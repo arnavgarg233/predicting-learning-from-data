@@ -1,0 +1,720 @@
+{
+ "forecast_headlines": [
+  {
+   "headline": "Table 1 code, data alone / two pilots",
+   "paper": 0.36717579102251896,
+   "ci95": [
+    0.13350677651977363,
+    0.7415858469103473
+   ],
+   "variants": {
+    "info floor: none": {
+     "value": 0.349500745470226,
+     "outside": false
+    },
+    "info floor: fitted": {
+     "value": 0.3586434334589827,
+     "outside": false
+    },
+    "pilots floor: reference": {
+     "value": 0.3542308423768376,
+     "outside": false
+    },
+    "pilots floor: 0.5 n-gram": {
+     "value": 0.29788892337231554,
+     "outside": false
+    },
+    "seed 0 only": {
+     "value": 0.3666587300789386,
+     "outside": false
+    },
+    "seed 1 only": {
+     "value": 0.3677171237068766,
+     "outside": false
+    },
+    "early-stopping split": {
+     "value": 0.23190124882783175,
+     "outside": false
+    },
+    "1,000 targets*": {
+     "value": 0.34934315271822086,
+     "outside": false
+    }
+   }
+  },
+  {
+   "headline": "Table 1 English",
+   "paper": 0.873838931185121,
+   "ci95": [
+    0.7033396705612666,
+    1.0900929962850674
+   ],
+   "variants": {
+    "info floor: none": {
+     "value": 1.3208369255167236,
+     "outside": true
+    },
+    "info floor: fitted": {
+     "value": 1.161213471213291,
+     "outside": true
+    },
+    "pilots floor: reference": {
+     "value": 1.3870701171623039,
+     "outside": true
+    },
+    "pilots floor: 0.5 n-gram": {
+     "value": 1.5648126638520916,
+     "outside": true
+    },
+    "seed 0 only": {
+     "value": 0.8752438195587717,
+     "outside": false
+    },
+    "seed 1 only": {
+     "value": 0.8725004427718772,
+     "outside": false
+    },
+    "early-stopping split": {
+     "value": 0.8652262049198852,
+     "outside": false
+    },
+    "1,000 targets*": {
+     "value": 0.937674394275787,
+     "outside": false
+    }
+   }
+  },
+  {
+   "headline": "Table 1 Wikipedia",
+   "paper": 3.9027969567795915,
+   "ci95": [
+    2.993821544663996,
+    5.2399393996096055
+   ],
+   "variants": {
+    "info floor: none": {
+     "value": 3.129324029184883,
+     "outside": false
+    },
+    "info floor: fitted": {
+     "value": 3.3534124168400705,
+     "outside": false
+    },
+    "pilots floor: reference": {
+     "value": 1.200495811340087,
+     "outside": true
+    },
+    "pilots floor: 0.5 n-gram": {
+     "value": 3.7188312714154304,
+     "outside": false
+    },
+    "seed 0 only": {
+     "value": 3.8991265763627605,
+     "outside": false
+    },
+    "seed 1 only": {
+     "value": 3.906268457103739,
+     "outside": false
+    },
+    "early-stopping split": {
+     "value": 3.7980663715759415,
+     "outside": false
+    },
+    "1,000 targets*": {
+     "value": 3.9335022035941125,
+     "outside": false
+    }
+   }
+  },
+  {
+   "headline": "Table 1 all 80",
+   "paper": 1.1981057143946177,
+   "ci95": [
+    0.8034757843738164,
+    2.0801937021100616
+   ],
+   "variants": {
+    "info floor: none": {
+     "value": 1.0009295516045746,
+     "outside": false
+    },
+    "info floor: fitted": {
+     "value": 1.0560561084182931,
+     "outside": false
+    },
+    "pilots floor: reference": {
+     "value": 0.8805262266033584,
+     "outside": false
+    },
+    "pilots floor: 0.5 n-gram": {
+     "value": 0.9991706389319471,
+     "outside": false
+    },
+    "seed 0 only": {
+     "value": 1.1987087847109172,
+     "outside": false
+    },
+    "seed 1 only": {
+     "value": 1.1974956944183306,
+     "outside": false
+    },
+    "early-stopping split": {
+     "value": 1.2368215995001106,
+     "outside": false
+    },
+    "1,000 targets*": {
+     "value": 1.203748628461052,
+     "outside": false
+    }
+   }
+  },
+  {
+   "headline": "Forward 45, revision / two pilots, all",
+   "paper": 1.2023078850499536,
+   "ci95": [
+    0.6391945329692504,
+    2.6855979411046365
+   ],
+   "variants": {
+    "info floor: none": {
+     "value": 1.1837128734892135,
+     "outside": false
+    },
+    "info floor: fitted": {
+     "value": 1.1912841225535025,
+     "outside": false
+    },
+    "pilots floor: reference": {
+     "value": 1.1308699973746625,
+     "outside": false
+    },
+    "pilots floor: 0.5 n-gram": {
+     "value": 1.1568311720568858,
+     "outside": false
+    },
+    "seed 0 only": {
+     "value": 1.1955612173040226,
+     "outside": false
+    },
+    "seed 1 only": {
+     "value": 1.2090144506227813,
+     "outside": false
+    },
+    "early-stopping split": {
+     "value": 1.3991716516666917,
+     "outside": false
+    },
+    "1,000 targets*": {
+     "value": 1.1941452615368582,
+     "outside": false
+    }
+   }
+  },
+  {
+   "headline": "Forward 45, code",
+   "paper": 2.0559628547073623,
+   "ci95": [
+    0.6599023382081182,
+    3.6088247794894044
+   ],
+   "variants": {
+    "info floor: none": {
+     "value": 2.0363734767247186,
+     "outside": false
+    },
+    "info floor: fitted": {
+     "value": 2.01576497001343,
+     "outside": false
+    },
+    "pilots floor: reference": {
+     "value": 2.005824574256896,
+     "outside": false
+    },
+    "pilots floor: 0.5 n-gram": {
+     "value": 1.8509097773801997,
+     "outside": false
+    },
+    "seed 0 only": {
+     "value": 2.0296058790915668,
+     "outside": false
+    },
+    "seed 1 only": {
+     "value": 2.0825642001168974,
+     "outside": false
+    },
+    "early-stopping split": {
+     "value": 2.9336403163002487,
+     "outside": false
+    },
+    "1,000 targets*": {
+     "value": 2.027874507461001,
+     "outside": false
+    }
+   }
+  },
+  {
+   "headline": "Forward 45, web languages",
+   "paper": 1.1818485120419107,
+   "ci95": [
+    0.6780029314795425,
+    2.1019809946811816
+   ],
+   "variants": {
+    "info floor: none": {
+     "value": 1.215677801444091,
+     "outside": false
+    },
+    "info floor: fitted": {
+     "value": 1.310172843378963,
+     "outside": false
+    },
+    "pilots floor: reference": {
+     "value": 0.4914639645179843,
+     "outside": true
+    },
+    "pilots floor: 0.5 n-gram": {
+     "value": 1.1068476474666638,
+     "outside": false
+    },
+    "seed 0 only": {
+     "value": 1.172031241755243,
+     "outside": false
+    },
+    "seed 1 only": {
+     "value": 1.1909942186425988,
+     "outside": false
+    },
+    "early-stopping split": {
+     "value": 1.6185797514820364,
+     "outside": false
+    },
+    "1,000 targets*": {
+     "value": 1.1801450295216207,
+     "outside": false
+    }
+   }
+  },
+  {
+   "headline": "Forward 45, web-language fall vs two pilots",
+   "paper": 1.1342111902086334,
+   "ci95": [
+    0.6812952059060475,
+    1.6671127851630823
+   ],
+   "variants": {
+    "info floor: none": {
+     "value": 1.3714004941981626,
+     "outside": false
+    },
+    "info floor: fitted": {
+     "value": 1.6577557688397326,
+     "outside": false
+    },
+    "seed 0 only": {
+     "value": 1.1378857965626858,
+     "outside": false
+    },
+    "seed 1 only": {
+     "value": 1.1258150669313216,
+     "outside": false
+    },
+    "early-stopping split": {
+     "value": 1.143228025184152,
+     "outside": false
+    },
+    "1,000 targets*": {
+     "value": 1.291153370905621,
+     "outside": false
+    }
+   }
+  },
+  {
+   "headline": "Own fall orders 84 language falls (Spearman)",
+   "paper": 0.57387870810975,
+   "ci95": [
+    0.39337602510883873,
+    0.7152434949883567
+   ],
+   "variants": {
+    "info floor: none": {
+     "value": 0.5127670345246533,
+     "outside": false
+    },
+    "info floor: fitted": {
+     "value": 0.327710843373494,
+     "outside": true
+    },
+    "seed 0 only": {
+     "value": 0.5796699402652628,
+     "outside": false
+    },
+    "seed 1 only": {
+     "value": 0.5689379366204314,
+     "outside": false
+    },
+    "early-stopping split": {
+     "value": 0.5877695656575884,
+     "outside": false
+    },
+    "1,000 targets*": {
+     "value": 0.48933886807735144,
+     "same_rows_20000": 0.57387870810975,
+     "outside": false
+    }
+   }
+  },
+  {
+   "headline": "Web-language fall line / kind mean (30)",
+   "paper": 0.747021652968386,
+   "ci95": [
+    0.5393118729556116,
+    0.9787764583776583
+   ],
+   "variants": {
+    "info floor: none": {
+     "value": 0.734693779272667,
+     "outside": false
+    },
+    "info floor: fitted": {
+     "value": 0.7355378003453326,
+     "outside": false
+    },
+    "seed 0 only": {
+     "value": 0.7263079172579479,
+     "outside": false
+    },
+    "seed 1 only": {
+     "value": 0.7824055142664739,
+     "outside": false
+    },
+    "early-stopping split": {
+     "value": 0.8074613424535352,
+     "outside": false
+    },
+    "1,000 targets*": {
+     "value": 0.8786692267512106,
+     "same_rows_20000": 0.8872261306561149,
+     "outside": false
+    }
+   }
+  },
+  {
+   "headline": "English fall line / kind mean (20)",
+   "paper": 0.8415060391653871,
+   "ci95": [
+    0.7520274913318042,
+    0.9190966955538717
+   ],
+   "variants": {
+    "info floor: none": {
+     "value": 0.8932128326583999,
+     "outside": false
+    },
+    "info floor: fitted": {
+     "value": 0.9756673435081367,
+     "outside": true
+    },
+    "seed 0 only": {
+     "value": 0.8507229119824504,
+     "outside": false
+    },
+    "seed 1 only": {
+     "value": 0.8368591035514442,
+     "outside": false
+    },
+    "early-stopping split": {
+     "value": 0.8251067711529747,
+     "outside": false
+    }
+   }
+  }
+ ],
+ "rate_headlines": [
+  {
+   "headline": "DataDecide: evaluation-set share of rate variance",
+   "paper": 0.7291279604548953,
+   "variants": {
+    "none": {
+     "value": 0.7291279604548953
+    },
+    "frac 0.5": {
+     "value": 0.5626779945130128
+    },
+    "frac 0.7": {
+     "value": 0.40863503933766687
+    },
+    "frac 0.85": {
+     "value": 0.26579261932490444
+    },
+    "frac 0.95": {
+     "value": 0.16624102249892136
+    },
+    "free per cell": {
+     "value": 0.3489449156371489
+    },
+    "free per set": {
+     "value": 0.7291279604548957
+    }
+   }
+  },
+  {
+   "headline": "DataDecide: Spearman(gamma, set-mean rate), 11 sets",
+   "paper": 0.590909090909091,
+   "ci95": [
+    -0.07985039423141718,
+    0.981138657305836
+   ],
+   "variants": {
+    "none": {
+     "value": 0.590909090909091
+    },
+    "frac 0.5": {
+     "value": 0.6545454545454547
+    },
+    "frac 0.7": {
+     "value": 0.590909090909091
+    },
+    "frac 0.85": {
+     "value": 0.4363636363636364
+    },
+    "frac 0.95": {
+     "value": 0.13636363636363633
+    },
+    "free per cell": {
+     "value": 0.590909090909091
+    },
+    "free per set": {
+     "value": 0.590909090909091
+    }
+   }
+  },
+  {
+   "headline": "Single pass 40: Spearman(gamma, rate)",
+   "paper": -0.24502814258911826,
+   "ci95": [
+    -0.5274015009380864,
+    0.07954971857410884
+   ],
+   "variants": {
+    "raw": {
+     "value": -0.24502814258911826,
+     "ci95": [
+      -0.5274015009380864,
+      0.07954971857410884
+     ]
+    },
+    "raw 24-27": {
+     "value": -0.37692307692307697,
+     "ci95": [
+      -0.6296482176360226,
+      -0.06396810506566618
+     ]
+    },
+    "frac 0.5": {
+     "value": -0.2313320825515948,
+     "ci95": [
+      -0.5225187617260789,
+      0.10131801125703557
+     ]
+    },
+    "frac 0.7": {
+     "value": -0.22176360225140718,
+     "ci95": [
+      -0.5153846153846154,
+      0.11445121951219506
+     ]
+    },
+    "frac 0.85": {
+     "value": -0.20450281425891187,
+     "ci95": [
+      -0.5046904315197,
+      0.13714821763602253
+     ]
+    },
+    "frac 0.95": {
+     "value": -0.15722326454033772,
+     "ci95": [
+      -0.46567542213883684,
+      0.18837711069418372
+     ]
+    },
+    "ref 0.5": {
+     "value": -0.23714821763602256,
+     "ci95": [
+      -0.5146341463414634,
+      0.0784427767354594
+     ]
+    },
+    "ng 0.5": {
+     "value": -0.30900562851782365,
+     "ci95": [
+      -0.5688602251407131,
+      0.0030065666041275115
+     ]
+    },
+    "ref 0.8": {
+     "value": -0.0975609756097561,
+     "ci95": [
+      -0.3988789868667918,
+      0.22420262664165103
+     ]
+    },
+    "ng 0.8": {
+     "value": -0.15966228893058165,
+     "ci95": [
+      -0.46567542213883684,
+      0.1838836772983112
+     ]
+    },
+    "fit3": {
+     "value": 0.33264540337711074,
+     "ci95": [
+      0.025131332082551607,
+      0.5825562851782364
+     ]
+    },
+    "ref 1.0": {
+     "value": 0.014258911819887431,
+     "ci95": [
+      -0.3052579737335835,
+      0.32608818011257024
+     ]
+    }
+   }
+  },
+  {
+   "headline": "Curve-forecast learner, 159 corpora: median local exponent 2^23->2^25",
+   "paper": 0.10374894955957585,
+   "variants": {
+    "none": {
+     "value": 0.10374894955957585,
+     "n": 159,
+     "rank_agreement_with_none": 1.0
+    },
+    "fitted": {
+     "value": 0.19592794920240086,
+     "n": 159,
+     "rank_agreement_with_none": 0.1429424408884643
+    },
+    "reference": {
+     "value": 0.32237425871700026,
+     "n": 82,
+     "rank_agreement_with_none": 0.3634592570825307
+    },
+    "ngram_half": {
+     "value": 0.32454621733299416,
+     "n": 133,
+     "rank_agreement_with_none": 0.8359178135297538
+    }
+   }
+  },
+  {
+   "headline": "Curve-forecast learner, 159 corpora: Spearman(gamma, local exponent)",
+   "paper": -0.15798602818246957,
+   "ci95": [
+    -0.31206367924528305,
+    0.00604049737282065
+   ],
+   "variants": {
+    "none / gamma h960": {
+     "value": -0.15798602818246957
+    },
+    "none / gamma zero": {
+     "value": 0.4139837592548364
+    },
+    "none / gamma free": {
+     "value": 0.24221399570097923
+    },
+    "fitted / gamma h960": {
+     "value": -0.17232505373775975
+    },
+    "fitted / gamma zero": {
+     "value": -0.05220026271793648
+    },
+    "fitted / gamma free": {
+     "value": 0.0017464771913064247
+    },
+    "reference / gamma h960": {
+     "value": 0.14232539915760603
+    },
+    "reference / gamma zero": {
+     "value": 0.10373200117543344
+    },
+    "reference / gamma free": {
+     "value": 0.17710952209923708
+    },
+    "ngram_half / gamma h960": {
+     "value": 0.00940104671447955
+    },
+    "ngram_half / gamma zero": {
+     "value": 0.20223217473806634
+    },
+    "ngram_half / gamma free": {
+     "value": 0.20820028361269524
+    }
+   }
+  }
+ ],
+ "numerics": {
+  "learner_fp16_minus_bf16": {
+   "code_xslt_b23_s0": 0.007833409359893073,
+   "code_xslt_b25_s0": 0.0002652517881489569,
+   "code_coffeescript_b23_s0": -0.0016073687724318386,
+   "code_coffeescript_b25_s0": -0.0034014039759200365
+  },
+  "fall_diff": {
+   "code_xslt": 0.007568157571744116,
+   "code_coffeescript": 0.001794035203488198
+  },
+  "ref_x_diff": -9.252574583396012e-06,
+  "ref_full_diff": 7.802936609624389e-06
+ },
+ "seed": {
+  "n": 102,
+  "sd_single_run": 0.012144651284738161
+ },
+ "eval_split": {
+  "n": 213,
+  "missing": 0,
+  "valA_minus_test": {
+   "19": {
+    "mean": -0.021389340810927103,
+    "sd": 0.17137515805721312,
+    "max_abs": 1.1116531572640223
+   },
+   "20": {
+    "mean": -0.02722149846430704,
+    "sd": 0.1720341155471558,
+    "max_abs": 1.245378862884618
+   },
+   "23": {
+    "mean": -0.012604366084574443,
+    "sd": 0.1423010750473851,
+    "max_abs": 1.1707136555847786
+   },
+   "25": {
+    "mean": -0.005362295260327904,
+    "sd": 0.11209275805161478,
+    "max_abs": 0.9533012094347271
+   }
+  },
+  "fall_valA_minus_test": {
+   "mean": -0.007242070824246541,
+   "sd": 0.06907986366075228,
+   "max_abs": 0.8029903492399597
+  }
+ },
+ "ref1000": {
+  "n": 178,
+  "gamma_diff": {
+   "median_abs": 0.01707301154264637,
+   "max_abs": 0.07808935261493166
+  },
+  "own_fall_diff": {
+   "median_abs": 0.014561074931638496
+  },
+  "A0_25_diff": {
+   "median_abs": 0.023663035388764242
+  }
+ }
+}

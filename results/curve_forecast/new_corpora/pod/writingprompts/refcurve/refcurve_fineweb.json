@@ -1,0 +1,149 @@
+{
+ "SmolLM2-135M": {
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "short": "SmolLM2-135M",
+  "n_targets": 20000,
+  "n_docs": 1546,
+  "n_docs_total": 1690,
+  "mean_bytes_per_target_token": 4.09485,
+  "rows": [
+   {
+    "n_tokens": 1,
+    "bits_per_token": 9.313082543857256,
+    "bits_per_byte": 2.27434034063696,
+    "bpb_se": 0.012769645465835033,
+    "context_bytes_exact_mean": 4.12265
+   },
+   {
+    "n_tokens": 2,
+    "bits_per_token": 8.086468313125598,
+    "bits_per_byte": 1.9747898734082074,
+    "bpb_se": 0.011175089240320494,
+    "context_bytes_exact_mean": 8.2398
+   },
+   {
+    "n_tokens": 3,
+    "bits_per_token": 7.504385034263507,
+    "bits_per_byte": 1.8326397876023557,
+    "bpb_se": 0.010579756280293921,
+    "context_bytes_exact_mean": 12.3322
+   },
+   {
+    "n_tokens": 4,
+    "bits_per_token": 7.17070235775873,
+    "bits_per_byte": 1.7511514115923001,
+    "bpb_se": 0.010420344814005344,
+    "context_bytes_exact_mean": 16.4459
+   },
+   {
+    "n_tokens": 6,
+    "bits_per_token": 6.783336236639059,
+    "bits_per_byte": 1.6565530450783446,
+    "bpb_se": 0.01020452954977284,
+    "context_bytes_exact_mean": 24.63935
+   },
+   {
+    "n_tokens": 8,
+    "bits_per_token": 6.541459479387056,
+    "bits_per_byte": 1.5974845182087394,
+    "bpb_se": 0.010096080537534304,
+    "context_bytes_exact_mean": 32.86975
+   },
+   {
+    "n_tokens": 12,
+    "bits_per_token": 6.185840387378085,
+    "bits_per_byte": 1.5106390679458552,
+    "bpb_se": 0.009762946688357659,
+    "context_bytes_exact_mean": 49.27035
+   },
+   {
+    "n_tokens": 16,
+    "bits_per_token": 5.954205849036485,
+    "bits_per_byte": 1.4540717850559812,
+    "bpb_se": 0.009509338799370735,
+    "context_bytes_exact_mean": 65.72535
+   },
+   {
+    "n_tokens": 24,
+    "bits_per_token": 5.692640947199904,
+    "bits_per_byte": 1.39019523235281,
+    "bpb_se": 0.009318191085864609,
+    "context_bytes_exact_mean": 98.55365
+   },
+   {
+    "n_tokens": 32,
+    "bits_per_token": 5.466204360222364,
+    "bits_per_byte": 1.3348973369530908,
+    "bpb_se": 0.008969290758697016,
+    "context_bytes_exact_mean": 131.38785
+   },
+   {
+    "n_tokens": 48,
+    "bits_per_token": 5.193521646860222,
+    "bits_per_byte": 1.2683057125072277,
+    "bpb_se": 0.008780447974294073,
+    "context_bytes_exact_mean": 197.10525
+   },
+   {
+    "n_tokens": 64,
+    "bits_per_token": 5.012117825185308,
+    "bits_per_byte": 1.2240052322271409,
+    "bpb_se": 0.008418553636728178,
+    "context_bytes_exact_mean": 262.93745
+   },
+   {
+    "n_tokens": 96,
+    "bits_per_token": 4.809197910510638,
+    "bits_per_byte": 1.1744503243124016,
+    "bpb_se": 0.008125534429785345,
+    "context_bytes_exact_mean": 394.5096
+   },
+   {
+    "n_tokens": 128,
+    "bits_per_token": 4.695082605761845,
+    "bits_per_byte": 1.146582318219677,
+    "bpb_se": 0.007972028571910763,
+    "context_bytes_exact_mean": 526.3109
+   },
+   {
+    "n_tokens": 192,
+    "bits_per_token": 4.5825701492667505,
+    "bits_per_byte": 1.119105742400027,
+    "bpb_se": 0.007790235194621105,
+    "context_bytes_exact_mean": 789.89425
+   },
+   {
+    "n_tokens": 256,
+    "bits_per_token": 4.5207906569359535,
+    "bits_per_byte": 1.10401862264453,
+    "bpb_se": 0.007632001778367159,
+    "context_bytes_exact_mean": 1054.00615
+   },
+   {
+    "n_tokens": 384,
+    "bits_per_token": 4.45649147669417,
+    "bits_per_byte": 1.0883161719462666,
+    "bpb_se": 0.0074676236221016485,
+    "context_bytes_exact_mean": 1582.83015
+   },
+   {
+    "n_tokens": 512,
+    "bits_per_token": 4.413325443997498,
+    "bits_per_byte": 1.077774630083519,
+    "bpb_se": 0.007384878656414748,
+    "context_bytes_exact_mean": 2114.03935
+   }
+  ],
+  "key": {
+   "model": "HuggingFaceTB/SmolLM2-135M",
+   "corpus": [
+    "dded236eec7535660cdc9816e6feb59a48954d1d8f12968fb28e036309906159",
+    "9a211d7ea267842800ebd5815f1b098c194658cbd70d33067f38c45fddda6767"
+   ],
+   "ns": "1,2,3,4,6,8,12,16,24,32,48,64,96,128,192,256,384,512",
+   "nt": 20000,
+   "seed": 0,
+   "docs": "nfc_only"
+  }
+ }
+}

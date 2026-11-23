@@ -1,0 +1,10 @@
+{
+ "name": "code_kotlin",
+ "prep_ok": true,
+ "prep_seconds": 39.11203074455261,
+ "train_sha256": "d68e05f3848618138825b81f447433f14722a5e4f87bf41c82f4b30f0db5467d",
+ "ref_sha256": "1036e183bd6318edfc93a1e68b4d063258eb4640973162196dc1025f718ce60b",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

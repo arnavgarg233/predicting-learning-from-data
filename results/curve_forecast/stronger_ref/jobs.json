@@ -1,0 +1,930 @@
+{
+ "subset_seed": 20261025,
+ "n_sub": 1000,
+ "jobs": [
+  {
+   "name": "ja_wiki",
+   "group": "dev",
+   "prep_corpus": "ja_wiki",
+   "prep_extra": "",
+   "corpus_sha": [
+    "1fd057c1134992f4ad72367a99aae7ebd7dbe750e8ddff8e2d05c3a7cbaf55d6",
+    "0d2cdd55f6c25161a4c10667576a1c252c44f51e4bf496fab3ddb9fa8df4c9b2"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "69bb28cc59cadb69",
+   "refdir": "results/mc/ja_wiki/refcurve"
+  },
+  {
+   "name": "de_wiki",
+   "group": "dev",
+   "prep_corpus": "de_wiki",
+   "prep_extra": "",
+   "corpus_sha": [
+    "6b6124a2f489af2c4ad8219ce9498f4aa15ea80d7dfdb927c0e8c0491942cb27",
+    "64b8b51c2136362f377e9f4cc4c9717b11f9267dab58c05186ed360cea9351d0"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "b953286c4055181d",
+   "refdir": "results/mc2/de_wiki/refcurve"
+  },
+  {
+   "name": "zh_wiki",
+   "group": "dev",
+   "prep_corpus": "zh_wiki",
+   "prep_extra": "",
+   "corpus_sha": [
+    "e83ae777c3d8436c051287dbeac0a48b60a01ecb6764f0294e8f03a17797616f",
+    "aab4b42baec5af7fa2612b5db1619a46bc235e6d2489966d36ab60952f665d17"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "75d9840436e462d9",
+   "refdir": "results/mc2/zh_wiki/refcurve"
+  },
+  {
+   "name": "wiki_ceb",
+   "group": "stage3",
+   "prep_corpus": "wiki_ceb",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "44f587a8627a8bda5901411775b3da2cc5024852bc4bc1562b68865a02baa391",
+    "acb6f22cfcbdfecc87c891a3938914f9b6bf80acf3d4fa4caadd795d9d015f38"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "8ce57748de7ed3ea",
+   "refdir": "results/curve_forecast/stage3/wiki_ceb/refcurve"
+  },
+  {
+   "name": "wiki_arz",
+   "group": "stage3",
+   "prep_corpus": "wiki_arz",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "29e657dd40f035fa06e29efdb75b0a21b4026c5e0d32379a8cb9c7a0fd296f1d",
+    "ed54ae70d8c3ff97a957efb98b18bd9e3033e77664a3085d1079a81d720a77dd"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "9c944b9cfde1f8d9",
+   "refdir": "results/curve_forecast/stage3/wiki_arz/refcurve"
+  },
+  {
+   "name": "wiki_zh",
+   "group": "stage3",
+   "prep_corpus": "wiki_zh",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "ab2e5952459528e1f5ba212436e46251e3b44da5bc7f7a2c5edcb2bb5560991a",
+    "f54b5fe29b49f4661edf7f37ff283552777e81bbd2dc7f50b1b9ada6812dc24f"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "de6281ba8c2636ac",
+   "refdir": "results/curve_forecast/stage3/wiki_zh/refcurve"
+  },
+  {
+   "name": "wiki_ce",
+   "group": "stage3",
+   "prep_corpus": "wiki_ce",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "ce7822ecbbeeba2582847a58afdcb2139f80a51b8ad1e18c9260b4a5a5401bb6",
+    "766444e66cf6cb9d5cf4717010cd91b12f2af728bc203a58b3bc8f95f2822526"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "b8a16262cbd58e8c",
+   "refdir": "results/curve_forecast/stage3/wiki_ce/refcurve"
+  },
+  {
+   "name": "wiki_sh",
+   "group": "stage3",
+   "prep_corpus": "wiki_sh",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "aa0d1d8f6ec522c6565300be6b1769f771e08d3f1de98b41fc2f0d7e15473e8e",
+    "2d3ea50aab4034df7a7107d66c864da6c257185400e3a18ef2484f59c71df9de"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "39283e879a093254",
+   "refdir": "results/curve_forecast/stage3/wiki_sh/refcurve"
+  },
+  {
+   "name": "wiki_uz",
+   "group": "stage3",
+   "prep_corpus": "wiki_uz",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "8f19ec3cdfce7983255254c7488665582699886d0cf0b55d35159c95ae546e85",
+    "124d8ce2086b1b25ee6b343432c2d1974582ba76d030de9bc774ea04322ccc2e"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "ce3040eff37c3711",
+   "refdir": "results/curve_forecast/stage3/wiki_uz/refcurve"
+  },
+  {
+   "name": "wiki_min",
+   "group": "stage3",
+   "prep_corpus": "wiki_min",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "80826ddd1bac7dec8ede11e856c93fbf941d156e9517398bffa39d46a7181d3c",
+    "40dc074d682984e672fcc3d7ff547b5d5c25c5fa1f95306873095471911eb280"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "e14ca398756a2c91",
+   "refdir": "results/curve_forecast/stage3/wiki_min/refcurve"
+  },
+  {
+   "name": "wiki_gl",
+   "group": "stage3",
+   "prep_corpus": "wiki_gl",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "7194b4506185e1ef489c058c9d2a8bb2e1cce61250bb51c7605f10a72432351f",
+    "49e767f53309f779c3c7bfc4cb226eaceac7d791ddc42cb59a05ad525230b85d"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "012052209c6eedb7",
+   "refdir": "results/curve_forecast/stage3/wiki_gl/refcurve"
+  },
+  {
+   "name": "wiki_nn",
+   "group": "stage3",
+   "prep_corpus": "wiki_nn",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "492123082bc7eae455d44ac840dddf2638cf515fce598c413361d3a1d51a4402",
+    "0abf541ace4cf71ed7d9ece3689a7c69a03f8d2da34066c44272f8ddb8396619"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "b230fc6d1a00f9e6",
+   "refdir": "results/curve_forecast/stage3/wiki_nn/refcurve"
+  },
+  {
+   "name": "wiki_la",
+   "group": "stage3",
+   "prep_corpus": "wiki_la",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "8b769752712437e7381189f88157b52a91b23c25d18f17675b4b41ec10c03669",
+    "e77595f8cd014cfb60b7c3ba022869b5f8db9e79b7174d3764c21ed80a2454be"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "85e45c5d8c51ac9f",
+   "refdir": "results/curve_forecast/stage3/wiki_la/refcurve"
+  },
+  {
+   "name": "wiki_af",
+   "group": "stage3",
+   "prep_corpus": "wiki_af",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "f00aafd0aa2cb2aa9b365568c2ea412547e4b19ef3b0a7de17771fa4c7374bcb",
+    "c626bf10be3d7f0be2338b29fc55f37df980bcbb1979c9184b7e6b5e8130eabf"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "54496ee312388608",
+   "refdir": "results/curve_forecast/stage3/wiki_af/refcurve"
+  },
+  {
+   "name": "wiki_my",
+   "group": "stage3",
+   "prep_corpus": "wiki_my",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "531a11b2fcfb4ef170c8e8eb5d6d1f8342117abec00de09b6b4d50b8a491511a",
+    "a53b487541c4a0e05e5b0c30e9508a335d999f6ae6304bcd82df98d78e269c1a"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "b8382b21568d0844",
+   "refdir": "results/curve_forecast/stage3/wiki_my/refcurve"
+  },
+  {
+   "name": "wiki_de",
+   "group": "stage3",
+   "prep_corpus": "wiki_de",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "24e4865701840b52c1de8fdeae3c7ce96133fa981d1ba39ab22a91c9fca41e82",
+    "0a257e815ac52b3d9000d462553651202c42fd64e64fdf40adb444c5739b11a5"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "510a73f608d1eaab",
+   "refdir": "results/curve_forecast/stage3/wiki_de/refcurve"
+  },
+  {
+   "name": "wiki_bs",
+   "group": "stage3",
+   "prep_corpus": "wiki_bs",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "f0fefc13df95e8a63ae42cb5bd68cbf5617e77491511a0ad059e4b8537b2b6cf",
+    "13f6bb89df5e3ca8e6eff9f57a23d3b2baa2a2c88c04412e17c22c59634f7b80"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "44f4cf1fe7bc19a6",
+   "refdir": "results/curve_forecast/stage3/wiki_bs/refcurve"
+  },
+  {
+   "name": "wiki_te",
+   "group": "stage3",
+   "prep_corpus": "wiki_te",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "94e6268d0c571075effddb9962ec4b23fef43fec502eeaf904fbbebd56f631d5",
+    "4f1e879cfdc080130dd0ed6e4d55b0c3d21fd743791de8014afe727aa8c90857"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "1cc910d5d296d3e0",
+   "refdir": "results/curve_forecast/stage3/wiki_te/refcurve"
+  },
+  {
+   "name": "wiki_br",
+   "group": "stage3",
+   "prep_corpus": "wiki_br",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "797bdb9879e35042ad8f7d4ddbcdb4e6dc6fa851dacbd17194abd0b874b66f36",
+    "c8e7592284541c50d14e6c2bea2bbd5f154087440e95182ec305ea528556b388"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "f3c8d3aea27a9c4c",
+   "refdir": "results/curve_forecast/stage3/wiki_br/refcurve"
+  },
+  {
+   "name": "wiki_fr",
+   "group": "test80",
+   "prep_corpus": "wiki_fr",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "fc4bdfd59eb00658ae7efbb801a4b3a00f066aaf23524cf6e6a581c7befa918b",
+    "2e222939d7febf9e8293d695fe594444e5711c786e160399ca2dea25386322ad"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "92af5263bd382d79",
+   "refdir": "results/curve_forecast/wiki_fr/refcurve"
+  },
+  {
+   "name": "wiki_ru",
+   "group": "test80",
+   "prep_corpus": "wiki_ru",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "97c15bb2def281467661ca31d89fddc51a59e652bb745f7163b5bf387a22cb5f",
+    "59fcf8f263bc47ec2514f6640dd5835637d340d1294ce6f74b53a8d08cb66d9d"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "5c63359b048857cd",
+   "refdir": "results/curve_forecast/wiki_ru/refcurve"
+  },
+  {
+   "name": "wiki_es",
+   "group": "test80",
+   "prep_corpus": "wiki_es",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "a7f4816b45b300129d6ea9b2222fd796ac5b9eaa4ed3432992caa3817d8d2e1c",
+    "a022902cd5b606010458e94fd76882d534c36bf5b781ac69e31ff214119b0b05"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "fbddb89f64a49f81",
+   "refdir": "results/curve_forecast/wiki_es/refcurve"
+  },
+  {
+   "name": "wiki_ar",
+   "group": "test80",
+   "prep_corpus": "wiki_ar",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "e474c04cca7f51c8ca0a14a355e74d1406424285807a6f8938a2120e256a601f",
+    "f1d4ac2d80113bf49e4653ffe2c292b016c5efec39eb5e1f5c022748363cdf2c"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "d010b4ea388f1f18",
+   "refdir": "results/curve_forecast/wiki_ar/refcurve"
+  },
+  {
+   "name": "wiki_ko",
+   "group": "test80",
+   "prep_corpus": "wiki_ko",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "2db87b23506c2a5acf90fc09572eeed693599b2ae2be6c7d3b912e5865695378",
+    "6b6d9464941c5725d11a7644db89b5c210146dab2df5fd7c2dffd4331fba628b"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "112bd8387bea5408",
+   "refdir": "results/curve_forecast/wiki_ko/refcurve"
+  },
+  {
+   "name": "wiki_it",
+   "group": "test80",
+   "prep_corpus": "wiki_it",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "683ec7268ca18c81bf69d90899c7b88710f36a15150519d88a9c6714aaee9ca8",
+    "107362c0035cae308340359ef857ce2b329e7d22f287afe6d62821ad7afd5ade"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "800798c6aa920cdf",
+   "refdir": "results/curve_forecast/wiki_it/refcurve"
+  },
+  {
+   "name": "wiki_pt",
+   "group": "test80",
+   "prep_corpus": "wiki_pt",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "fe6aa63bc449e52408d0aaa77e232cdf6f2318be2587f553da3dd9e7c935311b",
+    "85f04962480eebd8f2ea79ea747f079bfc20e7474b79401393e329c8038a0417"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "2471672b5e3e56f2",
+   "refdir": "results/curve_forecast/wiki_pt/refcurve"
+  },
+  {
+   "name": "wiki_pl",
+   "group": "test80",
+   "prep_corpus": "wiki_pl",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "b0a267d9835f623e585fbe4c2a68f067d80d362d7579ec963c7ca286fb40f3b8",
+    "5d023269852fce7b7221ed962bd81627ecffa76813f82e81142877ba946d4b7b"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "5f4b66a7508ffb14",
+   "refdir": "results/curve_forecast/wiki_pl/refcurve"
+  },
+  {
+   "name": "wiki_tr",
+   "group": "test80",
+   "prep_corpus": "wiki_tr",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "a988dbf3cb894a07121c42286b56ec88c4d58c1fd90f4d52108c21987caaa669",
+    "98722cc852d5866fe14b4f6824e312b873a6e36c08c9bc305d810ac61ba9311c"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "3f2e3aa8834d2493",
+   "refdir": "results/curve_forecast/wiki_tr/refcurve"
+  },
+  {
+   "name": "wiki_vi",
+   "group": "test80",
+   "prep_corpus": "wiki_vi",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "0800521777104193e8f74b25879e3b88a8edb340e16fd144537319d84bcf548e",
+    "f5e35d75c4903ff4482e1dc8eb1c67518c59ec0616d373790c2f179c5809606a"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "51e29e9ded7984d1",
+   "refdir": "results/curve_forecast/wiki_vi/refcurve"
+  },
+  {
+   "name": "wiki_fa",
+   "group": "test80",
+   "prep_corpus": "wiki_fa",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "083ce7d4ed71bdbff20332a57b793362873493a30c52c4698f740143938b7a03",
+    "61535c31b15cc68062f697ab23c4183b0c73a6240b7ee2518e60072b64083767"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "adb11b83870e10fd",
+   "refdir": "results/curve_forecast/stage2/wiki_fa/refcurve"
+  },
+  {
+   "name": "wiki_nl",
+   "group": "test80",
+   "prep_corpus": "wiki_nl",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "4fac3af8aae0183ef738533d7c85e91dc88039b626ddcc13e08b1b3f45e348c9",
+    "b07ce2b08ffd21c403a44be3b56061f1fb550716829f8f59b9762bfcbf507f3d"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "7337c10f4c983242",
+   "refdir": "results/curve_forecast/stage2/wiki_nl/refcurve"
+  },
+  {
+   "name": "wiki_sv",
+   "group": "test80",
+   "prep_corpus": "wiki_sv",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "cdac64015ab13b13b3a848ab0242fec7c677a24c094daf59228b3857894fba31",
+    "9321696f3013e41848518e3393d0d909232e7357405c25ce5e619933ffd1c9d4"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "8f87fcbccefccc94",
+   "refdir": "results/curve_forecast/stage2/wiki_sv/refcurve"
+  },
+  {
+   "name": "wiki_uk",
+   "group": "test80",
+   "prep_corpus": "wiki_uk",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "eb8ac227160d70ff5b02b223c5f9926c45942a4316c9a46563901c64b264d559",
+    "71d472f7472781fb07e7e135926729a33b7cccd3d0a58fe7c787e5900fc4b143"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "89973151a11f417b",
+   "refdir": "results/curve_forecast/stage2/wiki_uk/refcurve"
+  },
+  {
+   "name": "wiki_he",
+   "group": "test80",
+   "prep_corpus": "wiki_he",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "106025cdc6256585d887f0651d1298bedde440045e3b7e413c96b938f0a69c21",
+    "3c06d925bbdf6de6d3b66a64607917dd29af6a2b3c46a0431bb18ba8be0c41d2"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "d71caccfd3157408",
+   "refdir": "results/curve_forecast/stage2/wiki_he/refcurve"
+  },
+  {
+   "name": "wiki_hi",
+   "group": "test80",
+   "prep_corpus": "wiki_hi",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "0eeb764146bc1c24b7b30946430a0af4e8e93df1a922fec3f1f37e2b121bd05c",
+    "4a49c7a9150be8ab88158c30ae03376642b3c9df810573b860fc4b4dd4358248"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "1f6eadecbe2098e8",
+   "refdir": "results/curve_forecast/stage2/wiki_hi/refcurve"
+  },
+  {
+   "name": "wiki_cs",
+   "group": "test80",
+   "prep_corpus": "wiki_cs",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "0ea49a94d6d736efcf38b3956738e8f35522e7a042f696527fd8506eeda59718",
+    "5809954a5818d3b1b1ebeb3c6ccfffe9da5efd6256ff2ffc23b64413da360544"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "e836441b4537e10c",
+   "refdir": "results/curve_forecast/stage2/wiki_cs/refcurve"
+  },
+  {
+   "name": "wiki_el",
+   "group": "test80",
+   "prep_corpus": "wiki_el",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "5dae7097469176803f07f1397a7ce7da0a8ba5579fee64ea355753ca5d0b3838",
+    "15e00bcc313367dcd4b4dbbee71bc3796698f0dc80ba8a7e1726313d947d7081"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "15581b5b6cee2dda",
+   "refdir": "results/curve_forecast/stage2/wiki_el/refcurve"
+  },
+  {
+   "name": "wiki_fi",
+   "group": "test80",
+   "prep_corpus": "wiki_fi",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "4fa4b5e5de500d278b4d90abbd18155a3ad5cfa9629599e7824f1ae8b747923a",
+    "12df0d38862bd9248776cccf102cf9a169948dff83df107c1764ce414dab5eaf"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "a779669e85ee2220",
+   "refdir": "results/curve_forecast/stage2/wiki_fi/refcurve"
+  },
+  {
+   "name": "wiki_th",
+   "group": "test80",
+   "prep_corpus": "wiki_th",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "fac15e716f7e561780046c61d78674a56d06e32657a8c561762913d15779b73b",
+    "ea032ddc19aaca01b055615b70b53171112a1b1a02d373092049a379f311e7db"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "c9ac794437e1c412",
+   "refdir": "results/curve_forecast/stage2/wiki_th/refcurve"
+  },
+  {
+   "name": "wiki_id",
+   "group": "test80",
+   "prep_corpus": "wiki_id",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "09a19eab997651a75aecd4655361d03df5c351a1f6d274960cc32f18d3b090f2",
+    "40aea7a78aa77cb4471ea59052ef0280818d5a5e25ddbdf8ca7e01d052526301"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "7ec40395fe05ab11",
+   "refdir": "results/curve_forecast/stage2/wiki_id/refcurve"
+  },
+  {
+   "name": "wiki_ro",
+   "group": "test80",
+   "prep_corpus": "wiki_ro",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "d5cb56772dc3a083e5fe7bb4b8e4f80e540a172a2c3df7b622600a800b90fa2c",
+    "c81aa3d306c659e783be6cb91f5e90d67f7dde4108e75b5ac5776068e8d088d9"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "e2e350c370df8566",
+   "refdir": "results/curve_forecast/stage2/wiki_ro/refcurve"
+  },
+  {
+   "name": "wiki_az",
+   "group": "test80",
+   "prep_corpus": "wiki_az",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "955f035e3a67361e814ee1aa5e2c83340d2a52d8fd4d3b214c02db0ff2e8dfde",
+    "dc5085e3cc90686effb6c227cf25ada752791be772dab05a7ac9613b9897a166"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "35aa91e6da1eb283",
+   "refdir": "results/curve_forecast/stage2/wiki_az/refcurve"
+  },
+  {
+   "name": "wiki_hu",
+   "group": "test80",
+   "prep_corpus": "wiki_hu",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "414c886889edcac7d91a4598513e89e13fae4f7f94448b88178ee46b3c02b5c7",
+    "502cf5ae327ebfc1d2127e071bca7c7f6902e7d5b66b39d309ac7cf31d6876fe"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "2704ce49ffb779e6",
+   "refdir": "results/curve_forecast/stage2/wiki_hu/refcurve"
+  },
+  {
+   "name": "wiki_be",
+   "group": "test80",
+   "prep_corpus": "wiki_be",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "db9ee6867240c6da37d00f97182d247afc9eb86357dbabfcd99837f3d377e624",
+    "c433b8ff758341e42ca0df96e0d6487dc31425b9e09446134aa976f110ec122c"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "1d91853d40618ba8",
+   "refdir": "results/curve_forecast/stage2/wiki_be/refcurve"
+  },
+  {
+   "name": "wiki_da",
+   "group": "test80",
+   "prep_corpus": "wiki_da",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "7fb9419b112064c7bf2e86de9ab485212ebb2582a7aefb034b4781d168ecc43e",
+    "d7f94052179bfdf2fae4f66ae2e18e86738ad890f651761ccb5994835c6a2aa6"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "2995f73df6d8eb72",
+   "refdir": "results/curve_forecast/stage2/wiki_da/refcurve"
+  },
+  {
+   "name": "wiki_no",
+   "group": "test80",
+   "prep_corpus": "wiki_no",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "a2ceb645f95ee3c1903497a489c7a9266fbb5f6fc54ac892b2bb23586e70e199",
+    "6297ac0de109b49ab2636dccab924b9020698a2846d82e367c4c96174a29e2df"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "f433eb40168e4665",
+   "refdir": "results/curve_forecast/stage2/wiki_no/refcurve"
+  },
+  {
+   "name": "wiki_ka",
+   "group": "test80",
+   "prep_corpus": "wiki_ka",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "c7ace88e8f745cbbeb9162f0e487c592ee93ffeacf11f7df89e14d8469999e08",
+    "4d68f4b58f639484d7762ebd48258223b1f56b64f0a9fc1685499b8a46910625"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "a73c66e5cb53c7d4",
+   "refdir": "results/curve_forecast/stage2/wiki_ka/refcurve"
+  },
+  {
+   "name": "wiki_bg",
+   "group": "test80",
+   "prep_corpus": "wiki_bg",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "603d304248b1ce29b8a990a88e4c8fd67497b58973bee5d48ce867b15c1398dc",
+    "c90083b360eb77c2758c84809263ba2302a507df54914eb31c5e87c7fd092a4c"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "6d7bd8b3f337c570",
+   "refdir": "results/curve_forecast/stage2/wiki_bg/refcurve"
+  },
+  {
+   "name": "wiki_ca",
+   "group": "test80",
+   "prep_corpus": "wiki_ca",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "5fb434637599d1e915a66e02733a4658090975e420f3c695a0075a2c26cc51af",
+    "eaf5d29751bd4bd02e45ed8375afc69e6d0cdf37b0169d5f94c0166fd26b7fe7"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "28b256721697c951",
+   "refdir": "results/curve_forecast/stage2/wiki_ca/refcurve"
+  },
+  {
+   "name": "wiki_hy",
+   "group": "test80",
+   "prep_corpus": "wiki_hy",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "ba781d497624590705cdb759090a307276a8feb3d6ba3ed65705f6b7f0958dbb",
+    "0e84244b921327c313b2c6bb450dcb1dcb6d9abc1a5f22249b13699cfdc34430"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "39d7065c2bb32685",
+   "refdir": "results/curve_forecast/stage2/wiki_hy/refcurve"
+  },
+  {
+   "name": "wiki_sr",
+   "group": "test80",
+   "prep_corpus": "wiki_sr",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "e3d05d4b00f4e70969d5aeb3fcc055a564bb409f9b90f94c8f44a105ce995dce",
+    "9c658be0e4367d10e86ed013ca9f067beb363ab0ea40f29bd44ff8a22b79fd65"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "bf2def8828478503",
+   "refdir": "results/curve_forecast/stage2/wiki_sr/refcurve"
+  },
+  {
+   "name": "wiki_kk",
+   "group": "test80",
+   "prep_corpus": "wiki_kk",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "b8bd57c0dbd90d5b04256cd95c29728d100d1e0507068c7107837aa8a56c74af",
+    "046600de77b3fc0842e068f7098217158b2a904dfae9876212548d525abf6e07"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "367f1970c8d901df",
+   "refdir": "results/curve_forecast/stage2/wiki_kk/refcurve"
+  },
+  {
+   "name": "wiki_hr",
+   "group": "test80",
+   "prep_corpus": "wiki_hr",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "1b0b34c50c79a8d848e8f6aa21b3ae6e43db39be2c14a695781ff30b1310634b",
+    "17413139e0bee2f7ff1a9c7351c97b92ff1dfd77c0b4adacc83134cdf4e91561"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "f150fd80db5f4de9",
+   "refdir": "results/curve_forecast/stage2/wiki_hr/refcurve"
+  },
+  {
+   "name": "wiki_mk",
+   "group": "test80",
+   "prep_corpus": "wiki_mk",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "66edf64054bde061a0286e4af7eaeb110af158413a542bc4064839efa6ab820b",
+    "5aca324ac0b4ba9bb46f77d270f861fa2e932b041c6b36c95ac658de14ec4239"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "f85c7af113a8f8eb",
+   "refdir": "results/curve_forecast/stage2/wiki_mk/refcurve"
+  },
+  {
+   "name": "wiki_lt",
+   "group": "test80",
+   "prep_corpus": "wiki_lt",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "46364f32245d70edf9302c3e0ca34c21af18a210132f9a396ad9131c1bb162fd",
+    "db6a3a88f6f38c13b3827e977422642665e24cceef409352dee3486d9c72506b"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "ffc07599d2b0af7e",
+   "refdir": "results/curve_forecast/stage2/wiki_lt/refcurve"
+  },
+  {
+   "name": "wiki_sk",
+   "group": "test80",
+   "prep_corpus": "wiki_sk",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "a27f985a3a7ebcd4b8a8a50f39535a28df5b55979682061b31539159042783ea",
+    "2a62b888ce96ae98b75cc8f3ae95b900ecb905ff86b93c8c562d6f7c6e52ee4d"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "e816e3df3041cc05",
+   "refdir": "results/curve_forecast/stage2/wiki_sk/refcurve"
+  },
+  {
+   "name": "wiki_is",
+   "group": "test80",
+   "prep_corpus": "wiki_is",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "bdbea4932e1d01d08e880f3ad522af3beee83caf8c344ff842d22e8bc46e44ec",
+    "07fa0c2f326bb3113e1134688709d81934285c189e73a6f41e1ff14a3539043d"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "3d5eb58f439b1b53",
+   "refdir": "results/curve_forecast/stage2/wiki_is/refcurve"
+  },
+  {
+   "name": "wiki_sl",
+   "group": "test80",
+   "prep_corpus": "wiki_sl",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "15aac40148e6581c3284fba115c546786391201cc495b4eb70dca0b49e72d8db",
+    "777735ff51ec0150d860dc52487592b6b85b71a70f2c52edc95b69c515158b86"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "4349722830832ae8",
+   "refdir": "results/curve_forecast/stage2/wiki_sl/refcurve"
+  },
+  {
+   "name": "wiki_cy",
+   "group": "test80",
+   "prep_corpus": "wiki_cy",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "56f290a664055b49586395d5b7a96668482f5ac51a440730ff0462c9600dfcfd",
+    "f9e2b602290659973ccfdfbc9d71687b8df80820a0fc5b3addde9d5e05b0876a"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "3b855c1a3969b4ce",
+   "refdir": "results/curve_forecast/stage2/wiki_cy/refcurve"
+  },
+  {
+   "name": "wiki_et",
+   "group": "test80",
+   "prep_corpus": "wiki_et",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "e63faf3acad44e55ef2c32ae9d084e7876a9ace4a95c8a8689820ec2e19a0868",
+    "a8c9b7234e126f1dbc0fdac32229acc576ba090b6034065669e279591ebb0e85"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "1ff216ad7a0ba409",
+   "refdir": "results/curve_forecast/stage2/wiki_et/refcurve"
+  },
+  {
+   "name": "wiki_ga",
+   "group": "test80",
+   "prep_corpus": "wiki_ga",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "db3fbbce4fd46f89c747dd57554ffee2125a7634edbe17884d400ce3b3405d58",
+    "6f16908475ac1f84cd48e08c650df179fc6098aada581283c7acb5c9b0f4fa86"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "2bf8e97a08e8610f",
+   "refdir": "results/curve_forecast/stage2/wiki_ga/refcurve"
+  },
+  {
+   "name": "wiki_lv",
+   "group": "test80",
+   "prep_corpus": "wiki_lv",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "6c647a98ef500f42d1dd1332ed6b7747d1eddbed336bcc3ce5092fa0594c37cb",
+    "824b36fe91aa98c2421377705c3d6c6d4c4a74c8a4852c3f16ead37e0e2e27b1"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "19adeae5f13aab76",
+   "refdir": "results/curve_forecast/stage2/wiki_lv/refcurve"
+  },
+  {
+   "name": "wiki_sw",
+   "group": "test80",
+   "prep_corpus": "wiki_sw",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "0380ee852eafefffa7a332b43001971b4ca8df25771a0a211b01a710960ed1a7",
+    "82639ef1663f69492cd89cac8b2dd50b26913aa9c3899b17675b1fe51e1dcbdd"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "08db17729776aba2",
+   "refdir": "results/curve_forecast/stage2/wiki_sw/refcurve"
+  },
+  {
+   "name": "wiki_ms",
+   "group": "test80",
+   "prep_corpus": "wiki_ms",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "fab4c5690369b5902bd6503b284e8d465c0a30a4f9c84cef3d557de4479caf3b",
+    "5f71a514e4d4b228486cbf2fcd30b2aa6559c3685966b78a35a53207d5ed0814"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "e0d53e40e434bfcc",
+   "refdir": "results/curve_forecast/stage2/wiki_ms/refcurve"
+  },
+  {
+   "name": "wiki_bn",
+   "group": "test80",
+   "prep_corpus": "wiki_bn",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "046442acb9f54dc85d28f79b76192b620a9ab42b2e151f4044243fd1db0d6ea1",
+    "2cc12fc71aa0b29815828c102099a49956f7fc1c723a4be7e7f93c2932b3ed9f"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "c363d184bc8e8bc3",
+   "refdir": "results/curve_forecast/stage2/wiki_bn/refcurve"
+  },
+  {
+   "name": "wiki_eu",
+   "group": "test80",
+   "prep_corpus": "wiki_eu",
+   "prep_extra": "--train_bytes 35300000 --enc_bytes 35232154",
+   "corpus_sha": [
+    "d5db919d2905afae01c208eea5a39b0c95bbde2beb7fb46e77e4068bd015b259",
+    "9a3cdda535346fed0458e3af061937e2734cd1544831daf948e6cede81b754ff"
+   ],
+   "nt": 20000,
+   "n_sub": 1000,
+   "tgt_sub_sha": "f3f76ee6ceb39757",
+   "refdir": "results/curve_forecast/stage2/wiki_eu/refcurve"
+  }
+ ]
+}

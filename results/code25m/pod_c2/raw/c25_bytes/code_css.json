@@ -1,0 +1,10 @@
+{
+ "name": "code_css",
+ "prep_ok": true,
+ "prep_seconds": 64.15225315093994,
+ "train_sha256": "8fd47368df817544c5d7f92e3726a689fd350e8bca28a5a8a52eeb720bae510a",
+ "ref_sha256": "ff318f393db2da68548f2f8f13ba79b3814fce7a6353ed5a982e7e38bb78da71",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

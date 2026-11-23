@@ -1,0 +1,10 @@
+{
+ "name": "code_scala",
+ "prep_ok": true,
+ "prep_seconds": 176.4852111339569,
+ "train_sha256": "635c1fc4bea0e7bdb504a8e1f5fbd1496b523fe55f6903489da9c424b637e95d",
+ "ref_sha256": "8044513467b58cab273810466602bfbbdb0af396772e7fe219405e1e3f7ffa95",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

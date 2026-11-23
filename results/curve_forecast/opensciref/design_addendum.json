@@ -1,0 +1,29 @@
+{
+ "created_pt": "2026-10-24T15:31:49-07:00",
+ "reason": "Three needed branches have no model.safetensors on Hugging Face (found when the 0.13b CommonCorpus job failed). Rule fixed before any score was computed: a missing pilot is replaced by the next available branch and that branch leaves the scored set; a missing anchor is replaced by log-linear interpolation between the branches 2k either side, and the anchor leaves that corpus's scored set.",
+ "missing": [
+  "0.13b/commoncorpus iter_0026000",
+  "0.4b/fineweb_edu iter_0028000",
+  "0.4b/hplt iter_0042000"
+ ],
+ "pilots": {
+  "0.13b/commoncorpus": [
+   28000,
+   30000
+  ],
+  "0.4b/fineweb_edu": [
+   26000,
+   30000
+  ]
+ },
+ "pilot1": {
+  "0.13b/commoncorpus": 28000
+ },
+ "anchor_interp": {
+  "0.4b/hplt": [
+   40000,
+   44000
+  ]
+ },
+ "also": "eval_ckpt.py cleanup now also deletes the cache-root blobs/ directory (huggingface_hub 1.x layout); no effect on any number."
+}

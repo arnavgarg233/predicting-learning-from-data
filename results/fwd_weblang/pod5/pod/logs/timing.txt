@@ -1,0 +1,52 @@
+eb main start PAR=4 PREP_PAR=4 2026-10-31T22:58:33Z
+prep fw2_amh_ethi ok=True 64s 2026-10-31T22:59:37Z
+prep fw2_kan_knda ok=True 68s 2026-10-31T22:59:40Z
+prep fw2_som_latn ok=True 73s 2026-10-31T22:59:46Z
+prep fw2_hif_latn ok=True 93s 2026-10-31T23:00:06Z
+prep fw2_zul_latn ok=True 82s 2026-10-31T23:01:02Z
+prep fw2_yor_latn ok=True 95s 2026-10-31T23:01:12Z
+ref fw2_amh_ethi ok=True 1315s 2026-10-31T23:21:33Z
+prep fw2_sdh_arab ok=True 60s 2026-10-31T23:22:33Z
+ref fw2_kan_knda ok=True 1334s 2026-10-31T23:43:47Z
+prep fw2_hyw_armn ok=True 58s 2026-10-31T23:44:45Z
+ref fw2_som_latn ok=True 1295s 2026-11-01T00:05:22Z
+ref fw2_hif_latn ok=True 1302s 2026-11-01T00:27:04Z
+ref fw2_zul_latn ok=True 1304s 2026-11-01T00:48:48Z
+ref fw2_yor_latn ok=True 1313s 2026-11-01T01:10:40Z
+ref fw2_sdh_arab ok=True 1309s 2026-11-01T01:32:30Z
+ref fw2_hyw_armn ok=True 1297s 2026-11-01T01:54:07Z
+eb corpora.json written: 8 corpora 2026-11-01T01:54:07Z
+eb forecast written 2026-11-01T01:54:08Z
+eb training released 2026-11-01T01:54:23Z
+eb test splits encoded 2026-11-01T01:54:24Z
+train cf_fw2_hif_latn b19 s0 ok=True 586s 2026-11-01T02:04:10Z
+train cf_fw2_hif_latn b20 s0 ok=True 632s 2026-11-01T02:04:56Z
+train cf_fw2_hif_latn b23 s0 ok=True 1362s 2026-11-01T02:17:06Z
+train cf_fw2_amh_ethi b23 s0 ok=True 1199s 2026-11-01T02:37:05Z
+train cf_fw2_hif_latn b25 s0 ok=True 2948s 2026-11-01T02:43:32Z
+train cf_fw2_amh_ethi b20 s0 ok=True 610s 2026-11-01T02:47:15Z
+train cf_fw2_hif_latn b25 s1 ok=True 2804s 2026-11-01T02:50:53Z
+train cf_fw2_amh_ethi b19 s0 ok=True 561s 2026-11-01T02:52:53Z
+train cf_fw2_amh_ethi b25 s0 ok=True 3183s 2026-11-01T02:57:59Z
+train cf_fw2_kan_knda b20 s0 ok=True 624s 2026-11-01T03:08:23Z
+train cf_fw2_kan_knda b23 s0 ok=True 1184s 2026-11-01T03:12:37Z
+train cf_fw2_kan_knda b19 s0 ok=True 576s 2026-11-01T03:17:59Z
+train cf_fw2_amh_ethi b25 s1 ok=True 2567s 2026-11-01T03:30:02Z
+train cf_fw2_kan_knda b25 s0 ok=True 2451s 2026-11-01T03:31:44Z
+train cf_fw2_som_latn b20 s0 ok=True 599s 2026-11-01T03:41:43Z
+train cf_fw2_som_latn b19 s0 ok=True 564s 2026-11-01T03:51:07Z
+train cf_fw2_som_latn b23 s0 ok=True 1451s 2026-11-01T03:54:13Z
+train cf_fw2_kan_knda b25 s1 ok=True 2629s 2026-11-01T03:56:26Z
+train cf_fw2_som_latn b25 s0 ok=True 3407s 2026-11-01T04:14:46Z
+train cf_fw2_yor_latn b23 s0 ok=True 1398s 2026-11-01T04:19:45Z
+train cf_fw2_yor_latn b20 s0 ok=True 584s 2026-11-01T04:24:29Z
+train cf_fw2_yor_latn b19 s0 ok=True 548s 2026-11-01T04:28:53Z
+train cf_fw2_som_latn b25 s1 ok=True 2837s 2026-11-01T04:38:24Z
+train cf_fw2_yor_latn b25 s0 ok=True 2768s 2026-11-01T04:40:21Z
+train cf_fw2_zul_latn b20 s0 ok=True 620s 2026-11-01T04:50:41Z
+train cf_fw2_zul_latn b19 s0 ok=True 571s 2026-11-01T05:00:12Z
+train cf_fw2_zul_latn b23 s0 ok=True 1345s 2026-11-01T05:00:49Z
+train cf_fw2_yor_latn b25 s1 ok=True 2918s 2026-11-01T05:13:08Z
+train cf_fw2_zul_latn b25 s0 ok=True 3003s 2026-11-01T05:18:57Z
+train cf_fw2_zul_latn b25 s1 ok=True 1458s 2026-11-01T05:24:30Z
+eb training done 30/30 (limit 6) 2026-11-01T05:24:30Z

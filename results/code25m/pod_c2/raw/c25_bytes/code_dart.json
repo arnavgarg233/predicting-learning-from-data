@@ -1,0 +1,10 @@
+{
+ "name": "code_dart",
+ "prep_ok": true,
+ "prep_seconds": 43.90654706954956,
+ "train_sha256": "a4632c6b4d35bb38266936cf4eb009903d71ebab4355c9211c9b3381a40f223a",
+ "ref_sha256": "a398d66928be6cbf292d8ac3f7cc28a5b028e49c7546d86298bda0db4c078e58",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

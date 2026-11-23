@@ -1,0 +1,1 @@
+{"repo": "open-sci/open-sci-ref-v0.01-0.4b-hplt-2.0-300B-4096", "revision": "main", "sample": "hplt/heldout", "bpb": 0.9002484204289194, "nats_per_token": 2.673410349358245, "n_bytes": 1507081, "n_tokens": 351770, "n_seqs": 86, "dtype": "float32", "device": "cpu", "load_s": 59.2, "eval_s": 7218.0}

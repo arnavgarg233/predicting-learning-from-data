@@ -1,0 +1,293 @@
+{
+ "unit": "bits per byte of eval text",
+ "smoothing": "add 0.5",
+ "ce": {
+  "c4": {
+   "dolma_wiki": 2.6395632638447846,
+   "dolma_stack": 4.742117195264024,
+   "dolma_reddit": 2.5675815109768023,
+   "dolma_pes2o": 2.5237867356726795,
+   "dolma_common-crawl": 2.4507173553734005,
+   "dolma_books": 2.956010057432842,
+   "c4_en": 2.503298562589481,
+   "pile": 3.0924457819144586,
+   "wikitext_103": 2.676512386748138,
+   "m2d2_s2orc": 2.6775624644937612,
+   "ice": 3.1493314620591026
+  },
+  "dclm_baseline": {
+   "dolma_wiki": 2.650095057383477,
+   "dolma_stack": 4.325438040866664,
+   "dolma_reddit": 2.5242151135793094,
+   "dolma_pes2o": 2.524983954956064,
+   "dolma_common-crawl": 2.466652804629104,
+   "dolma_books": 2.8872432418405514,
+   "c4_en": 2.527608168416691,
+   "pile": 2.9885550599820685,
+   "wikitext_103": 2.682687912763341,
+   "m2d2_s2orc": 2.6649368975600107,
+   "ice": 2.9380990912288647
+  },
+  "dolma": {
+   "dolma_wiki": 2.6374153532958284,
+   "dolma_stack": 4.208167694773972,
+   "dolma_reddit": 2.529693486195408,
+   "dolma_pes2o": 2.49266720355745,
+   "dolma_common-crawl": 2.454032640650585,
+   "dolma_books": 2.9117238844824653,
+   "c4_en": 2.5103840523179106,
+   "pile": 2.9592842016098473,
+   "wikitext_103": 2.641093730378463,
+   "m2d2_s2orc": 2.6273168295550393,
+   "ice": 2.961634012217313
+  },
+  "fineweb": {
+   "dolma_wiki": 2.63134415505842,
+   "dolma_stack": 4.7952106426488355,
+   "dolma_reddit": 2.563705816105779,
+   "dolma_pes2o": 2.526333604335473,
+   "dolma_common-crawl": 2.4516461735527773,
+   "dolma_books": 2.9329568669484343,
+   "c4_en": 2.5064420005438084,
+   "pile": 3.102395460007534,
+   "wikitext_103": 2.676266206344749,
+   "m2d2_s2orc": 2.686024728223344,
+   "ice": 3.1415523921395847
+  },
+  "fineweb_edu": {
+   "dolma_wiki": 2.634762903738229,
+   "dolma_stack": 4.824788714523262,
+   "dolma_reddit": 2.6145687232532513,
+   "dolma_pes2o": 2.4687475937493155,
+   "dolma_common-crawl": 2.4780456717371053,
+   "dolma_books": 2.9236046688534425,
+   "c4_en": 2.529695369859071,
+   "pile": 3.1049435323312977,
+   "wikitext_103": 2.6849832596365673,
+   "m2d2_s2orc": 2.639603043709164,
+   "ice": 3.164259327070629
+  },
+  "pile": {
+   "dolma_wiki": 2.714281579821472,
+   "dolma_stack": 3.709368031307984,
+   "dolma_reddit": 2.6705693122555245,
+   "dolma_pes2o": 2.4547038775693855,
+   "dolma_common-crawl": 2.5822324000291013,
+   "dolma_books": 2.9529055456180684,
+   "c4_en": 2.616741162339281,
+   "pile": 2.8247000859800373,
+   "wikitext_103": 2.715964580080713,
+   "m2d2_s2orc": 2.5890116705973436,
+   "ice": 2.9704888202146242
+  },
+  "redpajama_1t": {
+   "dolma_wiki": 2.6086623583571664,
+   "dolma_stack": 4.1913217784927435,
+   "dolma_reddit": 2.5682135451884935,
+   "dolma_pes2o": 2.508317831374611,
+   "dolma_common-crawl": 2.4634690329687228,
+   "dolma_books": 2.885473110389216,
+   "c4_en": 2.513953174808077,
+   "pile": 2.9604160327195936,
+   "wikitext_103": 2.6286762498094056,
+   "m2d2_s2orc": 2.6616151685953104,
+   "ice": 2.982392166886891
+  },
+  "refinedweb": {
+   "dolma_wiki": 2.633020895488653,
+   "dolma_stack": 4.644502720633191,
+   "dolma_reddit": 2.5673521487940816,
+   "dolma_pes2o": 2.523120101765708,
+   "dolma_common-crawl": 2.455678784322972,
+   "dolma_books": 2.9212930832773143,
+   "c4_en": 2.5080298860377184,
+   "pile": 3.0672008826759884,
+   "wikitext_103": 2.6638447666240634,
+   "m2d2_s2orc": 2.6746041359761508,
+   "ice": 3.1154551770650856
+  },
+  "slimpajama": {
+   "dolma_wiki": 2.621324474641632,
+   "dolma_stack": 3.988746909139536,
+   "dolma_reddit": 2.5897679142789523,
+   "dolma_pes2o": 2.5064766600355393,
+   "dolma_common-crawl": 2.51313046495695,
+   "dolma_books": 2.890788747659393,
+   "c4_en": 2.5558976067587915,
+   "pile": 2.9294649310977268,
+   "wikitext_103": 2.6351609503355395,
+   "m2d2_s2orc": 2.641299029409586,
+   "ice": 2.940459757671174
+  }
+ },
+ "bench_ce": {
+  "c4": {
+   "arc_challenge": 2.263239897113966,
+   "arc_easy": 2.244198200420786,
+   "hellaswag": 2.495217888950726,
+   "mmlu": 2.324537403439724,
+   "openbookqa": 2.401935014661688,
+   "winogrande": 2.517281902200293,
+   "commonsense_qa": 2.3917293233998764,
+   "boolq": 2.4728284806539587,
+   "sciq": 2.3507703957948354
+  },
+  "dclm_baseline": {
+   "arc_challenge": 2.253009446729256,
+   "arc_easy": 2.232712136189966,
+   "hellaswag": 2.4802190994692626,
+   "mmlu": 2.3125422857264515,
+   "openbookqa": 2.3942292857912544,
+   "winogrande": 2.4902187514798397,
+   "commonsense_qa": 2.373196467773679,
+   "boolq": 2.484648463620015,
+   "sciq": 2.334296166773611
+  },
+  "dolma": {
+   "arc_challenge": 2.258748136062279,
+   "arc_easy": 2.2431249338191797,
+   "hellaswag": 2.47968933539812,
+   "mmlu": 2.314449570907781,
+   "openbookqa": 2.4075666728842817,
+   "winogrande": 2.4982026988570305,
+   "commonsense_qa": 2.388497670462676,
+   "boolq": 2.4715770385421147,
+   "sciq": 2.340529496011432
+  },
+  "fineweb": {
+   "arc_challenge": 2.271266955020574,
+   "arc_easy": 2.251249364309132,
+   "hellaswag": 2.493764107174536,
+   "mmlu": 2.3199579442777303,
+   "openbookqa": 2.408022301996202,
+   "winogrande": 2.5063773336504127,
+   "commonsense_qa": 2.3980879168861002,
+   "boolq": 2.468707529922074,
+   "sciq": 2.3581793518906755
+  },
+  "fineweb_edu": {
+   "arc_challenge": 2.2071996940614755,
+   "arc_easy": 2.175775713225549,
+   "hellaswag": 2.5148298487426186,
+   "mmlu": 2.305280280115728,
+   "openbookqa": 2.3668288516695304,
+   "winogrande": 2.5586756824734165,
+   "commonsense_qa": 2.4294642102872754,
+   "boolq": 2.4658205023659527,
+   "sciq": 2.2685071994127886
+  },
+  "pile": {
+   "arc_challenge": 2.3395968985453983,
+   "arc_easy": 2.3206919873959357,
+   "hellaswag": 2.6122022162549174,
+   "mmlu": 2.3801787190589865,
+   "openbookqa": 2.5408247781966273,
+   "winogrande": 2.642096165628047,
+   "commonsense_qa": 2.569859433491397,
+   "boolq": 2.5585097974475057,
+   "sciq": 2.3792858027562622
+  },
+  "redpajama_1t": {
+   "arc_challenge": 2.284365663592191,
+   "arc_easy": 2.26774063544397,
+   "hellaswag": 2.515585223850399,
+   "mmlu": 2.316752649561012,
+   "openbookqa": 2.4387012235751877,
+   "winogrande": 2.51629872553812,
+   "commonsense_qa": 2.426320232900347,
+   "boolq": 2.463266931471999,
+   "sciq": 2.3668708711719098
+  },
+  "refinedweb": {
+   "arc_challenge": 2.2846312750210673,
+   "arc_easy": 2.270037199231203,
+   "hellaswag": 2.496008384584571,
+   "mmlu": 2.3281514706843316,
+   "openbookqa": 2.4232747201052725,
+   "winogrande": 2.5040002461857944,
+   "commonsense_qa": 2.405875715053329,
+   "boolq": 2.476510415536378,
+   "sciq": 2.3734059712602433
+  },
+  "slimpajama": {
+   "arc_challenge": 2.297184770025444,
+   "arc_easy": 2.2825182388373704,
+   "hellaswag": 2.5176928379832857,
+   "mmlu": 2.33224157401307,
+   "openbookqa": 2.4533065225152484,
+   "winogrande": 2.514824504402358,
+   "commonsense_qa": 2.440354942779486,
+   "boolq": 2.4764712743141204,
+   "sciq": 2.391510524609191
+  }
+ },
+ "bench": {
+  "arc_challenge": {
+   "dataset": "allenai/ai2_arc",
+   "file": "ARC-Challenge/test-00000-of-00001.parquet",
+   "revision": "210d026faf9955653af8916fad021475a3f00453",
+   "n_tokens": 59055
+  },
+  "arc_easy": {
+   "dataset": "allenai/ai2_arc",
+   "file": "ARC-Easy/test-00000-of-00001.parquet",
+   "revision": "210d026faf9955653af8916fad021475a3f00453",
+   "n_tokens": 96537
+  },
+  "hellaswag": {
+   "dataset": "Rowan/hellaswag",
+   "file": "data/validation-00000-of-00001.parquet",
+   "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+   "n_tokens": 1796560
+  },
+  "mmlu": {
+   "dataset": "cais/mmlu",
+   "file": "all/test-00000-of-00001.parquet",
+   "revision": "c30699e8356da336a370243923dbaf21066bb9fe",
+   "n_tokens": 1291117
+  },
+  "openbookqa": {
+   "dataset": "allenai/openbookqa",
+   "file": "main/test-00000-of-00001.parquet",
+   "revision": "388097ea7776314e93a529163e0fea805b8a6454",
+   "n_tokens": 12814
+  },
+  "winogrande": {
+   "dataset": "allenai/winogrande",
+   "file": "winogrande_xl/validation-00000-of-00001.parquet",
+   "revision": "01e74176c63542e6b0bcb004dcdea22d94fb67b5",
+   "n_tokens": 31260
+  },
+  "commonsense_qa": {
+   "dataset": "tau/commonsense_qa",
+   "file": "data/validation-00000-of-00001.parquet",
+   "revision": "94630fe30dad47192a8546eb75f094926d47e155",
+   "n_tokens": 29292
+  },
+  "boolq": {
+   "dataset": "google/boolq",
+   "file": "data/validation-00000-of-00001.parquet",
+   "revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+   "n_tokens": 427557
+  },
+  "sciq": {
+   "dataset": "allenai/sciq",
+   "file": "data/test-00000-of-00001.parquet",
+   "revision": "2c94ad3e1aafab77146f384e23536f97a4849815",
+   "n_tokens": 109697
+  }
+ },
+ "pools": {
+  "benchmark_pool_mean": {
+   "c4": 2.384637611848428,
+   "dclm_baseline": 2.372785789283704,
+   "dolma": 2.378042839216099,
+   "fineweb": 2.3861792005697158,
+   "fineweb_edu": 2.3658202202615928,
+   "pile": 2.482582866530564,
+   "redpajama_1t": 2.3995446841227928,
+   "refinedweb": 2.395766155295799,
+   "slimpajama": 2.4117894654977308
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "name": "code_markdown",
+ "prep_ok": true,
+ "prep_seconds": 7.500404357910156,
+ "train_sha256": "a3cc081acbc19e7a02cfacb94eb67dc8d3bfaaa2ebc8fcf1be3628d4e0325ad9",
+ "ref_sha256": "39ac1ea75fdede8cf6b8e652622283d4e25ad41e89b69f8fd63821aba3a6bbba",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

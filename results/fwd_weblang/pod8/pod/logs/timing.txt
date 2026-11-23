@@ -1,0 +1,38 @@
+eb main start PAR=4 PREP_PAR=4 2026-11-01T03:00:52Z
+prep fw2_lus_latn ok=True 50s 2026-11-01T03:01:42Z
+prep fw2_sah_cyrl ok=True 69s 2026-11-01T03:02:02Z
+prep fw2_xho_latn ok=True 88s 2026-11-01T03:02:20Z
+prep fw2_ory_orya ok=True 45s 2026-11-01T03:02:47Z
+prep fw2_mlt_latn ok=True 77s 2026-11-01T03:02:59Z
+prep fw2_snd_arab ok=True 142s 2026-11-01T03:03:15Z
+ref fw2_lus_latn ok=True 1075s 2026-11-01T03:19:38Z
+ref fw2_sah_cyrl ok=True 1066s 2026-11-01T03:37:23Z
+ref fw2_xho_latn ok=True 1067s 2026-11-01T03:55:11Z
+ref fw2_ory_orya ok=True 1068s 2026-11-01T04:12:59Z
+ref fw2_mlt_latn ok=True 1070s 2026-11-01T04:30:49Z
+ref fw2_snd_arab ok=True 1067s 2026-11-01T04:48:36Z
+eb corpora.json written: 6 corpora 2026-11-01T04:48:36Z
+eb forecast written 2026-11-01T04:48:37Z
+eb training released 2026-11-01T04:48:52Z
+eb test splits encoded 2026-11-01T04:48:52Z
+train cf_fw2_snd_arab b19 s0 ok=True 500s 2026-11-01T04:57:12Z
+train cf_fw2_snd_arab b20 s0 ok=True 540s 2026-11-01T04:57:52Z
+train cf_fw2_snd_arab b23 s0 ok=True 1141s 2026-11-01T05:07:53Z
+train cf_fw2_snd_arab b25 s0 ok=True 2200s 2026-11-01T05:25:32Z
+train cf_fw2_lus_latn b23 s0 ok=True 1278s 2026-11-01T05:29:11Z
+train cf_fw2_lus_latn b20 s0 ok=True 540s 2026-11-01T05:34:32Z
+train cf_fw2_lus_latn b19 s0 ok=True 508s 2026-11-01T05:37:40Z
+train cf_fw2_snd_arab b25 s1 ok=True 2568s 2026-11-01T05:40:01Z
+train cf_fw2_lus_latn b25 s0 ok=True 3162s 2026-11-01T05:50:33Z
+train cf_fw2_sah_cyrl b23 s0 ok=True 1154s 2026-11-01T05:59:15Z
+train cf_fw2_sah_cyrl b20 s0 ok=True 551s 2026-11-01T05:59:44Z
+train cf_fw2_sah_cyrl b19 s0 ok=True 499s 2026-11-01T06:07:34Z
+train cf_fw2_sah_cyrl b25 s0 ok=True 2530s 2026-11-01T06:19:50Z
+train cf_fw2_lus_latn b25 s1 ok=True 3150s 2026-11-01T06:27:02Z
+train cf_fw2_xho_latn b20 s0 ok=True 542s 2026-11-01T06:36:04Z
+train cf_fw2_xho_latn b23 s0 ok=True 1266s 2026-11-01T06:40:56Z
+train cf_fw2_xho_latn b19 s0 ok=True 508s 2026-11-01T06:44:32Z
+train cf_fw2_xho_latn b25 s0 ok=True 2264s 2026-11-01T06:45:18Z
+train cf_fw2_sah_cyrl b25 s1 ok=True 2841s 2026-11-01T06:47:05Z
+train cf_fw2_xho_latn b25 s1 ok=True 863s 2026-11-01T06:55:19Z
+eb training done 20/20 (limit 4) 2026-11-01T06:55:19Z

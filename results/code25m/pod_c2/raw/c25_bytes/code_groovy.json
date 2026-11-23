@@ -1,0 +1,10 @@
+{
+ "name": "code_groovy",
+ "prep_ok": true,
+ "prep_seconds": 54.68076705932617,
+ "train_sha256": "a5e75a37b80e5d9c29f506aee4af0e6393d16b0b024bef80da72f06712e43765",
+ "ref_sha256": "852906a635a77003e0230e0f0c4311338c95ffab8465bae0eb9960aadd76fcff",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

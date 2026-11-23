@@ -1,0 +1,10 @@
+{
+ "name": "fw2_haw_latn",
+ "prep_ok": true,
+ "prep_seconds": 32.61752724647522,
+ "train_sha256": "7fb7bef7a8026644a9562caaa18b2362f1b9a841ac6a08088e294e51899a8505",
+ "ref_sha256": "d964c4af3a186506c3c2e12cd2856d9e97a0076eebeaf6c3438e17b77c4e5f8d",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

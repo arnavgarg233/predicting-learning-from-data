@@ -1,0 +1,20 @@
+{
+ "note": "primary '4-64' = slope of log(h(n)-h(longest)) over 4-64 tokens (tok_stats.gamma_stats); free = fit_paired h_inf + a n^-g over >=8 bytes",
+ "results": {
+  "gpt2": {
+   "floor_longest": 0.5909090909090909,
+   "free_floor": 0.17272727272727276,
+   "between": 0.3181818181818182
+  },
+  "pythia-160m": {
+   "floor_longest": 0.5090909090909091,
+   "free_floor": 0.48181818181818187,
+   "between": 0.8636363636363636
+  },
+  "SmolLM2-135M": {
+   "floor_longest": 0.3545454545454546,
+   "free_floor": 0.24545454545454545,
+   "between": 0.9
+  }
+ }
+}

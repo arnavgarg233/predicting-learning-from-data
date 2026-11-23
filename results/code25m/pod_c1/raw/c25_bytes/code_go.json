@@ -1,0 +1,10 @@
+{
+ "name": "code_go",
+ "prep_ok": true,
+ "prep_seconds": 51.891353130340576,
+ "train_sha256": "04168f7c5180a19cb569d1b1007870d8455fa5dcd67ec6552560ea5e25b23cfe",
+ "ref_sha256": "bab48d9a999dc7a0f3d4182b939f16a9c17b1cdc72f29b7ba66923e54e1da726",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

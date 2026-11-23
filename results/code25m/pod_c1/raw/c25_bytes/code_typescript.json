@@ -1,0 +1,10 @@
+{
+ "name": "code_typescript",
+ "prep_ok": true,
+ "prep_seconds": 28.311965465545654,
+ "train_sha256": "f410f67b8c46ad71169930540f99eacc40b8cc29b9f3ab23499d25bc2acff556",
+ "ref_sha256": "aa3f493da76b548e644b2c77aed8c8c3c8200270f2f7ad6f2289d572464f899e",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

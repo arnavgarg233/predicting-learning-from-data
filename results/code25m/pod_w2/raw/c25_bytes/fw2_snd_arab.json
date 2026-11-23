@@ -1,0 +1,10 @@
+{
+ "name": "fw2_snd_arab",
+ "prep_ok": true,
+ "prep_seconds": 26.897701740264893,
+ "train_sha256": "00f7def9454d8cdc6e7cd1093ada4e4c31b01f12fc9933b3f53d117346cd3e92",
+ "ref_sha256": "d51a5268e924ad4d61a103ee5e5956e2354cfb86a2a7fc334540dce533c63959",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

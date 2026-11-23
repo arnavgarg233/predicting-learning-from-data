@@ -1,0 +1,10 @@
+{
+ "name": "fw2_grc_grek",
+ "prep_ok": true,
+ "prep_seconds": 25.460113286972046,
+ "train_sha256": "00dc235cac742c253150980780686f265960cb415d009125273545482508fbc0",
+ "ref_sha256": "c2b92333c50ff87e59f4a093ab9732adfff96065e99117b12de80e6efa03a076",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

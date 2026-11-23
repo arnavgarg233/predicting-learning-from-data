@@ -1,0 +1,396 @@
+{
+ "created_utc": "2026-11-02T00:15:41+00:00",
+ "locked_sha256": "d154a5bfdfdfca1222eab946c9cd487bbbc7edcac73fcc3c24a173c0110dc8a3",
+ "chosen": {
+  "shape": "gamma",
+  "A2_form": "neff",
+  "A4_form": "off",
+  "level": "both",
+  "level_mode": "anch",
+  "A3_floor": "zero"
+ },
+ "code_sha256": {
+  "scripts/curve_forecast/core.py": "8b17c3f080d9700837d5717e20af54097db26ed35c7ae5fae090145b8dc04071",
+  "scripts/curve_forecast/forecast.py": "d9387933cfeb27c0adc063ba69fe92831a1655cf6ac5cb2afa85aee16ec59708",
+  "scripts/curve_forecast/pod_main.py": "73cf88e4aa17d2ba7102a6fe3a99378600def7af2d58c194723b4da3aba511ad",
+  "scripts/forecast_neff.py": "0145e988a405fcbe9e8082f07e732955c666279189c60f79e879b53c713545fe",
+  "scripts/forecast_input_variants.py": "3db74abad8de72cd52ee3955883a048e3055c8f151e1aa747a69055ddb423266",
+  "scripts/forecast_multicorpus.py": "28968f77299d3459691cf47e55d23b866547f756eacafe782010b64b10677a50",
+  "scripts/ngram_curve_ts.py": "93487934a1f6133021aa7e2250c7af4cf6ddd27666c5011936eb53ee06739266"
+ },
+ "corpora": {
+  "cp_wikiteam": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.9708042870389927,
+    "gamma": 0.4167929538397746,
+    "A": 2.3551610421833735,
+    "ngram23": 2.1137143551701496
+   },
+   "shape": {
+    "nu": 0.7058194334534291,
+    "n0": 0.0002807029904618384
+   },
+   "S": {
+    "19": 2.3315167048573326,
+    "20": 2.2173760944599685,
+    "23": 1.6925282167912317,
+    "25": 1.4395779502234833
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.7004360709425412,
+    "25": 1.4474858043747927
+   },
+   "refcurve_sha256": "13e5bfcbf0533d6a1ce3ab85131dbecb24e4f855887b5168a7c2550f918ae3eb",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/cp_wikiteam/tok/tok_bytes_train.npy": "8cc6c27bed571d6516cd49a2e4c90c0d77e47688dd704bc5d862bd0716e5bf98",
+    "data/cf/cp_wikiteam/tok/tok_bytes_ref.npy": "3758b4be42eed90db868114a16c16e9cd0348c7f2d05e8aec54055ad3cafce1d"
+   }
+  },
+  "cp_doab": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.895789257246213,
+    "gamma": 0.5231739618527009,
+    "A": 2.8200954477660316,
+    "ngram23": 2.410895330514933
+   },
+   "shape": {
+    "nu": 0.6565238279045013,
+    "n0": 0.0006493692494821
+   },
+   "S": {
+    "19": 2.284210780594927,
+    "20": 2.059630912720881,
+    "23": 1.4989680912563357,
+    "25": 1.277584934423052
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.8173078542225143,
+    "25": 1.5959246973892307
+   },
+   "refcurve_sha256": "057febb453ee70b8ecd71cbb163d19f134049bdf38a8e180536741a2a0e097e3",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/cp_doab/tok/tok_bytes_train.npy": "2920c530394fa940852e1da1db7926646c433cce6f6cba67ef4306cc42861cfb",
+    "data/cf/cp_doab/tok/tok_bytes_ref.npy": "3542d79942bbd464456a17b56f7a888dbeb72839e54190898b64ce34a11f9e20"
+   }
+  },
+  "cp_pressbooks": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.8341765033142959,
+    "gamma": 0.5617685552529457,
+    "A": 2.9702484108598823,
+    "ngram23": 2.1325638073628825
+   },
+   "shape": {
+    "nu": 0.6402997400841118,
+    "n0": 0.000842324744708809
+   },
+   "S": {
+    "19": 2.072985752535779,
+    "20": 1.8996799387623513,
+    "23": 1.3865383910790994,
+    "25": 1.1616223769070166
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.6218791069325527,
+    "25": 1.3969630927604697
+   },
+   "refcurve_sha256": "ecc667f14f5f74178c1f04a9eb40ec4d1fa086f409d294f48c161e90f1e32c73",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/cp_pressbooks/tok/tok_bytes_train.npy": "dc3357d713016ce6878412d6d53ee95c7f01db7481ad534761adb710447bc7e7",
+    "data/cf/cp_pressbooks/tok/tok_bytes_ref.npy": "7c0636950315dabe20e645b26cb317e7b4223c97ed235e5c805d6c189bb559f2"
+   }
+  },
+  "pol_resource_contracts": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 1.3845511497753922,
+    "gamma": 0.4684242403741456,
+    "A": 3.1292499478623474,
+    "ngram23": 3.0661785366894048
+   },
+   "shape": {
+    "nu": 0.6810021058663578,
+    "n0": 0.0004917213406159939
+   },
+   "S": {
+    "19": 3.321866133900571,
+    "20": 2.8338952689346204,
+    "23": 2.1113856365878707,
+    "25": 1.8827090269320406
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.501482707872226,
+    "25": 2.272806098216396
+   },
+   "refcurve_sha256": "76bd662c8dbb451b64734228ad83f85c41487a0994198934721c14d9834f7996",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_resource_contracts/tok/tok_bytes_train.npy": "39b8d8db9d1d1839d24f5dfc1943bbe45fbc89faba32ed79bb68279b76344645",
+    "data/cf/pol_resource_contracts/tok/tok_bytes_ref.npy": "fdd44244ebe848e86ce14a77351a293322af493dd4f991dfddd34d4eb4c89121"
+   }
+  },
+  "pol_atticus_contracts": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.7630418927315245,
+    "gamma": 0.33635229655575627,
+    "A": 2.2560619379335547,
+    "ngram23": 1.6350381311395337
+   },
+   "shape": {
+    "nu": 0.7483056695284224,
+    "n0": 0.0001415125182341052
+   },
+   "S": {
+    "19": 2.283824965821887,
+    "20": 2.2128671379940132,
+    "23": 1.6365063493289373,
+    "25": 1.370926854900767
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.2979698011528764,
+    "25": 1.0323903067247062
+   },
+   "refcurve_sha256": "bbb313978978e3497354efb9dea8d0641b42dc83e9ab1140689671bd5f662fb8",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_atticus_contracts/tok/tok_bytes_train.npy": "fe356d35c0a92321adb705fd07bf5a3d2f33878c47c9449dc14a11582f969ac1",
+    "data/cf/pol_atticus_contracts/tok/tok_bytes_ref.npy": "82312285ced1f4bd31287df7450b5de80bfc9409f0972701ba99f2c9185ba908"
+   }
+  },
+  "pol_eurlex": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.9774365404745005,
+    "gamma": 0.2967358226963028,
+    "A": 2.6018333922115287,
+    "ngram23": 2.595763356795417
+   },
+   "shape": {
+    "nu": 0.771167097027288,
+    "n0": 0.00010939185072441842
+   },
+   "S": {
+    "19": 2.9472879943782644,
+    "20": 2.651632956460115,
+    "23": 2.074380279939132,
+    "25": 1.7280097259581793
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.9736610113432116,
+    "25": 1.6272904573622586
+   },
+   "refcurve_sha256": "a23e18edc6d6dd0149e6bc2cd00e3e36febfac42f9ca1942bf3102d34e832942",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_eurlex/tok/tok_bytes_train.npy": "9d22a966b13e9e4a4d99500357ea507f12819772736bab389e1e623b0618638f",
+    "data/cf/pol_eurlex/tok/tok_bytes_ref.npy": "f4452163401b2b1fcb3fe28eace999c84cad07b8c4c497c96a33f21e71a1fc50"
+   }
+  },
+  "pol_uspto_oab": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.7634133456636206,
+    "gamma": 0.29600353246071603,
+    "A": 1.8961383717123133,
+    "ngram23": 1.7789637938652405
+   },
+   "shape": {
+    "nu": 0.7716028351414325,
+    "n0": 8.509290059047812e-05
+   },
+   "S": {
+    "19": 2.1441509600258457,
+    "20": 2.1441509600258457,
+    "23": 1.6984996626427382,
+    "25": 1.4627222697412925
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.378497949533825,
+    "25": 1.1427205566323797
+   },
+   "refcurve_sha256": "649e034b501af39eddd6ca2a038e0a718ed941c094372af84df73d106f75e784",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_uspto_oab/tok/tok_bytes_train.npy": "27139c09d0df773253fe37299e73c4a968568038276e66485b90d659d6b45f67",
+    "data/cf/pol_uspto_oab/tok/tok_bytes_ref.npy": "ed5da22e41f76d7289f9367b86fd7854e1e605a5e70f91d4e552efc3be68e1db"
+   }
+  },
+  "pol_congressional_hearings": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.9139872269957434,
+    "gamma": 0.3105858860897545,
+    "A": 2.2471921539566555,
+    "ngram23": 1.8478659096104704
+   },
+   "shape": {
+    "nu": 0.7630175256835596,
+    "n0": 0.00011153294493653173
+   },
+   "S": {
+    "19": 2.300929092193231,
+    "20": 2.2807871469417274,
+    "23": 1.8476160487684643,
+    "25": 1.5209668090693573
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.5150972096753885,
+    "25": 1.1884479699762815
+   },
+   "refcurve_sha256": "c0482e16aad21f09935ce91e2d178b0f721c59e6ab234f649581e9f9bfe86d74",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_congressional_hearings/tok/tok_bytes_train.npy": "992b55c4431adb3af849777ca898510de9457bf422192c2ef9d18d5f690b112c",
+    "data/cf/pol_congressional_hearings/tok/tok_bytes_ref.npy": "099c9ec39bb9010f913104e672aff68be3e5ef404bdb1d9d48f2caff7f2e0dbd"
+   }
+  },
+  "pol_fmshrc": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 1.046764263818557,
+    "gamma": 0.3382659139318271,
+    "A": 1.893691555581898,
+    "ngram23": 1.8363455194865856
+   },
+   "shape": {
+    "nu": 0.747235649947923,
+    "n0": 0.0001262754340526254
+   },
+   "S": {
+    "19": 2.4293626916507023,
+    "20": 2.3764263315066305,
+    "23": 1.811073142675793,
+    "25": 1.596807381027486
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.5952321237835823,
+    "25": 1.3809663621352755
+   },
+   "refcurve_sha256": "0574f7935926dcb63f4b59ff755ce23f918c0951a9f1f8dc172bba453471555b",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_fmshrc/tok/tok_bytes_train.npy": "a024e39c3a52bb685729e98cf245065e111ced978c9286c64642b24f903d6d8d",
+    "data/cf/pol_fmshrc/tok/tok_bytes_ref.npy": "4cd97cc685268395a911165ee9de33d4f95e098468b5a1fa62dc87edb05e4c0f"
+   }
+  },
+  "pol_sec": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.8038911891500586,
+    "gamma": 0.3447386608406689,
+    "A": 2.2470307441026036,
+    "ngram23": 1.7347818082682136
+   },
+   "shape": {
+    "nu": 0.7436389159621885,
+    "n0": 0.00015186524067488163
+   },
+   "S": {
+    "19": 2.2922352874490053,
+    "20": 2.2177380358820598,
+    "23": 1.652940769697496,
+    "25": 1.402553809767332
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.380240651392377,
+    "25": 1.1298536914622135
+   },
+   "refcurve_sha256": "853dd9aa2531fbeaf63aeabe0f2687648ff16e14a4330b478f3e240124bf232e",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_sec/tok/tok_bytes_train.npy": "feed3140ff48e8083a566ae018090453b7b0316cf26305fc4ccb8646aa3ea61b",
+    "data/cf/pol_sec/tok/tok_bytes_ref.npy": "5f409369b384428b44be27934f9fcaecc43815977cf409fbcb584fb32c18ef72"
+   }
+  },
+  "pol_nlrb_decisions": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 1.1471044070199494,
+    "gamma": 0.3420829260374705,
+    "A": 1.9681579631916644,
+    "ngram23": 2.060299186192867
+   },
+   "shape": {
+    "nu": 0.7451104403455322,
+    "n0": 0.0001344371394821473
+   },
+   "S": {
+    "19": 2.446933857340132,
+    "20": 2.436097919796532,
+    "23": 1.9287637466185525,
+    "25": 1.7023892659245097
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.7855748413812071,
+    "25": 1.5592003606871645
+   },
+   "refcurve_sha256": "737542263553ff9686d7c8410493c9d05095874dc30f3c248c9260599512eccd",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_nlrb_decisions/tok/tok_bytes_train.npy": "ca1f586e547959e0d787c957a4f5d5b88bea42922994872109cf52739570e904",
+    "data/cf/pol_nlrb_decisions/tok/tok_bytes_ref.npy": "a2bb41afaa27c3e98b1e97e66dd548489d521025f0a64b5432c94cd9cc1cced9"
+   }
+  },
+  "pol_edgar": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.784352625324544,
+    "gamma": 0.39178585282849887,
+    "A": 2.4095258724886546,
+    "ngram23": 1.8191038745603687
+   },
+   "shape": {
+    "nu": 0.7185013398201452,
+    "n0": 0.00023563738728452045
+   },
+   "S": {
+    "19": 2.2246366151984676,
+    "20": 2.129080042034117,
+    "23": 1.5698425728703609,
+    "25": 1.3123345298788165
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.4145402162411642,
+    "25": 1.1570321732496196
+   },
+   "refcurve_sha256": "75336af74de67ef5686acd755938fba6d5b3fe12cc0784e5d6e4711f88029b97",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_edgar/tok/tok_bytes_train.npy": "54091a02ac7c1e138c585a105ddbfebd0b3af8489cc61d9e5083f38bddc1f427",
+    "data/cf/pol_edgar/tok/tok_bytes_ref.npy": "9116f66144a99d424839296a6a5fd6cd4e705d757f9a30f2f9aa619e8e70594f"
+   }
+  }
+ },
+ "date": "2026-11-01 16:16:49 PST"
+}

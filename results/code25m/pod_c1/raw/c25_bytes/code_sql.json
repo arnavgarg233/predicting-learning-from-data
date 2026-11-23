@@ -1,0 +1,10 @@
+{
+ "name": "code_sql",
+ "prep_ok": true,
+ "prep_seconds": 158.38624787330627,
+ "train_sha256": "038a154cdb47aeb3e8101b4d9e8e8b6ab3c7dc7682f64373b63782fedd54ce5e",
+ "ref_sha256": "095167cdcef50bb632654a0b5888461399c8e54c2318539b9da78b6cb65b47ca",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

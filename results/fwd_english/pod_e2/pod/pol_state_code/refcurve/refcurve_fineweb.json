@@ -1,0 +1,149 @@
+{
+ "SmolLM2-135M": {
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "short": "SmolLM2-135M",
+  "n_targets": 20000,
+  "n_docs": 1,
+  "n_docs_total": 1,
+  "mean_bytes_per_target_token": 3.59825,
+  "rows": [
+   {
+    "n_tokens": 1,
+    "bits_per_token": 8.08672876229518,
+    "bits_per_byte": 2.2474060341263336,
+    "bpb_se": 1.3322676295501878e-15,
+    "context_bytes_exact_mean": 3.58985
+   },
+   {
+    "n_tokens": 2,
+    "bits_per_token": 6.86648281895431,
+    "bits_per_byte": 1.908283976642613,
+    "bpb_se": 6.661338147750939e-16,
+    "context_bytes_exact_mean": 7.1761
+   },
+   {
+    "n_tokens": 3,
+    "bits_per_token": 6.4043738334688465,
+    "bits_per_byte": 1.779857940240083,
+    "bpb_se": 8.881784197001252e-16,
+    "context_bytes_exact_mean": 10.76775
+   },
+   {
+    "n_tokens": 4,
+    "bits_per_token": 6.106064208342376,
+    "bits_per_byte": 1.6969538548856677,
+    "bpb_se": 8.881784197001252e-16,
+    "context_bytes_exact_mean": 14.3806
+   },
+   {
+    "n_tokens": 6,
+    "bits_per_token": 5.792999144352,
+    "bits_per_byte": 1.6099490431048362,
+    "bpb_se": 4.440892098500626e-16,
+    "context_bytes_exact_mean": 21.57395
+   },
+   {
+    "n_tokens": 8,
+    "bits_per_token": 5.532808700517204,
+    "bits_per_byte": 1.5376387689897124,
+    "bpb_se": 0.0,
+    "context_bytes_exact_mean": 28.75555
+   },
+   {
+    "n_tokens": 12,
+    "bits_per_token": 5.118977600333882,
+    "bits_per_byte": 1.4226297784572692,
+    "bpb_se": 4.440892098500626e-16,
+    "context_bytes_exact_mean": 43.0714
+   },
+   {
+    "n_tokens": 16,
+    "bits_per_token": 4.793336026216436,
+    "bits_per_byte": 1.3321297925981843,
+    "bpb_se": 2.220446049250313e-16,
+    "context_bytes_exact_mean": 57.41745
+   },
+   {
+    "n_tokens": 24,
+    "bits_per_token": 4.353970014334442,
+    "bits_per_byte": 1.2100243213602289,
+    "bpb_se": 4.440892098500626e-16,
+    "context_bytes_exact_mean": 86.09925
+   },
+   {
+    "n_tokens": 32,
+    "bits_per_token": 4.056282406355765,
+    "bits_per_byte": 1.127293102579243,
+    "bpb_se": 0.0,
+    "context_bytes_exact_mean": 114.94315
+   },
+   {
+    "n_tokens": 48,
+    "bits_per_token": 3.6548082558799813,
+    "bits_per_byte": 1.01571826745779,
+    "bpb_se": 2.220446049250313e-16,
+    "context_bytes_exact_mean": 172.46495
+   },
+   {
+    "n_tokens": 64,
+    "bits_per_token": 3.387077602357701,
+    "bits_per_byte": 0.9413124719954712,
+    "bpb_se": 3.3306690738754696e-16,
+    "context_bytes_exact_mean": 230.01125
+   },
+   {
+    "n_tokens": 96,
+    "bits_per_token": 3.0876828088289607,
+    "bits_per_byte": 0.8581068043712845,
+    "bpb_se": 1.1102230246251565e-16,
+    "context_bytes_exact_mean": 344.7392
+   },
+   {
+    "n_tokens": 128,
+    "bits_per_token": 2.914988489283145,
+    "bits_per_byte": 0.8101128296486184,
+    "bpb_se": 0.0,
+    "context_bytes_exact_mean": 459.501
+   },
+   {
+    "n_tokens": 192,
+    "bits_per_token": 2.7202182773881707,
+    "bits_per_byte": 0.755983680230156,
+    "bpb_se": 1.1102230246251565e-16,
+    "context_bytes_exact_mean": 689.6658
+   },
+   {
+    "n_tokens": 256,
+    "bits_per_token": 2.6158388172278726,
+    "bits_per_byte": 0.726975284437675,
+    "bpb_se": 2.220446049250313e-16,
+    "context_bytes_exact_mean": 919.4953
+   },
+   {
+    "n_tokens": 384,
+    "bits_per_token": 2.491857926096114,
+    "bits_per_byte": 0.6925193986232496,
+    "bpb_se": 2.220446049250313e-16,
+    "context_bytes_exact_mean": 1379.23055
+   },
+   {
+    "n_tokens": 512,
+    "bits_per_token": 2.4254696087640624,
+    "bits_per_byte": 0.6740692305326356,
+    "bpb_se": 3.3306690738754696e-16,
+    "context_bytes_exact_mean": 1839.86715
+   }
+  ],
+  "key": {
+   "model": "HuggingFaceTB/SmolLM2-135M",
+   "corpus": [
+    "34ed21040d41fa1333bba6465aa5c3042e6ab737d836c5ca02af8abcc2551e2d",
+    "f6df0000bed676f0a4b777e2a1d915b6608dab452e11737f82c685cebf0e8ba7"
+   ],
+   "ns": "1,2,3,4,6,8,12,16,24,32,48,64,96,128,192,256,384,512",
+   "nt": 20000,
+   "seed": 0,
+   "docs": "nfc_only"
+  }
+ }
+}

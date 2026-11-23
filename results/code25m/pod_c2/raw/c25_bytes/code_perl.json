@@ -1,0 +1,10 @@
+{
+ "name": "code_perl",
+ "prep_ok": true,
+ "prep_seconds": 161.27369785308838,
+ "train_sha256": "92c49dbdb4c0e4425e17697da260d5f834fff16604aa94b27d43382e9f3634ca",
+ "ref_sha256": "d3f70c298ade799e2673feacbf59e3f327a1facd979ac5b0a1319cc9cbd983bc",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

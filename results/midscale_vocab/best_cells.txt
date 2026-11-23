@@ -1,0 +1,2 @@
+bytes best wd 0.3 lr 0.0048 edge lr
+bpe8k best wd 1.0 lr 0.0024 edge wd,lr

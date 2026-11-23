@@ -1,0 +1,10 @@
+{
+ "name": "code_coffeescript",
+ "prep_ok": true,
+ "prep_seconds": 43.389564990997314,
+ "train_sha256": "801ff9edae72fa51bbe6a6e0431624f32bdb2ed3db1eec445229d81d1c55003c",
+ "ref_sha256": "7d89f3664060952d8c6b821756b4c12cfc9a221275f3294dcc2a301b3d3f8ed5",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

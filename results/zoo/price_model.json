@@ -1,0 +1,77 @@
+{
+ "c": 0.3431870510823253,
+ "rule": "K(P) = 210 (P/2^20)^(-c)",
+ "sources": {
+  "gated_geo": {
+   "measured": 1.055827097946607,
+   "fixed_price": 1.017687798649791,
+   "budget_price": 1.3380197305902752
+  },
+  "gated_mix": {
+   "measured": 0.7943522124027965,
+   "fixed_price": 0.884823788685142,
+   "budget_price": 0.9789893309576142
+  },
+  "gated_p0.25": {
+   "measured": 0.6367706433282156,
+   "fixed_price": 0.667401383267793,
+   "budget_price": 0.7699447744688602
+  },
+  "gated_p0.5": {
+   "measured": 0.6461418676102136,
+   "fixed_price": 0.6058913667474505,
+   "budget_price": 0.730480518710202
+  },
+  "gated_p0.75": {
+   "measured": 0.6735439569563977,
+   "fixed_price": 0.570092121683043,
+   "budget_price": 0.7296867480411553
+  },
+  "gated_p1.5": {
+   "measured": 0.7258435901000034,
+   "fixed_price": 0.616845455703931,
+   "budget_price": 0.7404070359177957
+  },
+  "gated_p1": {
+   "measured": 0.7402258734126703,
+   "fixed_price": 0.5850162071873757,
+   "budget_price": 0.7357246278598842
+  },
+  "gated_p2": {
+   "measured": 0.6700901023723271,
+   "fixed_price": 0.7229270390970293,
+   "budget_price": 0.9424676355287043
+  },
+  "gated_p3": {
+   "measured": 0.7504670979213702,
+   "fixed_price": 0.6451288072584099,
+   "budget_price": 1.0150088147352025
+  },
+  "hmm_exp": {
+   "measured": 0.7296978204593995,
+   "fixed_price": 0.944811977628192,
+   "budget_price": 1.0176060358702665
+  },
+  "hmm_pl_a": {
+   "measured": 0.5582389088452705,
+   "fixed_price": 0.6402195773359595,
+   "budget_price": 0.7871140891261658
+  },
+  "hmm_pl_b": {
+   "measured": 0.6809662507774749,
+   "fixed_price": 0.7540428339637582,
+   "budget_price": 1.0404947046634623
+  },
+  "hmm_two": {
+   "measured": 0.45370076901550094,
+   "fixed_price": 0.5869630456889037,
+   "budget_price": 0.7980062138535465
+  }
+ },
+ "rms_fixed_price": 0.10700568737762552,
+ "bias_fixed_price": 0.009691170134502415,
+ "n_fixed_price": 13,
+ "rms_budget_price": 0.22688696788506843,
+ "bias_budget_price": 0.19292954378268365,
+ "n_budget_price": 13
+}

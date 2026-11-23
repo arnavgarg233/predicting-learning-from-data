@@ -1,0 +1,240 @@
+{
+ "cells": [
+  "C4|c4_en",
+  "Dolma1.7|dolma_wiki",
+  "Dolma1.7|dolma_stack",
+  "Dolma1.7|dolma_reddit",
+  "Dolma1.7|dolma_pes2o",
+  "Dolma1.7|dolma_common-crawl",
+  "Dolma1.7|dolma_books"
+ ],
+ "size_match": {
+  "0.13b": "150M",
+  "0.4b": "530M"
+ },
+ "sizes": {
+  "0.13b": {
+   "dd_size": "150M",
+   "a": 0.05505498950194286,
+   "b": 0.9859192628393287,
+   "map_resid_rms": 0.06544731425581342,
+   "map_pearson": 0.9405182303739067,
+   "log10K": 7.14,
+   "K_at_grid_edge": false,
+   "T_step": 38750.0,
+   "tokens_per_step": 393216,
+   "D_cal_bytes": 65766701229.82594,
+   "mean_recipe_bpt": 4.316216006031714,
+   "cells": [
+    {
+     "recipe": "C4",
+     "eval": "c4_en",
+     "r": 1.0741041212651663,
+     "gamma": 0.508624051482241,
+     "A": 2.3763600018102813,
+     "L_final": 1.0219032690569911,
+     "T_step": 38750.0,
+     "n_seeds": 3,
+     "n_K_steps": 24,
+     "bpt_eval": 4.469544028240832,
+     "bpt_recipe": 4.563436674086451
+    },
+    {
+     "recipe": "Dolma1.7",
+     "eval": "dolma_wiki",
+     "r": 0.9287360150086269,
+     "gamma": 0.512669838054572,
+     "A": 2.701035515061671,
+     "L_final": 0.969778818511394,
+     "T_step": 38750.0,
+     "n_seeds": 3,
+     "n_K_steps": 24,
+     "bpt_eval": 4.377038,
+     "bpt_recipe": 4.275012561355924
+    },
+    {
+     "recipe": "Dolma1.7",
+     "eval": "dolma_stack",
+     "r": 0.5511920439212272,
+     "gamma": 0.3982456753720163,
+     "A": 4.421373642721384,
+     "L_final": 0.6238509008483117,
+     "T_step": 38750.0,
+     "n_seeds": 3,
+     "n_K_steps": 24,
+     "bpt_eval": 3.115675224881169,
+     "bpt_recipe": 4.275012561355924
+    },
+    {
+     "recipe": "Dolma1.7",
+     "eval": "dolma_reddit",
+     "r": 1.1043882637950184,
+     "gamma": 0.3542132267993488,
+     "A": 2.058608321418509,
+     "L_final": 1.1456879732378913,
+     "T_step": 38750.0,
+     "n_seeds": 3,
+     "n_K_steps": 24,
+     "bpt_eval": 4.227883582322471,
+     "bpt_recipe": 4.275012561355924
+    },
+    {
+     "recipe": "Dolma1.7",
+     "eval": "dolma_pes2o",
+     "r": 0.8402097770239284,
+     "gamma": 0.48250073838878027,
+     "A": 2.7224884939277074,
+     "L_final": 0.841756810130102,
+     "T_step": 38750.0,
+     "n_seeds": 3,
+     "n_K_steps": 24,
+     "bpt_eval": 4.672010752172035,
+     "bpt_recipe": 4.275012561355924
+    },
+    {
+     "recipe": "Dolma1.7",
+     "eval": "dolma_common-crawl",
+     "r": 1.0293711540525263,
+     "gamma": 0.5131534775889175,
+     "A": 2.229717357749854,
+     "L_final": 1.0421035135058778,
+     "T_step": 38750.0,
+     "n_seeds": 3,
+     "n_K_steps": 24,
+     "bpt_eval": 4.517344998098136,
+     "bpt_recipe": 4.275012561355924
+    },
+    {
+     "recipe": "Dolma1.7",
+     "eval": "dolma_books",
+     "r": 1.0894685244695257,
+     "gamma": 0.5913298364626041,
+     "A": 3.016840429976523,
+     "L_final": 1.2645946864350288,
+     "T_step": 38750.0,
+     "n_seeds": 3,
+     "n_K_steps": 24,
+     "bpt_eval": 3.9347837391349567,
+     "bpt_recipe": 4.275012561355924
+    }
+   ]
+  },
+  "0.4b": {
+   "dd_size": "530M",
+   "a": -0.02070080113643958,
+   "b": 0.9408557708790737,
+   "map_resid_rms": 0.0522227262645262,
+   "map_pearson": 0.9572861775147692,
+   "log10K": 7.49,
+   "K_at_grid_edge": false,
+   "T_step": 57786.0,
+   "tokens_per_step": 917504,
+   "D_cal_bytes": 228840964996.70584,
+   "mean_recipe_bpt": 4.316216006031714,
+   "cells": [
+    {
+     "recipe": "C4",
+     "eval": "c4_en",
+     "r": 1.0741041212651663,
+     "gamma": 0.508624051482241,
+     "A": 2.3763600018102813,
+     "L_final": 0.9083786055100893,
+     "T_step": 57786.0,
+     "n_seeds": 1,
+     "n_K_steps": 36,
+     "bpt_eval": 4.469544028240832,
+     "bpt_recipe": 4.563436674086451
+    },
+    {
+     "recipe": "Dolma1.7",
+     "eval": "dolma_wiki",
+     "r": 0.9287360150086269,
+     "gamma": 0.512669838054572,
+     "A": 2.701035515061671,
+     "L_final": 0.8417308804897596,
+     "T_step": 57786.0,
+     "n_seeds": 1,
+     "n_K_steps": 35,
+     "bpt_eval": 4.377038,
+     "bpt_recipe": 4.275012561355924
+    },
+    {
+     "recipe": "Dolma1.7",
+     "eval": "dolma_stack",
+     "r": 0.5511920439212272,
+     "gamma": 0.3982456753720163,
+     "A": 4.421373642721384,
+     "L_final": 0.5218590945804615,
+     "T_step": 57786.0,
+     "n_seeds": 1,
+     "n_K_steps": 35,
+     "bpt_eval": 3.115675224881169,
+     "bpt_recipe": 4.275012561355924
+    },
+    {
+     "recipe": "Dolma1.7",
+     "eval": "dolma_reddit",
+     "r": 1.1043882637950184,
+     "gamma": 0.3542132267993488,
+     "A": 2.058608321418509,
+     "L_final": 1.0390624446430214,
+     "T_step": 57786.0,
+     "n_seeds": 1,
+     "n_K_steps": 35,
+     "bpt_eval": 4.227883582322471,
+     "bpt_recipe": 4.275012561355924
+    },
+    {
+     "recipe": "Dolma1.7",
+     "eval": "dolma_pes2o",
+     "r": 0.8402097770239284,
+     "gamma": 0.48250073838878027,
+     "A": 2.7224884939277074,
+     "L_final": 0.7357701212006054,
+     "T_step": 57786.0,
+     "n_seeds": 1,
+     "n_K_steps": 35,
+     "bpt_eval": 4.672010752172035,
+     "bpt_recipe": 4.275012561355924
+    },
+    {
+     "recipe": "Dolma1.7",
+     "eval": "dolma_common-crawl",
+     "r": 1.0293711540525263,
+     "gamma": 0.5131534775889175,
+     "A": 2.229717357749854,
+     "L_final": 0.9307179280377813,
+     "T_step": 57786.0,
+     "n_seeds": 1,
+     "n_K_steps": 35,
+     "bpt_eval": 4.517344998098136,
+     "bpt_recipe": 4.275012561355924
+    },
+    {
+     "recipe": "Dolma1.7",
+     "eval": "dolma_books",
+     "r": 1.0894685244695257,
+     "gamma": 0.5913298364626041,
+     "A": 3.016840429976523,
+     "L_final": 1.1036600611802287,
+     "T_step": 57786.0,
+     "n_seeds": 1,
+     "n_K_steps": 35,
+     "bpt_eval": 3.9347837391349567,
+     "bpt_recipe": 4.275012561355924
+    }
+   ]
+  }
+ },
+ "inputs_sha256": {
+  "data/datadecide/gt/ppl_results.parquet": "dda83054c20f9a378db63d48baf094b1d73ad5fa4b3af5e30768bff0ccd00886",
+  "results/datadecide/stats/merged.json": "b92eb37967b50e1a412468088cfdc86e23566836e8093a8324cee3094ba8c209",
+  "results/datadecide/stats/ev_c4_en_ref_SmolLM2-135M.json": "1a25f282fc08621e4b526bc9c27968126820b672dfc864d1b3ff3d0fd33f972b",
+  "results/datadecide/stats/ev_dolma_wiki_ref_SmolLM2-135M.json": "f120c8afd9faa29af2f11c13f5a0e55a8edb37636c99f554f89e250b9bbbeebc",
+  "results/datadecide/stats/ev_dolma_stack_ref_SmolLM2-135M.json": "b0a47214209f58f6ecb3cb21678ffd4b4204797484180f7468e9ee201e2aae1c",
+  "results/datadecide/stats/ev_dolma_reddit_ref_SmolLM2-135M.json": "44fda31ae10b07cda305964a712cb25c658c4b1552ebe60b09b61f08c2ecaf2b",
+  "results/datadecide/stats/ev_dolma_pes2o_ref_SmolLM2-135M.json": "19eae733aa7e76b32c41368d4a454beff1cf33c8aec12a9a2d77741e87d18a56",
+  "results/datadecide/stats/ev_dolma_common-crawl_ref_SmolLM2-135M.json": "389ab1f9e436ede4dde0e57094add8b1042e0aa52cbebfdba2c0144010f87542",
+  "results/datadecide/stats/ev_dolma_books_ref_SmolLM2-135M.json": "372c0a8df98f75346701af3eec13bc6d1946a8c225c4f83b565b6161da9398ac"
+ }
+}

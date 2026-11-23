@@ -1,0 +1,50 @@
+{
+ "description": "Public sources of the inputs. None of the corpora, model weights or checkpoints are included; the archive holds derived statistics, seeded subsets of per-target reference losses, training records, scores and one extract of released results. Each item remains under the terms of its original release.",
+ "sources": [
+  {
+   "name": "DataDecide",
+   "id": "allenai/DataDecide-* (Hugging Face)",
+   "used_for": "perplexity table, evaluation sets, recipe token files (file list in data/datadecide/recipe_paths.json)"
+  },
+  {
+   "name": "DataDecide downstream results",
+   "id": "allenai/DataDecide-eval-results, data/macro_avg-00000-of-00001.parquet",
+   "version": "revision 9919b5a0e61e57a85021263918fa82d6ceaee038",
+   "included": "rows used, as results/bench_mismatch_score/outcomes_extract.parquet"
+  },
+  {
+   "name": "Benchmark task text",
+   "id": "OLMES suite (allenai/olmes) and the task datasets on Hugging Face",
+   "version": "revisions recorded per task in results/bench_mismatch/forecast.json"
+  },
+  {
+   "name": "Public pretraining corpora",
+   "id": "Pile, SlimPajama, Dolma, RedPajama, DCLM-Baseline, RefinedWeb, FineWeb, FineWeb-Edu, C4 (Hugging Face)",
+   "version": "revisions recorded in results/data_choice/forecast*.json"
+  },
+  {
+   "name": "Forecast-test and development corpora",
+   "id": "wikimedia/wikipedia (2023-11-01), codeparrot/github-code-clean, HuggingFaceFW/fineweb-edu, TinyStories, the English datasets of Supplementary Table 1",
+   "version": "as listed in scripts/prep_corpus.py"
+  },
+  {
+   "name": "Forward-test corpora",
+   "id": "bigcode/commitpack, monology/pile-uncopyrighted, allenai/dolma v1.7, HuggingFaceFW/fineweb-2, Common Pile v0.1, pile-of-law/pile-of-law",
+   "version": "seeded draws recorded in results/extbench/draw.json, results/fwd_weblang/fall_line.json, results/fwd_english/fall_line.json, results/rate_singlepass/draw.json"
+  },
+  {
+   "name": "Open-sci-ref",
+   "id": "open-sci/open-sci-ref-v0.01-*",
+   "version": "checkpoint revisions recorded in results/curve_forecast/opensciref/"
+  },
+  {
+   "name": "Reference models",
+   "id": "openai-community/gpt2, EleutherAI/pythia-*, HuggingFaceTB/SmolLM2-135M, Qwen/Qwen2.5-0.5B, Qwen/Qwen2.5-1.5B, Qwen/Qwen2.5-7B, Qwen/Qwen2.5-14B, Qwen/Qwen3-14B-Base, roneneldan/TinyStories-33M"
+  },
+  {
+   "name": "Published scaling results",
+   "id": "Limisiewicz et al., Compute Optimal Tokenization, Tables 2 and 10",
+   "included": "values used, in results/external/"
+  }
+ ]
+}

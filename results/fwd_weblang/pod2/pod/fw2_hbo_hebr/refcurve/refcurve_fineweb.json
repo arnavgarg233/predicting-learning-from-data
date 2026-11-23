@@ -1,0 +1,149 @@
+{
+ "Qwen2.5-0.5B": {
+  "model": "Qwen/Qwen2.5-0.5B",
+  "short": "Qwen2.5-0.5B",
+  "n_targets": 20000,
+  "n_docs": 672,
+  "n_docs_total": 691,
+  "mean_bytes_per_target_token": 1.7585,
+  "rows": [
+   {
+    "n_tokens": 1,
+    "bits_per_token": 12.053494592316587,
+    "bits_per_byte": 6.8544183066912625,
+    "bpb_se": 0.15318861614409182,
+    "context_bytes_exact_mean": 1.78105
+   },
+   {
+    "n_tokens": 2,
+    "bits_per_token": 7.247269301612707,
+    "bits_per_byte": 4.121279102424059,
+    "bpb_se": 0.08954784278094687,
+    "context_bytes_exact_mean": 3.5555
+   },
+   {
+    "n_tokens": 3,
+    "bits_per_token": 5.1211174788439875,
+    "bits_per_byte": 2.912207835566669,
+    "bpb_se": 0.0853545786113971,
+    "context_bytes_exact_mean": 5.31875
+   },
+   {
+    "n_tokens": 4,
+    "bits_per_token": 4.467905256508588,
+    "bits_per_byte": 2.540747942285236,
+    "bpb_se": 0.08132871816977205,
+    "context_bytes_exact_mean": 7.0968
+   },
+   {
+    "n_tokens": 6,
+    "bits_per_token": 3.92386101392664,
+    "bits_per_byte": 2.2313682194635422,
+    "bpb_se": 0.0771579283188316,
+    "context_bytes_exact_mean": 10.6376
+   },
+   {
+    "n_tokens": 8,
+    "bits_per_token": 3.667761787012225,
+    "bits_per_byte": 2.0857331743032272,
+    "bpb_se": 0.07475567549975208,
+    "context_bytes_exact_mean": 14.17655
+   },
+   {
+    "n_tokens": 12,
+    "bits_per_token": 3.4243353965057044,
+    "bits_per_byte": 1.9473047463779949,
+    "bpb_se": 0.06915996974936599,
+    "context_bytes_exact_mean": 21.24045
+   },
+   {
+    "n_tokens": 16,
+    "bits_per_token": 3.2875515013433354,
+    "bits_per_byte": 1.8695203305904664,
+    "bpb_se": 0.06533793744689917,
+    "context_bytes_exact_mean": 28.284
+   },
+   {
+    "n_tokens": 24,
+    "bits_per_token": 3.135095507857259,
+    "bits_per_byte": 1.7828237178602553,
+    "bpb_se": 0.06084523440433308,
+    "context_bytes_exact_mean": 42.37145
+   },
+   {
+    "n_tokens": 32,
+    "bits_per_token": 3.020734369261943,
+    "bits_per_byte": 1.7177903720568337,
+    "bpb_se": 0.05726287463403877,
+    "context_bytes_exact_mean": 56.4391
+   },
+   {
+    "n_tokens": 48,
+    "bits_per_token": 2.8954781071526297,
+    "bits_per_byte": 1.6465613347470172,
+    "bpb_se": 0.05477179661468625,
+    "context_bytes_exact_mean": 84.60535
+   },
+   {
+    "n_tokens": 64,
+    "bits_per_token": 2.827762418758069,
+    "bits_per_byte": 1.6080536927825242,
+    "bpb_se": 0.05365087887486351,
+    "context_bytes_exact_mean": 112.7694
+   },
+   {
+    "n_tokens": 96,
+    "bits_per_token": 2.743309113696531,
+    "bits_per_byte": 1.5600279293127843,
+    "bpb_se": 0.051365247178354986,
+    "context_bytes_exact_mean": 169.1864
+   },
+   {
+    "n_tokens": 128,
+    "bits_per_token": 2.6759542393034588,
+    "bits_per_byte": 1.5217254701754102,
+    "bpb_se": 0.050246370559087795,
+    "context_bytes_exact_mean": 225.5432
+   },
+   {
+    "n_tokens": 192,
+    "bits_per_token": 2.572411841832215,
+    "bits_per_byte": 1.462844379773793,
+    "bpb_se": 0.04745370884221791,
+    "context_bytes_exact_mean": 338.5726
+   },
+   {
+    "n_tokens": 256,
+    "bits_per_token": 2.502912498705226,
+    "bits_per_byte": 1.4233224331562275,
+    "bpb_se": 0.047138843186968815,
+    "context_bytes_exact_mean": 451.31205
+   },
+   {
+    "n_tokens": 384,
+    "bits_per_token": 2.4062737979358224,
+    "bits_per_byte": 1.3683672436370897,
+    "bpb_se": 0.04555276115635573,
+    "context_bytes_exact_mean": 676.45495
+   },
+   {
+    "n_tokens": 512,
+    "bits_per_token": 2.3508284682333245,
+    "bits_per_byte": 1.3368373433229024,
+    "bpb_se": 0.04425779913499409,
+    "context_bytes_exact_mean": 901.7843
+   }
+  ],
+  "key": {
+   "model": "Qwen/Qwen2.5-0.5B",
+   "corpus": [
+    "166301d1937a02b38bd24f8f6b397dc7e48a7d7d11f698bcfdc07ab378c8cd66",
+    "94a6153a4f03d51b7fed1aeed623887919693c1021320e1391e9b930313f5f36"
+   ],
+   "ns": "1,2,3,4,6,8,12,16,24,32,48,64,96,128,192,256,384,512",
+   "nt": 20000,
+   "seed": 0,
+   "docs": "nfc_only"
+  }
+ }
+}

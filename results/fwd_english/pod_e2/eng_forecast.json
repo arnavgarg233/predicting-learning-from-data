@@ -1,0 +1,218 @@
+{
+ "date": "2026-11-01 17:22:55 PST",
+ "date_epoch": 1793582575,
+ "forecast_i_date": "2026-11-01 17:22:55 PST",
+ "forecast_i_created_utc": "2026-11-02T01:21:31+00:00",
+ "calibration": {
+  "n": 29,
+  "corpora": [
+   "hacker_news",
+   "patents",
+   "poetry",
+   "scotus",
+   "sci_abstracts",
+   "recipes",
+   "yelp",
+   "govreport",
+   "billsum",
+   "ecthr",
+   "xsum",
+   "hh_dialogue",
+   "caselaw",
+   "cnn_dailymail",
+   "dbpedia",
+   "amazon_polarity",
+   "edgar",
+   "multi_news",
+   "booksum",
+   "lyrics",
+   "writingprompts",
+   "med_textbooks",
+   "philosophy",
+   "yahoo_answers",
+   "pile_dm_math",
+   "pile_ubuntu_irc",
+   "pile_pmc",
+   "pile_nih_exporter",
+   "dolma_reddit"
+  ],
+  "median": {
+   "fall": 0.18436121501848612,
+   "x": 0.2143055201612516
+  },
+  "scaled_mad": {
+   "fall": 0.04650997397029667,
+   "x": 0.025760477787789515
+  },
+  "k_mad": 4.0,
+  "set_aside": [
+   "patents",
+   "billsum",
+   "pile_dm_math",
+   "pile_ubuntu_irc"
+  ],
+  "set_aside_fall_rule": [
+   "pile_ubuntu_irc"
+  ],
+  "n_clean": 25,
+  "line": {
+   "a": -0.0020592357692609917,
+   "b": 0.87281927052648
+  },
+  "kind_mean": 0.19001227849399754,
+  "context_fall_rule_only": {
+   "n": 28,
+   "line": {
+    "a": 0.18738398991763217,
+    "b": 0.004422812654553467
+   },
+   "kind_mean": 0.1884346051630141
+  }
+ },
+ "corpora": {
+  "cp_uk_hansard": {
+   "level_23": 1.5478037419499913,
+   "S23": 1.5737650430779921,
+   "S25": 1.3743246160166707,
+   "own_fall": 0.19944042706132148,
+   "calibrated_fall": 0.17201621229189126,
+   "kind_mean_fall": 0.19001227849399754,
+   "pred_L25": 1.3757875296581,
+   "pred_L25_kind_mean": 1.3577914634559938,
+   "calibrated_fall_fall_rule_only": 0.1882660775622685,
+   "own_fall_outlier": false
+  },
+  "cp_youtube": {
+   "level_23": 1.6967686712171623,
+   "S23": 1.5335393373112236,
+   "S25": 1.3596966631581506,
+   "own_fall": 0.17384267415307297,
+   "calibrated_fall": 0.14967400027139674,
+   "kind_mean_fall": 0.19001227849399754,
+   "pred_L25": 1.5470946709457656,
+   "pred_L25_kind_mean": 1.5067563927231649,
+   "calibrated_fall_fall_rule_only": 0.1881528634967778,
+   "own_fall_outlier": false
+  },
+  "cp_libretexts": {
+   "level_23": 1.5106034971157534,
+   "S23": 1.3212164364377845,
+   "S25": 1.0739608158042135,
+   "own_fall": 0.24725562063357098,
+   "calibrated_fall": 0.21375023466570453,
+   "kind_mean_fall": 0.19001227849399754,
+   "pred_L25": 1.2968532624500488,
+   "pred_L25_kind_mean": 1.3205912186217559,
+   "calibrated_fall_fall_rule_only": 0.1884775552054798,
+   "own_fall_outlier": false
+  },
+  "pol_founding_docs": {
+   "level_23": 1.6847449439372728,
+   "S23": 1.7131206682439328,
+   "S25": 1.5240358883751315,
+   "own_fall": 0.18908477986880134,
+   "calibrated_fall": 0.16297760386348625,
+   "kind_mean_fall": 0.19001227849399754,
+   "pred_L25": 1.5217673400737866,
+   "pred_L25_kind_mean": 1.4947326654432753,
+   "calibrated_fall_fall_rule_only": 0.18822027647481937,
+   "own_fall_outlier": false
+  },
+  "pol_scotus_oral": {
+   "level_23": 1.459980516094453,
+   "S23": 1.5300045143304397,
+   "S25": 1.357878544236144,
+   "own_fall": 0.17212597009429564,
+   "calibrated_fall": 0.14817562788710487,
+   "kind_mean_fall": 0.19001227849399754,
+   "pred_L25": 1.311804888207348,
+   "pred_L25_kind_mean": 1.2699682376004555,
+   "calibrated_fall_fall_rule_only": 0.1881452708363425,
+   "own_fall_outlier": false
+  },
+  "pol_undebates": {
+   "level_23": 1.2354529070606222,
+   "S23": 1.2873030992210768,
+   "S25": 1.1053076456343343,
+   "own_fall": 0.18199545358674252,
+   "calibrated_fall": 0.15678990326945547,
+   "kind_mean_fall": 0.19001227849399754,
+   "pred_L25": 1.0786630037911666,
+   "pred_L25_kind_mean": 1.0454406285666247,
+   "calibrated_fall_fall_rule_only": 0.1881889217128268,
+   "own_fall_outlier": false
+  },
+  "pol_oig": {
+   "level_23": 1.259487578823471,
+   "S23": 1.6857455893624085,
+   "S25": 1.4344833890913185,
+   "own_fall": 0.25126220027109003,
+   "calibrated_fall": 0.21724725458223015,
+   "kind_mean_fall": 0.19001227849399754,
+   "pred_L25": 1.0422403242412408,
+   "pred_L25_kind_mean": 1.0694753003294735,
+   "calibrated_fall_fall_rule_only": 0.1884952755566021,
+   "own_fall_outlier": false
+  },
+  "pol_state_code": {
+   "level_23": 1.9662483022654862,
+   "S23": 1.6091232832480156,
+   "S25": 1.308948354923699,
+   "own_fall": 0.30017492832431647,
+   "calibrated_fall": 0.2599392262011073,
+   "kind_mean_fall": 0.19001227849399754,
+   "pred_L25": 1.7063090760643789,
+   "pred_L25_kind_mean": 1.7762360237714887,
+   "calibrated_fall_fall_rule_only": 0.18871160738920464,
+   "own_fall_outlier": false
+  },
+  "pol_cfr": {
+   "level_23": 1.2988697678854262,
+   "S23": 1.4369859099980271,
+   "S25": 1.174305701746997,
+   "own_fall": 0.26268020825103,
+   "calibrated_fall": 0.2272131119781469,
+   "kind_mean_fall": 0.19001227849399754,
+   "pred_L25": 1.0716566559072793,
+   "pred_L25_kind_mean": 1.1088574893914287,
+   "calibrated_fall_fall_rule_only": 0.18854577526678556,
+   "own_fall_outlier": false
+  },
+  "pol_dol_ecab": {
+   "level_23": 1.1249236420272046,
+   "S23": 1.6590664905385712,
+   "S25": 1.4626776549921772,
+   "own_fall": 0.19638883554639408,
+   "calibrated_fall": 0.16935272441188753,
+   "kind_mean_fall": 0.19001227849399754,
+   "pred_L25": 0.9555709176153171,
+   "pred_L25_kind_mean": 0.9349113635332071,
+   "calibrated_fall_fall_rule_only": 0.18825258094469977,
+   "own_fall_outlier": false
+  },
+  "pol_taxrulings": {
+   "level_23": 1.3263454316655938,
+   "S23": 1.7627560913922236,
+   "S25": 1.53501249356643,
+   "own_fall": 0.22774359782579356,
+   "calibrated_fall": 0.1967197651521242,
+   "kind_mean_fall": 0.19001227849399754,
+   "pred_L25": 1.1296256665134696,
+   "pred_L25_kind_mean": 1.1363331531715963,
+   "calibrated_fall_fall_rule_only": 0.1883912571840896,
+   "own_fall_outlier": false
+  },
+  "pol_federal_register": {
+   "level_23": 1.3414051321144298,
+   "S23": 1.4913019508108227,
+   "S25": 1.2577438744609846,
+   "own_fall": 0.23355807634983816,
+   "calibrated_fall": 0.2017947540559727,
+   "kind_mean_fall": 0.19001227849399754,
+   "pred_L25": 1.1396103780584572,
+   "pred_L25_kind_mean": 1.1513928536204323,
+   "calibrated_fall_fall_rule_only": 0.1884169735332854,
+   "own_fall_outlier": false
+  }
+ }
+}

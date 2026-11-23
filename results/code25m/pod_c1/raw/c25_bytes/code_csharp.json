@@ -1,0 +1,10 @@
+{
+ "name": "code_csharp",
+ "prep_ok": true,
+ "prep_seconds": 61.02036166191101,
+ "train_sha256": "797122a6d47463abd0a9cfa62ebc2a9edec85d34845f55124819cfc10eddbfd2",
+ "ref_sha256": "50edfcdd3108466f188265b067af499404c60d8b601cc424bdfd0ded1c10658f",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

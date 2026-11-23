@@ -1,0 +1,52 @@
+{
+ "n_recipes": 25,
+ "protocol": "task E leave-one-family-out affine, target level_1B all11, pairwise over 300 pairs",
+ "rows": {
+  "bigram (paper)": {
+   "pairwise": 0.74,
+   "pairwise_95": [
+    0.5932835820895522,
+    0.9243697478991597
+   ],
+   "mae": 0.04864101987311446,
+   "spearman": 0.6184615384615385
+  },
+  "token unigram": {
+   "pairwise": 0.7366666666666667,
+   "pairwise_95": [
+    0.5559701492537313,
+    0.9106280193236715
+   ],
+   "mae": 0.05590577933068447,
+   "spearman": 0.6015384615384615,
+   "bigram_minus_this": {
+    "point": 0.0033333333333332993,
+    "ci95": [
+     -0.016460905349794164,
+     0.05814803481572142
+    ]
+   }
+  },
+  "word unigram": {
+   "pairwise": 0.7966666666666666,
+   "pairwise_95": [
+    0.6572880400379807,
+    0.9473684210526315
+   ],
+   "mae": 0.052786709693081274,
+   "spearman": 0.7638461538461538,
+   "bigram_minus_this": {
+    "point": -0.05666666666666664,
+    "ci95": [
+     -0.13266998341625214,
+     0.0888888888888888
+    ]
+   }
+  }
+ },
+ "raw_feature_spearman_with_target": {
+  "bigram (paper)": 0.7723076923076923,
+  "token unigram": 0.7007692307692307,
+  "word unigram": 0.8223076923076923
+ }
+}

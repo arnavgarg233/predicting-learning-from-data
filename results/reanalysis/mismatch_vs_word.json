@@ -1,0 +1,741 @@
+{
+ "datadecide": {
+  "all11": {
+   "rows": {
+    "bigram": {
+     "pairwise": 0.74,
+     "pairwise_95": [
+      0.5932835820895522,
+      0.9243697478991597
+     ],
+     "mae": 0.04864101987311446,
+     "mae_95": [
+      0.03161151178542407,
+      0.06831040545007924
+     ],
+     "spearman": 0.6184615384615385
+    },
+    "word unigram": {
+     "pairwise": 0.7966666666666666,
+     "pairwise_95": [
+      0.6572880400379807,
+      0.9473684210526315
+     ],
+     "mae": 0.052786709693081274,
+     "mae_95": [
+      0.03556644755263666,
+      0.08688401003158473
+     ],
+     "spearman": 0.7638461538461538
+    },
+    "token unigram": {
+     "pairwise": 0.7366666666666667,
+     "pairwise_95": [
+      0.5559701492537313,
+      0.9106280193236715
+     ],
+     "mae": 0.05590577933068447,
+     "mae_95": [
+      0.03561683349386594,
+      0.07596033344333165
+     ],
+     "spearman": 0.6015384615384615
+    },
+    "bigram + word": {
+     "pairwise": 0.7266666666666667,
+     "pairwise_95": [
+      0.5681970272724215,
+      0.9027777777777778
+     ],
+     "mae": 0.05623730488431713,
+     "mae_95": [
+      0.03695252749072112,
+      0.07670838863998143
+     ],
+     "spearman": 0.6053846153846154
+    },
+    "nested choice": {
+     "pairwise": 0.7,
+     "pairwise_95": [
+      0.5074626865671642,
+      0.9385964912280702
+     ],
+     "mae": 0.057691967209312175,
+     "mae_95": [
+      0.038542505935962715,
+      0.0786947868401898
+     ],
+     "spearman": 0.5376923076923077
+    }
+   },
+   "differences": {
+    "bigram + word minus word unigram": {
+     "pairwise": -0.06999999999999995,
+     "pairwise_95": [
+      -0.204225352112676,
+      0.044642857142857095
+     ],
+     "mae": 0.0034505951912358543,
+     "mae_95": [
+      -0.02487196021235387,
+      0.02701709977866367
+     ],
+     "share_boot_both_better_mae": 0.374
+    },
+    "bigram + word minus bigram": {
+     "pairwise": -0.013333333333333308,
+     "pairwise_95": [
+      -0.13168724279835398,
+      0.02197802197802201
+     ],
+     "mae": 0.007596285011202665,
+     "mae_95": [
+      0.003175431694002487,
+      0.013222825596730152
+     ],
+     "share_boot_both_better_mae": 0.0
+    },
+    "bigram minus word unigram": {
+     "pairwise": -0.05666666666666664,
+     "pairwise_95": [
+      -0.13266998341625214,
+      0.0888888888888888
+     ],
+     "mae": -0.004145689819966811,
+     "mae_95": [
+      -0.032296399091635127,
+      0.014520320414467248
+     ],
+     "share_boot_both_better_mae": 0.739
+    },
+    "nested choice minus word unigram": {
+     "pairwise": -0.09666666666666668,
+     "pairwise_95": [
+      -0.213963963963964,
+      0.0772357723577235
+     ],
+     "mae": 0.0049052575162309014,
+     "mae_95": [
+      -0.01724731215939024,
+      0.028321718678730727
+     ],
+     "share_boot_both_better_mae": 0.3535
+    }
+   },
+   "nested_choices": {
+    "c4": [
+     0
+    ],
+    "dclm": [
+     0,
+     1
+    ],
+    "dclm_dolma_mix": [
+     0
+    ],
+    "dolma": [
+     0
+    ],
+    "falcon": [
+     0
+    ],
+    "fineweb": [
+     1
+    ]
+   },
+   "feature_columns": [
+    "bigram",
+    "word unigram",
+    "token unigram"
+   ],
+   "raw": {
+    "pearson_bigram_word": 0.7638157091185263,
+    "spearman_bigram_word": 0.7507692307692307,
+    "pearson_bigram_target": 0.7730652610455232,
+    "pearson_word_target": 0.6788859798412165,
+    "partial_bigram_given_word": 0.537071498858842,
+    "partial_word_given_bigram": 0.21593332732922121
+   },
+   "both_map_coef_per_sd_by_heldout_family": {
+    "c4": [
+     0.02952965085511954,
+     0.023152441162583217
+    ],
+    "dclm": [
+     0.07390538964393843,
+     -0.019174492829295148
+    ],
+    "dclm_dolma_mix": [
+     0.04278227372214643,
+     0.018749554604791028
+    ],
+    "dolma": [
+     0.052985580401499595,
+     0.01159043188738481
+    ],
+    "falcon": [
+     0.04710874438159276,
+     0.034687420650780294
+    ],
+    "fineweb": [
+     0.04124356977108783,
+     0.01837713444909012
+    ]
+   }
+  },
+  "ood4": {
+   "rows": {
+    "bigram": {
+     "pairwise": 0.6666666666666666,
+     "pairwise_95": [
+      0.45098039215686275,
+      0.9159838935574228
+     ],
+     "mae": 0.061195190341840885,
+     "mae_95": [
+      0.04245909806717707,
+      0.08011444289892955
+     ],
+     "spearman": 0.4692307692307692
+    },
+    "word unigram": {
+     "pairwise": 0.52,
+     "pairwise_95": [
+      0.4,
+      0.8309178743961353
+     ],
+     "mae": 0.08655594174853494,
+     "mae_95": [
+      0.07208956806929508,
+      0.12192192219886026
+     ],
+     "spearman": -0.061538461538461535
+    },
+    "token unigram": {
+     "pairwise": 0.6766666666666666,
+     "pairwise_95": [
+      0.49261083743842365,
+      0.9761904761904762
+     ],
+     "mae": 0.07029374510094016,
+     "mae_95": [
+      0.04799708285952721,
+      0.0906222400032857
+     ],
+     "spearman": 0.42615384615384616
+    },
+    "bigram + word": {
+     "pairwise": 0.71,
+     "pairwise_95": [
+      0.46445497630331756,
+      0.9389312977099237
+     ],
+     "mae": 0.05597969387280806,
+     "mae_95": [
+      0.03366194960970911,
+      0.0773162691327883
+     ],
+     "spearman": 0.5715384615384614
+    },
+    "nested choice": {
+     "pairwise": 0.7,
+     "pairwise_95": [
+      0.47393364928909953,
+      0.9272727272727272
+     ],
+     "mae": 0.05712692408453405,
+     "mae_95": [
+      0.03388923467631132,
+      0.07919029513235853
+     ],
+     "spearman": 0.5546153846153846
+    }
+   },
+   "differences": {
+    "bigram + word minus word unigram": {
+     "pairwise": 0.18999999999999995,
+     "pairwise_95": [
+      -0.008247905643738992,
+      0.33333333333333337
+     ],
+     "mae": -0.03057624787572688,
+     "mae_95": [
+      -0.07383264940024267,
+      -0.0030604807722941357
+     ],
+     "share_boot_both_better_mae": 0.9895
+    },
+    "bigram + word minus bigram": {
+     "pairwise": 0.043333333333333335,
+     "pairwise_95": [
+      -0.016666666666666607,
+      0.07878787878787885
+     ],
+     "mae": -0.0052154964690328265,
+     "mae_95": [
+      -0.012275601304735838,
+      -0.0015301562882116815
+     ],
+     "share_boot_both_better_mae": 0.9995
+    },
+    "bigram minus word unigram": {
+     "pairwise": 0.1466666666666666,
+     "pairwise_95": [
+      -0.01449275362318836,
+      0.29761904761904767
+     ],
+     "mae": -0.025360751406694054,
+     "mae_95": [
+      -0.062203582355198905,
+      -0.001105522100268292
+     ],
+     "share_boot_both_better_mae": 0.9825
+    },
+    "nested choice minus word unigram": {
+     "pairwise": 0.17999999999999994,
+     "pairwise_95": [
+      -8.503401360543605e-05,
+      0.32843137254901955
+     ],
+     "mae": -0.02942901766400089,
+     "mae_95": [
+      -0.07275571971050158,
+      -0.0021044555958557865
+     ],
+     "share_boot_both_better_mae": 0.985
+    }
+   },
+   "nested_choices": {
+    "c4": [
+     0,
+     1
+    ],
+    "dclm": [
+     0,
+     1
+    ],
+    "dclm_dolma_mix": [
+     0,
+     1
+    ],
+    "dolma": [
+     0,
+     1
+    ],
+    "falcon": [
+     0
+    ],
+    "fineweb": [
+     0,
+     1
+    ]
+   },
+   "feature_columns": [
+    "bigram",
+    "word unigram",
+    "token unigram"
+   ],
+   "raw": {
+    "pearson_bigram_word": 0.7093214736994448,
+    "spearman_bigram_word": 0.7615384615384616,
+    "pearson_bigram_target": 0.7537087030836291,
+    "pearson_word_target": 0.38869755528286953,
+    "partial_bigram_given_word": 0.7359953726193913,
+    "partial_word_given_bigram": -0.31499651456499583
+   },
+   "both_map_coef_per_sd_by_heldout_family": {
+    "c4": [
+     0.06670520557429752,
+     -0.024079736543980913
+    ],
+    "dclm": [
+     0.08390259231540208,
+     -0.021318759876292028
+    ],
+    "dclm_dolma_mix": [
+     0.07493943651165814,
+     -0.02080423753828499
+    ],
+    "dolma": [
+     0.07873527351246844,
+     -0.02730531030285623
+    ],
+    "falcon": [
+     0.09166265251418061,
+     -0.024046065802559254
+    ],
+    "fineweb": [
+     0.07728805300633793,
+     -0.02282681382954383
+    ]
+   }
+  }
+ },
+ "published_rankings": {
+  "check_bigram_reproduces_frozen_forecast_max_abs_diff": 0.0,
+  "word_ce_public": {
+   "c4": 1.9155372686333472,
+   "dclm_baseline": 1.908160156701153,
+   "dolma": 1.9012749927489379,
+   "fineweb": 1.9123140911140217,
+   "fineweb_edu": 1.9150092323917371,
+   "pile": 1.909020530676191,
+   "redpajama_1t": 1.9028008945078438,
+   "refinedweb": 1.9115390715545415,
+   "slimpajama": 1.90006354163472
+  },
+  "coef": {
+   "bigram": [
+    0.8334220432505985,
+    0.7945266084759894
+   ],
+   "word": [
+    -14.100439014143511,
+    7.879788240835344
+   ],
+   "both": [
+    -3.8443744903136543,
+    0.6279318644533083,
+    2.4631912202248833
+   ]
+  },
+  "predicted": {
+   "bigram (paper)": {
+    "c4": 1.0270732859566127,
+    "dclm_baseline": 0.9179178803385019,
+    "dolma": 0.86051506970208,
+    "fineweb": 1.0222412934093454,
+    "fineweb_edu": 1.0235492352354008,
+    "pile": 0.8500038300391656,
+    "redpajama_1t": 0.8767713724497391,
+    "refinedweb": 0.9924499491953986,
+    "slimpajama": 0.8581939449692941
+   },
+   "token unigram (labelled word-overlap in ED Table 1)": {
+    "c4": 2.907175161488134,
+    "dclm_baseline": 2.8345923039278316,
+    "dolma": 2.81212846263948,
+    "fineweb": 2.910352549628067,
+    "fineweb_edu": 2.9152729825873944,
+    "pile": 2.8000879150739575,
+    "redpajama_1t": 2.8156827681445664,
+    "refinedweb": 2.8885547802419023,
+    "slimpajama": 2.8011379496349837
+   },
+   "word unigram": {
+    "c4": 0.9935890301153911,
+    "dclm_baseline": 0.9354589502607613,
+    "dolma": 0.8812053163138742,
+    "fineweb": 0.9681910738004866,
+    "fineweb_edu": 0.9894282163480188,
+    "pile": 0.9422385149919865,
+    "redpajama_1t": 0.8932290990503713,
+    "refinedweb": 0.9620840837892768,
+    "slimpajama": 0.8716593380697137
+   },
+   "bigram + word": {
+    "c4": 1.0270069307440028,
+    "dclm_baseline": 0.9225677740727702,
+    "dolma": 0.8602415941209003,
+    "fineweb": 1.015248798125591,
+    "fineweb_edu": 1.0229211416681658,
+    "pile": 0.871013071104473,
+    "redpajama_1t": 0.8768478957631345,
+    "refinedweb": 0.989795021777248,
+    "slimpajama": 0.8554231224134807
+   }
+  },
+  "predicted_order": {
+   "bigram (paper)": [
+    "pile",
+    "slimpajama",
+    "dolma",
+    "redpajama_1t",
+    "dclm_baseline",
+    "refinedweb",
+    "fineweb",
+    "fineweb_edu",
+    "c4"
+   ],
+   "token unigram (labelled word-overlap in ED Table 1)": [
+    "pile",
+    "slimpajama",
+    "dolma",
+    "redpajama_1t",
+    "dclm_baseline",
+    "refinedweb",
+    "c4",
+    "fineweb",
+    "fineweb_edu"
+   ],
+   "word unigram": [
+    "slimpajama",
+    "dolma",
+    "redpajama_1t",
+    "dclm_baseline",
+    "pile",
+    "refinedweb",
+    "fineweb",
+    "fineweb_edu",
+    "c4"
+   ],
+   "bigram + word": [
+    "slimpajama",
+    "dolma",
+    "pile",
+    "redpajama_1t",
+    "dclm_baseline",
+    "refinedweb",
+    "fineweb",
+    "fineweb_edu",
+    "c4"
+   ]
+  },
+  "per_source": {
+   "A1_paloma_fig1": {
+    "bigram (paper)": "9/9",
+    "token unigram (labelled word-overlap in ED Table 1)": "9/9",
+    "word unigram": "8/9",
+    "bigram + word": "9/9"
+   },
+   "A2_paloma_fig2_ddmatched": {
+    "bigram (paper)": "9/9",
+    "token unigram (labelled word-overlap in ED Table 1)": "9/9",
+    "word unigram": "8/9",
+    "bigram + word": "9/9"
+   },
+   "A3_redpajama_t5_paloma": {
+    "bigram (paper)": "7/10",
+    "token unigram (labelled word-overlap in ED Table 1)": "6/10",
+    "word unigram": "7/10",
+    "bigram + word": "7/10"
+   },
+   "A3b_redpajama_t5_pileval": {
+    "bigram (paper)": "8/10",
+    "token unigram (labelled word-overlap in ED Table 1)": "7/10",
+    "word unigram": "8/10",
+    "bigram + word": "8/10"
+   },
+   "A4_fineweb_paloma_ddmatched": {
+    "bigram (paper)": "1/1",
+    "token unigram (labelled word-overlap in ED Table 1)": "1/1",
+    "word unigram": "1/1",
+    "bigram + word": "1/1"
+   },
+   "A4b_fineweb_paloma_broad": {
+    "bigram (paper)": "1/1",
+    "token unigram (labelled word-overlap in ED Table 1)": "1/1",
+    "word unigram": "1/1",
+    "bigram + word": "1/1"
+   },
+   "A5_chungkim_lambada": {
+    "bigram (paper)": "2/3",
+    "token unigram (labelled word-overlap in ED Table 1)": "3/3",
+    "word unigram": "2/3",
+    "bigram + word": "2/3"
+   },
+   "B1_fineweb_fig10_11": {
+    "bigram (paper)": "2/21",
+    "token unigram (labelled word-overlap in ED Table 1)": "0/21",
+    "word unigram": "4/21",
+    "bigram + word": "4/21"
+   },
+   "B2_dclm_table2": {
+    "bigram (paper)": "3/6",
+    "token unigram (labelled word-overlap in ED Table 1)": "3/6",
+    "word unigram": "3/6",
+    "bigram + word": "3/6"
+   },
+   "B3_dclm_table12": {
+    "bigram (paper)": "2/3",
+    "token unigram (labelled word-overlap in ED Table 1)": "2/3",
+    "word unigram": "2/3",
+    "bigram + word": "2/3"
+   },
+   "B4_dclm_table8": {
+    "bigram (paper)": "1/1",
+    "token unigram (labelled word-overlap in ED Table 1)": "1/1",
+    "word unigram": "1/1",
+    "bigram + word": "1/1"
+   },
+   "B5_refinedweb_table4": {
+    "bigram (paper)": "1/3",
+    "token unigram (labelled word-overlap in ED Table 1)": "1/3",
+    "word unigram": "1/3",
+    "bigram + word": "1/3"
+   },
+   "B6_slimpajama_dc_table5": {
+    "bigram (paper)": "1/1",
+    "token unigram (labelled word-overlap in ED Table 1)": "1/1",
+    "word unigram": "1/1",
+    "bigram + word": "1/1"
+   },
+   "B7_redpajama_t5_downstream": {
+    "bigram (paper)": "5/10",
+    "token unigram (labelled word-overlap in ED Table 1)": "4/10",
+    "word unigram": "5/10",
+    "bigram + word": "5/10"
+   },
+   "B8_chungkim_table7": {
+    "bigram (paper)": "2/3",
+    "token unigram (labelled word-overlap in ED Table 1)": "1/3",
+    "word unigram": "2/3",
+    "bigram + word": "2/3"
+   }
+  },
+  "pooled": {
+   "a_loss_broad": {
+    "bigram (paper)": "17/20",
+    "token unigram (labelled word-overlap in ED Table 1)": "16/20",
+    "word unigram": "16/20",
+    "bigram + word": "17/20"
+   },
+   "a_loss_matched": {
+    "bigram (paper)": "10/10",
+    "token unigram (labelled word-overlap in ED Table 1)": "10/10",
+    "word unigram": "9/10",
+    "bigram + word": "10/10"
+   },
+   "a_loss_narrow": {
+    "bigram (paper)": "10/13",
+    "token unigram (labelled word-overlap in ED Table 1)": "10/13",
+    "word unigram": "10/13",
+    "bigram + word": "10/13"
+   },
+   "b_downstream": {
+    "bigram (paper)": "17/48",
+    "token unigram (labelled word-overlap in ED Table 1)": "13/48",
+    "word unigram": "19/48",
+    "bigram + word": "19/48"
+   }
+  },
+  "note": "token unigram row = results/data_choice/stats/unigram_ce.json (token-level, add-0.5); ED Table 1 and Methods call it word overlap"
+ },
+ "benchmark_text": {
+  "pooled_agreement": {
+   "bigram raw": 0.8789156626506024,
+   "token raw": 0.8831325301204819,
+   "word raw": 0.8698795180722891,
+   "bigram map": 0.7644578313253012,
+   "word map": 0.7524096385542168,
+   "bigram + word map": 0.7903614457831325,
+   "z-sum bigram + word": 0.8801204819277109
+  },
+  "pooled_95": {
+   "bigram raw": [
+    0.7896790958268933,
+    0.9346781940441883
+   ],
+   "token raw": [
+    0.7988721804511278,
+    0.9183375865840321
+   ],
+   "word raw": [
+    0.8046132971506106,
+    0.9196800724970174
+   ],
+   "bigram map": [
+    0.5946428571428571,
+    0.8954635108481263
+   ],
+   "word map": [
+    0.5989621942179392,
+    0.8846523668639051
+   ],
+   "bigram + word map": [
+    0.6947153598281418,
+    0.8937052393516773
+   ],
+   "z-sum bigram + word": [
+    0.8155318971623817,
+    0.9259927797833934
+   ]
+  },
+  "mae_accuracy": {
+   "bigram map": 0.019309869650105088,
+   "word map": 0.02037780606515046,
+   "bigram + word map": 0.01914186725942742
+  },
+  "mae_95": {
+   "bigram map": [
+    0.013370570655384419,
+    0.023624549774076787
+   ],
+   "word map": [
+    0.014454380278755695,
+    0.024903616054508686
+   ],
+   "bigram + word map": [
+    0.014383937122913481,
+    0.022586253265241142
+   ]
+  },
+  "differences": {
+   "bigram + word map minus word map": {
+    "pairwise": 0.03795180722891567,
+    "pairwise_95": [
+     -0.0167364016736401,
+     0.1042253521126757
+    ],
+    "mae": -0.0012359388057230393,
+    "mae_95": [
+     -0.002863624900516274,
+     0.0003839751653426076
+    ]
+   },
+   "bigram + word map minus bigram map": {
+    "pairwise": 0.025903614457831292,
+    "pairwise_95": [
+     -0.026666666666666616,
+     0.10480976310122037
+    ],
+    "mae": -0.00016800239067766773,
+    "mae_95": [
+     -0.001326941767946059,
+     0.001352131106424348
+    ]
+   },
+   "bigram map minus word map": {
+    "pairwise": 0.012048192771084376,
+    "pairwise_95": [
+     -0.07341269841269837,
+     0.05670103092783507
+    ],
+    "mae": -0.0010679364150453716,
+    "mae_95": [
+     -0.00190229586757263,
+     -0.00020508308898573382
+    ]
+   },
+   "z-sum bigram + word minus word raw": {
+    "pairwise": 0.010240963855421725,
+    "pairwise_95": [
+     -0.01831501831501825,
+     0.03409606758581315
+    ]
+   },
+   "z-sum bigram + word minus bigram raw": {
+    "pairwise": 0.001204819277108471,
+    "pairwise_95": [
+     -0.014525139664804398,
+     0.04482225656877892
+    ]
+   },
+   "bigram raw minus word raw": {
+    "pairwise": 0.009036144578313254,
+    "pairwise_95": [
+     -0.05739130434782602,
+     0.044334975369458074
+    ]
+   },
+   "bigram raw minus token raw": {
+    "pairwise": -0.004216867469879482,
+    "pairwise_95": [
+     -0.07243296934354404,
+     0.07017543859649122
+    ]
+   }
+  },
+  "note": "raw rows reproduce bench_mismatch_score.json; map rows are leave-one-family-out affine maps of each task's 1B accuracy on the statistic(s), fitted per task"
+ }
+}

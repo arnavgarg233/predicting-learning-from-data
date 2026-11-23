@@ -1,0 +1,10 @@
+{
+ "name": "fw2_npi_deva",
+ "prep_ok": true,
+ "prep_seconds": 25.87602686882019,
+ "train_sha256": "d85c013a678474415f37727412c25ae3fed20d2196fd8cb5eb4e1a8dab2d0276",
+ "ref_sha256": "31a81be5882382abea1e0ec07f2664b1b2c6b3b35d119ced9d351de378460540",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

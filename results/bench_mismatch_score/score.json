@@ -1,0 +1,1886 @@
+{
+ "plan": "docs/plan/benchmark_mismatch_test.md",
+ "frozen_inputs_sha256": {
+  "results/bench_mismatch/forecast.json": "a4bf679efde72c41a0cd90189df8977ca8d1240118bbd751cb0efe1dfa218d78",
+  "results/bench_mismatch/forecast_word_rival.json": "1c76fab97ad1b0dbcc5251a89082ffc48fea35e75b493e2a2b7faea349adcd98"
+ },
+ "outcome_source": {
+  "url": "https://huggingface.co/datasets/allenai/DataDecide-eval-results/blob/9919b5a0e61e57a85021263918fa82d6ceaee038/data/macro_avg-00000-of-00001.parquet",
+  "repo": "allenai/DataDecide-eval-results",
+  "revision": "9919b5a0e61e57a85021263918fa82d6ceaee038",
+  "file": "data/macro_avg-00000-of-00001.parquet",
+  "sha256": "b5012e963952ba2b5814bc07c260f8389c288db0ad7558e312db49fa1ab57fdf",
+  "selection": "params == '1B', final step (69369) per recipe/seed/task, metrics.primary_metric, 3 seeds (default, large aux 2, large aux 3) averaged; mmlu = DataDecide's macro average over the 57 subjects"
+ },
+ "rule": "lower statistic predicts higher accuracy; pairs with |acc diff| < 2 x pooled seed SD dropped (pooled SD = sqrt(mean over recipes of the 3-seed variance), per task)",
+ "bootstrap": {
+  "unit": "recipe family (6, FAMILIES of scripts/datadecide_predict.py)",
+  "resamples": 2000,
+  "seed": 20261016,
+  "pair_weight": "count(family_i) * count(family_j)"
+ },
+ "pairs_total": 3000,
+ "pairs_kept": 1660,
+ "pairs_dropped": 1340,
+ "pooled_agreement": {
+  "ours_M_task": 0.8789156626506024,
+  "rival_token_unigram_ce": 0.8831325301204819,
+  "rival_word_unigram_ce": 0.8698795180722891,
+  "secondary_M_mix11": 0.4018072289156627
+ },
+ "pooled_ci95": {
+  "ours_M_task": [
+   0.7896790958268933,
+   0.9346781940441883
+  ],
+  "rival_token_unigram_ce": [
+   0.7988721804511278,
+   0.9183375865840321
+  ],
+  "rival_word_unigram_ce": [
+   0.8046132971506106,
+   0.9196800724970174
+  ],
+  "secondary_M_mix11": [
+   0.21644653477932174,
+   0.6569767441860465
+  ]
+ },
+ "differences": {
+  "ours_minus_rival_token_unigram_ce": {
+   "point": -0.004216867469879482,
+   "ci95": [
+    -0.07243296934354404,
+    0.07017543859649122
+   ]
+  },
+  "ours_minus_rival_word_unigram_ce": {
+   "point": 0.009036144578313254,
+   "ci95": [
+    -0.05739130434782602,
+    0.044334975369458074
+   ]
+  },
+  "ours_minus_secondary_M_mix11": {
+   "point": 0.4771084337349397,
+   "ci95": [
+    0.2359550561797753,
+    0.6277682740220502
+   ]
+  }
+ },
+ "stronger_rival": "rival_token_unigram_ce",
+ "theory_reading_supported": false,
+ "flagged_tasks": [
+  "boolq",
+  "openbookqa",
+  "social_iqa",
+  "winogrande"
+ ],
+ "diagnostic_only_pooled_agreement_unflagged_tasks": {
+  "ours_M_task": 0.8875096974398758,
+  "rival_token_unigram_ce": 0.8859581070597362,
+  "rival_word_unigram_ce": 0.9006982156710628,
+  "secondary_M_mix11": 0.41660201706749417
+ },
+ "per_task": {
+  "arc_challenge": {
+   "datadecide_task": "arc_challenge",
+   "chance": 0.25,
+   "mean_acc": 0.4197497155858931,
+   "min_acc": 0.35978384527872587,
+   "max_acc": 0.5005688282138795,
+   "recipe_sd": 0.04711295429360815,
+   "pooled_seed_sd": 0.009152126011952576,
+   "spread_over_seed_sd": 5.147760665891089,
+   "threshold": 0.018304252023905152,
+   "pairs_kept": 239,
+   "pairs_dropped": 61,
+   "agreement": {
+    "ours_M_task": 0.9623430962343096,
+    "rival_token_unigram_ce": 0.9121338912133892,
+    "rival_word_unigram_ce": 0.9414225941422594,
+    "secondary_M_mix11": 0.401673640167364
+   },
+   "flag_spread_within_seed_noise": false,
+   "flag_near_chance": false,
+   "acc_by_recipe": {
+    "C4": {
+     "mean": 0.3774175199089875,
+     "seed_sd": 0.0017761655285547294
+    },
+    "DCLM-Baseline": {
+     "mean": 0.4249146757679181,
+     "seed_sd": 0.015095397621974512
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "mean": 0.46700796359499436,
+     "seed_sd": 0.015030955929151109
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "mean": 0.4644482366325369,
+     "seed_sd": 0.009398584551682748
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "mean": 0.49061433447098973,
+     "seed_sd": 0.014555223642689394
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "mean": 0.5005688282138795,
+     "seed_sd": 0.009703482428459587
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "mean": 0.48890784982935154,
+     "seed_sd": 0.008532423208191142
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "mean": 0.4843572241183163,
+     "seed_sd": 0.007356380635027037
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "mean": 0.38566552901023887,
+     "seed_sd": 0.005328496585664149
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "mean": 0.4035836177474403,
+     "seed_sd": 0.0
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "mean": 0.4286120591581342,
+     "seed_sd": 0.005485580637652397
+    },
+    "Dolma1.6++": {
+     "mean": 0.35978384527872587,
+     "seed_sd": 0.007155714235158786
+    },
+    "Dolma1.7": {
+     "mean": 0.36518771331058025,
+     "seed_sd": 0.005328496585664198
+    },
+    "Dolma1.7 (no Flan)": {
+     "mean": 0.36831626848691695,
+     "seed_sd": 0.00499954375177672
+    },
+    "Dolma1.7 (no Reddit)": {
+     "mean": 0.36547212741751994,
+     "seed_sd": 0.005992977106287108
+    },
+    "Dolma1.7 (no code)": {
+     "mean": 0.36035267349260525,
+     "seed_sd": 0.009815377660260173
+    },
+    "Dolma1.7 (no math, code)": {
+     "mean": 0.3640500568828214,
+     "seed_sd": 0.004208944421771527
+    },
+    "Falcon": {
+     "mean": 0.3845278725824801,
+     "seed_sd": 0.014909377044460973
+    },
+    "Falcon+CC": {
+     "mean": 0.3802616609783845,
+     "seed_sd": 0.0004926196836089271
+    },
+    "Falcon+CC (QC 10%)": {
+     "mean": 0.44738339021615475,
+     "seed_sd": 0.015554617649459987
+    },
+    "Falcon+CC (QC 20%)": {
+     "mean": 0.4195108077360637,
+     "seed_sd": 0.0051431004891993965
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "mean": 0.4399886234357224,
+     "seed_sd": 0.009398584551682757
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "mean": 0.4186575654152446,
+     "seed_sd": 0.011584420850066146
+    },
+    "FineWeb-Edu": {
+     "mean": 0.46530147895335605,
+     "seed_sd": 0.008109543475189558
+    },
+    "FineWeb-Pro": {
+     "mean": 0.4388509670079636,
+     "seed_sd": 0.004851741214229797
+    }
+   },
+   "diff_ci95": {
+    "ours_minus_rival_token_unigram_ce": [
+     -0.03021260146888279,
+     0.17142857142857137
+    ],
+    "ours_minus_rival_word_unigram_ce": [
+     -0.016666666666666607,
+     0.0843373493975903
+    ]
+   }
+  },
+  "arc_easy": {
+   "datadecide_task": "arc_easy",
+   "chance": 0.25,
+   "mean_acc": 0.6967227833894502,
+   "min_acc": 0.5855780022446689,
+   "max_acc": 0.7974186307519641,
+   "recipe_sd": 0.0625695859919687,
+   "pooled_seed_sd": 0.01170104318451008,
+   "spread_over_seed_sd": 5.347351087020919,
+   "threshold": 0.02340208636902016,
+   "pairs_kept": 245,
+   "pairs_dropped": 55,
+   "agreement": {
+    "ours_M_task": 0.9591836734693877,
+    "rival_token_unigram_ce": 0.926530612244898,
+    "rival_word_unigram_ce": 0.9428571428571428,
+    "secondary_M_mix11": 0.4
+   },
+   "flag_spread_within_seed_noise": false,
+   "flag_near_chance": false,
+   "acc_by_recipe": {
+    "C4": {
+     "mean": 0.6461840628507295,
+     "seed_sd": 0.009000569546770759
+    },
+    "DCLM-Baseline": {
+     "mean": 0.7153479236812569,
+     "seed_sd": 0.007637854988112343
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "mean": 0.742845117845118,
+     "seed_sd": 0.004853772135804263
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "mean": 0.7477553310886643,
+     "seed_sd": 0.010448679114122008
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "mean": 0.774270482603816,
+     "seed_sd": 0.004044201825308583
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "mean": 0.7974186307519641,
+     "seed_sd": 0.009319642918205558
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "mean": 0.7846520763187429,
+     "seed_sd": 0.005056347163563472
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "mean": 0.7714646464646465,
+     "seed_sd": 0.0033405950897280345
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "mean": 0.6811167227833894,
+     "seed_sd": 0.004500284773385373
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "mean": 0.6979517396184063,
+     "seed_sd": 0.003579503597691635
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "mean": 0.7006172839506174,
+     "seed_sd": 0.006132854375531583
+    },
+    "Dolma1.6++": {
+     "mean": 0.6022727272727272,
+     "seed_sd": 0.011625612219640676
+    },
+    "Dolma1.7": {
+     "mean": 0.5855780022446689,
+     "seed_sd": 0.02305741835471583
+    },
+    "Dolma1.7 (no Flan)": {
+     "mean": 0.6536195286195287,
+     "seed_sd": 0.01713226636115116
+    },
+    "Dolma1.7 (no Reddit)": {
+     "mean": 0.5982042648709315,
+     "seed_sd": 0.034456136186801496
+    },
+    "Dolma1.7 (no code)": {
+     "mean": 0.6092873176206509,
+     "seed_sd": 0.015130066499533508
+    },
+    "Dolma1.7 (no math, code)": {
+     "mean": 0.6069023569023569,
+     "seed_sd": 0.014603831290317669
+    },
+    "Falcon": {
+     "mean": 0.6703142536475869,
+     "seed_sd": 0.008272459589116475
+    },
+    "Falcon+CC": {
+     "mean": 0.6665263748597082,
+     "seed_sd": 0.001059179915161403
+    },
+    "Falcon+CC (QC 10%)": {
+     "mean": 0.7335858585858586,
+     "seed_sd": 0.004373865675679083
+    },
+    "Falcon+CC (QC 20%)": {
+     "mean": 0.7076318742985409,
+     "seed_sd": 0.007220600018214237
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "mean": 0.7358305274971942,
+     "seed_sd": 0.004841592010869078
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "mean": 0.7237654320987654,
+     "seed_sd": 0.010329326674635259
+    },
+    "FineWeb-Edu": {
+     "mean": 0.7408810325476992,
+     "seed_sd": 0.0068427319855540415
+    },
+    "FineWeb-Pro": {
+     "mean": 0.7240460157126823,
+     "seed_sd": 0.005714200857019156
+    }
+   },
+   "diff_ci95": {
+    "ours_minus_rival_token_unigram_ce": [
+     -0.012122438964544301,
+     0.14150943396226412
+    ],
+    "ours_minus_rival_word_unigram_ce": [
+     0.0,
+     0.061224489795918435
+    ]
+   }
+  },
+  "boolq": {
+   "datadecide_task": "boolq",
+   "chance": 0.622,
+   "mean_acc": 0.6231029561671764,
+   "min_acc": 0.45453618756371056,
+   "max_acc": 0.6649337410805302,
+   "recipe_sd": 0.04484480524852586,
+   "pooled_seed_sd": 0.03803274955300251,
+   "spread_over_seed_sd": 1.1791102609089585,
+   "threshold": 0.07606549910600502,
+   "pairs_kept": 43,
+   "pairs_dropped": 257,
+   "agreement": {
+    "ours_M_task": 0.6976744186046512,
+    "rival_token_unigram_ce": 0.7674418604651163,
+    "rival_word_unigram_ce": 0.627906976744186,
+    "secondary_M_mix11": 0.11627906976744186
+   },
+   "flag_spread_within_seed_noise": true,
+   "flag_near_chance": true,
+   "acc_by_recipe": {
+    "C4": {
+     "mean": 0.6584097859327217,
+     "seed_sd": 0.011716968844445232
+    },
+    "DCLM-Baseline": {
+     "mean": 0.6598369011213048,
+     "seed_sd": 0.01049305543931319
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "mean": 0.6544342507645259,
+     "seed_sd": 0.017702698028631537
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "mean": 0.6551478083588176,
+     "seed_sd": 0.013874268694002238
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "mean": 0.6559633027522936,
+     "seed_sd": 0.018305249447066838
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "mean": 0.6261977573904179,
+     "seed_sd": 0.011316362149951457
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "mean": 0.6431192660550459,
+     "seed_sd": 0.010012663941128368
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "mean": 0.5969418960244649,
+     "seed_sd": 0.03593630016666511
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "mean": 0.6376146788990825,
+     "seed_sd": 0.01920284762867226
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "mean": 0.5674821610601427,
+     "seed_sd": 0.04552399759197183
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "mean": 0.5827726809378185,
+     "seed_sd": 0.09887533228830475
+    },
+    "Dolma1.6++": {
+     "mean": 0.45453618756371056,
+     "seed_sd": 0.04067431572993127
+    },
+    "Dolma1.7": {
+     "mean": 0.5767584097859327,
+     "seed_sd": 0.11088189095448207
+    },
+    "Dolma1.7 (no Flan)": {
+     "mean": 0.628236493374108,
+     "seed_sd": 0.021559813765771017
+    },
+    "Dolma1.7 (no Reddit)": {
+     "mean": 0.6487257900101936,
+     "seed_sd": 0.009962725156265513
+    },
+    "Dolma1.7 (no code)": {
+     "mean": 0.6507645259938838,
+     "seed_sd": 0.009494908071107094
+    },
+    "Dolma1.7 (no math, code)": {
+     "mean": 0.609887869520897,
+     "seed_sd": 0.052537419343282286
+    },
+    "Falcon": {
+     "mean": 0.6004077471967381,
+     "seed_sd": 0.015672099137269867
+    },
+    "Falcon+CC": {
+     "mean": 0.616717635066259,
+     "seed_sd": 0.021756283909405205
+    },
+    "Falcon+CC (QC 10%)": {
+     "mean": 0.6469928644240571,
+     "seed_sd": 0.011270817730629877
+    },
+    "Falcon+CC (QC 20%)": {
+     "mean": 0.6497451580020387,
+     "seed_sd": 0.022832250199287012
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "mean": 0.6649337410805302,
+     "seed_sd": 0.021779912982801724
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "mean": 0.6462793068297655,
+     "seed_sd": 0.01753905501651633
+    },
+    "FineWeb-Edu": {
+     "mean": 0.6117227319062182,
+     "seed_sd": 0.03456379093467739
+    },
+    "FineWeb-Pro": {
+     "mean": 0.6339449541284403,
+     "seed_sd": 0.025082046068196445
+    }
+   },
+   "diff_ci95": {
+    "ours_minus_rival_token_unigram_ce": [
+     -0.2,
+     0.09302325581395354
+    ],
+    "ours_minus_rival_word_unigram_ce": [
+     -0.1875,
+     0.21071428571428485
+    ]
+   }
+  },
+  "commonsense_qa": {
+   "datadecide_task": "csqa",
+   "chance": 0.2,
+   "mean_acc": 0.6266885066885066,
+   "min_acc": 0.5533715533715534,
+   "max_acc": 0.6713076713076713,
+   "recipe_sd": 0.028552257057401803,
+   "pooled_seed_sd": 0.013368542114817823,
+   "spread_over_seed_sd": 2.135779415000997,
+   "threshold": 0.026737084229635645,
+   "pairs_kept": 151,
+   "pairs_dropped": 149,
+   "agreement": {
+    "ours_M_task": 0.7682119205298014,
+    "rival_token_unigram_ce": 0.8741721854304636,
+    "rival_word_unigram_ce": 0.7880794701986755,
+    "secondary_M_mix11": 0.44370860927152317
+   },
+   "flag_spread_within_seed_noise": false,
+   "flag_near_chance": false,
+   "acc_by_recipe": {
+    "C4": {
+     "mean": 0.598962598962599,
+     "seed_sd": 0.00047285034331661865
+    },
+    "DCLM-Baseline": {
+     "mean": 0.659022659022659,
+     "seed_sd": 0.014772316962564806
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "mean": 0.65001365001365,
+     "seed_sd": 0.009205413759261477
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "mean": 0.6576576576576577,
+     "seed_sd": 0.002952949447554487
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "mean": 0.6513786513786514,
+     "seed_sd": 0.006965520514427042
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "mean": 0.6068796068796068,
+     "seed_sd": 0.009009009009009028
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "mean": 0.638001638001638,
+     "seed_sd": 0.01562553974474933
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "mean": 0.5533715533715534,
+     "seed_sd": 0.0045107047889320915
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "mean": 0.6339066339066339,
+     "seed_sd": 0.004914004914004955
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "mean": 0.6377286377286376,
+     "seed_sd": 0.012537223590723474
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "mean": 0.6279006279006278,
+     "seed_sd": 0.03772148610301034
+    },
+    "Dolma1.6++": {
+     "mean": 0.5825825825825826,
+     "seed_sd": 0.005453176182210866
+    },
+    "Dolma1.7": {
+     "mean": 0.6003276003276002,
+     "seed_sd": 0.010262050848600808
+    },
+    "Dolma1.7 (no Flan)": {
+     "mean": 0.6117936117936118,
+     "seed_sd": 0.008066222605893644
+    },
+    "Dolma1.7 (no Reddit)": {
+     "mean": 0.5896805896805897,
+     "seed_sd": 0.008511306179699658
+    },
+    "Dolma1.7 (no code)": {
+     "mean": 0.6060606060606061,
+     "seed_sd": 0.032760032760032795
+    },
+    "Dolma1.7 (no math, code)": {
+     "mean": 0.6227136227136226,
+     "seed_sd": 0.008524430792244584
+    },
+    "Falcon": {
+     "mean": 0.6415506415506416,
+     "seed_sd": 0.01456655372312759
+    },
+    "Falcon+CC": {
+     "mean": 0.6248976248976249,
+     "seed_sd": 0.009963574988203454
+    },
+    "Falcon+CC (QC 10%)": {
+     "mean": 0.6644826644826645,
+     "seed_sd": 0.01393104102885402
+    },
+    "Falcon+CC (QC 20%)": {
+     "mean": 0.65001365001365,
+     "seed_sd": 0.008984156523016252
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "mean": 0.6713076713076713,
+     "seed_sd": 0.005265438580940715
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "mean": 0.6491946491946492,
+     "seed_sd": 0.007155524117980373
+    },
+    "FineWeb-Edu": {
+     "mean": 0.6126126126126126,
+     "seed_sd": 0.004333744981268759
+    },
+    "FineWeb-Pro": {
+     "mean": 0.6251706251706252,
+     "seed_sd": 0.0074314264749201185
+    }
+   },
+   "diff_ci95": {
+    "ours_minus_rival_token_unigram_ce": [
+     -0.349973638803681,
+     0.18181818181818177
+    ],
+    "ours_minus_rival_word_unigram_ce": [
+     -0.2647959183673469,
+     0.23529411764705888
+    ]
+   }
+  },
+  "hellaswag": {
+   "datadecide_task": "hellaswag",
+   "chance": 0.25,
+   "mean_acc": 0.6068100643962027,
+   "min_acc": 0.4889464250149373,
+   "max_acc": 0.6468167031799774,
+   "recipe_sd": 0.033260527948654306,
+   "pooled_seed_sd": 0.0029449049184251358,
+   "spread_over_seed_sd": 11.294262079755443,
+   "threshold": 0.0058898098368502716,
+   "pairs_kept": 260,
+   "pairs_dropped": 40,
+   "agreement": {
+    "ours_M_task": 0.7307692307692307,
+    "rival_token_unigram_ce": 0.9,
+    "rival_word_unigram_ce": 0.8384615384615385,
+    "secondary_M_mix11": 0.4076923076923077
+   },
+   "flag_spread_within_seed_noise": false,
+   "flag_near_chance": false,
+   "acc_by_recipe": {
+    "C4": {
+     "mean": 0.5987187147314612,
+     "seed_sd": 0.005591081850136891
+    },
+    "DCLM-Baseline": {
+     "mean": 0.6316470822545309,
+     "seed_sd": 0.0007518257752709703
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "mean": 0.6102701984996348,
+     "seed_sd": 0.004192301280588549
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "mean": 0.6243444201022372,
+     "seed_sd": 0.0027113560189420513
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "mean": 0.6077806545840801,
+     "seed_sd": 0.0019774773960840463
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "mean": 0.5419571134568147,
+     "seed_sd": 0.0031083761159422687
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "mean": 0.5754829715196176,
+     "seed_sd": 0.0036138712032710253
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "mean": 0.4889464250149373,
+     "seed_sd": 0.004075559037976743
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "mean": 0.6196308836221204,
+     "seed_sd": 0.0018478610714621124
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "mean": 0.6285268538803691,
+     "seed_sd": 0.0020657714774615634
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "mean": 0.630020580229702,
+     "seed_sd": 0.0017933934354696737
+    },
+    "Dolma1.6++": {
+     "mean": 0.5879638850162651,
+     "seed_sd": 0.0019774773960840003
+    },
+    "Dolma1.7": {
+     "mean": 0.5989510721635797,
+     "seed_sd": 0.0024802322038402947
+    },
+    "Dolma1.7 (no Flan)": {
+     "mean": 0.5970590187877581,
+     "seed_sd": 0.002094375828765501
+    },
+    "Dolma1.7 (no Reddit)": {
+     "mean": 0.6014074221602602,
+     "seed_sd": 0.003701084741357364
+    },
+    "Dolma1.7 (no code)": {
+     "mean": 0.6186018721370244,
+     "seed_sd": 0.0013173428157063245
+    },
+    "Dolma1.7 (no math, code)": {
+     "mean": 0.6212573856469494,
+     "seed_sd": 0.0018370967406256087
+    },
+    "Falcon": {
+     "mean": 0.6143862444400185,
+     "seed_sd": 0.003933584429220955
+    },
+    "Falcon+CC": {
+     "mean": 0.6200292106486093,
+     "seed_sd": 0.0021295910419365876
+    },
+    "Falcon+CC (QC 10%)": {
+     "mean": 0.6376219876518622,
+     "seed_sd": 0.003067700020065558
+    },
+    "Falcon+CC (QC 20%)": {
+     "mean": 0.6468167031799774,
+     "seed_sd": 0.0027386491844032914
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "mean": 0.6347673106286927,
+     "seed_sd": 0.003774047854302555
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "mean": 0.6066852552612362,
+     "seed_sd": 0.00267453190977673
+    },
+    "FineWeb-Edu": {
+     "mean": 0.594370311358959,
+     "seed_sd": 0.0008469329364783877
+    },
+    "FineWeb-Pro": {
+     "mean": 0.6330080329283675,
+     "seed_sd": 0.0036916950820651993
+    }
+   },
+   "diff_ci95": {
+    "ours_minus_rival_token_unigram_ce": [
+     -0.42276422764227645,
+     -0.010563380281690238
+    ],
+    "ours_minus_rival_word_unigram_ce": [
+     -0.33207547169811324,
+     0.009037513691128141
+    ]
+   }
+  },
+  "mmlu": {
+   "datadecide_task": "mmlu",
+   "chance": 0.25,
+   "mean_acc": 0.3295626565172908,
+   "min_acc": 0.30014857462945027,
+   "max_acc": 0.371243248026978,
+   "recipe_sd": 0.023426537621401736,
+   "pooled_seed_sd": 0.00203506196935781,
+   "spread_over_seed_sd": 11.51146155455614,
+   "threshold": 0.00407012393871562,
+   "pairs_kept": 260,
+   "pairs_dropped": 40,
+   "agreement": {
+    "ours_M_task": 0.9384615384615385,
+    "rival_token_unigram_ce": 0.8423076923076923,
+    "rival_word_unigram_ce": 0.9038461538461539,
+    "secondary_M_mix11": 0.4230769230769231
+   },
+   "flag_spread_within_seed_noise": false,
+   "flag_near_chance": false,
+   "acc_by_recipe": {
+    "C4": {
+     "mean": 0.3014241327601179,
+     "seed_sd": 0.001996926297957835
+    },
+    "DCLM-Baseline": {
+     "mean": 0.32779825898101844,
+     "seed_sd": 0.002446220215378467
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "mean": 0.3571884692082592,
+     "seed_sd": 0.002224956906201503
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "mean": 0.35644326673575394,
+     "seed_sd": 0.0013970565994571166
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "mean": 0.3652100827378871,
+     "seed_sd": 0.001399509575488719
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "mean": 0.371243248026978,
+     "seed_sd": 0.0014384619809063336
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "mean": 0.37054191427768335,
+     "seed_sd": 0.0015498010433273608
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "mean": 0.34971004578206716,
+     "seed_sd": 0.004507562004826698
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "mean": 0.31959502486146096,
+     "seed_sd": 0.00044382027677528367
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "mean": 0.32546951641597904,
+     "seed_sd": 0.0014008367686891897
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "mean": 0.3289901268144329,
+     "seed_sd": 0.0024594441064624
+    },
+    "Dolma1.6++": {
+     "mean": 0.30014857462945027,
+     "seed_sd": 0.0013634061840063065
+    },
+    "Dolma1.7": {
+     "mean": 0.30387596178447335,
+     "seed_sd": 0.001561825700275049
+    },
+    "Dolma1.7 (no Flan)": {
+     "mean": 0.3044980423931223,
+     "seed_sd": 0.0032350327084503423
+    },
+    "Dolma1.7 (no Reddit)": {
+     "mean": 0.30279308005283256,
+     "seed_sd": 0.0013063501662516149
+    },
+    "Dolma1.7 (no code)": {
+     "mean": 0.30600333903479204,
+     "seed_sd": 0.0020340316712250577
+    },
+    "Dolma1.7 (no math, code)": {
+     "mean": 0.3049839631637725,
+     "seed_sd": 0.002338816246400001
+    },
+    "Falcon": {
+     "mean": 0.308503442013186,
+     "seed_sd": 0.0015887135963807148
+    },
+    "Falcon+CC": {
+     "mean": 0.30896397774240814,
+     "seed_sd": 0.002010696330972114
+    },
+    "Falcon+CC (QC 10%)": {
+     "mean": 0.3342204822651489,
+     "seed_sd": 0.0008175471158047643
+    },
+    "Falcon+CC (QC 20%)": {
+     "mean": 0.3260848485397212,
+     "seed_sd": 0.0014214603682543763
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "mean": 0.33737924125811225,
+     "seed_sd": 0.0011800094260654562
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "mean": 0.33697595678837694,
+     "seed_sd": 0.0031965131437802245
+    },
+    "FineWeb-Edu": {
+     "mean": 0.3534366865071023,
+     "seed_sd": 0.0009281009993230786
+    },
+    "FineWeb-Pro": {
+     "mean": 0.3375847301581318,
+     "seed_sd": 0.0019753974830557285
+    }
+   },
+   "diff_ci95": {
+    "ours_minus_rival_token_unigram_ce": [
+     0.0,
+     0.1858974358974359
+    ],
+    "ours_minus_rival_word_unigram_ce": [
+     -0.012500000000000067,
+     0.1132619738751811
+    ]
+   }
+  },
+  "openbookqa": {
+   "datadecide_task": "openbookqa",
+   "chance": 0.25,
+   "mean_acc": 0.48256,
+   "min_acc": 0.43533333333333335,
+   "max_acc": 0.5306666666666667,
+   "recipe_sd": 0.025386406394557495,
+   "pooled_seed_sd": 0.016215219188568913,
+   "spread_over_seed_sd": 1.565591318830516,
+   "threshold": 0.03243043837713783,
+   "pairs_kept": 114,
+   "pairs_dropped": 186,
+   "agreement": {
+    "ours_M_task": 0.9035087719298246,
+    "rival_token_unigram_ce": 0.8333333333333334,
+    "rival_word_unigram_ce": 0.8771929824561403,
+    "secondary_M_mix11": 0.43859649122807015
+   },
+   "flag_spread_within_seed_noise": true,
+   "flag_near_chance": false,
+   "acc_by_recipe": {
+    "C4": {
+     "mean": 0.43533333333333335,
+     "seed_sd": 0.02444040370643117
+    },
+    "DCLM-Baseline": {
+     "mean": 0.47933333333333333,
+     "seed_sd": 0.011015141094572186
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "mean": 0.5186666666666667,
+     "seed_sd": 0.025324559884296785
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "mean": 0.5306666666666667,
+     "seed_sd": 0.009451631252505241
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "mean": 0.5,
+     "seed_sd": 0.008717797887081356
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "mean": 0.5013333333333333,
+     "seed_sd": 0.013613718571108088
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "mean": 0.5246666666666667,
+     "seed_sd": 0.00832666399786455
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "mean": 0.482,
+     "seed_sd": 0.005291502622129186
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "mean": 0.48333333333333334,
+     "seed_sd": 0.029280255007996994
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "mean": 0.48933333333333334,
+     "seed_sd": 0.012220201853215578
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "mean": 0.48133333333333334,
+     "seed_sd": 0.004618802153517006
+    },
+    "Dolma1.6++": {
+     "mean": 0.44533333333333336,
+     "seed_sd": 0.011015141094572219
+    },
+    "Dolma1.7": {
+     "mean": 0.4606666666666667,
+     "seed_sd": 0.03711244175924475
+    },
+    "Dolma1.7 (no Flan)": {
+     "mean": 0.4566666666666667,
+     "seed_sd": 0.014468356276140487
+    },
+    "Dolma1.7 (no Reddit)": {
+     "mean": 0.4506666666666667,
+     "seed_sd": 0.00945163125250523
+    },
+    "Dolma1.7 (no code)": {
+     "mean": 0.4406666666666667,
+     "seed_sd": 0.0133166562369588
+    },
+    "Dolma1.7 (no math, code)": {
+     "mean": 0.474,
+     "seed_sd": 0.008717797887081331
+    },
+    "Falcon": {
+     "mean": 0.46799999999999997,
+     "seed_sd": 0.00916515138991163
+    },
+    "Falcon+CC": {
+     "mean": 0.4746666666666666,
+     "seed_sd": 0.01665332799572907
+    },
+    "Falcon+CC (QC 10%)": {
+     "mean": 0.49933333333333335,
+     "seed_sd": 0.01628905563049417
+    },
+    "Falcon+CC (QC 20%)": {
+     "mean": 0.5006666666666667,
+     "seed_sd": 0.017243356208503428
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "mean": 0.502,
+     "seed_sd": 0.011135528725660053
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "mean": 0.4726666666666666,
+     "seed_sd": 0.009018499505645785
+    },
+    "FineWeb-Edu": {
+     "mean": 0.49866666666666665,
+     "seed_sd": 0.021385353243127268
+    },
+    "FineWeb-Pro": {
+     "mean": 0.494,
+     "seed_sd": 0.010000000000000009
+    }
+   },
+   "diff_ci95": {
+    "ours_minus_rival_token_unigram_ce": [
+     0.009345794392523366,
+     0.24329268292682926
+    ],
+    "ours_minus_rival_word_unigram_ce": [
+     0.0,
+     0.10169491525423735
+    ]
+   }
+  },
+  "piqa": {
+   "datadecide_task": "piqa",
+   "chance": 0.5,
+   "mean_acc": 0.7447587957925282,
+   "min_acc": 0.6918752266956837,
+   "max_acc": 0.7626042800145085,
+   "recipe_sd": 0.015493606571694888,
+   "pooled_seed_sd": 0.004716804527027917,
+   "spread_over_seed_sd": 3.284767575784509,
+   "threshold": 0.009433609054055834,
+   "pairs_kept": 134,
+   "pairs_dropped": 166,
+   "agreement": {
+    "ours_M_task": 0.9626865671641791,
+    "rival_token_unigram_ce": 0.835820895522388,
+    "rival_word_unigram_ce": 0.9925373134328358,
+    "secondary_M_mix11": 0.44776119402985076
+   },
+   "flag_spread_within_seed_noise": false,
+   "flag_near_chance": false,
+   "acc_by_recipe": {
+    "C4": {
+     "mean": 0.7626042800145085,
+     "seed_sd": 0.0043976625509547385
+    },
+    "DCLM-Baseline": {
+     "mean": 0.7519042437431991,
+     "seed_sd": 0.0027203482045702054
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "mean": 0.7346753717809212,
+     "seed_sd": 0.0027384238067721524
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "mean": 0.749183895538629,
+     "seed_sd": 0.0039233419754776755
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "mean": 0.7453754080522307,
+     "seed_sd": 0.007319708404283836
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "mean": 0.7118244468625318,
+     "seed_sd": 0.002453345893810063
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "mean": 0.7232499093217265,
+     "seed_sd": 0.005993003859941394
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "mean": 0.6918752266956837,
+     "seed_sd": 0.0021988312754773554
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "mean": 0.7479143997098294,
+     "seed_sd": 0.007079877147603621
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "mean": 0.750816104461371,
+     "seed_sd": 0.007616974972796453
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "mean": 0.750272034820457,
+     "seed_sd": 0.003567703223232894
+    },
+    "Dolma1.6++": {
+     "mean": 0.7509974610083424,
+     "seed_sd": 0.007100751523558876
+    },
+    "Dolma1.7": {
+     "mean": 0.7428364163946318,
+     "seed_sd": 0.003935896701888064
+    },
+    "Dolma1.7 (no Flan)": {
+     "mean": 0.7433804860355459,
+     "seed_sd": 0.006490943115042975
+    },
+    "Dolma1.7 (no Reddit)": {
+     "mean": 0.7475516866158869,
+     "seed_sd": 0.007197364828793763
+    },
+    "Dolma1.7 (no code)": {
+     "mean": 0.7520856002901706,
+     "seed_sd": 0.0015705937681981794
+    },
+    "Dolma1.7 (no math, code)": {
+     "mean": 0.7524483133841132,
+     "seed_sd": 0.002176278563656181
+    },
+    "Falcon": {
+     "mean": 0.7569822270583968,
+     "seed_sd": 0.0043976625509547385
+    },
+    "Falcon+CC": {
+     "mean": 0.7517228871962279,
+     "seed_sd": 0.0012564750145585564
+    },
+    "Falcon+CC (QC 10%)": {
+     "mean": 0.7495466086325716,
+     "seed_sd": 0.0021988312754773307
+    },
+    "Falcon+CC (QC 20%)": {
+     "mean": 0.7568008705114254,
+     "seed_sd": 0.0016322089227421566
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "mean": 0.7597025752629669,
+     "seed_sd": 0.007506058065496846
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "mean": 0.7439245556764599,
+     "seed_sd": 0.0016621602085440672
+    },
+    "FineWeb-Edu": {
+     "mean": 0.7388465723612624,
+     "seed_sd": 0.0005440696409140244
+    },
+    "FineWeb-Pro": {
+     "mean": 0.7524483133841131,
+     "seed_sd": 0.005521703789495252
+    }
+   },
+   "diff_ci95": {
+    "ours_minus_rival_token_unigram_ce": [
+     0.019132706374085734,
+     0.2812839673913042
+    ],
+    "ours_minus_rival_word_unigram_ce": [
+     -0.21052631578947367,
+     0.0
+    ]
+   }
+  },
+  "social_iqa": {
+   "datadecide_task": "socialiqa",
+   "chance": 0.3333333333333333,
+   "mean_acc": 0.5075196178778575,
+   "min_acc": 0.4669054930058001,
+   "max_acc": 0.5298532923916752,
+   "recipe_sd": 0.015142940699242225,
+   "pooled_seed_sd": 0.011904803560735892,
+   "spread_over_seed_sd": 1.2720025678698532,
+   "threshold": 0.023809607121471784,
+   "pairs_kept": 81,
+   "pairs_dropped": 219,
+   "agreement": {
+    "ours_M_task": 0.7407407407407407,
+    "rival_token_unigram_ce": 0.8641975308641975,
+    "rival_word_unigram_ce": 0.7530864197530864,
+    "secondary_M_mix11": 0.30864197530864196
+   },
+   "flag_spread_within_seed_noise": true,
+   "flag_near_chance": false,
+   "acc_by_recipe": {
+    "C4": {
+     "mean": 0.5064824292050495,
+     "seed_sd": 0.010006830007548581
+    },
+    "DCLM-Baseline": {
+     "mean": 0.5228590924599112,
+     "seed_sd": 0.0015634853957542999
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "mean": 0.5269532582736267,
+     "seed_sd": 0.012797679517919438
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "mean": 0.5172296144660525,
+     "seed_sd": 0.014167208936877897
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "mean": 0.5187649266461959,
+     "seed_sd": 0.007999572901871975
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "mean": 0.4895939952234732,
+     "seed_sd": 0.012264714751292158
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "mean": 0.5030706243602866,
+     "seed_sd": 0.005767363188118991
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "mean": 0.4669054930058001,
+     "seed_sd": 0.0069482810830488835
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "mean": 0.5092118730808598,
+     "seed_sd": 0.008878890262485938
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "mean": 0.5220061412487206,
+     "seed_sd": 0.0092118730808598
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "mean": 0.5175707949505289,
+     "seed_sd": 0.01061641616001471
+    },
+    "Dolma1.6++": {
+     "mean": 0.48805868304332994,
+     "seed_sd": 0.00967413638946285
+    },
+    "Dolma1.7": {
+     "mean": 0.4887410440122825,
+     "seed_sd": 0.011903483469409375
+    },
+    "Dolma1.7 (no Flan)": {
+     "mean": 0.5076765609007166,
+     "seed_sd": 0.01602912974755966
+    },
+    "Dolma1.7 (no Reddit)": {
+     "mean": 0.48754691231661546,
+     "seed_sd": 0.026301895424371245
+    },
+    "Dolma1.7 (no code)": {
+     "mean": 0.49437052200614123,
+     "seed_sd": 0.01864278976467452
+    },
+    "Dolma1.7 (no math, code)": {
+     "mean": 0.4991470487888093,
+     "seed_sd": 0.018110707262499647
+    },
+    "Falcon": {
+     "mean": 0.5151825315591948,
+     "seed_sd": 0.004643690750193162
+    },
+    "Falcon+CC": {
+     "mean": 0.5020470829068577,
+     "seed_sd": 0.011591352766536469
+    },
+    "Falcon+CC (QC 10%)": {
+     "mean": 0.5185943364039577,
+     "seed_sd": 0.011785551313146337
+    },
+    "Falcon+CC (QC 20%)": {
+     "mean": 0.5209825997952917,
+     "seed_sd": 0.013452855095286527
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "mean": 0.5298532923916752,
+     "seed_sd": 0.00951031038196275
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "mean": 0.5061412487205731,
+     "seed_sd": 0.00399705715245998
+    },
+    "FineWeb-Edu": {
+     "mean": 0.5148413510747186,
+     "seed_sd": 0.00669227064003173
+    },
+    "FineWeb-Pro": {
+     "mean": 0.5141589901057659,
+     "seed_sd": 0.004136593535647295
+    }
+   },
+   "diff_ci95": {
+    "ours_minus_rival_token_unigram_ce": [
+     -0.2461607949412828,
+     0.0
+    ],
+    "ours_minus_rival_word_unigram_ce": [
+     -0.033333333333333326,
+     1.0
+    ]
+   }
+  },
+  "winogrande": {
+   "datadecide_task": "winogrande",
+   "chance": 0.5,
+   "mean_acc": 0.5978321494343595,
+   "min_acc": 0.5556432517758485,
+   "max_acc": 0.6290449881610103,
+   "recipe_sd": 0.016346975359998187,
+   "pooled_seed_sd": 0.008233119941779577,
+   "spread_over_seed_sd": 1.9855140548899635,
+   "threshold": 0.016466239883559153,
+   "pairs_kept": 133,
+   "pairs_dropped": 167,
+   "agreement": {
+    "ours_M_task": 0.9172932330827067,
+    "rival_token_unigram_ce": 0.9473684210526315,
+    "rival_word_unigram_ce": 0.7142857142857143,
+    "secondary_M_mix11": 0.37593984962406013
+   },
+   "flag_spread_within_seed_noise": true,
+   "flag_near_chance": false,
+   "acc_by_recipe": {
+    "C4": {
+     "mean": 0.5972112601946856,
+     "seed_sd": 0.002411247405922598
+    },
+    "DCLM-Baseline": {
+     "mean": 0.6161536437779532,
+     "seed_sd": 0.010773793859217746
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "mean": 0.598789792159958,
+     "seed_sd": 0.012976966540529865
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "mean": 0.6066824519863193,
+     "seed_sd": 0.01051038377029107
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "mean": 0.5861615364377796,
+     "seed_sd": 0.004346938079941717
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "mean": 0.5661667982109971,
+     "seed_sd": 0.008693876159883424
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "mean": 0.5956327282294134,
+     "seed_sd": 0.0012056237029612657
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "mean": 0.5556432517758485,
+     "seed_sd": 0.0027340975652231352
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "mean": 0.5906340436727177,
+     "seed_sd": 0.0018227317101487436
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "mean": 0.606156274664562,
+     "seed_sd": 0.01292084099743087
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "mean": 0.6069455406471981,
+     "seed_sd": 0.010260457774269954
+    },
+    "Dolma1.6++": {
+     "mean": 0.5814259405419627,
+     "seed_sd": 0.013120186940059638
+    },
+    "Dolma1.7": {
+     "mean": 0.597737437516443,
+     "seed_sd": 0.012636474568295504
+    },
+    "Dolma1.7 (no Flan)": {
+     "mean": 0.5961589055511708,
+     "seed_sd": 0.003558997437113624
+    },
+    "Dolma1.7 (no Reddit)": {
+     "mean": 0.5882662457248092,
+     "seed_sd": 0.006130586791755373
+    },
+    "Dolma1.7 (no code)": {
+     "mean": 0.5924756642988688,
+     "seed_sd": 0.008871199842192729
+    },
+    "Dolma1.7 (no math, code)": {
+     "mean": 0.599579058142594,
+     "seed_sd": 0.010270571584289965
+    },
+    "Falcon": {
+     "mean": 0.5998421468034728,
+     "seed_sd": 0.004800917545618176
+    },
+    "Falcon+CC": {
+     "mean": 0.6045777426992897,
+     "seed_sd": 0.012404288591556163
+    },
+    "Falcon+CC (QC 10%)": {
+     "mean": 0.6261510128913444,
+     "seed_sd": 0.007117994874227148
+    },
+    "Falcon+CC (QC 20%)": {
+     "mean": 0.6164167324388319,
+     "seed_sd": 0.0015785319652722452
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "mean": 0.6290449881610103,
+     "seed_sd": 0.007015149500643709
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "mean": 0.6077348066298343,
+     "seed_sd": 0.004928964481766691
+    },
+    "FineWeb-Edu": {
+     "mean": 0.5835306498289924,
+     "seed_sd": 0.006571952642355583
+    },
+    "FineWeb-Pro": {
+     "mean": 0.5966850828729281,
+     "seed_sd": 0.0013670487826115557
+    }
+   },
+   "diff_ci95": {
+    "ours_minus_rival_token_unigram_ce": [
+     -0.10752688172043012,
+     0.016949152542372836
+    ],
+    "ours_minus_rival_word_unigram_ce": [
+     0.0,
+     0.48571428571428577
+    ]
+   }
+  }
+ },
+ "proxy_baseline": {
+  "method": "DataDecide single-scale ranking: final-checkpoint primary_metric of a small model, 3 seeds (default, small aux 2, small aux 3) averaged; same pinned parquet; scored on the same 1,660 noise-filtered 1B task-pairs (outcome: 1B primary_metric); higher proxy value predicts higher 1B accuracy",
+  "pooled_agreement": {
+   "ours_M_task": 0.8789156626506024,
+   "rival_token_unigram_ce": 0.8831325301204819,
+   "proxy_4M": 0.5933734939759037,
+   "proxy_20M": 0.7192771084337349,
+   "proxy_60M": 0.797289156626506,
+   "proxy_150M": 0.8656626506024097,
+   "proxy_300M": 0.941566265060241
+  },
+  "pooled_ci95": {
+   "ours_M_task": [
+    0.7896790958268933,
+    0.9346781940441883
+   ],
+   "rival_token_unigram_ce": [
+    0.7988721804511278,
+    0.9183375865840321
+   ],
+   "proxy_4M": [
+    0.5382381413359149,
+    0.6806375442739079
+   ],
+   "proxy_20M": [
+    0.610077767409824,
+    0.7643610785463072
+   ],
+   "proxy_60M": [
+    0.7416705118740002,
+    0.8220338983050848
+   ],
+   "proxy_150M": [
+    0.8219211438531653,
+    0.8977807666442502
+   ],
+   "proxy_300M": [
+    0.9098591549295775,
+    0.964181027807413
+   ]
+  },
+  "differences": {
+   "ours_minus_proxy_4M": {
+    "point": 0.2855421686746987,
+    "ci95": [
+     0.18486458699859246,
+     0.31981635162267474
+    ]
+   },
+   "ours_minus_proxy_20M": {
+    "point": 0.15963855421686746,
+    "ci95": [
+     0.06570350587206238,
+     0.2522171032773277
+    ]
+   },
+   "ours_minus_proxy_60M": {
+    "point": 0.08162650602409638,
+    "ci95": [
+     0.0034207525655644,
+     0.1704225352112676
+    ]
+   },
+   "ours_minus_proxy_150M": {
+    "point": 0.013253012048192736,
+    "ci95": [
+     -0.07156796103145557,
+     0.1049250535331906
+    ]
+   },
+   "ours_minus_proxy_300M": {
+    "point": -0.0626506024096386,
+    "ci95": [
+     -0.13954741379310343,
+     0.020712909441233163
+    ]
+   },
+   "token_rival_minus_proxy_150M": {
+    "point": 0.017469879518072218,
+    "ci95": [
+     -0.08374384236453203,
+     0.08020415603353992
+    ]
+   }
+  },
+  "per_task": {
+   "arc_challenge": {
+    "ours_M_task": 0.9623430962343096,
+    "rival_token_unigram_ce": 0.9121338912133892,
+    "proxy_4M": 0.6422594142259415,
+    "proxy_20M": 0.8661087866108786,
+    "proxy_60M": 0.9246861924686193,
+    "proxy_150M": 0.9497907949790795,
+    "proxy_300M": 0.9874476987447699
+   },
+   "arc_easy": {
+    "ours_M_task": 0.9591836734693877,
+    "rival_token_unigram_ce": 0.926530612244898,
+    "proxy_4M": 0.9653061224489796,
+    "proxy_20M": 0.9387755102040817,
+    "proxy_60M": 0.9755102040816327,
+    "proxy_150M": 0.9836734693877551,
+    "proxy_300M": 0.9918367346938776
+   },
+   "boolq": {
+    "ours_M_task": 0.6976744186046512,
+    "rival_token_unigram_ce": 0.7674418604651163,
+    "proxy_4M": 0.4418604651162791,
+    "proxy_20M": 0.4186046511627907,
+    "proxy_60M": 0.46511627906976744,
+    "proxy_150M": 0.8604651162790697,
+    "proxy_300M": 0.9069767441860465
+   },
+   "commonsense_qa": {
+    "ours_M_task": 0.7682119205298014,
+    "rival_token_unigram_ce": 0.8741721854304636,
+    "proxy_4M": 0.7384105960264901,
+    "proxy_20M": 0.7086092715231788,
+    "proxy_60M": 0.7682119205298014,
+    "proxy_150M": 0.8278145695364238,
+    "proxy_300M": 0.9205298013245033
+   },
+   "hellaswag": {
+    "ours_M_task": 0.7307692307692307,
+    "rival_token_unigram_ce": 0.9,
+    "proxy_4M": 0.3403846153846154,
+    "proxy_20M": 0.27115384615384613,
+    "proxy_60M": 0.4846153846153846,
+    "proxy_150M": 0.7230769230769231,
+    "proxy_300M": 0.9
+   },
+   "mmlu": {
+    "ours_M_task": 0.9384615384615385,
+    "rival_token_unigram_ce": 0.8423076923076923,
+    "proxy_4M": 0.49230769230769234,
+    "proxy_20M": 0.8884615384615384,
+    "proxy_60M": 0.9230769230769231,
+    "proxy_150M": 0.9769230769230769,
+    "proxy_300M": 0.9538461538461539
+   },
+   "openbookqa": {
+    "ours_M_task": 0.9035087719298246,
+    "rival_token_unigram_ce": 0.8333333333333334,
+    "proxy_4M": 0.4956140350877193,
+    "proxy_20M": 0.8333333333333334,
+    "proxy_60M": 0.8026315789473685,
+    "proxy_150M": 0.9649122807017544,
+    "proxy_300M": 0.9736842105263158
+   },
+   "piqa": {
+    "ours_M_task": 0.9626865671641791,
+    "rival_token_unigram_ce": 0.835820895522388,
+    "proxy_4M": 0.8955223880597015,
+    "proxy_20M": 0.8470149253731343,
+    "proxy_60M": 0.8843283582089553,
+    "proxy_150M": 0.9701492537313433,
+    "proxy_300M": 0.9402985074626866
+   },
+   "social_iqa": {
+    "ours_M_task": 0.7407407407407407,
+    "rival_token_unigram_ce": 0.8641975308641975,
+    "proxy_4M": 0.345679012345679,
+    "proxy_20M": 0.7407407407407407,
+    "proxy_60M": 0.9753086419753086,
+    "proxy_150M": 0.8333333333333334,
+    "proxy_300M": 0.9629629629629629
+   },
+   "winogrande": {
+    "ours_M_task": 0.9172932330827067,
+    "rival_token_unigram_ce": 0.9473684210526315,
+    "proxy_4M": 0.32706766917293234,
+    "proxy_20M": 0.46616541353383456,
+    "proxy_60M": 0.5451127819548872,
+    "proxy_150M": 0.4323308270676692,
+    "proxy_300M": 0.8195488721804511
+   }
+  },
+  "datadecide_reported": "Magnusson et al. 2025 (DataDecide), abstract: ranking models at a single small size (e.g. 150M) predicts the best models at 1B with ~80% of comparisons correct. Their pair set (all recipe pairs, their target metric and aggregation) differs from ours (1,660 noise-filtered task-pairs)."
+ },
+ "proxy_baseline_continuous": {
+  "method": "DataDecide single-scale ranking: final-checkpoint correct_prob_per_char / total_prob_per_char of a small model, 3 seeds (default, small aux 2, small aux 3) averaged; same pinned parquet; scored on the same 1,660 noise-filtered 1B task-pairs (outcome: 1B primary_metric); higher proxy value predicts higher 1B accuracy",
+  "pooled_agreement": {
+   "ours_M_task": 0.8789156626506024,
+   "rival_token_unigram_ce": 0.8831325301204819,
+   "proxy_4M": 0.8542168674698796,
+   "proxy_20M": 0.8722891566265061,
+   "proxy_60M": 0.8993975903614457,
+   "proxy_150M": 0.9216867469879518,
+   "proxy_300M": 0.9283132530120481,
+   "proxy_total_prob_4M": 0.85,
+   "proxy_total_prob_20M": 0.8710843373493976,
+   "proxy_total_prob_60M": 0.8963855421686747,
+   "proxy_total_prob_150M": 0.9060240963855422,
+   "proxy_total_prob_300M": 0.9060240963855422
+  },
+  "pooled_ci95": {
+   "ours_M_task": [
+    0.7896790958268933,
+    0.9346781940441883
+   ],
+   "rival_token_unigram_ce": [
+    0.7988721804511278,
+    0.9183375865840321
+   ],
+   "proxy_4M": [
+    0.8032230703986429,
+    0.9136413641364136
+   ],
+   "proxy_20M": [
+    0.7796123474515434,
+    0.9054878048780488
+   ],
+   "proxy_60M": [
+    0.8350889139486467,
+    0.9306972789115646
+   ],
+   "proxy_150M": [
+    0.8331845377130577,
+    0.9444534632034631
+   ],
+   "proxy_300M": [
+    0.8561797752808988,
+    0.9479440069991251
+   ],
+   "proxy_total_prob_4M": [
+    0.7896522476675149,
+    0.9103560451464994
+   ],
+   "proxy_total_prob_20M": [
+    0.7780612244897959,
+    0.9180819180819181
+   ],
+   "proxy_total_prob_60M": [
+    0.8244274809160306,
+    0.9181084198385236
+   ],
+   "proxy_total_prob_150M": [
+    0.8195020071071335,
+    0.946759548792069
+   ],
+   "proxy_total_prob_300M": [
+    0.8343553459119497,
+    0.9400836042731073
+   ]
+  },
+  "differences": {
+   "ours_minus_proxy_4M": {
+    "point": 0.02469879518072282,
+    "ci95": [
+     -0.06666666666666665,
+     0.08200692672565887
+    ]
+   },
+   "ours_minus_proxy_20M": {
+    "point": 0.0066265060240963125,
+    "ci95": [
+     -0.044349070100143106,
+     0.054480761683729055
+    ]
+   },
+   "ours_minus_proxy_60M": {
+    "point": -0.02048192771084334,
+    "ci95": [
+     -0.07111111111111112,
+     0.04602184087363492
+    ]
+   },
+   "ours_minus_proxy_150M": {
+    "point": -0.04277108433734944,
+    "ci95": [
+     -0.09365079365079365,
+     0.01605709188224802
+    ]
+   },
+   "ours_minus_proxy_300M": {
+    "point": -0.04939759036144575,
+    "ci95": [
+     -0.08238387379491674,
+     -0.0028169014084507005
+    ]
+   },
+   "ours_minus_proxy_total_prob_4M": {
+    "point": 0.028915662650602414,
+    "ci95": [
+     -0.058673469387755195,
+     0.07841544825123492
+    ]
+   },
+   "ours_minus_proxy_total_prob_20M": {
+    "point": 0.007831325301204783,
+    "ci95": [
+     -0.04587155963302758,
+     0.046251993620414655
+    ]
+   },
+   "ours_minus_proxy_total_prob_60M": {
+    "point": -0.01746987951807233,
+    "ci95": [
+     -0.059113300492610876,
+     0.04810996563573888
+    ]
+   },
+   "ours_minus_proxy_total_prob_150M": {
+    "point": -0.027108433734939763,
+    "ci95": [
+     -0.06631765190406173,
+     0.02758620689655178
+    ]
+   },
+   "ours_minus_proxy_total_prob_300M": {
+    "point": -0.027108433734939763,
+    "ci95": [
+     -0.0506465517241379,
+     0.0037453183520599342
+    ]
+   },
+   "token_rival_minus_proxy_150M": {
+    "point": -0.03855421686746996,
+    "ci95": [
+     -0.10837438423645318,
+     0.01795731707317073
+    ]
+   }
+  },
+  "per_task": {
+   "arc_challenge": {
+    "ours_M_task": 0.9623430962343096,
+    "rival_token_unigram_ce": 0.9121338912133892,
+    "proxy_4M": 0.9665271966527197,
+    "proxy_20M": 0.9707112970711297,
+    "proxy_60M": 0.9916317991631799,
+    "proxy_150M": 0.9874476987447699,
+    "proxy_300M": 0.9916317991631799,
+    "proxy_total_prob_4M": 0.9623430962343096,
+    "proxy_total_prob_20M": 0.9707112970711297,
+    "proxy_total_prob_60M": 0.9874476987447699,
+    "proxy_total_prob_150M": 0.9832635983263598,
+    "proxy_total_prob_300M": 0.9916317991631799
+   },
+   "arc_easy": {
+    "ours_M_task": 0.9591836734693877,
+    "rival_token_unigram_ce": 0.926530612244898,
+    "proxy_4M": 0.9306122448979591,
+    "proxy_20M": 0.9673469387755103,
+    "proxy_60M": 0.9877551020408163,
+    "proxy_150M": 0.9877551020408163,
+    "proxy_300M": 0.9877551020408163,
+    "proxy_total_prob_4M": 0.9224489795918367,
+    "proxy_total_prob_20M": 0.9714285714285714,
+    "proxy_total_prob_60M": 0.9877551020408163,
+    "proxy_total_prob_150M": 0.9836734693877551,
+    "proxy_total_prob_300M": 0.9918367346938776
+   },
+   "boolq": {
+    "ours_M_task": 0.6976744186046512,
+    "rival_token_unigram_ce": 0.7674418604651163,
+    "proxy_4M": 0.20930232558139536,
+    "proxy_20M": 0.09302325581395349,
+    "proxy_60M": 0.37209302325581395,
+    "proxy_150M": 0.627906976744186,
+    "proxy_300M": 0.6744186046511628,
+    "proxy_total_prob_4M": 0.20930232558139536,
+    "proxy_total_prob_20M": 0.09302325581395349,
+    "proxy_total_prob_60M": 0.4418604651162791,
+    "proxy_total_prob_150M": 0.4418604651162791,
+    "proxy_total_prob_300M": 0.627906976744186
+   },
+   "commonsense_qa": {
+    "ours_M_task": 0.7682119205298014,
+    "rival_token_unigram_ce": 0.8741721854304636,
+    "proxy_4M": 0.3973509933774834,
+    "proxy_20M": 0.6556291390728477,
+    "proxy_60M": 0.6821192052980133,
+    "proxy_150M": 0.7880794701986755,
+    "proxy_300M": 0.8543046357615894,
+    "proxy_total_prob_4M": 0.3973509933774834,
+    "proxy_total_prob_20M": 0.6225165562913907,
+    "proxy_total_prob_60M": 0.6754966887417219,
+    "proxy_total_prob_150M": 0.7682119205298014,
+    "proxy_total_prob_300M": 0.8079470198675497
+   },
+   "hellaswag": {
+    "ours_M_task": 0.7307692307692307,
+    "rival_token_unigram_ce": 0.9,
+    "proxy_4M": 0.8730769230769231,
+    "proxy_20M": 0.8576923076923076,
+    "proxy_60M": 0.8615384615384616,
+    "proxy_150M": 0.9038461538461539,
+    "proxy_300M": 0.9,
+    "proxy_total_prob_4M": 0.8692307692307693,
+    "proxy_total_prob_20M": 0.8653846153846154,
+    "proxy_total_prob_60M": 0.8576923076923076,
+    "proxy_total_prob_150M": 0.8538461538461538,
+    "proxy_total_prob_300M": 0.8076923076923077
+   },
+   "mmlu": {
+    "ours_M_task": 0.9384615384615385,
+    "rival_token_unigram_ce": 0.8423076923076923,
+    "proxy_4M": 0.9615384615384616,
+    "proxy_20M": 0.9461538461538461,
+    "proxy_60M": 0.9576923076923077,
+    "proxy_150M": 0.9576923076923077,
+    "proxy_300M": 0.9730769230769231,
+    "proxy_total_prob_4M": 0.9615384615384616,
+    "proxy_total_prob_20M": 0.9423076923076923,
+    "proxy_total_prob_60M": 0.95,
+    "proxy_total_prob_150M": 0.9615384615384616,
+    "proxy_total_prob_300M": 0.9653846153846154
+   },
+   "openbookqa": {
+    "ours_M_task": 0.9035087719298246,
+    "rival_token_unigram_ce": 0.8333333333333334,
+    "proxy_4M": 0.956140350877193,
+    "proxy_20M": 0.9473684210526315,
+    "proxy_60M": 0.9649122807017544,
+    "proxy_150M": 0.9736842105263158,
+    "proxy_300M": 0.9736842105263158,
+    "proxy_total_prob_4M": 0.956140350877193,
+    "proxy_total_prob_20M": 0.9649122807017544,
+    "proxy_total_prob_60M": 0.9649122807017544,
+    "proxy_total_prob_150M": 0.9912280701754386,
+    "proxy_total_prob_300M": 0.9912280701754386
+   },
+   "piqa": {
+    "ours_M_task": 0.9626865671641791,
+    "rival_token_unigram_ce": 0.835820895522388,
+    "proxy_4M": 0.8955223880597015,
+    "proxy_20M": 0.835820895522388,
+    "proxy_60M": 0.8059701492537313,
+    "proxy_150M": 0.8134328358208955,
+    "proxy_300M": 0.835820895522388,
+    "proxy_total_prob_4M": 0.8880597014925373,
+    "proxy_total_prob_20M": 0.8432835820895522,
+    "proxy_total_prob_60M": 0.7835820895522388,
+    "proxy_total_prob_150M": 0.7910447761194029,
+    "proxy_total_prob_300M": 0.8059701492537313
+   },
+   "social_iqa": {
+    "ours_M_task": 0.7407407407407407,
+    "rival_token_unigram_ce": 0.8641975308641975,
+    "proxy_4M": 0.6666666666666666,
+    "proxy_20M": 0.7283950617283951,
+    "proxy_60M": 0.9135802469135802,
+    "proxy_150M": 0.9753086419753086,
+    "proxy_300M": 0.9753086419753086,
+    "proxy_total_prob_4M": 0.6419753086419753,
+    "proxy_total_prob_20M": 0.7037037037037037,
+    "proxy_total_prob_60M": 0.9135802469135802,
+    "proxy_total_prob_150M": 0.9753086419753086,
+    "proxy_total_prob_300M": 0.9753086419753086
+   },
+   "winogrande": {
+    "ours_M_task": 0.9172932330827067,
+    "rival_token_unigram_ce": 0.9473684210526315,
+    "proxy_4M": 0.9774436090225563,
+    "proxy_20M": 0.9624060150375939,
+    "proxy_60M": 0.9774436090225563,
+    "proxy_150M": 0.924812030075188,
+    "proxy_300M": 0.8646616541353384,
+    "proxy_total_prob_4M": 0.9774436090225563,
+    "proxy_total_prob_20M": 0.9624060150375939,
+    "proxy_total_prob_60M": 0.9774436090225563,
+    "proxy_total_prob_150M": 0.924812030075188,
+    "proxy_total_prob_300M": 0.8571428571428571
+   }
+  },
+  "metric_choice": "Primary: correct_prob_per_char. DataDecide (arXiv 2504.11393, sec. 3.3): 'Here we chose a single length normalization, *_per_char.' ... 'Using Correct Prob or Total Prob leads to decision accuracy at least as good as any other metric for most small scales.' Sec. 3.4: 'Using Correct Prob sees wider spreads or reduced noise for many tasks.' total_prob_per_char (co-recommended) is reported alongside, not as the primary."
+ }
+}

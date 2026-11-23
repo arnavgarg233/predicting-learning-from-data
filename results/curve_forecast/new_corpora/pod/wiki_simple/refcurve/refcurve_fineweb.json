@@ -1,0 +1,149 @@
+{
+ "Qwen2.5-0.5B": {
+  "model": "Qwen/Qwen2.5-0.5B",
+  "short": "Qwen2.5-0.5B",
+  "n_targets": 20000,
+  "n_docs": 889,
+  "n_docs_total": 1039,
+  "mean_bytes_per_target_token": 3.71735,
+  "rows": [
+   {
+    "n_tokens": 1,
+    "bits_per_token": 9.526102260470422,
+    "bits_per_byte": 2.562605689663449,
+    "bpb_se": 0.03650449148265813,
+    "context_bytes_exact_mean": 3.7473
+   },
+   {
+    "n_tokens": 2,
+    "bits_per_token": 8.089786170242933,
+    "bits_per_byte": 2.1762239687527227,
+    "bpb_se": 0.033041933773569655,
+    "context_bytes_exact_mean": 7.47325
+   },
+   {
+    "n_tokens": 3,
+    "bits_per_token": 7.2162244744947905,
+    "bits_per_byte": 1.9412281529839241,
+    "bpb_se": 0.030954125942867814,
+    "context_bytes_exact_mean": 11.17815
+   },
+   {
+    "n_tokens": 4,
+    "bits_per_token": 6.735593789492413,
+    "bits_per_byte": 1.8119342514136183,
+    "bpb_se": 0.029661002025178705,
+    "context_bytes_exact_mean": 14.8818
+   },
+   {
+    "n_tokens": 6,
+    "bits_per_token": 5.949107742079755,
+    "bits_per_byte": 1.6003625545293703,
+    "bpb_se": 0.025136330108660447,
+    "context_bytes_exact_mean": 22.31365
+   },
+   {
+    "n_tokens": 8,
+    "bits_per_token": 5.47493850154524,
+    "bits_per_byte": 1.4728068386203181,
+    "bpb_se": 0.022786878353488447,
+    "context_bytes_exact_mean": 29.68425
+   },
+   {
+    "n_tokens": 12,
+    "bits_per_token": 5.001210869115106,
+    "bits_per_byte": 1.3453699191938089,
+    "bpb_se": 0.0215920650665247,
+    "context_bytes_exact_mean": 44.5147
+   },
+   {
+    "n_tokens": 16,
+    "bits_per_token": 4.605894816739349,
+    "bits_per_byte": 1.2390264077203785,
+    "bpb_se": 0.0191346143230798,
+    "context_bytes_exact_mean": 59.35405
+   },
+   {
+    "n_tokens": 24,
+    "bits_per_token": 4.03664266871426,
+    "bits_per_byte": 1.0858925494543854,
+    "bpb_se": 0.014460309805143094,
+    "context_bytes_exact_mean": 88.9649
+   },
+   {
+    "n_tokens": 32,
+    "bits_per_token": 3.75346087336258,
+    "bits_per_byte": 1.0097141440441657,
+    "bpb_se": 0.013877330482671287,
+    "context_bytes_exact_mean": 118.6388
+   },
+   {
+    "n_tokens": 48,
+    "bits_per_token": 3.539945972811217,
+    "bits_per_byte": 0.9522767489774212,
+    "bpb_se": 0.012597661341787516,
+    "context_bytes_exact_mean": 177.85745
+   },
+   {
+    "n_tokens": 64,
+    "bits_per_token": 3.433585963779458,
+    "bits_per_byte": 0.9236649666508286,
+    "bpb_se": 0.012241107815715975,
+    "context_bytes_exact_mean": 237.01775
+   },
+   {
+    "n_tokens": 96,
+    "bits_per_token": 3.3279705827997166,
+    "bits_per_byte": 0.8952534958504625,
+    "bpb_se": 0.011717003052315532,
+    "context_bytes_exact_mean": 355.64745
+   },
+   {
+    "n_tokens": 128,
+    "bits_per_token": 3.266615014541996,
+    "bits_per_byte": 0.8787483057936423,
+    "bpb_se": 0.011354614340783524,
+    "context_bytes_exact_mean": 474.4181
+   },
+   {
+    "n_tokens": 192,
+    "bits_per_token": 3.2072421652192906,
+    "bits_per_byte": 0.8627764846515098,
+    "bpb_se": 0.011129664234990658,
+    "context_bytes_exact_mean": 712.2862
+   },
+   {
+    "n_tokens": 256,
+    "bits_per_token": 3.174675939794721,
+    "bits_per_byte": 0.8540158822265111,
+    "bpb_se": 0.010895508771503795,
+    "context_bytes_exact_mean": 950.64075
+   },
+   {
+    "n_tokens": 384,
+    "bits_per_token": 3.133148483392244,
+    "bits_per_byte": 0.8428446294785918,
+    "bpb_se": 0.010705405300586095,
+    "context_bytes_exact_mean": 1429.80265
+   },
+   {
+    "n_tokens": 512,
+    "bits_per_token": 3.111539812033212,
+    "bits_per_byte": 0.8370317059284736,
+    "bpb_se": 0.010581689325549634,
+    "context_bytes_exact_mean": 1911.7785
+   }
+  ],
+  "key": {
+   "model": "Qwen/Qwen2.5-0.5B",
+   "corpus": [
+    "e267ed4717edf78521c0bd3e2abf4ce8925ebd30a00a94c1d83c52f424de9e03",
+    "a2238095547debc8c86fbbe0ad968194ae9b3b6f8b6276040c41301e0e192ca3"
+   ],
+   "ns": "1,2,3,4,6,8,12,16,24,32,48,64,96,128,192,256,384,512",
+   "nt": 20000,
+   "seed": 0,
+   "docs": "nfc_only"
+  }
+ }
+}

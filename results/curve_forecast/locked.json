@@ -1,0 +1,59 @@
+{
+ "created_utc": "2026-10-18T01:29:44+00:00",
+ "design": "docs/plan/curve_forecast_vs_pilots_2026-10-17.md",
+ "chosen": {
+  "shape": "gamma",
+  "A2_form": "neff",
+  "A4_form": "off",
+  "level": "both",
+  "level_mode": "anch",
+  "A3_floor": "zero"
+ },
+ "constants": {
+  "nu_ts": 0.6461012862586333,
+  "n0_ts": 0.0006678564735576053,
+  "K_ts": 105691.37441476129,
+  "nu_pool": 0.74,
+  "n0_pool": 0.0002818382931264455,
+  "level_coef": [
+   -0.11155264655307916,
+   0.6519299584572159,
+   0.5578295459327987
+  ],
+  "level_coef_ref_fallback": [
+   0.7880141579258128,
+   1.028680800389098
+  ],
+  "A3_floor_param": 0.0,
+  "E_cap": 0.9
+ },
+ "fineweb_edu_measured_bpb": {
+  "21": 2.086241346164229,
+  "22": 1.9645207856056865,
+  "23": 1.8502939843081945,
+  "24": 1.6926276353935408,
+  "25": 1.606758055031989
+ },
+ "rules": {
+  "primary_ref": "Qwen2.5-0.5B for non-English text, SmolLM2-135M for English and code",
+  "pilots": "seed 0 at 2^19 and 2^20; one-pilot arms use 2^20",
+  "targets": "2^23 and 2^25, mean over the seeds run",
+  "A1_shape": "FineWeb-Edu measured bpb, mean over seeds, at the pilot and target budgets (2^19, 2^20 run on the pod)",
+  "level_fallback": "if the chosen level statistic is not finite for a corpus, the ref-only level map is used"
+ },
+ "code_sha256": {
+  "scripts/curve_forecast/core.py": "8b17c3f080d9700837d5717e20af54097db26ed35c7ae5fae090145b8dc04071",
+  "scripts/curve_forecast/develop.py": "dc477443564ca1d09564f7bd6643a5fa38d3e7511846ba75d5c48f183bf309d0",
+  "scripts/curve_forecast/forecast.py": "d9387933cfeb27c0adc063ba69fe92831a1655cf6ac5cb2afa85aee16ec59708",
+  "scripts/curve_forecast/pod_main.py": "46101a2a2b3ee0d9dd0eb12abe2d457c140107c6065eda9c05c3417ccf06cea2",
+  "scripts/curve_forecast/power.py": "518d35632e444f4b8c3a9da8db9f590480edefc3cb7dd73d647db74265b1e878",
+  "scripts/curve_forecast/score.py": "f18be2fbd3796d436f899ce8cf66d5cb1207a2eb2819a9707918b6ff3899714f",
+  "scripts/forecast_neff.py": "5ca440438c66e116a4982379652f6c2abe432f0c687bec01a981a773e141d23b",
+  "scripts/forecast_input_variants.py": "9f5f50141bce5843af6722366b36564b2ba343ace12a3e5ad550fe0d5d81866b",
+  "scripts/forecast_multicorpus.py": "28968f77299d3459691cf47e55d23b866547f756eacafe782010b64b10677a50",
+  "scripts/ngram_curve_ts.py": "f2051248a9e73b8aa15e9a354a093ddb4ffb9d1d7ceafd930006322831856d58",
+  "scripts/prep_corpus.py": "b1a14533c783ce19a99a7f1535ecf1f096e1d40a375362b9f8fcb7a3125acad0",
+  "scripts/run_text_ladder.py": "b3e46321fa3e6a191c3cffa54ecf95e11d818f88dc8ef1e5e87449ce89a14382",
+  "scripts/train_text.py": "2cb0c440e453f4bc14d1a6d8f28c35f2b9211076d96554018899db0931bbf4aa"
+ }
+}

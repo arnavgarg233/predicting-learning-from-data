@@ -1,0 +1,10 @@
+{
+ "name": "code_dm",
+ "prep_ok": true,
+ "prep_seconds": 89.89818239212036,
+ "train_sha256": "6978604edef287d9e1d4746de7a389e0c0d9cbf65fc75d5cae3c559b383af39f",
+ "ref_sha256": "a55a925b6bd9481e4075fc86adf534bd85b2dd4ed48a044f0f08f4ca2a82e497",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

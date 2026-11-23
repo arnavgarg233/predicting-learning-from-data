@@ -1,0 +1,801 @@
+{
+ "created_utc": "2026-10-18T05:14:49+00:00",
+ "locked_sha256": "2832a199a385749272fd98a9067680d6e6f6c45818661fa49ac40abb813bc306",
+ "chosen": {
+  "shape": "gamma",
+  "A2_form": "neff",
+  "A4_form": "off",
+  "level": "both",
+  "level_mode": "anch",
+  "A3_floor": "zero"
+ },
+ "code_sha256": {
+  "scripts/curve_forecast/core.py": "8b17c3f080d9700837d5717e20af54097db26ed35c7ae5fae090145b8dc04071",
+  "scripts/curve_forecast/develop.py": "dc477443564ca1d09564f7bd6643a5fa38d3e7511846ba75d5c48f183bf309d0",
+  "scripts/curve_forecast/forecast.py": "d9387933cfeb27c0adc063ba69fe92831a1655cf6ac5cb2afa85aee16ec59708",
+  "scripts/curve_forecast/pod_main.py": "46101a2a2b3ee0d9dd0eb12abe2d457c140107c6065eda9c05c3417ccf06cea2",
+  "scripts/curve_forecast/power.py": "518d35632e444f4b8c3a9da8db9f590480edefc3cb7dd73d647db74265b1e878",
+  "scripts/curve_forecast/score.py": "f18be2fbd3796d436f899ce8cf66d5cb1207a2eb2819a9707918b6ff3899714f",
+  "scripts/forecast_neff.py": "5ca440438c66e116a4982379652f6c2abe432f0c687bec01a981a773e141d23b",
+  "scripts/forecast_input_variants.py": "9f5f50141bce5843af6722366b36564b2ba343ace12a3e5ad550fe0d5d81866b",
+  "scripts/forecast_multicorpus.py": "28968f77299d3459691cf47e55d23b866547f756eacafe782010b64b10677a50",
+  "scripts/ngram_curve_ts.py": "f2051248a9e73b8aa15e9a354a093ddb4ffb9d1d7ceafd930006322831856d58"
+ },
+ "corpora": {
+  "wiki_fr": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 0.9861819166090461,
+    "gamma": 0.6657234486044219,
+    "A": 4.985672469753662,
+    "ngram23": 2.1239533917125373
+   },
+   "shape": {
+    "nu": 0.6003397507778503,
+    "n0": 0.0019799623257898756
+   },
+   "S": {
+    "19": 2.780368018072168,
+    "20": 2.270117363927729,
+    "23": 1.5413200732430525,
+    "25": 1.3253250758820925
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.7161728454545464,
+    "25": 1.5001778480935861
+   },
+   "refcurve_sha256": "110cff4e226b1493b7137166d7907797f87cefbc3f38ec7c8cb6ea0cc064609c",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_fr/tok/tok_bytes_train.npy": "d2c20b063bad86e678258a9291ed4662ae289a5a2475105e17c2c062080202b5",
+    "data/cf/wiki_fr/tok/tok_bytes_ref.npy": "6989b88810e75bbb15c047a5896cf13a3acf3a8b6aa99926a8087c26f2116330"
+   }
+  },
+  "code_c": {
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.6515168210722304,
+    "gamma": 0.4022223257544635,
+    "A": 5.33300467229505,
+    "ngram23": 3.5810912395040058
+   },
+   "shape": {
+    "nu": 0.7131536715919508,
+    "n0": 0.0004502503677763388
+   },
+   "S": {
+    "19": 3.0609384514255162,
+    "20": 2.788228853075638,
+    "23": 1.9400607035157287,
+    "25": 1.318762809251973
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.3108291876191607,
+    "25": 1.6895312933554045
+   },
+   "refcurve_sha256": "ddb7a41996a3ac54963d994fefe2da96859e6a75e845808ab266b52c0a86fc79",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/code_c/tok/tok_bytes_train.npy": "00295c2d4eb3b4776b52be5b408f95cb5756c229b519ca2278ae29728e8a0a87",
+    "data/cf/code_c/tok/tok_bytes_ref.npy": "45ef8342db6f1dd10e24d5226d06a47043ec3d3924835fd817007a05e8a3112f"
+   }
+  },
+  "hacker_news": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 1.1120708362770015,
+    "gamma": 0.6005382540291321,
+    "A": 3.5033681324757273,
+    "ngram23": 2.021432549993694
+   },
+   "shape": {
+    "nu": 0.6247898152278705,
+    "n0": 0.0011557260384920135
+   },
+   "S": {
+    "19": 2.443050949275803,
+    "20": 2.160700694172856,
+    "23": 1.6579211686361295,
+    "25": 1.4219100974837329
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.7410544490392295,
+    "25": 1.505043377886833
+   },
+   "refcurve_sha256": "add296f5d46f370231d183d8a15b2125067c2e737ff27a071ce8beae9439e917",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/hacker_news/tok/tok_bytes_train.npy": "27077690cfb4075ef59b3ff4f06ec5a53b1baf9fc60765ef46f8a803736bc137",
+    "data/cf/hacker_news/tok/tok_bytes_ref.npy": "eda642510ee529bb3e80785222a112ea25d77da0e4fae32b307c8780012d54f4"
+   }
+  },
+  "wiki_ru": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 0.6402355147881198,
+    "gamma": 0.6705435554273318,
+    "A": 3.9096073340965516,
+    "ngram23": 1.5445261878517105
+   },
+   "shape": {
+    "nu": 0.5986075590493634,
+    "n0": 0.0017503512577836358
+   },
+   "S": {
+    "19": 2.1612511345587797,
+    "20": 1.7858757874094526,
+    "23": 1.13294970887811,
+    "25": 0.9334784982912777
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.1674184080562102,
+    "25": 0.9679471974693779
+   },
+   "refcurve_sha256": "a949a1124dbe2f9c5635850adcf0846c9a37957fd2028d17abd5e76d87065665",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_ru/tok/tok_bytes_train.npy": "30d0a4fccc80359d430d8a28c630ef19d72c4c14c92562ea6f418432fb2bc076",
+    "data/cf/wiki_ru/tok/tok_bytes_ref.npy": "bb0dc0764caee58f18a0a8173609be4a6b7539047028d4c6a63585052f24d0c7"
+   }
+  },
+  "code_cpp": {
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.5469815455369057,
+    "gamma": 0.390197282270942,
+    "A": 4.106262317589065,
+    "ngram23": 2.9435075250694127
+   },
+   "shape": {
+    "nu": 0.7193223672301103,
+    "n0": 0.00034147862040362456
+   },
+   "S": {
+    "19": 2.7816782729428606,
+    "20": 2.3999908166953774,
+    "23": 1.6974708623760801,
+    "25": 1.2105730581902931
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.887016475864906,
+    "25": 1.4001186716791192
+   },
+   "refcurve_sha256": "0a656d9644e478ffb3f16adb6130157170351027514a6e1150eb89e44ad6510d",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/code_cpp/tok/tok_bytes_train.npy": "c96dda4eb6379b06ca1133e1c8e4c00a8195fff03a4f9df1af751717ceaa0695",
+    "data/cf/code_cpp/tok/tok_bytes_ref.npy": "b54bca71963abe4728f02687df69b371cb5e2cf70b6626f993876ef1cf5a9042"
+   }
+  },
+  "patents": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.7636946573641774,
+    "gamma": 0.32429620609504695,
+    "A": 2.520775423107042,
+    "ngram23": 1.9051942346906832
+   },
+   "shape": {
+    "nu": 0.7551180735831756,
+    "n0": 0.00013809119902205455
+   },
+   "S": {
+    "19": 2.292337572491946,
+    "20": 2.24829045449458,
+    "23": 1.7896413497784525,
+    "25": 1.4477447502452416
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.4490964145476366,
+    "25": 1.1071998150144258
+   },
+   "refcurve_sha256": "efd919d8b4be709da5d9cdc55513f8b8d16d006a5a8c73945681557028a1b99d",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/patents/tok/tok_bytes_train.npy": "d47a58c0161c397954fc69f8687da593ead140473aa76c4527841bebc4654433",
+    "data/cf/patents/tok/tok_bytes_ref.npy": "aa0be9dba0d9a83ed70dba0fe5ef14ba46be96b828ac469472aaa2b146e3b39d"
+   }
+  },
+  "wiki_es": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 0.9862428468915238,
+    "gamma": 0.6833089755913947,
+    "A": 4.90213850057362,
+    "ngram23": 2.159025808963448
+   },
+   "shape": {
+    "nu": 0.5940680020723298,
+    "n0": 0.0021245461604007094
+   },
+   "S": {
+    "19": 2.708847929780293,
+    "20": 2.2085863101391383,
+    "23": 1.5207225587296622,
+    "25": 1.3031897997938475
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.7357769983209117,
+    "25": 1.5182442393850972
+   },
+   "refcurve_sha256": "9f2dbed875852783c336d4e9ba08aae7df91a37d2fd17f12684c2b311ab5833a",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_es/tok/tok_bytes_train.npy": "b62295ea2a3e4cd664edc52d2d4257e6a382316033dcdb82313bc01d64dc12be",
+    "data/cf/wiki_es/tok/tok_bytes_ref.npy": "9023fb3bd1dd6318fc8634e14b72264015bad41f680d261c3548753f369fe10a"
+   }
+  },
+  "code_csharp": {
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.31327059812532154,
+    "gamma": 0.43743344423155217,
+    "A": 4.037044439099247,
+    "ngram23": 2.219870666181878
+   },
+   "shape": {
+    "nu": 0.6956843838669673,
+    "n0": 0.0004749754389121662
+   },
+   "S": {
+    "19": 2.435658662972676,
+    "20": 2.026736997164455,
+    "23": 1.3476210196760745,
+    "25": 0.9069175384927589
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.3309872872144053,
+    "25": 0.8902838060310894
+   },
+   "refcurve_sha256": "0b38e433aea5e835b60fc0324ad1b4f29c4ed10c5f5dd127efdde0533f032a76",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/code_csharp/tok/tok_bytes_train.npy": "797122a6d47463abd0a9cfa62ebc2a9edec85d34845f55124819cfc10eddbfd2",
+    "data/cf/code_csharp/tok/tok_bytes_ref.npy": "50edfcdd3108466f188265b067af499404c60d8b601cc424bdfd0ded1c10658f"
+   }
+  },
+  "poetry": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 1.5071476845771554,
+    "gamma": 0.6316123586473007,
+    "A": 3.5621664676710307,
+    "ngram23": 2.306801037543569
+   },
+   "shape": {
+    "nu": 0.6128906751043837,
+    "n0": 0.0013697823054332598
+   },
+   "S": {
+    "19": 2.6542662722892536,
+    "20": 2.475339813340622,
+    "23": 2.0345483381362195,
+    "25": 1.7844629109600119
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.157803856172433,
+    "25": 1.9077184289962252
+   },
+   "refcurve_sha256": "42cd01b8493b4c8353725242ef9a812e823bd493729709f7358a13fe68cd24b5",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/poetry/tok/tok_bytes_train.npy": "ecc1e71e36716f3941a2c44fdf61afc572a868a118a338d1c192c6979dc1c207",
+    "data/cf/poetry/tok/tok_bytes_ref.npy": "a196dd31c620bc9c2d2bd4c7ddc815926baf966def2be6efa8f16b2a75668484"
+   }
+  },
+  "wiki_ar": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 0.860247316221228,
+    "gamma": 0.5903874769461515,
+    "A": 2.85931453210179,
+    "ngram23": 1.6047140084000187
+   },
+   "shape": {
+    "nu": 0.6287775869061742,
+    "n0": 0.0009637845843376249
+   },
+   "S": {
+    "19": 2.2740517974790238,
+    "20": 2.0483135938581056,
+    "23": 1.3470192706198123,
+    "25": 1.1709054883857712
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.3444252372317411,
+    "25": 1.1683114549977
+   },
+   "refcurve_sha256": "ab309880c39b1b9e7253c432f9f06ed8d0be6b4ee7baafac37aa8524f20b143f",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_ar/tok/tok_bytes_train.npy": "46f5f60a14b8170469fa593baf56467b92a47805c07b7b3e177188e8aa7c0728",
+    "data/cf/wiki_ar/tok/tok_bytes_ref.npy": "c863dca42ddf969dff78b856bc0d6b039074cbeadea399b0f97cea90bab70c97"
+   }
+  },
+  "code_javascript": {
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.5204591336972914,
+    "gamma": 0.47677528048889234,
+    "A": 5.141557955962117,
+    "ngram23": 2.960914894708227
+   },
+   "shape": {
+    "nu": 0.6771510961836699,
+    "n0": 0.0007272010277758905
+   },
+   "S": {
+    "19": 2.613602017867652,
+    "20": 2.303003143215269,
+    "23": 1.5305132146943696,
+    "25": 1.0417297867613404
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.8794360661176255,
+    "25": 1.3906526381845963
+   },
+   "refcurve_sha256": "6de346a0b4e376b058c0e329da7628a9de43d9c38a877826ab60f68186c30530",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/code_javascript/tok/tok_bytes_train.npy": "2abb1ccf77c3b99501bd169f1472872e8df4f8c718b5f5bc862a50ba7dcf4bb5",
+    "data/cf/code_javascript/tok/tok_bytes_ref.npy": "a43a5fa103b824c4dc9a7a380cb0ba92e085e64dd5937abd689abc23d55f80c1"
+   }
+  },
+  "scotus": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.8949654371034508,
+    "gamma": 0.4890364496795049,
+    "A": 2.594007865990542,
+    "ngram23": 1.7263936785487264
+   },
+   "shape": {
+    "nu": 0.6715752325708593,
+    "n0": 0.0004958628845492574
+   },
+   "S": {
+    "19": 2.149942095550292,
+    "20": 1.9994921547522702,
+    "23": 1.5279252292969219,
+    "25": 1.2887592410274797
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.4349355354845075,
+    "25": 1.1957695472150653
+   },
+   "refcurve_sha256": "9b977f1dc4ac7a728a905b082d572f6ccd9db225ee0096fcbd75d750d426667f",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/scotus/tok/tok_bytes_train.npy": "f714afe24479191a8e182d4355f78b25214d7f21e11c0423244033fc3a94a616",
+    "data/cf/scotus/tok/tok_bytes_ref.npy": "8c3c000442ab93a43f3fb761b49a6a20878468c56af601f8ac235c74164284c2"
+   }
+  },
+  "wiki_ko": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.1804425286901046,
+    "gamma": 0.5166186018427614,
+    "A": 3.2579760379792373,
+    "ngram23": 2.122215028212334
+   },
+   "shape": {
+    "nu": 0.6593615552288189,
+    "n0": 0.0006861750755028747
+   },
+   "S": {
+    "19": 3.154096522733134,
+    "20": 2.542717324900963,
+    "23": 1.8178646348668288,
+    "25": 1.5873120704922656
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.8418474476964393,
+    "25": 1.6112948833218759
+   },
+   "refcurve_sha256": "28b0b299840b022b10e4414b1aece075bf3f9e11711c3f6ee41fa2e9bb66663b",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_ko/tok/tok_bytes_train.npy": "097bb05f74aeb066392a64d8a76c4b370fb8bbfa3777f48a011a18b75fda9ffd",
+    "data/cf/wiki_ko/tok/tok_bytes_ref.npy": "1b4657e3744e170a4bcbae4815264e2462e92e1a831dd8c74d5810ccb2324e78"
+   }
+  },
+  "code_php": {
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.502879262923624,
+    "gamma": 0.4498797451422113,
+    "A": 4.284682945371243,
+    "ngram23": 2.444308547576837
+   },
+   "shape": {
+    "nu": 0.6897123732850791,
+    "n0": 0.000538810715656289
+   },
+   "S": {
+    "19": 2.601495442374854,
+    "20": 2.2053120140595106,
+    "23": 1.4776841466490882,
+    "25": 1.0629411980174286
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.5797969376481602,
+    "25": 1.1650539890165004
+   },
+   "refcurve_sha256": "199ed12702513a4ce05914bc576dd0fb5b381807832d35ba06d5a1dced19eb7c",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/code_php/tok/tok_bytes_train.npy": "faae4f9cd906065d930a1a7279200fd23a6caa08bf72cf98f154dd0128f06850",
+    "data/cf/code_php/tok/tok_bytes_ref.npy": "abceb6dd91c5babccca4983f0556aad66717109773f135cded70447302f77d42"
+   }
+  },
+  "sci_abstracts": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.8603840989621527,
+    "gamma": 0.5168349764809762,
+    "A": 2.631430529189122,
+    "ngram23": 1.989300869500196
+   },
+   "shape": {
+    "nu": 0.6592674981163593,
+    "n0": 0.0005968361345334765
+   },
+   "S": {
+    "19": 1.9954032840429459,
+    "20": 1.9407300046362037,
+    "23": 1.423826245633771,
+    "25": 1.2133713584763932
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.559048324097582,
+    "25": 1.3485934369402044
+   },
+   "refcurve_sha256": "90ffa85221a121f583af6bedcff7882dca894fee7d003d3dcf6cd198edbc5947",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/sci_abstracts/tok/tok_bytes_train.npy": "3a5adb86baa46c5c39b893c1567c24c0d90e1f3e2bf59ea4fad0caf74773d715",
+    "data/cf/sci_abstracts/tok/tok_bytes_ref.npy": "1d43c59dac42328c3daa8b649a644b09620352d8103f7c5139a1ec771cadbada"
+   }
+  },
+  "wiki_it": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.1629423464466784,
+    "gamma": 0.6872780091638154,
+    "A": 6.693692285032274,
+    "ngram23": 2.3520179139689374
+   },
+   "shape": {
+    "nu": 0.5926705584787311,
+    "n0": 0.0026014809565396376
+   },
+   "S": {
+    "19": 3.0238660072951937,
+    "20": 2.5981534862631643,
+    "23": 1.800722846389044,
+    "25": 1.5311612978000195
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.9586293940291417,
+    "25": 1.6890678454401173
+   },
+   "refcurve_sha256": "f777ee1a69ab0565bc89467c84e9b2dbb1584ba4c6fd9b5737bd009b7cafa58e",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_it/tok/tok_bytes_train.npy": "9c3e21a77ad33b45d18ee81b27768b521cb369b46bedf9bc48b54f87753a9281",
+    "data/cf/wiki_it/tok/tok_bytes_ref.npy": "cdc4e51dc8687719c4862918c65de16eddf86eff5282ce2f9d5b59b3d7ce5abe"
+   }
+  },
+  "code_html": {
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.48717505026632757,
+    "gamma": 0.3919075716187564,
+    "A": 4.041860464367446,
+    "ngram23": 2.35853780836524
+   },
+   "shape": {
+    "nu": 0.7184385086985504,
+    "n0": 0.00034202304472216326
+   },
+   "S": {
+    "19": 2.9146048854730284,
+    "20": 2.38335383286601,
+    "23": 1.5827673470984154,
+    "25": 1.1932018839805492
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.5217134384341597,
+    "25": 1.1321479753162933
+   },
+   "refcurve_sha256": "f8f82f5811ce4b21567385cdc947b07eaf0bda9fcb5672a00da3730705930e3a",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/code_html/tok/tok_bytes_train.npy": "7e5b8c8ce7653d5c4cfb1daffe6a5421a830ca8c6df4794d1c7b4a03a6f9c0e5",
+    "data/cf/code_html/tok/tok_bytes_ref.npy": "050680597e97d472d79cbbcb8b2aca788043561a6ed7f04365d81990e62d4589"
+   }
+  },
+  "recipes": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.8150263361693504,
+    "gamma": 0.8990502850608328,
+    "A": 9.970732991893602,
+    "ngram23": 1.262058710896202
+   },
+   "shape": {
+    "nu": 0.5265789999699596,
+    "n0": 0.007178250447768798
+   },
+   "S": {
+    "19": 2.230346626198985,
+    "20": 1.9947579280753687,
+    "23": 1.2905032378442576,
+    "25": 1.0441640657982683
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.1238010765671038,
+    "25": 0.8774619045211145
+   },
+   "refcurve_sha256": "888e889a7bfeca37e1137164696a2680d2b849830d7d891f37acf6de4b0e4908",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/recipes/tok/tok_bytes_train.npy": "06d6e328d4f6e01ee26164536777be9b8561c5929870551c709207ef21ee95f7",
+    "data/cf/recipes/tok/tok_bytes_ref.npy": "4ace7affa9b50e90256b62b49fb394843ec0611c3b6e11b0ebff87f4216856ef"
+   }
+  },
+  "wiki_pt": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.0034112647987121,
+    "gamma": 0.7435163948016009,
+    "A": 6.15509212663885,
+    "ngram23": 2.1720547205942617
+   },
+   "shape": {
+    "nu": 0.5735535398356794,
+    "n0": 0.003142612601450443
+   },
+   "S": {
+    "19": 2.6762240494439693,
+    "20": 2.2292294205300784,
+    "23": 1.525523367639924,
+    "25": 1.2948680408259448
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.7542375161529367,
+    "25": 1.5235821893389576
+   },
+   "refcurve_sha256": "385439920c6ecab39de262b134dae1215fe4870e45ecb5731deffbe7ae2950cf",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_pt/tok/tok_bytes_train.npy": "5251ad21b22e292b2eb91f183cecb36a7ffd8f823364dd862624b80ec8bfa157",
+    "data/cf/wiki_pt/tok/tok_bytes_ref.npy": "7dd2a1b58923a841e2928046845ad27b43ef87f2bfe7c773d5d8098593d630b5"
+   }
+  },
+  "yelp": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 1.1762924561531996,
+    "gamma": 0.5779182979766689,
+    "A": 2.4390518562398826,
+    "ngram23": 1.898558066493822
+   },
+   "shape": {
+    "nu": 0.6337463741198,
+    "n0": 0.0008137983480211157
+   },
+   "S": {
+    "19": 2.208251173003111,
+    "20": 2.08685271525726,
+    "23": 1.6349722740283454,
+    "25": 1.450408322077782
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.714379429679714,
+    "25": 1.5298154777291504
+   },
+   "refcurve_sha256": "dc056e63765a2c9e46d44b778612221472e78623aec10794a85efbbce48913eb",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/yelp/tok/tok_bytes_train.npy": "fc246c6d22c3633cafa06c8a6a2cd0ffb036597436eac0b81f2a3535cd816ec7",
+    "data/cf/yelp/tok/tok_bytes_ref.npy": "7a3287a4fdfab9267f67353d6db6f8d79e1683ea0f5bf1cc3b02f714e6c092dd"
+   }
+  },
+  "wiki_pl": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.425407615638234,
+    "gamma": 0.7602424870368999,
+    "A": 8.258369143042794,
+    "ngram23": 2.305781225440779
+   },
+   "shape": {
+    "nu": 0.5681035467353975,
+    "n0": 0.003972690218818317
+   },
+   "S": {
+    "19": 3.370120065131091,
+    "20": 2.855523043768119,
+    "23": 2.013785972837776,
+    "25": 1.7669974118704423
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.103946175102556,
+    "25": 1.8571576141352217
+   },
+   "refcurve_sha256": "3b492e29d7901857bfa33cd1005a1ee8c4fce499a4107f2922bc7eab98dbcdb9",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_pl/tok/tok_bytes_train.npy": "50d92900ce7994a7b9551dc751d92c8a38ab4421375a2be5174d8e0f0ae91d4b",
+    "data/cf/wiki_pl/tok/tok_bytes_ref.npy": "b0c8bca1741034155abaf273fbd1158e8264c3d9280276d3dda6fe89cdf30254"
+   }
+  },
+  "govreport": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.7123343927386405,
+    "gamma": 0.4337260055107643,
+    "A": 2.0807967766376922,
+    "ngram23": 1.7022677717959658
+   },
+   "shape": {
+    "nu": 0.6974833379295163,
+    "n0": 0.0002915679932125825
+   },
+   "S": {
+    "19": 1.7573175937040166,
+    "20": 1.7573175937040166,
+    "23": 1.3332155818124563,
+    "25": 1.1316743323816685
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.3024147427096497,
+    "25": 1.100873493278862
+   },
+   "refcurve_sha256": "29bc0355c74ede8179aefd62df3f2711287b81d6f9e3bfdec72d682aa66ca14c",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/govreport/tok/tok_bytes_train.npy": "01aef67f1dbf6653e466477ec55624bacd50b48ea99704623d68ef5d4cd99ad0",
+    "data/cf/govreport/tok/tok_bytes_ref.npy": "d5cc594444b8bd4e31eb954cd642d2fbc373834cfb58e9e1f893bac4b2747842"
+   }
+  },
+  "wiki_tr": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.4248912214103544,
+    "gamma": 0.65591050870208,
+    "A": 5.745766509776079,
+    "ngram23": 2.0552221101045736
+   },
+   "shape": {
+    "nu": 0.603897369299148,
+    "n0": 0.0020604254615493632
+   },
+   "S": {
+    "19": 3.433919400971731,
+    "20": 2.848905638136495,
+    "23": 2.042851124112475,
+    "25": 1.8030958313789875
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.9638402446977072,
+    "25": 1.7240849519642194
+   },
+   "refcurve_sha256": "06a273503dc551018da6b842715a03ec779514765de7321ec231c4146b12bc07",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_tr/tok/tok_bytes_train.npy": "45571d8c3d7925da71d1575a9a660aa997b7faf3f97b2e1fceca628308958c83",
+    "data/cf/wiki_tr/tok/tok_bytes_ref.npy": "670669d0297983a11619554a741abe7bd8c9e73c0473ea2bb7f434744cf87024"
+   }
+  },
+  "billsum": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.5653658961895898,
+    "gamma": 0.3299731572922316,
+    "A": 2.420084913519856,
+    "ngram23": 1.3492397679751513
+   },
+   "shape": {
+    "nu": 0.7518948743566805,
+    "n0": 0.00014092797703417427
+   },
+   "S": {
+    "19": 1.9752746974834605,
+    "20": 1.9752746974834605,
+    "23": 1.5253061132813301,
+    "25": 1.1947595992404836
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.00967212578698,
+    "25": 0.6791256117461333
+   },
+   "refcurve_sha256": "11b574dc622d1b3588c781642d56ea7a129b0d1f66d5b6f2b734440370e5b9c4",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/billsum/tok/tok_bytes_train.npy": "5d3862b2c540a25cc0333eddafef3e855fc40b161e259cf0fddbb089806e90e4",
+    "data/cf/billsum/tok/tok_bytes_ref.npy": "0b568b7a7733fd76011222a1b562b19344c54fa43bafb3940b45fa1427b2060f"
+   }
+  },
+  "wiki_vi": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 0.8827220977961524,
+    "gamma": 0.6191608776556319,
+    "A": 3.7078648349393997,
+    "ngram23": 1.8309968563022556
+   },
+   "shape": {
+    "nu": 0.6176038550584861,
+    "n0": 0.001318390191083045
+   },
+   "S": {
+    "19": 2.635824819390773,
+    "20": 2.1385868547687625,
+    "23": 1.4211853122051545,
+    "25": 1.2098680735477785
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.485304478947902,
+    "25": 1.2739872402905261
+   },
+   "refcurve_sha256": "62a1a20af64e16feb41b2c831142d3be6f4f6aa7fc794ec884d3a0f7f3ad9b7c",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_vi/tok/tok_bytes_train.npy": "21552c7bb7e9c12fd0c9ba05495be4dae943aa49a95ace459747ee06e1d0d1fe",
+    "data/cf/wiki_vi/tok/tok_bytes_ref.npy": "09b88b5fcd897443cb982ac600dd07bd5086a4cbfbbbc71f85e28406ed2442b1"
+   }
+  }
+ }
+}

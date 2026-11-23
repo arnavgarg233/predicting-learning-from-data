@@ -1,0 +1,1570 @@
+{
+ "seed": 20261028,
+ "written": "2026-10-28 (before any corpus was prepared)",
+ "frames": {
+  "languages": {
+   "source": "HuggingFaceFW/fineweb-2, frames/fw2_dist.csv (github.com/huggingface/fineweb-2/blob/main/fineweb2-language-distribution.csv)",
+   "rule": "filtered train subsets with utf8_bytes >= 2^28",
+   "n": 139,
+   "members": [
+    "afr_Latn",
+    "als_Latn",
+    "amh_Ethi",
+    "anp_Deva",
+    "arb_Arab",
+    "ars_Arab",
+    "ary_Arab",
+    "arz_Arab",
+    "asm_Beng",
+    "ast_Latn",
+    "azb_Arab",
+    "azj_Latn",
+    "bak_Cyrl",
+    "bel_Cyrl",
+    "ben_Beng",
+    "bew_Latn",
+    "bod_Tibt",
+    "bos_Latn",
+    "bul_Cyrl",
+    "cat_Latn",
+    "ceb_Latn",
+    "ces_Latn",
+    "chv_Cyrl",
+    "ckb_Arab",
+    "cmn_Hani",
+    "cos_Latn",
+    "cym_Latn",
+    "dan_Latn",
+    "deu_Latn",
+    "div_Thaa",
+    "ekk_Latn",
+    "ell_Grek",
+    "epo_Latn",
+    "eus_Latn",
+    "fao_Latn",
+    "fas_Arab",
+    "fil_Latn",
+    "fin_Latn",
+    "fra_Latn",
+    "fry_Latn",
+    "gla_Latn",
+    "gle_Latn",
+    "glg_Latn",
+    "gmh_Latn",
+    "grc_Grek",
+    "guj_Gujr",
+    "hat_Latn",
+    "hau_Latn",
+    "haw_Latn",
+    "hbo_Hebr",
+    "heb_Hebr",
+    "hif_Latn",
+    "hin_Deva",
+    "hin_Latn",
+    "hrv_Latn",
+    "hun_Latn",
+    "hye_Armn",
+    "hyw_Armn",
+    "ibo_Latn",
+    "ind_Latn",
+    "isl_Latn",
+    "ita_Latn",
+    "jav_Latn",
+    "jpn_Jpan",
+    "kan_Knda",
+    "kat_Geor",
+    "kaz_Cyrl",
+    "khk_Cyrl",
+    "khm_Khmr",
+    "kin_Latn",
+    "kir_Cyrl",
+    "kmr_Latn",
+    "kor_Hang",
+    "lao_Laoo",
+    "lat_Latn",
+    "lit_Latn",
+    "ltz_Latn",
+    "lvs_Latn",
+    "mal_Mlym",
+    "mar_Deva",
+    "mkd_Cyrl",
+    "mlt_Latn",
+    "mri_Latn",
+    "mww_Latn",
+    "mya_Mymr",
+    "nld_Latn",
+    "nno_Latn",
+    "nob_Latn",
+    "npi_Deva",
+    "nrm_Latn",
+    "nya_Latn",
+    "ory_Orya",
+    "oss_Cyrl",
+    "pan_Guru",
+    "pap_Latn",
+    "pbt_Arab",
+    "plt_Latn",
+    "pol_Latn",
+    "por_Latn",
+    "ron_Latn",
+    "rus_Cyrl",
+    "sah_Cyrl",
+    "san_Deva",
+    "sdh_Arab",
+    "sin_Sinh",
+    "slk_Latn",
+    "slv_Latn",
+    "smo_Latn",
+    "sna_Latn",
+    "snd_Arab",
+    "som_Latn",
+    "sot_Latn",
+    "spa_Latn",
+    "srp_Cyrl",
+    "srp_Latn",
+    "sun_Latn",
+    "swe_Latn",
+    "swh_Latn",
+    "tam_Taml",
+    "tat_Cyrl",
+    "tel_Telu",
+    "tgk_Cyrl",
+    "tha_Thai",
+    "tir_Ethi",
+    "tuk_Latn",
+    "tur_Latn",
+    "uig_Arab",
+    "ukr_Cyrl",
+    "urd_Arab",
+    "urd_Latn",
+    "uzn_Cyrl",
+    "uzn_Latn",
+    "vie_Latn",
+    "xho_Latn",
+    "ydd_Hebr",
+    "yor_Latn",
+    "yue_Hani",
+    "zsm_Latn",
+    "zul_Latn"
+   ]
+  },
+  "english": {
+   "pile": {
+    "source": "monology/pile-uncopyrighted, train/00-05.jsonl.zst, meta.pile_set_name",
+    "members": [
+     "ArXiv",
+     "Enron Emails",
+     "FreeLaw",
+     "Gutenberg (PG-19)",
+     "HackerNews",
+     "NIH ExPorter",
+     "PhilPapers",
+     "Pile-CC",
+     "PubMed Abstracts",
+     "PubMed Central",
+     "StackExchange",
+     "USPTO Backgrounds",
+     "Ubuntu IRC",
+     "Wikipedia (en)"
+    ],
+    "excluded": {
+     "Github": "source code",
+     "DM Mathematics": "synthetic mathematics questions, not natural language",
+     "EuroParl": "multilingual, not English"
+    }
+   },
+   "dolma": {
+    "source": "allenai/dolma urls/v1_7.txt (frames/dolma17.txt)",
+    "members": [
+     "c4-filtered",
+     "cc_en_head",
+     "cc_news_head",
+     "falcon-refinedweb-filtered",
+     "pes2o",
+     "proof_pile_2-open_web_math",
+     "reddit",
+     "tulu_flan",
+     "wikiref_megawika"
+    ],
+    "excluded": "redpajama-arxiv, redpajama-stackexchange, books, wiki (repeat a Pile subset); starcoder, proof_pile_2-algebraic_stack (code); cc_en_middle/tail, cc_news_middle/tail (lower tiers of the same sources)"
+   }
+  }
+ },
+ "order": {
+  "languages": [
+   {
+    "name": "fw2_gmh_latn",
+    "source": "fineweb2",
+    "subset": "gmh_Latn",
+    "utf8_bytes": 3662289285,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_lit_latn",
+    "source": "fineweb2",
+    "subset": "lit_Latn",
+    "utf8_bytes": 60666590655,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_pap_latn",
+    "source": "fineweb2",
+    "subset": "pap_Latn",
+    "utf8_bytes": 533119171,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_nno_latn",
+    "source": "fineweb2",
+    "subset": "nno_Latn",
+    "utf8_bytes": 2882129938,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ita_latn",
+    "source": "fineweb2",
+    "subset": "ita_Latn",
+    "utf8_bytes": 793750885035,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_slk_latn",
+    "source": "fineweb2",
+    "subset": "slk_Latn",
+    "utf8_bytes": 91733828860,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_kor_hang",
+    "source": "fineweb2",
+    "subset": "kor_Hang",
+    "utf8_bytes": 229164863492,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_hye_armn",
+    "source": "fineweb2",
+    "subset": "hye_Armn",
+    "utf8_bytes": 7697017226,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_mar_deva",
+    "source": "fineweb2",
+    "subset": "mar_Deva",
+    "utf8_bytes": 24237886861,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_kmr_latn",
+    "source": "fineweb2",
+    "subset": "kmr_Latn",
+    "utf8_bytes": 1250565913,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_haw_latn",
+    "source": "fineweb2",
+    "subset": "haw_Latn",
+    "utf8_bytes": 349447631,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_srp_latn",
+    "source": "fineweb2",
+    "subset": "srp_Latn",
+    "utf8_bytes": 2235393671,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_srp_cyrl",
+    "source": "fineweb2",
+    "subset": "srp_Cyrl",
+    "utf8_bytes": 28846157665,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_tir_ethi",
+    "source": "fineweb2",
+    "subset": "tir_Ethi",
+    "utf8_bytes": 376757819,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_sdh_arab",
+    "source": "fineweb2",
+    "subset": "sdh_Arab",
+    "utf8_bytes": 481544292,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_vie_latn",
+    "source": "fineweb2",
+    "subset": "vie_Latn",
+    "utf8_bytes": 343416915256,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_sun_latn",
+    "source": "fineweb2",
+    "subset": "sun_Latn",
+    "utf8_bytes": 448575600,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_jav_latn",
+    "source": "fineweb2",
+    "subset": "jav_Latn",
+    "utf8_bytes": 821367191,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_bul_cyrl",
+    "source": "fineweb2",
+    "subset": "bul_Cyrl",
+    "utf8_bytes": 156496753428,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_tur_latn",
+    "source": "fineweb2",
+    "subset": "tur_Latn",
+    "utf8_bytes": 305497429770,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_arb_arab",
+    "source": "fineweb2",
+    "subset": "arb_Arab",
+    "utf8_bytes": 315241517028,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ars_arab",
+    "source": "fineweb2",
+    "subset": "ars_Arab",
+    "utf8_bytes": 2376935495,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ydd_hebr",
+    "source": "fineweb2",
+    "subset": "ydd_Hebr",
+    "utf8_bytes": 936578790,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_fry_latn",
+    "source": "fineweb2",
+    "subset": "fry_Latn",
+    "utf8_bytes": 693772624,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_kir_cyrl",
+    "source": "fineweb2",
+    "subset": "kir_Cyrl",
+    "utf8_bytes": 4682371376,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_spa_latn",
+    "source": "fineweb2",
+    "subset": "spa_Latn",
+    "utf8_bytes": 1447166708770,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_mya_mymr",
+    "source": "fineweb2",
+    "subset": "mya_Mymr",
+    "utf8_bytes": 13261245557,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_sna_latn",
+    "source": "fineweb2",
+    "subset": "sna_Latn",
+    "utf8_bytes": 360372257,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ukr_cyrl",
+    "source": "fineweb2",
+    "subset": "ukr_Cyrl",
+    "utf8_bytes": 273654962631,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ell_grek",
+    "source": "fineweb2",
+    "subset": "ell_Grek",
+    "utf8_bytes": 238423993714,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_mri_latn",
+    "source": "fineweb2",
+    "subset": "mri_Latn",
+    "utf8_bytes": 539994062,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_uig_arab",
+    "source": "fineweb2",
+    "subset": "uig_Arab",
+    "utf8_bytes": 1116620907,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ary_arab",
+    "source": "fineweb2",
+    "subset": "ary_Arab",
+    "utf8_bytes": 8311310671,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ceb_latn",
+    "source": "fineweb2",
+    "subset": "ceb_Latn",
+    "utf8_bytes": 692041428,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_bod_tibt",
+    "source": "fineweb2",
+    "subset": "bod_Tibt",
+    "utf8_bytes": 2067569611,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_bew_latn",
+    "source": "fineweb2",
+    "subset": "bew_Latn",
+    "utf8_bytes": 1743445787,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_arz_arab",
+    "source": "fineweb2",
+    "subset": "arz_Arab",
+    "utf8_bytes": 3136669067,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_urd_latn",
+    "source": "fineweb2",
+    "subset": "urd_Latn",
+    "utf8_bytes": 288087232,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ces_latn",
+    "source": "fineweb2",
+    "subset": "ces_Latn",
+    "utf8_bytes": 221544258565,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_hif_latn",
+    "source": "fineweb2",
+    "subset": "hif_Latn",
+    "utf8_bytes": 1090912695,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_mww_latn",
+    "source": "fineweb2",
+    "subset": "mww_Latn",
+    "utf8_bytes": 596736621,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_hat_latn",
+    "source": "fineweb2",
+    "subset": "hat_Latn",
+    "utf8_bytes": 657148963,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_cmn_hani",
+    "source": "fineweb2",
+    "subset": "cmn_Hani",
+    "utf8_bytes": 2665362545414,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ory_orya",
+    "source": "fineweb2",
+    "subset": "ory_Orya",
+    "utf8_bytes": 5286806083,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_cos_latn",
+    "source": "fineweb2",
+    "subset": "cos_Latn",
+    "utf8_bytes": 431709777,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_lao_laoo",
+    "source": "fineweb2",
+    "subset": "lao_Laoo",
+    "utf8_bytes": 2327641306,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ckb_arab",
+    "source": "fineweb2",
+    "subset": "ckb_Arab",
+    "utf8_bytes": 2562813224,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_kat_geor",
+    "source": "fineweb2",
+    "subset": "kat_Geor",
+    "utf8_bytes": 27094494127,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_rus_cyrl",
+    "source": "fineweb2",
+    "subset": "rus_Cyrl",
+    "utf8_bytes": 6400108560340,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_gla_latn",
+    "source": "fineweb2",
+    "subset": "gla_Latn",
+    "utf8_bytes": 935026939,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_tam_taml",
+    "source": "fineweb2",
+    "subset": "tam_Taml",
+    "utf8_bytes": 39693515188,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_swe_latn",
+    "source": "fineweb2",
+    "subset": "swe_Latn",
+    "utf8_bytes": 217929329252,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_grc_grek",
+    "source": "fineweb2",
+    "subset": "grc_Grek",
+    "utf8_bytes": 357352609,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_yue_hani",
+    "source": "fineweb2",
+    "subset": "yue_Hani",
+    "utf8_bytes": 673769606,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ekk_latn",
+    "source": "fineweb2",
+    "subset": "ekk_Latn",
+    "utf8_bytes": 43834195267,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_zul_latn",
+    "source": "fineweb2",
+    "subset": "zul_Latn",
+    "utf8_bytes": 511054246,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_pbt_arab",
+    "source": "fineweb2",
+    "subset": "pbt_Arab",
+    "utf8_bytes": 2586053704,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ast_latn",
+    "source": "fineweb2",
+    "subset": "ast_Latn",
+    "utf8_bytes": 274911002,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_sah_cyrl",
+    "source": "fineweb2",
+    "subset": "sah_Cyrl",
+    "utf8_bytes": 512944243,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_gle_latn",
+    "source": "fineweb2",
+    "subset": "gle_Latn",
+    "utf8_bytes": 2330152361,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_dan_latn",
+    "source": "fineweb2",
+    "subset": "dan_Latn",
+    "utf8_bytes": 161837584891,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_slv_latn",
+    "source": "fineweb2",
+    "subset": "slv_Latn",
+    "utf8_bytes": 44878788376,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_cym_latn",
+    "source": "fineweb2",
+    "subset": "cym_Latn",
+    "utf8_bytes": 2680853098,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_fil_latn",
+    "source": "fineweb2",
+    "subset": "fil_Latn",
+    "utf8_bytes": 8728698096,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ben_beng",
+    "source": "fineweb2",
+    "subset": "ben_Beng",
+    "utf8_bytes": 93456224217,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ron_latn",
+    "source": "fineweb2",
+    "subset": "ron_Latn",
+    "utf8_bytes": 199920561455,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_hau_latn",
+    "source": "fineweb2",
+    "subset": "hau_Latn",
+    "utf8_bytes": 1388541923,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_xho_latn",
+    "source": "fineweb2",
+    "subset": "xho_Latn",
+    "utf8_bytes": 796963469,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_fao_latn",
+    "source": "fineweb2",
+    "subset": "fao_Latn",
+    "utf8_bytes": 591504161,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_nld_latn",
+    "source": "fineweb2",
+    "subset": "nld_Latn",
+    "utf8_bytes": 426818652448,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_lvs_latn",
+    "source": "fineweb2",
+    "subset": "lvs_Latn",
+    "utf8_bytes": 35823658462,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_swh_latn",
+    "source": "fineweb2",
+    "subset": "swh_Latn",
+    "utf8_bytes": 3311669706,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_mlt_latn",
+    "source": "fineweb2",
+    "subset": "mlt_Latn",
+    "utf8_bytes": 1642185804,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_heb_hebr",
+    "source": "fineweb2",
+    "subset": "heb_Hebr",
+    "utf8_bytes": 73780962340,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_sin_sinh",
+    "source": "fineweb2",
+    "subset": "sin_Sinh",
+    "utf8_bytes": 7567102011,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_fra_latn",
+    "source": "fineweb2",
+    "subset": "fra_Latn",
+    "utf8_bytes": 1220202265605,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_zsm_latn",
+    "source": "fineweb2",
+    "subset": "zsm_Latn",
+    "utf8_bytes": 34291909291,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_anp_deva",
+    "source": "fineweb2",
+    "subset": "anp_Deva",
+    "utf8_bytes": 329286779,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_khk_cyrl",
+    "source": "fineweb2",
+    "subset": "khk_Cyrl",
+    "utf8_bytes": 9147689411,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_som_latn",
+    "source": "fineweb2",
+    "subset": "som_Latn",
+    "utf8_bytes": 2204199720,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_fin_latn",
+    "source": "fineweb2",
+    "subset": "fin_Latn",
+    "utf8_bytes": 153578789445,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_lat_latn",
+    "source": "fineweb2",
+    "subset": "lat_Latn",
+    "utf8_bytes": 4145908647,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_jpn_jpan",
+    "source": "fineweb2",
+    "subset": "jpn_Jpan",
+    "utf8_bytes": 1650248456871,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_deu_latn",
+    "source": "fineweb2",
+    "subset": "deu_Latn",
+    "utf8_bytes": 1654784757688,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_mal_mlym",
+    "source": "fineweb2",
+    "subset": "mal_Mlym",
+    "utf8_bytes": 23909881915,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_tha_thai",
+    "source": "fineweb2",
+    "subset": "tha_Thai",
+    "utf8_bytes": 299226473998,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_glg_latn",
+    "source": "fineweb2",
+    "subset": "glg_Latn",
+    "utf8_bytes": 6947044419,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_pol_latn",
+    "source": "fineweb2",
+    "subset": "pol_Latn",
+    "utf8_bytes": 463862082709,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_afr_latn",
+    "source": "fineweb2",
+    "subset": "afr_Latn",
+    "utf8_bytes": 8254403024,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_div_thaa",
+    "source": "fineweb2",
+    "subset": "div_Thaa",
+    "utf8_bytes": 1495299270,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_kan_knda",
+    "source": "fineweb2",
+    "subset": "kan_Knda",
+    "utf8_bytes": 13857353006,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_bos_latn",
+    "source": "fineweb2",
+    "subset": "bos_Latn",
+    "utf8_bytes": 52807573543,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_hun_latn",
+    "source": "fineweb2",
+    "subset": "hun_Latn",
+    "utf8_bytes": 214420647030,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_uzn_cyrl",
+    "source": "fineweb2",
+    "subset": "uzn_Cyrl",
+    "utf8_bytes": 6569421517,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_pan_guru",
+    "source": "fineweb2",
+    "subset": "pan_Guru",
+    "utf8_bytes": 6050581322,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_kin_latn",
+    "source": "fineweb2",
+    "subset": "kin_Latn",
+    "utf8_bytes": 831837331,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_uzn_latn",
+    "source": "fineweb2",
+    "subset": "uzn_Latn",
+    "utf8_bytes": 4780890804,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_chv_cyrl",
+    "source": "fineweb2",
+    "subset": "chv_Cyrl",
+    "utf8_bytes": 419676103,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_bel_cyrl",
+    "source": "fineweb2",
+    "subset": "bel_Cyrl",
+    "utf8_bytes": 12316859892,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_hin_latn",
+    "source": "fineweb2",
+    "subset": "hin_Latn",
+    "utf8_bytes": 517908506,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_oss_cyrl",
+    "source": "fineweb2",
+    "subset": "oss_Cyrl",
+    "utf8_bytes": 288793635,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_mkd_cyrl",
+    "source": "fineweb2",
+    "subset": "mkd_Cyrl",
+    "utf8_bytes": 16096523670,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_tgk_cyrl",
+    "source": "fineweb2",
+    "subset": "tgk_Cyrl",
+    "utf8_bytes": 4031127806,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_sot_latn",
+    "source": "fineweb2",
+    "subset": "sot_Latn",
+    "utf8_bytes": 385995324,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_san_deva",
+    "source": "fineweb2",
+    "subset": "san_Deva",
+    "utf8_bytes": 350803610,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ibo_latn",
+    "source": "fineweb2",
+    "subset": "ibo_Latn",
+    "utf8_bytes": 396446133,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_asm_beng",
+    "source": "fineweb2",
+    "subset": "asm_Beng",
+    "utf8_bytes": 1489680674,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_azj_latn",
+    "source": "fineweb2",
+    "subset": "azj_Latn",
+    "utf8_bytes": 28882728457,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_kaz_cyrl",
+    "source": "fineweb2",
+    "subset": "kaz_Cyrl",
+    "utf8_bytes": 22198217777,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_tuk_latn",
+    "source": "fineweb2",
+    "subset": "tuk_Latn",
+    "utf8_bytes": 737149133,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_epo_latn",
+    "source": "fineweb2",
+    "subset": "epo_Latn",
+    "utf8_bytes": 1303689462,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_tel_telu",
+    "source": "fineweb2",
+    "subset": "tel_Telu",
+    "utf8_bytes": 15478493847,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_nrm_latn",
+    "source": "fineweb2",
+    "subset": "nrm_Latn",
+    "utf8_bytes": 1839492236,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_guj_gujr",
+    "source": "fineweb2",
+    "subset": "guj_Gujr",
+    "utf8_bytes": 12573380396,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_npi_deva",
+    "source": "fineweb2",
+    "subset": "npi_Deva",
+    "utf8_bytes": 26982905157,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_cat_latn",
+    "source": "fineweb2",
+    "subset": "cat_Latn",
+    "utf8_bytes": 43330701751,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_eus_latn",
+    "source": "fineweb2",
+    "subset": "eus_Latn",
+    "utf8_bytes": 4616894404,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_isl_latn",
+    "source": "fineweb2",
+    "subset": "isl_Latn",
+    "utf8_bytes": 11028092809,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_tat_cyrl",
+    "source": "fineweb2",
+    "subset": "tat_Cyrl",
+    "utf8_bytes": 1638926006,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_nob_latn",
+    "source": "fineweb2",
+    "subset": "nob_Latn",
+    "utf8_bytes": 184736905731,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_fas_arab",
+    "source": "fineweb2",
+    "subset": "fas_Arab",
+    "utf8_bytes": 327079306116,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ltz_latn",
+    "source": "fineweb2",
+    "subset": "ltz_Latn",
+    "utf8_bytes": 1051196381,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_als_latn",
+    "source": "fineweb2",
+    "subset": "als_Latn",
+    "utf8_bytes": 19522049281,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_azb_arab",
+    "source": "fineweb2",
+    "subset": "azb_Arab",
+    "utf8_bytes": 349654458,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_amh_ethi",
+    "source": "fineweb2",
+    "subset": "amh_Ethi",
+    "utf8_bytes": 2675147230,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_por_latn",
+    "source": "fineweb2",
+    "subset": "por_Latn",
+    "utf8_bytes": 611213407211,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_hrv_latn",
+    "source": "fineweb2",
+    "subset": "hrv_Latn",
+    "utf8_bytes": 38555062999,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_hin_deva",
+    "source": "fineweb2",
+    "subset": "hin_Deva",
+    "utf8_bytes": 129902413849,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_ind_latn",
+    "source": "fineweb2",
+    "subset": "ind_Latn",
+    "utf8_bytes": 374364271538,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_smo_latn",
+    "source": "fineweb2",
+    "subset": "smo_Latn",
+    "utf8_bytes": 426106921,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_snd_arab",
+    "source": "fineweb2",
+    "subset": "snd_Arab",
+    "utf8_bytes": 1274860486,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_urd_arab",
+    "source": "fineweb2",
+    "subset": "urd_Arab",
+    "utf8_bytes": 21400072163,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_plt_latn",
+    "source": "fineweb2",
+    "subset": "plt_Latn",
+    "utf8_bytes": 963914602,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_nya_latn",
+    "source": "fineweb2",
+    "subset": "nya_Latn",
+    "utf8_bytes": 417963769,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_bak_cyrl",
+    "source": "fineweb2",
+    "subset": "bak_Cyrl",
+    "utf8_bytes": 885201808,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_khm_khmr",
+    "source": "fineweb2",
+    "subset": "khm_Khmr",
+    "utf8_bytes": 9341656291,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_hbo_hebr",
+    "source": "fineweb2",
+    "subset": "hbo_Hebr",
+    "utf8_bytes": 360917990,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_hyw_armn",
+    "source": "fineweb2",
+    "subset": "hyw_Armn",
+    "utf8_bytes": 862788840,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   },
+   {
+    "name": "fw2_yor_latn",
+    "source": "fineweb2",
+    "subset": "yor_Latn",
+    "utf8_bytes": 306731770,
+    "family": "language",
+    "ref_model": "Qwen2.5-0.5B"
+   }
+  ],
+  "english": [
+   {
+    "name": "pile_uspto_backgrounds",
+    "source": "pile",
+    "subset": "USPTO Backgrounds",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "pile_ubuntu_irc",
+    "source": "pile",
+    "subset": "Ubuntu IRC",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "pile_freelaw",
+    "source": "pile",
+    "subset": "FreeLaw",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "pile_nih_exporter",
+    "source": "pile",
+    "subset": "NIH ExPorter",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "pile_enron_emails",
+    "source": "pile",
+    "subset": "Enron Emails",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "pile_gutenberg_pg_19",
+    "source": "pile",
+    "subset": "Gutenberg (PG-19)",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "pile_arxiv",
+    "source": "pile",
+    "subset": "ArXiv",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "pile_wikipedia_en",
+    "source": "pile",
+    "subset": "Wikipedia (en)",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "pile_pubmed_abstracts",
+    "source": "pile",
+    "subset": "PubMed Abstracts",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "pile_philpapers",
+    "source": "pile",
+    "subset": "PhilPapers",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "pile_pubmed_central",
+    "source": "pile",
+    "subset": "PubMed Central",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "pile_stackexchange",
+    "source": "pile",
+    "subset": "StackExchange",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "pile_pile_cc",
+    "source": "pile",
+    "subset": "Pile-CC",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "pile_hackernews",
+    "source": "pile",
+    "subset": "HackerNews",
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "dolma_reddit",
+    "source": "dolma",
+    "subset": "reddit",
+    "files": [
+     "https://olmo-data.org/dolma-v1_7/reddit/reddit-0002.json.gz",
+     "https://olmo-data.org/dolma-v1_7/reddit/reddit-0003.json.gz",
+     "https://olmo-data.org/dolma-v1_7/reddit/reddit-0004.json.gz",
+     "https://olmo-data.org/dolma-v1_7/reddit/reddit-0005.json.gz"
+    ],
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "dolma_cc_news",
+    "source": "dolma",
+    "subset": "cc_news_head",
+    "files": [
+     "https://olmo-data.org/dolma-v1_7/cc_news_head/cc_news-0002.json.gz",
+     "https://olmo-data.org/dolma-v1_7/cc_news_head/cc_news-0003.json.gz",
+     "https://olmo-data.org/dolma-v1_7/cc_news_head/cc_news-0004.json.gz",
+     "https://olmo-data.org/dolma-v1_7/cc_news_head/cc_news-0000.json.gz"
+    ],
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "dolma_tulu_flan",
+    "source": "dolma",
+    "subset": "tulu_flan",
+    "files": [
+     "https://olmo-data.org/dolma-v1_7/tulu_flan/tulu_flan-0041.json.gz",
+     "https://olmo-data.org/dolma-v1_7/tulu_flan/tulu_flan-0042.json.gz",
+     "https://olmo-data.org/dolma-v1_7/tulu_flan/tulu_flan-0043.json.gz",
+     "https://olmo-data.org/dolma-v1_7/tulu_flan/tulu_flan-0044.json.gz"
+    ],
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "dolma_c4",
+    "source": "dolma",
+    "subset": "c4-filtered",
+    "files": [
+     "https://olmo-data.org/dolma-v1_7/c4-filtered/c4-0089.json.gz",
+     "https://olmo-data.org/dolma-v1_7/c4-filtered/c4-0090.json.gz",
+     "https://olmo-data.org/dolma-v1_7/c4-filtered/c4-0091.json.gz",
+     "https://olmo-data.org/dolma-v1_7/c4-filtered/c4-0092.json.gz"
+    ],
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "dolma_refinedweb",
+    "source": "dolma",
+    "subset": "falcon-refinedweb-filtered",
+    "files": [
+     "https://olmo-data.org/dolma-v1_7/falcon-refinedweb-filtered/falcon-0353.json.gz",
+     "https://olmo-data.org/dolma-v1_7/falcon-refinedweb-filtered/falcon-0354.json.gz",
+     "https://olmo-data.org/dolma-v1_7/falcon-refinedweb-filtered/falcon-0355.json.gz",
+     "https://olmo-data.org/dolma-v1_7/falcon-refinedweb-filtered/falcon-0356.json.gz"
+    ],
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "dolma_pes2o",
+    "source": "dolma",
+    "subset": "pes2o",
+    "files": [
+     "https://olmo-data.org/dolma-v1_7/pes2o/pes2o-0020.json.gz",
+     "https://olmo-data.org/dolma-v1_7/pes2o/pes2o-0021.json.gz",
+     "https://olmo-data.org/dolma-v1_7/pes2o/pes2o-0022.json.gz",
+     "https://olmo-data.org/dolma-v1_7/pes2o/pes2o-0023.json.gz"
+    ],
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "dolma_megawika",
+    "source": "dolma",
+    "subset": "wikiref_megawika",
+    "files": [
+     "https://olmo-data.org/dolma-v1_7/wikiref_megawika/megawika-0101.json.gz",
+     "https://olmo-data.org/dolma-v1_7/wikiref_megawika/megawika-0102.json.gz",
+     "https://olmo-data.org/dolma-v1_7/wikiref_megawika/megawika-0103.json.gz",
+     "https://olmo-data.org/dolma-v1_7/wikiref_megawika/megawika-0104.json.gz"
+    ],
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "dolma_cc_en_head",
+    "source": "dolma",
+    "subset": "cc_en_head",
+    "files": [
+     "https://olmo-data.org/dolma-v1_7/cc_en_head/cc_en_head-0041.json.gz",
+     "https://olmo-data.org/dolma-v1_7/cc_en_head/cc_en_head-0042.json.gz",
+     "https://olmo-data.org/dolma-v1_7/cc_en_head/cc_en_head-0043.json.gz",
+     "https://olmo-data.org/dolma-v1_7/cc_en_head/cc_en_head-0044.json.gz"
+    ],
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   },
+   {
+    "name": "dolma_open_web_math",
+    "source": "dolma",
+    "subset": "proof_pile_2-open_web_math",
+    "files": [
+     "https://olmo-data.org/dolma-v1_7/proof_pile_2-open_web_math/open-web-math-train-0012.json.gz",
+     "https://olmo-data.org/dolma-v1_7/proof_pile_2-open_web_math/open-web-math-train-0000.json.gz",
+     "https://olmo-data.org/dolma-v1_7/proof_pile_2-open_web_math/open-web-math-train-0001.json.gz",
+     "https://olmo-data.org/dolma-v1_7/proof_pile_2-open_web_math/open-web-math-train-0002.json.gz"
+    ],
+    "family": "english",
+    "ref_model": "SmolLM2-135M"
+   }
+  ],
+  "note": "English order is the seeded Pile order followed by the seeded Dolma order (the Pile first, Dolma as the top-up, as in the plan's frame)."
+ },
+ "rules": {
+  "reference": "Qwen2.5-0.5B for languages, SmolLM2-135M for English (the protocol of the earlier corpora).",
+  "screening": "Each candidate, in its family's seeded order, is prepared with small quotas (train 2^23*1.05, ref_stats 2^21) and screened: c = h_ref(512 tokens) / ngram23, with h_ref from 1,000 targets of the reference model at 512 tokens of context and ngram23 the best n-gram cross-entropy trained on 2^23 bytes (the paper's definitions). A candidate is eligible when c < 0.70. A candidate whose screening fails (stream, preparation or the reference's byte check) is ineligible.",
+  "selection": "The first 20 eligible candidates of each family in seeded order are the study corpora; later eligible candidates are spares in the same order.",
+  "replacement": "A study corpus that fails full preparation, its statistics or its reference pass is replaced by the next eligible spare of its family in seeded order (screening continues down the order if the spares run out); if the family's order is exhausted the slot is dropped.",
+  "training_order": "Interleaved: language 1, English 1, language 2, English 2, ... (positions in each family's final list).",
+  "cost_cut": "If the projected all-in spend exceeds the $3.50 cap, corpora are dropped from the end of the interleaved order in language/English pairs, never below 30 corpora in total; if 30 cannot be afforded, the run stops and is reported.",
+  "statistics_before_training": "gamma (reference curve and n-gram curves), ngram23, c and lzma bits per byte are written to stats.json and copied to the Mac with its local date before any training run starts."
+ },
+ "design": {
+  "learner": "4-layer byte-level transformer, d=256, 4 heads, ctx 512 bytes, AdamW lr 1e-3 wd 0.1, batch 32 (3.3M)",
+  "one_pass": "each budget D trains on the first D bytes of the train partition, cut into D/512 non-overlapping windows, each used exactly once in a seeded random order (D/16384 steps)",
+  "budgets_log2": [
+   22,
+   23,
+   24,
+   25,
+   26,
+   27
+  ],
+  "seeds": {
+   "22": [
+    0
+   ],
+   "23": [
+    0
+   ],
+   "24": [
+    0
+   ],
+   "25": [
+    0
+   ],
+   "26": [
+    0,
+    1
+   ],
+   "27": [
+    0,
+    1
+   ]
+  }
+ }
+}

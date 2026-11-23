@@ -1,0 +1,467 @@
+{
+ "design": "docs/analysis/code25m_english.md",
+ "list": [
+  {
+   "position": 1,
+   "name": "code_c",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "00295c2d4eb3b4776b52be5b408f95cb5756c229b519ca2278ae29728e8a0a87",
+   "ref_sha256": "45ef8342db6f1dd10e24d5226d06a47043ec3d3924835fd817007a05e8a3112f",
+   "sha_source": "results/curve_forecast/forecast.json"
+  },
+  {
+   "position": 2,
+   "name": "code_cpp",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "c96dda4eb6379b06ca1133e1c8e4c00a8195fff03a4f9df1af751717ceaa0695",
+   "ref_sha256": "b54bca71963abe4728f02687df69b371cb5e2cf70b6626f993876ef1cf5a9042",
+   "sha_source": "results/curve_forecast/forecast.json"
+  },
+  {
+   "position": 3,
+   "name": "code_csharp",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "797122a6d47463abd0a9cfa62ebc2a9edec85d34845f55124819cfc10eddbfd2",
+   "ref_sha256": "50edfcdd3108466f188265b067af499404c60d8b601cc424bdfd0ded1c10658f",
+   "sha_source": "results/curve_forecast/forecast.json"
+  },
+  {
+   "position": 4,
+   "name": "code_javascript",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "2abb1ccf77c3b99501bd169f1472872e8df4f8c718b5f5bc862a50ba7dcf4bb5",
+   "ref_sha256": "a43a5fa103b824c4dc9a7a380cb0ba92e085e64dd5937abd689abc23d55f80c1",
+   "sha_source": "results/curve_forecast/forecast.json"
+  },
+  {
+   "position": 5,
+   "name": "code_php",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "faae4f9cd906065d930a1a7279200fd23a6caa08bf72cf98f154dd0128f06850",
+   "ref_sha256": "abceb6dd91c5babccca4983f0556aad66717109773f135cded70447302f77d42",
+   "sha_source": "results/curve_forecast/forecast.json"
+  },
+  {
+   "position": 6,
+   "name": "code_html",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "7e5b8c8ce7653d5c4cfb1daffe6a5421a830ca8c6df4794d1c7b4a03a6f9c0e5",
+   "ref_sha256": "050680597e97d472d79cbbcb8b2aca788043561a6ed7f04365d81990e62d4589",
+   "sha_source": "results/curve_forecast/forecast.json"
+  },
+  {
+   "position": 7,
+   "name": "code_go",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "04168f7c5180a19cb569d1b1007870d8455fa5dcd67ec6552560ea5e25b23cfe",
+   "ref_sha256": "bab48d9a999dc7a0f3d4182b939f16a9c17b1cdc72f29b7ba66923e54e1da726",
+   "sha_source": "results/curve_forecast/stage2/forecast.json"
+  },
+  {
+   "position": 8,
+   "name": "code_ruby",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "93a9151cf944fc60ffd9bcdf91f72eb5aeb21c14f05b530e0927e94c8e6025da",
+   "ref_sha256": "0573a2318fff052997850c68e4e51d5ee94c465cde8916a368a2806bdfdf8390",
+   "sha_source": "results/curve_forecast/stage2/forecast.json"
+  },
+  {
+   "position": 9,
+   "name": "code_typescript",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "f410f67b8c46ad71169930540f99eacc40b8cc29b9f3ab23499d25bc2acff556",
+   "ref_sha256": "aa3f493da76b548e644b2c77aed8c8c3c8200270f2f7ad6f2289d572464f899e",
+   "sha_source": "results/curve_forecast/stage2/forecast.json"
+  },
+  {
+   "position": 10,
+   "name": "code_sql",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "038a154cdb47aeb3e8101b4d9e8e8b6ab3c7dc7682f64373b63782fedd54ce5e",
+   "ref_sha256": "095167cdcef50bb632654a0b5888461399c8e54c2318539b9da78b6cb65b47ca",
+   "sha_source": "results/curve_forecast/stage2/forecast.json"
+  },
+  {
+   "position": 11,
+   "name": "code_scala",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "635c1fc4bea0e7bdb504a8e1f5fbd1496b523fe55f6903489da9c424b637e95d",
+   "ref_sha256": "8044513467b58cab273810466602bfbbdb0af396772e7fe219405e1e3f7ffa95",
+   "sha_source": "results/curve_forecast/stage2/forecast.json"
+  },
+  {
+   "position": 12,
+   "name": "code_perl",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "92c49dbdb4c0e4425e17697da260d5f834fff16604aa94b27d43382e9f3634ca",
+   "ref_sha256": "d3f70c298ade799e2673feacbf59e3f327a1facd979ac5b0a1319cc9cbd983bc",
+   "sha_source": "results/curve_forecast/stage2/forecast.json"
+  },
+  {
+   "position": 13,
+   "name": "code_css",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "8fd47368df817544c5d7f92e3726a689fd350e8bca28a5a8a52eeb720bae510a",
+   "ref_sha256": "ff318f393db2da68548f2f8f13ba79b3814fce7a6353ed5a982e7e38bb78da71",
+   "sha_source": "results/curve_forecast/stage2/forecast.json"
+  },
+  {
+   "position": 14,
+   "name": "code_markdown",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "a3cc081acbc19e7a02cfacb94eb67dc8d3bfaaa2ebc8fcf1be3628d4e0325ad9",
+   "ref_sha256": "39ac1ea75fdede8cf6b8e652622283d4e25ad41e89b69f8fd63821aba3a6bbba",
+   "sha_source": "results/curve_forecast/stage2/forecast.json"
+  },
+  {
+   "position": 15,
+   "name": "code_kotlin",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "d68e05f3848618138825b81f447433f14722a5e4f87bf41c82f4b30f0db5467d",
+   "ref_sha256": "1036e183bd6318edfc93a1e68b4d063258eb4640973162196dc1025f718ce60b",
+   "sha_source": "results/curve_forecast/new_corpora/forecast.json"
+  },
+  {
+   "position": 16,
+   "name": "code_dart",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "a4632c6b4d35bb38266936cf4eb009903d71ebab4355c9211c9b3381a40f223a",
+   "ref_sha256": "a398d66928be6cbf292d8ac3f7cc28a5b028e49c7546d86298bda0db4c078e58",
+   "sha_source": "results/curve_forecast/new_corpora/forecast.json"
+  },
+  {
+   "position": 17,
+   "name": "code_ocaml",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "ea1955fbceeb0a8b47884bebd7922152c3f7ef7638fd37604e5b611036ccde4c",
+   "ref_sha256": "5c5c0ad702999e766d8b3e606cb0bbedbcbbb0b5c59998549fa2cbd7f6864b18",
+   "sha_source": "results/curve_forecast/new_corpora/forecast.json"
+  },
+  {
+   "position": 18,
+   "name": "code_clojure",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "58008c0f9ffec361358b3ee9e0a33b6c3e5a8fd6b0118831bce2b2655032a34a",
+   "ref_sha256": "fc54a3a761885325eba823246486f5f14be12bdcb0fa7233cb953122ac8ed6c2",
+   "sha_source": "results/curve_forecast/new_corpora/forecast.json"
+  },
+  {
+   "position": 19,
+   "name": "code_groovy",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "a5e75a37b80e5d9c29f506aee4af0e6393d16b0b024bef80da72f06712e43765",
+   "ref_sha256": "852906a635a77003e0230e0f0c4311338c95ffab8465bae0eb9960aadd76fcff",
+   "sha_source": "results/curve_forecast/new_corpora/forecast.json"
+  },
+  {
+   "position": 20,
+   "name": "code_nix",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "e4ad7066546a91406258062225c492d2442f4d3aa7d9aa6262100546063ecc0f",
+   "ref_sha256": "fee31ed0e0a7cf671b74cb0a61983d9c3d59779cc22115a299df0ca706181960",
+   "sha_source": "results/extbench/pod1/forecast_i.json"
+  },
+  {
+   "position": 21,
+   "name": "code_objective_cpp",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "8c9ff1ef0beb7160c33af99837d5767a165d373296b9a9b3c868f92e32e7b15d",
+   "ref_sha256": "76a404facbb1e679d8880ac86c74de0bf49330dc5c8a866e288093e76e3dad7c",
+   "sha_source": "results/extbench/pod1/forecast_i.json"
+  },
+  {
+   "position": 22,
+   "name": "code_dm",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "6978604edef287d9e1d4746de7a389e0c0d9cbf65fc75d5cae3c559b383af39f",
+   "ref_sha256": "a55a925b6bd9481e4075fc86adf534bd85b2dd4ed48a044f0f08f4ca2a82e497",
+   "sha_source": "results/extbench/pod1/forecast_i.json"
+  },
+  {
+   "position": 23,
+   "name": "code_coffeescript",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "801ff9edae72fa51bbe6a6e0431624f32bdb2ed3db1eec445229d81d1c55003c",
+   "ref_sha256": "7d89f3664060952d8c6b821756b4c12cfc9a221275f3294dcc2a301b3d3f8ed5",
+   "sha_source": "results/extbench/pod1/forecast_i.json"
+  },
+  {
+   "position": 24,
+   "name": "code_cython",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "b47b030ba16e27c417c17665d0634fad318317f2e35bff5d681a7208fcc7a1e4",
+   "ref_sha256": "c08990131eb4f1f4c2028441a02d5c9d7044c3d9525ee56dc25fd452c93935b6",
+   "sha_source": "results/extbench/pod2/forecast_i.json"
+  },
+  {
+   "position": 25,
+   "name": "code_gas",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "5e9f839a190cb663edada9184421b7764c51084750c84b6dd72495b302f1b347",
+   "ref_sha256": "910d7e5dd39191cc544bc64c7178903d150244e67317ad5c0092a7c1aa80c972",
+   "sha_source": "results/extbench/pod2/forecast_i.json"
+  },
+  {
+   "position": 26,
+   "name": "code_nesc",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "9d1dac3002bd3a97adc3220cedf534444dcadcc7d1a97c2c858e5d10f2c52411",
+   "ref_sha256": "76cd211f987dc1957cea6278fb303776b759a5c41714b04bd76e56dc8775ae66",
+   "sha_source": "results/extbench/pod2/forecast_i.json"
+  },
+  {
+   "position": 27,
+   "name": "code_mathematica",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "7eea9e541efa48da7db921dd0ca819d50df046d886f0f8a2cc3db6c5caac755c",
+   "ref_sha256": "b9f0c4ddfb8006c21b0e80e61541e6337ac28fd91efc8410c7b6c63fb7b46a09",
+   "sha_source": "results/extbench/pod2/forecast_i.json"
+  },
+  {
+   "position": 28,
+   "name": "code_java_server_pages",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "c4dafdf21f0e9669daf73d33093c8b041c79ebe76aa07f28671d7169aca66d88",
+   "ref_sha256": "dbf5b5c868d031694c780e97ef0db382681042b930653ec81af936137f094cf3",
+   "sha_source": "results/extbench/pod3/forecast_i.json"
+  },
+  {
+   "position": 29,
+   "name": "code_xslt",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "3e612f28c2d23ea226d1483a706c075ca31796d434040a87f396de1b20d4e7ec",
+   "ref_sha256": "27bc7b61d728c3102a19876d522a5ddab2bb0ddc6f4ced14d89e628800b6b1fd",
+   "sha_source": "results/extbench/pod3/forecast_i.json"
+  },
+  {
+   "position": 30,
+   "name": "code_makefile",
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "train_sha256": "08a9dd1400c53113073f6f52fc0d8ad35d857eb796882872ecbb86a015efda83",
+   "ref_sha256": "c2284ef5568715182c8d6d9955cad49f867c7eba84a15dccde99706a16eba1e9",
+   "sha_source": "results/extbench/pod3/forecast_i.json"
+  },
+  {
+   "position": 31,
+   "name": "fw2_ckb_arab",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "42c2fd97352055e640de6e6cc1183d7e1f5739b6867453c09a7b2666b0e31014",
+   "ref_sha256": "173a0407354efc9b17f6c34e185565d8894d2e0aa2e72bf7b799702e7b94f2a5",
+   "sha_source": "results/fwd_weblang/pod1/forecast_i.json"
+  },
+  {
+   "position": 32,
+   "name": "fw2_haw_latn",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "7fb7bef7a8026644a9562caaa18b2362f1b9a841ac6a08088e294e51899a8505",
+   "ref_sha256": "d964c4af3a186506c3c2e12cd2856d9e97a0076eebeaf6c3438e17b77c4e5f8d",
+   "sha_source": "results/fwd_weblang/pod2/forecast_i.json"
+  },
+  {
+   "position": 33,
+   "name": "fw2_hat_latn",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "7a71200cdcb64cc4093e9cc261ee3393858c9d46ec2a622fc0a349b2b90c33d9",
+   "ref_sha256": "3badd4e9681ab61f9c09acaa8f3b026293b18dd7785133a6a940b8e4fbf6ffef",
+   "sha_source": "results/fwd_weblang/pod1/forecast_i.json"
+  },
+  {
+   "position": 34,
+   "name": "fw2_grc_grek",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "00dc235cac742c253150980780686f265960cb415d009125273545482508fbc0",
+   "ref_sha256": "c2b92333c50ff87e59f4a093ab9732adfff96065e99117b12de80e6efa03a076",
+   "sha_source": "results/fwd_weblang/pod2/forecast_i.json"
+  },
+  {
+   "position": 35,
+   "name": "fw2_chv_cyrl",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "e1e38368f7e761c843b105644170de3c2347c9dfc27409853ed12e9b04cff769",
+   "ref_sha256": "f175221e786388a14e487c0496d0f4ff97e907c973ae125ba546df550cf1dffa",
+   "sha_source": "results/fwd_weblang/pod1/forecast_i.json"
+  },
+  {
+   "position": 36,
+   "name": "fw2_kmr_latn",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "d4f043e39708ee4961b95156f8a1c58be564c0a20a669ce7cbab01cb2993417e",
+   "ref_sha256": "8b3dcc09405b627847a1108dd6e438c3faf2c580df941fc70ad01deb03982e36",
+   "sha_source": "results/fwd_weblang/pod2/forecast_i.json"
+  },
+  {
+   "position": 37,
+   "name": "fw2_run_latn",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "d23c6cea081aff82c854aee14e27843d0cbb4a037458a9a1131de2be25941843",
+   "ref_sha256": "8190834ca998f914ee378811ead3c50241b0027e562ef50dddd5e874c418f7e3",
+   "sha_source": "results/fwd_weblang/pod1/forecast_i.json"
+  },
+  {
+   "position": 38,
+   "name": "fw2_npi_deva",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "d85c013a678474415f37727412c25ae3fed20d2196fd8cb5eb4e1a8dab2d0276",
+   "ref_sha256": "31a81be5882382abea1e0ec07f2664b1b2c6b3b35d119ced9d351de378460540",
+   "sha_source": "results/fwd_weblang/pod2/forecast_i.json"
+  },
+  {
+   "position": 39,
+   "name": "fw2_hif_latn",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "acbdabb3d0dfbef5dd07dbaf64cb8ce71e41f031d9e6383bbac43c87f8e02f94",
+   "ref_sha256": "ac6bdef95e370e69c1f92ccae343e2044e3d285d2d77190b33731837d7425293",
+   "sha_source": "results/fwd_weblang/pod1/forecast_i.json"
+  },
+  {
+   "position": 40,
+   "name": "fw2_snd_arab",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "00f7def9454d8cdc6e7cd1093ada4e4c31b01f12fc9933b3f53d117346cd3e92",
+   "ref_sha256": "d51a5268e924ad4d61a103ee5e5956e2354cfb86a2a7fc334540dce533c63959",
+   "sha_source": "results/fwd_weblang/pod2/forecast_i.json"
+  },
+  {
+   "position": 41,
+   "name": "fw2_hau_latn",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "0b7fcaa2467324f4c4fe58e45e2dd1a73e3814674afceb3ff025659d78509f4b",
+   "ref_sha256": "18e7ef93669dd038e713f4fd16f73955ad4356df4d5d17d9040231d3d82a61ab",
+   "sha_source": "results/fwd_weblang/pod1/forecast_i.json"
+  },
+  {
+   "position": 42,
+   "name": "fw2_amh_ethi",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "9d77cb60a0931c938089f6194c41e714ba789ab00e2440e56ce651e92367449e",
+   "ref_sha256": "edd38925af2b54f2ad3ce29ec44360b001c9e16a0fbadfbe05ca6217443feaa9",
+   "sha_source": "results/fwd_weblang/pod2/forecast_i.json"
+  },
+  {
+   "position": 43,
+   "name": "fw2_lus_latn",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "20ddc80bd0da71d97ff80bd617d89e8a6a3f105b06a031e6b41ba6e4b3ca6f4f",
+   "ref_sha256": "3e439949a9c201690bb910a5961a96377c9c83b5ce77dd5ce7e094fefab7eeee",
+   "sha_source": "results/fwd_weblang/pod1/forecast_i.json"
+  },
+  {
+   "position": 44,
+   "name": "fw2_hbo_hebr",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "bac1276a5b900692b612f2fcde8c3cb3aa9f2c01b4167640013592731d7df8da",
+   "ref_sha256": "04e42eda79810ae52dca9469c17991a860486aff64ce0b609bc2db0f6b01e751",
+   "sha_source": "results/fwd_weblang/pod2/forecast_i.json"
+  },
+  {
+   "position": 45,
+   "name": "fw2_kan_knda",
+   "family": "lang",
+   "ref_model": "Qwen2.5-0.5B",
+   "train_sha256": "f8fbda4dbe4d523469b847a3cc8c6fc9fb2bf5a5f0bf94fe1bee7e0874ecd6d0",
+   "ref_sha256": "1ee14db268a3e9312a9fa3e153f6fff2b5ec68f43c9d552ab91ccca96a8bb2ba",
+   "sha_source": "results/fwd_weblang/pod1/forecast_i.json"
+  }
+ ],
+ "slots": {
+  "c1": [
+   "code_c",
+   "code_cpp",
+   "code_csharp",
+   "code_javascript",
+   "code_php",
+   "code_html",
+   "code_go",
+   "code_ruby",
+   "code_typescript",
+   "code_sql"
+  ],
+  "c2": [
+   "code_scala",
+   "code_perl",
+   "code_css",
+   "code_markdown",
+   "code_kotlin",
+   "code_dart",
+   "code_ocaml",
+   "code_clojure",
+   "code_groovy",
+   "code_nix"
+  ],
+  "c3": [
+   "code_objective_cpp",
+   "code_dm",
+   "code_coffeescript",
+   "code_cython",
+   "code_gas",
+   "code_nesc",
+   "code_mathematica",
+   "code_java_server_pages",
+   "code_xslt",
+   "code_makefile"
+  ],
+  "w1": [
+   "fw2_ckb_arab",
+   "fw2_hat_latn",
+   "fw2_chv_cyrl",
+   "fw2_run_latn",
+   "fw2_hif_latn",
+   "fw2_hau_latn",
+   "fw2_lus_latn",
+   "fw2_kan_knda"
+  ],
+  "w2": [
+   "fw2_haw_latn",
+   "fw2_grc_grek",
+   "fw2_kmr_latn",
+   "fw2_npi_deva",
+   "fw2_snd_arab",
+   "fw2_amh_ethi",
+   "fw2_hbo_hebr"
+  ]
+ }
+}

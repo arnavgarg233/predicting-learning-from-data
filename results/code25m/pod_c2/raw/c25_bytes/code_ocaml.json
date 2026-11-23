@@ -1,0 +1,10 @@
+{
+ "name": "code_ocaml",
+ "prep_ok": true,
+ "prep_seconds": 54.596455574035645,
+ "train_sha256": "ea1955fbceeb0a8b47884bebd7922152c3f7ef7638fd37604e5b611036ccde4c",
+ "ref_sha256": "5c5c0ad702999e766d8b3e606cb0bbedbcbbb0b5c59998549fa2cbd7f6864b18",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

@@ -1,0 +1,10 @@
+{
+ "name": "fw2_kmr_latn",
+ "prep_ok": true,
+ "prep_seconds": 33.26352882385254,
+ "train_sha256": "d4f043e39708ee4961b95156f8a1c58be564c0a20a669ce7cbab01cb2993417e",
+ "ref_sha256": "8b3dcc09405b627847a1108dd6e438c3faf2c580df941fc70ad01deb03982e36",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

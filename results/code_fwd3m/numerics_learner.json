@@ -1,0 +1,40 @@
+{
+ "rule": "each |L_fp16 - L_stored| <= 0.021 (2 sqrt2 sigma) and mean within +-0.010 (sqrt2 sigma); sigma = 0.0073 b/B (9 clean stored code pairs, 3.3M, 2^25)",
+ "runs": {
+  "code_xslt_b23_s0": {
+   "fp16": 1.1423218538115623,
+   "stored_bf16": 1.1344884444516692,
+   "diff": 0.007833409359893073,
+   "steps_fp16": 9600,
+   "steps_stored": 7800,
+   "seconds_fp16": 766.8986163139343
+  },
+  "code_xslt_b25_s0": {
+   "fp16": 0.8105513696586607,
+   "stored_bf16": 0.8102861178705117,
+   "diff": 0.0002652517881489569,
+   "steps_fp16": 16600,
+   "steps_stored": 15300,
+   "seconds_fp16": 1319.106389760971
+  },
+  "code_coffeescript_b23_s0": {
+   "fp16": 1.55264279380153,
+   "stored_bf16": 1.5542501625739618,
+   "diff": -0.0016073687724318386,
+   "steps_fp16": 8300,
+   "steps_stored": 8300,
+   "seconds_fp16": 665.7402677536011
+  },
+  "code_coffeescript_b25_s0": {
+   "fp16": 1.2888400165119847,
+   "stored_bf16": 1.2922414204879047,
+   "diff": -0.0034014039759200365,
+   "steps_fp16": 20300,
+   "steps_stored": 18400,
+   "seconds_fp16": 1612.7654180526733
+  }
+ },
+ "mean_diff": 0.0007724720999225387,
+ "max_abs_diff": 0.007833409359893073,
+ "accepted": true
+}

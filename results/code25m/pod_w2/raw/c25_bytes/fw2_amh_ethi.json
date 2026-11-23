@@ -1,0 +1,10 @@
+{
+ "name": "fw2_amh_ethi",
+ "prep_ok": true,
+ "prep_seconds": 25.093419551849365,
+ "train_sha256": "9d77cb60a0931c938089f6194c41e714ba789ab00e2440e56ce651e92367449e",
+ "ref_sha256": "edd38925af2b54f2ad3ce29ec44360b001c9e16a0fbadfbe05ca6217443feaa9",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

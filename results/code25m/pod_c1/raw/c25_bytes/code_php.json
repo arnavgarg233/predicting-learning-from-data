@@ -1,0 +1,10 @@
+{
+ "name": "code_php",
+ "prep_ok": true,
+ "prep_seconds": 58.119324922561646,
+ "train_sha256": "faae4f9cd906065d930a1a7279200fd23a6caa08bf72cf98f154dd0128f06850",
+ "ref_sha256": "abceb6dd91c5babccca4983f0556aad66717109773f135cded70447302f77d42",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

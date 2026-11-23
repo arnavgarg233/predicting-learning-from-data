@@ -1,0 +1,6776 @@
+{
+ "constants": {
+  "code_bias": 0.2011360393894477,
+  "lam_pooled80": 0.6924039665645343,
+  "lam_code14": 0.6296935750166145,
+  "mean_fall_code14": 0.3303647186457393,
+  "mean_log_ratio_code14": 0.24678407887247605,
+  "ngram_level_coef_code14": [
+   0.03631296381066719,
+   0.561783627040757
+  ],
+  "pooled_exponent_paper": 0.14,
+  "pooled_exponent_code14": 0.23010426726062475
+ },
+ "checks": {
+  "A0_reproduced": 4.440892098500626e-16,
+  "A3_matches_costmatch": 0.0,
+  "Xpool1_matches_costmatch": 0.0,
+  "ext45_ii_reproduced": 0.0,
+  "code_bias_reproduced": 0.0
+ },
+ "methods": [
+  "A0 (paper forecast, as run)",
+  "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)",
+  "RevC (ref level - bias, code-fitted lam x info fall)",
+  "Two early pilots (2^19+2^20)",
+  "One pilot 2^20, pooled exponent 0.14",
+  "One pilot 2^20, code-pooled exponent",
+  "Ref level - bias + pooled-exponent fall",
+  "Ref level - bias + code-mean fall",
+  "Ref level - bias + code-mean log-ratio fall",
+  "n-gram level + code-mean fall",
+  "n-gram level + code-mean log-ratio fall",
+  "Oracle level + info fall (lam code)",
+  "Oracle level + code-mean fall"
+ ],
+ "n": {
+  "orig14": 14,
+  "ext45": 11,
+  "ext45_C1": 9,
+  "new5": 5,
+  "held16": 16,
+  "held16_C1": 14
+ },
+ "ext45_C1_dropped": [
+  "code_nesc",
+  "code_mathematica"
+ ],
+ "decomp": {
+  "orig14": {
+   "A0 (paper forecast, as run)": {
+    "rms_e25": 0.22124276891904723,
+    "rms_level": 0.3070363676722909,
+    "rms_fall": 0.24400841214242136,
+    "mean_level": 0.2011360393894477,
+    "mean_fall": 0.17288472691090379,
+    "ms_terms": {
+     "level": 0.09427133107339422,
+     "fall": 0.05954010519626577,
+     "cross": -0.10486307347069306
+    },
+    "rms_no_cancel": 0.3921880113793128,
+    "corr_level_fall": 0.44205105473471457,
+    "n_same_sign": 13,
+    "n": 14
+   },
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+    "rms_e25": 0.21169004667342567,
+    "rms_level": 0.231981949151482,
+    "rms_fall": 0.15554908835410794,
+    "mean_level": 7.93016446160826e-18,
+    "mean_fall": 0.018087193629082978,
+    "ms_terms": {
+     "level": 0.05381562473212078,
+     "fall": 0.024195518887794077,
+     "cross": -0.033198467759317715
+    },
+    "rms_no_cancel": 0.2793047504428001,
+    "corr_level_fall": 0.4631508326373043,
+    "n_same_sign": 12,
+    "n": 14
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall)": {
+    "rms_e25": 0.21024010419818412,
+    "rms_level": 0.231981949151482,
+    "rms_fall": 0.15215768553317946,
+    "mean_level": 7.93016446160826e-18,
+    "mean_fall": -0.013471776148047605,
+    "ms_terms": {
+     "level": 0.05381562473212078,
+     "fall": 0.023151961266813927,
+     "cross": -0.032766684585671405
+    },
+    "rms_no_cancel": 0.27743032638652665,
+    "corr_level_fall": 0.4659757836216502,
+    "n_same_sign": 9,
+    "n": 14
+   },
+   "Two early pilots (2^19+2^20)": {
+    "rms_e25": 0.6025527127017976,
+    "rms_level": 0.5574784642961605,
+    "rms_fall": 0.14196943314097912,
+    "mean_level": 0.3886530410019331,
+    "mean_fall": 0.015185274438205498,
+    "ms_terms": {
+     "level": 0.3107822381540055,
+     "fall": 0.020155319946370938,
+     "cross": 0.03213221348391857
+    },
+    "rms_no_cancel": 0.5752717254483976,
+    "corr_level_fall": -0.389401721788991,
+    "n_same_sign": 8,
+    "n": 14
+   },
+   "One pilot 2^20, pooled exponent 0.14": {
+    "rms_e25": 0.5178538319672499,
+    "rms_level": 0.5227831607832706,
+    "rms_fall": 0.11708440818341191,
+    "mean_level": 0.44281485753826805,
+    "mean_fall": 0.01883141456174305,
+    "ms_terms": {
+     "level": 0.2733022331985469,
+     "fall": 0.013708758639659814,
+     "cross": -0.018838400555042097
+    },
+    "rms_no_cancel": 0.5357340682075452,
+    "corr_level_fall": 0.033643993177163455,
+    "n_same_sign": 10,
+    "n": 14
+   },
+   "One pilot 2^20, code-pooled exponent": {
+    "rms_e25": 0.2654616986860918,
+    "rms_level": 0.26875309856076574,
+    "rms_fall": 0.16677724736618393,
+    "mean_level": 0.1046022776689757,
+    "mean_fall": 0.11789332351077987,
+    "ms_terms": {
+     "level": 0.07222822798601267,
+     "fall": 0.027814650239041304,
+     "cross": -0.029572964755748565
+    },
+    "rms_no_cancel": 0.31629555517751745,
+    "corr_level_fall": 0.08405020254314069,
+    "n_same_sign": 11,
+    "n": 14
+   },
+   "Ref level - bias + pooled-exponent fall": {
+    "rms_e25": 0.21374895620907072,
+    "rms_level": 0.231981949151482,
+    "rms_fall": 0.15048016022772018,
+    "mean_level": 7.93016446160826e-18,
+    "mean_fall": -0.05928510399538715,
+    "ms_terms": {
+     "level": 0.05381562473212078,
+     "fall": 0.02264427862216034,
+     "cross": -0.030771287073813897
+    },
+    "rms_no_cancel": 0.2765138393539845,
+    "corr_level_fall": 0.479522553939388,
+    "n_same_sign": 6,
+    "n": 14
+   },
+   "Ref level - bias + code-mean fall": {
+    "rms_e25": 0.2112229716930695,
+    "rms_level": 0.231981949151482,
+    "rms_fall": 0.13867422676273478,
+    "mean_level": 7.93016446160826e-18,
+    "mean_fall": -1.189524669241239e-16,
+    "ms_terms": {
+     "level": 0.05381562473212078,
+     "fall": 0.01923054116824239,
+     "cross": -0.028431022129511933
+    },
+    "rms_no_cancel": 0.27027054205067036,
+    "corr_level_fall": 0.4418883293513864,
+    "n_same_sign": 8,
+    "n": 14
+   },
+   "Ref level - bias + code-mean log-ratio fall": {
+    "rms_e25": 0.20641169685878494,
+    "rms_level": 0.231981949151482,
+    "rms_fall": 0.14185332139755502,
+    "mean_level": 7.93016446160826e-18,
+    "mean_fall": 0.0056871593372245155,
+    "ms_terms": {
+     "level": 0.05381562473212078,
+     "fall": 0.02012236479151804,
+     "cross": -0.0313322009235159
+    },
+    "rms_no_cancel": 0.2719154087646355,
+    "corr_level_fall": 0.476449108446808,
+    "n_same_sign": 10,
+    "n": 14
+   },
+   "n-gram level + code-mean fall": {
+    "rms_e25": 0.24866636782343765,
+    "rms_level": 0.2617058405087409,
+    "rms_fall": 0.13867422676273478,
+    "mean_level": -2.7755575615628914e-16,
+    "mean_fall": -1.189524669241239e-16,
+    "ms_terms": {
+     "level": 0.06848994695638652,
+     "fall": 0.01923054116824239,
+     "cross": -0.025885525638127706
+    },
+    "rms_no_cancel": 0.29617644761970674,
+    "corr_level_fall": 0.35662995990265905,
+    "n_same_sign": 8,
+    "n": 14
+   },
+   "n-gram level + code-mean log-ratio fall": {
+    "rms_e25": 0.24664517265729638,
+    "rms_level": 0.2617058405087409,
+    "rms_fall": 0.13501636892202631,
+    "mean_level": -2.7755575615628914e-16,
+    "mean_fall": 0.0056871593372244044,
+    "ms_terms": {
+     "level": 0.06848994695638652,
+     "fall": 0.018229419876888715,
+     "cross": -0.0258855256381277
+    },
+    "rms_no_cancel": 0.2944815220574548,
+    "corr_level_fall": 0.3666171458875627,
+    "n_same_sign": 10,
+    "n": 14
+   },
+   "Oracle level + info fall (lam code)": {
+    "rms_e25": 0.15215768553317943,
+    "rms_level": 0.0,
+    "rms_fall": 0.15215768553317943,
+    "mean_level": 0.0,
+    "mean_fall": -0.013471776148047636,
+    "ms_terms": {
+     "level": 0.0,
+     "fall": 0.02315196126681392,
+     "cross": -0.0
+    },
+    "rms_no_cancel": 0.15215768553317943,
+    "corr_level_fall": NaN,
+    "n_same_sign": 0,
+    "n": 14
+   },
+   "Oracle level + code-mean fall": {
+    "rms_e25": 0.13867422676273478,
+    "rms_level": 0.0,
+    "rms_fall": 0.13867422676273478,
+    "mean_level": 0.0,
+    "mean_fall": -1.1102230246251565e-16,
+    "ms_terms": {
+     "level": 0.0,
+     "fall": 0.01923054116824239,
+     "cross": -0.0
+    },
+    "rms_no_cancel": 0.13867422676273478,
+    "corr_level_fall": NaN,
+    "n_same_sign": 0,
+    "n": 14
+   }
+  },
+  "ext45": {
+   "A0 (paper forecast, as run)": {
+    "rms_e25": 1.7532020350350614,
+    "rms_level": 1.4572365391400872,
+    "rms_fall": 0.525437809422886,
+    "mean_level": -0.30905719768420875,
+    "mean_fall": 0.16913717623157154,
+    "ms_terms": {
+     "level": 2.123538331004979,
+     "fall": 0.27608489157112104,
+     "cross": 0.6740941530749818
+    },
+    "rms_no_cancel": 1.5490717293192398,
+    "corr_level_fall": -0.401972333462816,
+    "n_same_sign": 8,
+    "n": 11
+   },
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+    "rms_e25": 1.7462788097587962,
+    "rms_level": 1.5127191142840293,
+    "rms_fall": 0.47126303075735426,
+    "mean_level": -0.5101932370736564,
+    "mean_fall": 0.015685883035838722,
+    "ms_terms": {
+     "level": 2.288319118720258,
+     "fall": 0.22208884415860702,
+     "cross": 0.5390817185337327
+    },
+    "rms_no_cancel": 1.584426698487142,
+    "corr_level_fall": -0.3899203031034208,
+    "n_same_sign": 8,
+    "n": 11
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall)": {
+    "rms_e25": 1.732969955001669,
+    "rms_level": 1.5127191142840293,
+    "rms_fall": 0.4660264770277108,
+    "mean_level": -0.5101932370736564,
+    "mean_fall": -0.015598625325215852,
+    "ms_terms": {
+     "level": 2.288319118720258,
+     "fall": 0.21718067729085944,
+     "cross": 0.4976850689273686
+    },
+    "rms_no_cancel": 1.5828770628229842,
+    "corr_level_fall": -0.3871621995713675,
+    "n_same_sign": 8,
+    "n": 11
+   },
+   "Two early pilots (2^19+2^20)": {
+    "rms_e25": 0.849372743170185,
+    "rms_level": 0.6955642627279806,
+    "rms_fall": 0.4287286421438013,
+    "mean_level": 0.3772824410578277,
+    "mean_fall": -0.07511547310675958,
+    "ms_terms": {
+     "level": 0.48380964358431916,
+     "fall": 0.18380824859446765,
+     "cross": 0.05381616466165822
+    },
+    "rms_no_cancel": 0.8170788775747337,
+    "corr_level_fall": 0.0058043670399425895,
+    "n_same_sign": 8,
+    "n": 11
+   },
+   "One pilot 2^20, pooled exponent 0.14": {
+    "rms_e25": 0.888740204181119,
+    "rms_level": 0.5822078840008434,
+    "rms_fall": 0.5400805774725325,
+    "mean_level": 0.023026595514241324,
+    "mean_fall": 0.12482686741308417,
+    "ms_terms": {
+     "level": 0.3389660201927395,
+     "fall": 0.2916870301630642,
+     "cross": 0.15920610017209355
+    },
+    "rms_no_cancel": 0.7941366698218914,
+    "corr_level_fall": -0.2698108397369892,
+    "n_same_sign": 7,
+    "n": 11
+   },
+   "One pilot 2^20, code-pooled exponent": {
+    "rms_e25": 1.3186330174961063,
+    "rms_level": 0.8532670429207203,
+    "rms_fall": 0.626654572726849,
+    "mean_level": -0.4172381635549378,
+    "mean_fall": 0.25377969197459466,
+    "ms_terms": {
+     "level": 0.7280646465346703,
+     "fall": 0.39269595351946973,
+     "cross": 0.6180324347767462
+    },
+    "rms_no_cancel": 1.058659813185586,
+    "corr_level_fall": -0.47631847333050736,
+    "n_same_sign": 6,
+    "n": 11
+   },
+   "Ref level - bias + pooled-exponent fall": {
+    "rms_e25": 1.7300968030544746,
+    "rms_level": 1.5127191142840293,
+    "rms_fall": 0.40449796421641754,
+    "mean_level": -0.5101932370736564,
+    "mean_fall": 0.0307620991734985,
+    "ms_terms": {
+     "level": 2.288319118720258,
+     "fall": 0.1636186030552262,
+     "cross": 0.5412972261638287
+    },
+    "rms_no_cancel": 1.565866444424774,
+    "corr_level_fall": -0.44388319099885415,
+    "n_same_sign": 7,
+    "n": 11
+   },
+   "Ref level - bias + code-mean fall": {
+    "rms_e25": 1.6973895832779655,
+    "rms_level": 1.5127191142840293,
+    "rms_fall": 0.4167775335006013,
+    "mean_level": -0.5101932370736564,
+    "mean_fall": 0.000629099016218286,
+    "ms_terms": {
+     "level": 2.288319118720258,
+     "fall": 0.17370351243084486,
+     "cross": 0.4191087662694427
+    },
+    "rms_no_cancel": 1.5690833729127025,
+    "corr_level_fall": -0.35252581220011076,
+    "n_same_sign": 7,
+    "n": 11
+   },
+   "Ref level - bias + code-mean log-ratio fall": {
+    "rms_e25": 1.7664527909201153,
+    "rms_level": 1.5127191142840293,
+    "rms_fall": 0.42503776424102907,
+    "mean_level": -0.5101932370736564,
+    "mean_fall": 0.1171660611500807,
+    "ms_terms": {
+     "level": 2.288319118720258,
+     "fall": 0.18065710103101262,
+     "cross": 0.6513792427981941
+    },
+    "rms_no_cancel": 1.5712976229063895,
+    "corr_level_fall": -0.45702073520580166,
+    "n_same_sign": 8,
+    "n": 11
+   },
+   "n-gram level + code-mean fall": {
+    "rms_e25": 1.751346231824941,
+    "rms_level": 1.5527555381131068,
+    "rms_fall": 0.4167775335006013,
+    "mean_level": -0.6110847047642708,
+    "mean_fall": 0.000629099016218286,
+    "ms_terms": {
+     "level": 2.411049761140924,
+     "fall": 0.17370351243084486,
+     "cross": 0.48246035015565175
+    },
+    "rms_no_cancel": 1.6077167889811217,
+    "corr_level_fall": -0.40483030106963414,
+    "n_same_sign": 5,
+    "n": 11
+   },
+   "n-gram level + code-mean log-ratio fall": {
+    "rms_e25": 1.8135471043802474,
+    "rms_level": 1.5527555381131068,
+    "rms_fall": 0.40038257162619184,
+    "mean_level": -0.6110847047642708,
+    "mean_fall": 0.09510204317712234,
+    "ms_terms": {
+     "level": 2.411049761140924,
+     "fall": 0.16030620366200263,
+     "cross": 0.7175971350030529
+    },
+    "rms_no_cancel": 1.6035448122216374,
+    "corr_level_fall": -0.5416045637977668,
+    "n_same_sign": 6,
+    "n": 11
+   },
+   "Oracle level + info fall (lam code)": {
+    "rms_e25": 0.46602647702771066,
+    "rms_level": 0.0,
+    "rms_fall": 0.46602647702771066,
+    "mean_level": 0.0,
+    "mean_fall": -0.015598625325215922,
+    "ms_terms": {
+     "level": 0.0,
+     "fall": 0.21718067729085935,
+     "cross": -0.0
+    },
+    "rms_no_cancel": 0.46602647702771066,
+    "corr_level_fall": NaN,
+    "n_same_sign": 0,
+    "n": 11
+   },
+   "Oracle level + code-mean fall": {
+    "rms_e25": 0.41677753350060137,
+    "rms_level": 0.0,
+    "rms_fall": 0.41677753350060137,
+    "mean_level": 0.0,
+    "mean_fall": 0.0006290990162183263,
+    "ms_terms": {
+     "level": 0.0,
+     "fall": 0.1737035124308449,
+     "cross": -0.0
+    },
+    "rms_no_cancel": 0.41677753350060137,
+    "corr_level_fall": NaN,
+    "n_same_sign": 0,
+    "n": 11
+   }
+  },
+  "ext45_C1": {
+   "A0 (paper forecast, as run)": {
+    "rms_e25": 0.5569673731198773,
+    "rms_level": 0.4870587598996414,
+    "rms_fall": 0.47936809047389967,
+    "mean_level": 0.26787001964000406,
+    "mean_fall": 0.05640397772948474,
+    "ms_terms": {
+     "level": 0.23722623559497658,
+     "fall": 0.22979376616459288,
+     "cross": -0.15680734703951288
+    },
+    "rms_no_cancel": 0.6833886169373685,
+    "corr_level_fall": 0.32686145301001784,
+    "n_same_sign": 8,
+    "n": 9
+   },
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+    "rms_e25": 0.5283239588707468,
+    "rms_level": 0.4122199804632498,
+    "rms_fall": 0.4632966346120316,
+    "mean_level": 0.06673398025055641,
+    "mean_fall": -0.08825753827918814,
+    "ms_terms": {
+     "level": 0.16992531229312208,
+     "fall": 0.2146437716428343,
+     "cross": -0.10544287841909779
+    },
+    "rms_no_cancel": 0.6201363430214007,
+    "corr_level_fall": 0.3168007940846949,
+    "n_same_sign": 8,
+    "n": 9
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall)": {
+    "rms_e25": 0.5359979687268811,
+    "rms_level": 0.4122199804632498,
+    "rms_fall": 0.4657954479147827,
+    "mean_level": 0.06673398025055641,
+    "mean_fall": -0.11775005224141001,
+    "ms_terms": {
+     "level": 0.16992531229312208,
+     "fall": 0.21696539929813308,
+     "cross": -0.09959688911191257
+    },
+    "rms_no_cancel": 0.6220053951464208,
+    "corr_level_fall": 0.31450670445620843,
+    "n_same_sign": 8,
+    "n": 9
+   },
+   "Two early pilots (2^19+2^20)": {
+    "rms_e25": 0.7002252085748856,
+    "rms_level": 0.36017648549143844,
+    "rms_fall": 0.4708561011827684,
+    "mean_level": 0.236509328313988,
+    "mean_fall": -0.10711706217285782,
+    "ms_terms": {
+     "level": 0.12972710070096438,
+     "fall": 0.22170546802103744,
+     "cross": 0.1388827740017401
+    },
+    "rms_no_cancel": 0.5928174834820594,
+    "corr_level_fall": -0.3541283328591466,
+    "n_same_sign": 6,
+    "n": 9
+   },
+   "One pilot 2^20, pooled exponent 0.14": {
+    "rms_e25": 0.5555745768563964,
+    "rms_level": 0.4586539860828105,
+    "rms_fall": 0.3577914102026733,
+    "mean_level": 0.18797416305135684,
+    "mean_fall": -0.06250679159749056,
+    "ms_terms": {
+     "level": 0.21036347894965093,
+     "fall": 0.12801469321481765,
+     "cross": -0.029715061715304684
+    },
+    "rms_no_cancel": 0.5817028211763018,
+    "corr_level_fall": 0.1805280250884288,
+    "n_same_sign": 7,
+    "n": 9
+   },
+   "One pilot 2^20, code-pooled exponent": {
+    "rms_e25": 0.5778208296416938,
+    "rms_level": 0.5193462265008342,
+    "rms_fall": 0.34108819022012726,
+    "mean_level": -0.15235970377256136,
+    "mean_fall": 0.037176438815210204,
+    "ms_terms": {
+     "level": 0.26972050298065575,
+     "fall": 0.11634115350764174,
+     "cross": -0.0521847453204822
+    },
+    "rms_no_cancel": 0.6213386005136793,
+    "corr_level_fall": 0.18864584427578637,
+    "n_same_sign": 6,
+    "n": 9
+   },
+   "Ref level - bias + pooled-exponent fall": {
+    "rms_e25": 0.504416434249937,
+    "rms_level": 0.4122199804632498,
+    "rms_fall": 0.3640003022810661,
+    "mean_level": 0.06673398025055641,
+    "mean_fall": -0.08389464891167307,
+    "ms_terms": {
+     "level": 0.16992531229312208,
+     "fall": 0.1324962200607075,
+     "cross": -0.04798559321240857
+    },
+    "rms_no_cancel": 0.5499286611496346,
+    "corr_level_fall": 0.20537835962193554,
+    "n_same_sign": 7,
+    "n": 9
+   },
+   "Ref level - bias + code-mean fall": {
+    "rms_e25": 0.5123122726845579,
+    "rms_level": 0.4122199804632498,
+    "rms_fall": 0.4213398158481347,
+    "mean_level": 0.06673398025055641,
+    "mean_fall": -0.08352838253370543,
+    "ms_terms": {
+     "level": 0.16992531229312208,
+     "fall": 0.17752724041894002,
+     "cross": -0.08498868796884523
+    },
+    "rms_no_cancel": 0.5894510604893862,
+    "corr_level_fall": 0.2861360044610483,
+    "n_same_sign": 7,
+    "n": 9
+   },
+   "Ref level - bias + code-mean log-ratio fall": {
+    "rms_e25": 0.4895480182582279,
+    "rms_level": 0.4122199804632498,
+    "rms_fall": 0.3455674669668788,
+    "mean_level": 0.06673398025055641,
+    "mean_fall": -0.004800740032722634,
+    "ms_terms": {
+     "level": 0.16992531229312208,
+     "fall": 0.11941687422590487,
+     "cross": -0.049684924338468744
+    },
+    "rms_no_cancel": 0.5379053694833571,
+    "corr_level_fall": 0.17902204583790304,
+    "n_same_sign": 8,
+    "n": 9
+   },
+   "n-gram level + code-mean fall": {
+    "rms_e25": 0.5475345466484616,
+    "rms_level": 0.3928491510346431,
+    "rms_fall": 0.4213398158481347,
+    "mean_level": -0.00900245824757394,
+    "mean_fall": -0.08352838253370543,
+    "ms_terms": {
+     "level": 0.1543304554686398,
+     "fall": 0.17752724041894002,
+     "cross": -0.03206361611404346
+    },
+    "rms_no_cancel": 0.5760709122040271,
+    "corr_level_fall": 0.09420654495752934,
+    "n_same_sign": 5,
+    "n": 9
+   },
+   "n-gram level + code-mean log-ratio fall": {
+    "rms_e25": 0.5114066012842132,
+    "rms_level": 0.3928491510346431,
+    "rms_fall": 0.3314850037116402,
+    "mean_level": -0.00900245824757394,
+    "mean_fall": -0.02136358898794756,
+    "ms_terms": {
+     "level": 0.1543304554686398,
+     "fall": 0.10988230768570612,
+     "cross": -0.002676051317275713
+    },
+    "rms_no_cancel": 0.5140163063117219,
+    "corr_level_fall": 0.008818595070330955,
+    "n_same_sign": 6,
+    "n": 9
+   },
+   "Oracle level + info fall (lam code)": {
+    "rms_e25": 0.4657954479147827,
+    "rms_level": 0.0,
+    "rms_fall": 0.4657954479147827,
+    "mean_level": 0.0,
+    "mean_fall": -0.11775005224141001,
+    "ms_terms": {
+     "level": 0.0,
+     "fall": 0.21696539929813308,
+     "cross": -0.0
+    },
+    "rms_no_cancel": 0.4657954479147827,
+    "corr_level_fall": NaN,
+    "n_same_sign": 0,
+    "n": 9
+   },
+   "Oracle level + code-mean fall": {
+    "rms_e25": 0.4213398158481347,
+    "rms_level": 0.0,
+    "rms_fall": 0.4213398158481347,
+    "mean_level": 0.0,
+    "mean_fall": -0.08352838253370543,
+    "ms_terms": {
+     "level": 0.0,
+     "fall": 0.17752724041894002,
+     "cross": -0.0
+    },
+    "rms_no_cancel": 0.4213398158481347,
+    "corr_level_fall": NaN,
+    "n_same_sign": 0,
+    "n": 9
+   }
+  },
+  "new5": {
+   "A0 (paper forecast, as run)": {
+    "rms_e25": 0.07813886665544428,
+    "rms_level": 0.31962180169159077,
+    "rms_fall": 0.2530146614304683,
+    "mean_level": 0.2978014030065551,
+    "mean_fall": 0.2349192591751419,
+    "ms_terms": {
+     "level": 0.10215809611657858,
+     "fall": 0.06401641889877449,
+     "cross": -0.1600688325331558
+    },
+    "rms_no_cancel": 0.40764508462062077,
+    "corr_level_fall": 0.9237687647328053,
+    "n_same_sign": 5,
+    "n": 5
+   },
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+    "rms_e25": 0.06172996876033336,
+    "rms_level": 0.15105168985196263,
+    "rms_fall": 0.10696031947831619,
+    "mean_level": 0.09666536361710745,
+    "mean_fall": 0.08356205676042114,
+    "ms_terms": {
+     "level": 0.02281661300713351,
+     "fall": 0.011440509942903465,
+     "cross": -0.03044653390688524
+    },
+    "rms_no_cancel": 0.18508679842181336,
+    "corr_level_fall": 0.922057049557948,
+    "n_same_sign": 4,
+    "n": 5
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall)": {
+    "rms_e25": 0.07796734214570492,
+    "rms_level": 0.15105168985196263,
+    "rms_fall": 0.08092374012198948,
+    "mean_level": 0.09666536361710745,
+    "mean_fall": 0.05270447605297597,
+    "ms_terms": {
+     "level": 0.02281661300713351,
+     "fall": 0.00654865171533129,
+     "cross": -0.023286358281199383
+    },
+    "rms_no_cancel": 0.17136296193304082,
+    "corr_level_fall": 0.9187468920466911,
+    "n_same_sign": 4,
+    "n": 5
+   },
+   "Two early pilots (2^19+2^20)": {
+    "rms_e25": 0.2174393227570934,
+    "rms_level": 0.22364270390695587,
+    "rms_fall": 0.12692378975739924,
+    "mean_level": 0.1088901750256226,
+    "mean_fall": 0.11946915789307275,
+    "ms_terms": {
+     "level": 0.05001605901081433,
+     "fall": 0.016109648406380482,
+     "cross": -0.018845848336131357
+    },
+    "rms_no_cancel": 0.2571491929156979,
+    "corr_level_fall": -0.42834719172091296,
+    "n_same_sign": 3,
+    "n": 5
+   },
+   "One pilot 2^20, pooled exponent 0.14": {
+    "rms_e25": 0.3401086621117095,
+    "rms_level": 0.38761179759125575,
+    "rms_fall": 0.053652628006974505,
+    "mean_level": 0.3756865519998238,
+    "mean_fall": 0.046204726538769766,
+    "ms_terms": {
+     "level": 0.15024290563192463,
+     "fall": 0.002878604492054785,
+     "cross": -0.03744760808056246
+    },
+    "rms_no_cancel": 0.3913074368370469,
+    "corr_level_fall": 0.5247389958570078,
+    "n_same_sign": 5,
+    "n": 5
+   },
+   "One pilot 2^20, code-pooled exponent": {
+    "rms_e25": 0.07846697030728797,
+    "rms_level": 0.10781617172741949,
+    "rms_fall": 0.13663592840304892,
+    "mean_level": 0.08187774176974041,
+    "mean_fall": 0.13226084431737398,
+    "ms_terms": {
+     "level": 0.01162432688595641,
+     "fall": 0.018669376930563107,
+     "cross": -0.024136638387314707
+    },
+    "rms_no_cancel": 0.17405086560117855,
+    "corr_level_fall": 0.5150172754258573,
+    "n_same_sign": 4,
+    "n": 5
+   },
+   "Ref level - bias + pooled-exponent fall": {
+    "rms_e25": 0.12769599419908362,
+    "rms_level": 0.15105168985196263,
+    "rms_fall": 0.04103048807309166,
+    "mean_level": 0.09666536361710745,
+    "mean_fall": -0.0030171174646178136,
+    "ms_terms": {
+     "level": 0.02281661300713351,
+     "fall": 0.0016835009515161169,
+     "cross": -0.008193847024157219
+    },
+    "rms_no_cancel": 0.15652512245211508,
+    "corr_level_fall": 0.9239985626175592,
+    "n_same_sign": 5,
+    "n": 5
+   },
+   "Ref level - bias + code-mean fall": {
+    "rms_e25": 0.11672989988466985,
+    "rms_level": 0.15105168985196263,
+    "rms_fall": 0.07789625489958771,
+    "mean_level": 0.09666536361710745,
+    "mean_fall": 0.0732191071388741,
+    "ms_terms": {
+     "level": 0.02281661300713351,
+     "fall": 0.006067826527381542,
+     "cross": -0.015258570007430005
+    },
+    "rms_no_cancel": 0.16995422776299227,
+    "corr_level_fall": 0.17873275142282963,
+    "n_same_sign": 3,
+    "n": 5
+   },
+   "Ref level - bias + code-mean log-ratio fall": {
+    "rms_e25": 0.08177266457515453,
+    "rms_level": 0.15105168985196263,
+    "rms_fall": 0.07535905536570232,
+    "mean_level": 0.09666536361710745,
+    "mean_fall": 0.05789230745296499,
+    "ms_terms": {
+     "level": 0.02281661300713351,
+     "fall": 0.005678987225610987,
+     "cross": -0.021808831561023763
+    },
+    "rms_no_cancel": 0.16880639867239777,
+    "corr_level_fall": 0.9479500566760738,
+    "n_same_sign": 4,
+    "n": 5
+   },
+   "n-gram level + code-mean fall": {
+    "rms_e25": 0.07671944539970645,
+    "rms_level": 0.054501505885274144,
+    "rms_fall": 0.07789625489958771,
+    "mean_level": 0.007705693693380278,
+    "mean_fall": 0.0732191071388741,
+    "ms_terms": {
+     "level": 0.0029704141437625724,
+     "fall": 0.006067826527381542,
+     "cross": -0.0031523673687055775
+    },
+    "rms_no_cancel": 0.09506966220169354,
+    "corr_level_fall": 0.705509905308154,
+    "n_same_sign": 2,
+    "n": 5
+   },
+   "n-gram level + code-mean log-ratio fall": {
+    "rms_e25": 0.05728787351452239,
+    "rms_level": 0.054501505885274144,
+    "rms_fall": 0.04787318158608819,
+    "mean_level": 0.007705693693380278,
+    "mean_fall": 0.038437661772871,
+    "ms_terms": {
+     "level": 0.0029704141437625724,
+     "fall": 0.0022918415151745738,
+     "cross": -0.0019803552071212304
+    },
+    "rms_no_cancel": 0.07254140651336412,
+    "corr_level_fall": 0.4507264226580832,
+    "n_same_sign": 3,
+    "n": 5
+   },
+   "Oracle level + info fall (lam code)": {
+    "rms_e25": 0.08092374012198948,
+    "rms_level": 0.0,
+    "rms_fall": 0.08092374012198948,
+    "mean_level": 0.0,
+    "mean_fall": 0.05270447605297597,
+    "ms_terms": {
+     "level": 0.0,
+     "fall": 0.00654865171533129,
+     "cross": -0.0
+    },
+    "rms_no_cancel": 0.08092374012198948,
+    "corr_level_fall": NaN,
+    "n_same_sign": 0,
+    "n": 5
+   },
+   "Oracle level + code-mean fall": {
+    "rms_e25": 0.07789625489958771,
+    "rms_level": 0.0,
+    "rms_fall": 0.07789625489958771,
+    "mean_level": 0.0,
+    "mean_fall": 0.0732191071388741,
+    "ms_terms": {
+     "level": 0.0,
+     "fall": 0.006067826527381542,
+     "cross": -0.0
+    },
+    "rms_no_cancel": 0.07789625489958771,
+    "corr_level_fall": NaN,
+    "n_same_sign": 0,
+    "n": 5
+   }
+  },
+  "held16": {
+   "A0 (paper forecast, as run)": {
+    "rms_e25": 1.4543344599973573,
+    "rms_level": 1.2214159846679402,
+    "rms_fall": 0.458054029412484,
+    "mean_level": -0.11941388496834503,
+    "mean_fall": 0.18969407715143727,
+    "ms_terms": {
+     "level": 1.4918570076023538,
+     "fall": 0.20981349386101275,
+     "cross": 0.4134182200724388
+    },
+    "rms_no_cancel": 1.3044809318128674,
+    "corr_level_fall": -0.3631720092484627,
+    "n_same_sign": 13,
+    "n": 16
+   },
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+    "rms_e25": 1.4483490480706458,
+    "rms_level": 1.2571195590256747,
+    "rms_fall": 0.39529892450675813,
+    "mean_level": -0.32054992435779267,
+    "mean_fall": 0.03689718732477073,
+    "ms_terms": {
+     "level": 1.5803495856849068,
+     "fall": 0.15626123971619968,
+     "cross": 0.3611041396460396
+    },
+    "rms_no_cancel": 1.317805306333643,
+    "corr_level_fall": -0.35267532990390715,
+    "n_same_sign": 12,
+    "n": 16
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall)": {
+    "rms_e25": 1.4375636517761934,
+    "rms_level": 1.2571195590256747,
+    "rms_fall": 0.3890477725145164,
+    "mean_level": -0.32054992435779267,
+    "mean_fall": 0.005746093855469092,
+    "ms_terms": {
+     "level": 1.5803495856849068,
+     "fall": 0.15135816929850687,
+     "cross": 0.33488149792469113
+    },
+    "rms_no_cancel": 1.3159436747001803,
+    "corr_level_fall": -0.35020607833380407,
+    "n_same_sign": 12,
+    "n": 16
+   },
+   "Two early pilots (2^19+2^20)": {
+    "rms_e25": 0.7146753598947135,
+    "rms_level": 0.5901263834172294,
+    "rms_fall": 0.3624947393214009,
+    "mean_level": 0.2934098579227636,
+    "mean_fall": -0.014307775919311969,
+    "ms_terms": {
+     "level": 0.3482491484050989,
+     "fall": 0.1314024360356904,
+     "cross": 0.031109285599848976
+    },
+    "rms_no_cancel": 0.6925688301106174,
+    "corr_level_fall": -0.06123534084039814,
+    "n_same_sign": 11,
+    "n": 16
+   },
+   "One pilot 2^20, pooled exponent 0.14": {
+    "rms_e25": 0.7610363068714247,
+    "rms_level": 0.529140857326747,
+    "rms_fall": 0.44881443508522956,
+    "mean_level": 0.13323283191598587,
+    "mean_fall": 0.10025744838986092,
+    "ms_terms": {
+     "level": 0.27999004689248486,
+     "fall": 0.20143439714087372,
+     "cross": 0.09775181634313855
+    },
+    "rms_no_cancel": 0.6938475654157464,
+    "corr_level_fall": -0.2777947168635669,
+    "n_same_sign": 12,
+    "n": 16
+   },
+   "One pilot 2^20, code-pooled exponent": {
+    "rms_e25": 1.0942322853913884,
+    "rms_level": 0.7100542561272676,
+    "rms_fall": 0.5251786822934043,
+    "mean_level": -0.26126444314097597,
+    "mean_fall": 0.2158050520817132,
+    "ms_terms": {
+     "level": 0.5041770466444473,
+     "fall": 0.2758126483354364,
+     "cross": 0.41735459941297715
+    },
+    "rms_no_cancel": 0.8831702525447083,
+    "corr_level_fall": -0.48176762658226746,
+    "n_same_sign": 10,
+    "n": 16
+   },
+   "Ref level - bias + pooled-exponent fall": {
+    "rms_e25": 1.4362954901848388,
+    "rms_level": 1.2571195590256747,
+    "rms_fall": 0.33617537632583505,
+    "mean_level": -0.32054992435779267,
+    "mean_fall": 0.020206093974087153,
+    "ms_terms": {
+     "level": 1.5803495856849068,
+     "fall": 0.11301388364781681,
+     "cross": 0.36958126579258305
+    },
+    "rms_no_cancel": 1.301292999033163,
+    "corr_level_fall": -0.4371458490934634,
+    "n_same_sign": 12,
+    "n": 16
+   },
+   "Ref level - bias + code-mean fall": {
+    "rms_e25": 1.4089130278174873,
+    "rms_level": 1.2571195590256747,
+    "rms_fall": 0.34830641766412024,
+    "mean_level": -0.32054992435779267,
+    "mean_fall": 0.023313476554548226,
+    "ms_terms": {
+     "level": 1.5803495856849068,
+     "fall": 0.12131736058601258,
+     "cross": 0.28336897368292
+    },
+    "rms_no_cancel": 1.304479569127443,
+    "corr_level_fall": -0.3177055239433388,
+    "n_same_sign": 10,
+    "n": 16
+   },
+   "Ref level - bias + code-mean log-ratio fall": {
+    "rms_e25": 1.4653784479487442,
+    "rms_level": 1.2571195590256747,
+    "rms_fall": 0.3549315997017237,
+    "mean_level": -0.32054992435779267,
+    "mean_fall": 0.09864301311973203,
+    "ms_terms": {
+     "level": 1.5803495856849068,
+     "fall": 0.12597644046682466,
+     "cross": 0.4410079695609386
+    },
+    "rms_no_cancel": 1.306264148689587,
+    "corr_level_fall": -0.4557514520411415,
+    "n_same_sign": 12,
+    "n": 16
+   },
+   "n-gram level + code-mean fall": {
+    "rms_e25": 1.4527727632770424,
+    "rms_level": 1.2878373209393768,
+    "rms_fall": 0.34830641766412024,
+    "mean_level": -0.4177127052462548,
+    "mean_fall": 0.023313476554548226,
+    "ms_terms": {
+     "level": 1.658524965204311,
+     "fall": 0.12131736058601258,
+     "cross": 0.33070637592929003
+    },
+    "rms_no_cancel": 1.3341073141956472,
+    "corr_level_fall": -0.36757134315882856,
+    "n_same_sign": 7,
+    "n": 16
+   },
+   "n-gram level + code-mean log-ratio fall": {
+    "rms_e25": 1.5040548028605218,
+    "rms_level": 1.2878373209393768,
+    "rms_fall": 0.3330566250521357,
+    "mean_level": -0.4177127052462548,
+    "mean_fall": 0.0773944239882938,
+    "ms_terms": {
+     "level": 1.658524965204311,
+     "fall": 0.11092671549111888,
+     "cross": 0.49272916931237354
+    },
+    "rms_no_cancel": 1.330207382589433,
+    "corr_level_fall": -0.5423751960049747,
+    "n_same_sign": 9,
+    "n": 16
+   },
+   "Oracle level + info fall (lam code)": {
+    "rms_e25": 0.3890477725145163,
+    "rms_level": 0.0,
+    "rms_fall": 0.3890477725145163,
+    "mean_level": 0.0,
+    "mean_fall": 0.0057460938554690436,
+    "ms_terms": {
+     "level": 0.0,
+     "fall": 0.1513581692985068,
+     "cross": -0.0
+    },
+    "rms_no_cancel": 0.3890477725145163,
+    "corr_level_fall": NaN,
+    "n_same_sign": 0,
+    "n": 16
+   },
+   "Oracle level + code-mean fall": {
+    "rms_e25": 0.3483064176641203,
+    "rms_level": 0.0,
+    "rms_fall": 0.3483064176641203,
+    "mean_level": 0.0,
+    "mean_fall": 0.023313476554548254,
+    "ms_terms": {
+     "level": 0.0,
+     "fall": 0.12131736058601261,
+     "cross": -0.0
+    },
+    "rms_no_cancel": 0.3483064176641203,
+    "corr_level_fall": NaN,
+    "n_same_sign": 0,
+    "n": 16
+   }
+  },
+  "held16_C1": {
+   "A0 (paper forecast, as run)": {
+    "rms_e25": 0.44900225141747785,
+    "rms_level": 0.43472705730457084,
+    "rms_fall": 0.4130224820908844,
+    "mean_level": 0.27855979941377235,
+    "mean_fall": 0.12015943538864801,
+    "ms_terms": {
+     "level": 0.1889876143526916,
+     "fall": 0.1705875707125149,
+     "cross": -0.15797216328724248
+    },
+    "rms_no_cancel": 0.59964588305533,
+    "corr_level_fall": 0.3451060843318481,
+    "n_same_sign": 13,
+    "n": 14
+   },
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+    "rms_e25": 0.42520489135638107,
+    "rms_level": 0.3426171202954615,
+    "rms_fall": 0.37692330543304603,
+    "mean_level": 0.07742376002432463,
+    "mean_fall": -0.026893397193613396,
+    "ms_terms": {
+     "level": 0.11738649111955472,
+     "fall": 0.14207117817857332,
+     "cross": -0.07865846966473618
+    },
+    "rms_no_cancel": 0.5093698747453839,
+    "corr_level_fall": 0.3300261342830473,
+    "n_same_sign": 12,
+    "n": 14
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall)": {
+    "rms_e25": 0.43227297381899216,
+    "rms_level": 0.3426171202954615,
+    "rms_fall": 0.37658539652475087,
+    "mean_level": 0.07742376002432463,
+    "mean_fall": -0.05687343499341502,
+    "ms_terms": {
+     "level": 0.11738649111955472,
+     "fall": 0.14181656087570385,
+     "cross": -0.07234312810094357
+    },
+    "rms_no_cancel": 0.5091198797879126,
+    "corr_level_fall": 0.32657067987283417,
+    "n_same_sign": 12,
+    "n": 14
+   },
+   "Two early pilots (2^19+2^20)": {
+    "rms_e25": 0.5762711031102706,
+    "rms_level": 0.31821199148666723,
+    "rms_fall": 0.38506933088371426,
+    "mean_level": 0.19093105928242896,
+    "mean_fall": -0.026193412149311195,
+    "ms_terms": {
+     "level": 0.10125887152591077,
+     "fall": 0.1482783895872314,
+     "cross": 0.08255112316678599
+    },
+    "rms_no_cancel": 0.4995370467874652,
+    "corr_level_fall": -0.3709087837648183,
+    "n_same_sign": 9,
+    "n": 14
+   },
+   "One pilot 2^20, pooled exponent 0.14": {
+    "rms_e25": 0.4896308743955973,
+    "rms_level": 0.43461689523290686,
+    "rms_fall": 0.28865763969915653,
+    "mean_level": 0.2550143019615236,
+    "mean_fall": -0.02368124940596902,
+    "ms_terms": {
+     "level": 0.18889184562189154,
+     "fall": 0.08332323295668806,
+     "cross": -0.03247668541718247
+    },
+    "rms_no_cancel": 0.5217423488452702,
+    "corr_level_fall": 0.22003062428226527,
+    "n_same_sign": 12,
+    "n": 14
+   },
+   "One pilot 2^20, code-pooled exponent": {
+    "rms_e25": 0.46565449543444937,
+    "rms_level": 0.4213588698871175,
+    "rms_fall": 0.2854091381835646,
+    "mean_level": -0.06870347322173931,
+    "mean_fall": 0.07113515506598297,
+    "ms_terms": {
+     "level": 0.17754329723254883,
+     "fall": 0.08145837615868508,
+     "cross": -0.042167564272922384
+    },
+    "rms_no_cancel": 0.5089220700571296,
+    "corr_level_fall": 0.22601981387434908,
+    "n_same_sign": 10,
+    "n": 14
+   },
+   "Ref level - bias + pooled-exponent fall": {
+    "rms_e25": 0.4115697117608954,
+    "rms_level": 0.3426171202954615,
+    "rms_fall": 0.2928777762265769,
+    "mean_level": 0.07742376002432463,
+    "mean_fall": -0.05500981625201048,
+    "ms_terms": {
+     "level": 0.11738649111955472,
+     "fall": 0.08577739180742486,
+     "cross": -0.033774255288033087
+    },
+    "rms_no_cancel": 0.4507370441032993,
+    "corr_level_fall": 0.2202508912996431,
+    "n_same_sign": 12,
+    "n": 14
+   },
+   "Ref level - bias + code-mean fall": {
+    "rms_e25": 0.41664511537521587,
+    "rms_level": 0.3426171202954615,
+    "rms_fall": 0.34101574077697516,
+    "mean_level": 0.07742376002432463,
+    "mean_fall": -0.027547136222069883,
+    "ms_terms": {
+     "level": 0.11738649111955472,
+     "fall": 0.11629173545766912,
+     "cross": -0.06008507441119694
+    },
+    "rms_no_cancel": 0.48340275813985983,
+    "corr_level_fall": 0.28362415999544427,
+    "n_same_sign": 10,
+    "n": 14
+   },
+   "Ref level - bias + code-mean log-ratio fall": {
+    "rms_e25": 0.3955420514924179,
+    "rms_level": 0.3426171202954615,
+    "rms_fall": 0.28070660893044264,
+    "mean_level": 0.07742376002432463,
+    "mean_fall": 0.01758963406930866,
+    "ms_terms": {
+     "level": 0.11738649111955472,
+     "fall": 0.07879620029722846,
+     "cross": -0.039729176917952684
+    },
+    "rms_no_cancel": 0.4429251532897891,
+    "corr_level_fall": 0.1978838948794452,
+    "n_same_sign": 12,
+    "n": 14
+   },
+   "n-gram level + code-mean fall": {
+    "rms_e25": 0.44139196093349475,
+    "rms_level": 0.3166595930216109,
+    "rms_fall": 0.34101574077697516,
+    "mean_level": -0.0030352611258045764,
+    "mean_fall": -0.027547136222069883,
+    "ms_terms": {
+     "level": 0.10027329785261223,
+     "fall": 0.11629173545766912,
+     "cross": -0.021738170133565642
+    },
+    "rms_no_cancel": 0.46536548358283014,
+    "corr_level_fall": 0.10021059734016939,
+    "n_same_sign": 7,
+    "n": 14
+   },
+   "n-gram level + code-mean log-ratio fall": {
+    "rms_e25": 0.4114642762477088,
+    "rms_level": 0.3166595930216109,
+    "rms_fall": 0.26731468570998973,
+    "mean_level": -0.0030352611258045764,
+    "mean_fall": -5.999430512358485e-06,
+    "ms_terms": {
+     "level": 0.10027329785261223,
+     "fall": 0.07145714119623058,
+     "cross": -0.0024275884207919695
+    },
+    "rms_no_cancel": 0.41440371505193196,
+    "corr_level_fall": 0.014339797883591486,
+    "n_same_sign": 9,
+    "n": 14
+   },
+   "Oracle level + info fall (lam code)": {
+    "rms_e25": 0.37658539652475087,
+    "rms_level": 0.0,
+    "rms_fall": 0.37658539652475087,
+    "mean_level": 0.0,
+    "mean_fall": -0.05687343499341502,
+    "ms_terms": {
+     "level": 0.0,
+     "fall": 0.14181656087570385,
+     "cross": -0.0
+    },
+    "rms_no_cancel": 0.37658539652475087,
+    "corr_level_fall": NaN,
+    "n_same_sign": 0,
+    "n": 14
+   },
+   "Oracle level + code-mean fall": {
+    "rms_e25": 0.34101574077697516,
+    "rms_level": 0.0,
+    "rms_fall": 0.34101574077697516,
+    "mean_level": 0.0,
+    "mean_fall": -0.027547136222069883,
+    "ms_terms": {
+     "level": 0.0,
+     "fall": 0.11629173545766912,
+     "cross": -0.0
+    },
+    "rms_no_cancel": 0.34101574077697516,
+    "corr_level_fall": NaN,
+    "n_same_sign": 0,
+    "n": 14
+   }
+  }
+ },
+ "score": {
+  "orig14": {
+   "A0 (paper forecast, as run)": {
+    "rms": 0.22124276891904723,
+    "rms_ci": [
+     0.08754807147283042,
+     0.3444234601154426
+    ],
+    "median_abs": 0.0808930470287701,
+    "worst": 0.6849214892223887,
+    "vs_pilots": {
+     "ratio": 0.3671757910225191,
+     "ci95": [
+      0.13350677651977425,
+      0.7415858469103468
+     ],
+     "label": "REAL positive",
+     "closer": "12/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.20626637899361436,
+     "ci95": [
+      0.09620654255301334,
+      0.4195175335592296
+     ]
+    }
+   },
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+    "rms": 0.21169004667342567,
+    "rms_ci": [
+     0.07660205596968166,
+     0.3342087116989522
+    ],
+    "median_abs": 0.060469784868993126,
+    "worst": 0.6736552341902291,
+    "vs_pilots": {
+     "ratio": 0.35132203741017887,
+     "ci95": [
+      0.12476578896557959,
+      0.7151836756656265
+     ],
+     "label": "REAL positive",
+     "closer": "13/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.15418981014541347,
+     "ci95": [
+      0.06728397853531784,
+      0.33526994916556835
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall)": {
+    "rms": 0.21024010419818412,
+    "rms_ci": [
+     0.08555451326990093,
+     0.3219961569256679
+    ],
+    "median_abs": 0.05786986473452882,
+    "worst": 0.6303522341479673,
+    "vs_pilots": {
+     "ratio": 0.34891570441278824,
+     "ci95": [
+      0.14027128882863094,
+      0.6857875701664968
+     ],
+     "label": "REAL positive",
+     "closer": "13/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.1475603638393816,
+     "ci95": [
+      0.09129261071172207,
+      0.3577166548390783
+     ]
+    }
+   },
+   "Two early pilots (2^19+2^20)": {
+    "rms": 0.6025527127017976,
+    "rms_ci": [
+     0.3573013228067091,
+     0.8332270950126924
+    ],
+    "median_abs": 0.3921775687509131,
+    "worst": 1.4532938271529543,
+    "vs_pilots": {
+     "ratio": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ],
+     "label": "tie",
+     "closer": "0/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "One pilot 2^20, pooled exponent 0.14": {
+    "rms": 0.5178538319672499,
+    "rms_ci": [
+     0.34672723773332637,
+     0.7081876520093395
+    ],
+    "median_abs": 0.4448425395391076,
+    "worst": 1.2689248857374997,
+    "vs_pilots": {
+     "ratio": 0.85943324301908,
+     "ci95": [
+      0.745711904093077,
+      1.0337420965148272
+     ],
+     "label": "tie",
+     "closer": "8/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.1342885850303286,
+     "ci95": [
+      0.7154884152635662,
+      1.7961561143659512
+     ]
+    }
+   },
+   "One pilot 2^20, code-pooled exponent": {
+    "rms": 0.2654616986860918,
+    "rms_ci": [
+     0.09620512293884981,
+     0.3876019277261114
+    ],
+    "median_abs": 0.1116088878448972,
+    "worst": 0.6431641599340157,
+    "vs_pilots": {
+     "ratio": 0.44056178503584037,
+     "ci95": [
+      0.20039900084490653,
+      0.7313867931971894
+     ],
+     "label": "REAL positive",
+     "closer": "10/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.2845876376876217,
+     "ci95": [
+      0.07615917151457412,
+      0.6360034153685751
+     ]
+    }
+   },
+   "Ref level - bias + pooled-exponent fall": {
+    "rms": 0.21374895620907072,
+    "rms_ci": [
+     0.11965272570368674,
+     0.30119343901699347
+    ],
+    "median_abs": 0.12336564138577039,
+    "worst": 0.5431077250418603,
+    "vs_pilots": {
+     "ratio": 0.3547390156964653,
+     "ci95": [
+      0.20852779528233395,
+      0.630120477806216
+     ],
+     "label": "REAL positive",
+     "closer": "11/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.31456577636168837,
+     "ci95": [
+      0.16553762172732062,
+      0.5575471107053428
+     ]
+    }
+   },
+   "Ref level - bias + code-mean fall": {
+    "rms": 0.2112229716930695,
+    "rms_ci": [
+     0.11297382241717233,
+     0.2972304316374774
+    ],
+    "median_abs": 0.09445037445521826,
+    "worst": 0.5258987315628594,
+    "vs_pilots": {
+     "ratio": 0.35054687704576554,
+     "ci95": [
+      0.20398012052314163,
+      0.6099815444189269
+     ],
+     "label": "REAL positive",
+     "closer": "13/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.2408357386579835,
+     "ci95": [
+      0.08928383165707376,
+      0.5357559317315576
+     ]
+    }
+   },
+   "Ref level - bias + code-mean log-ratio fall": {
+    "rms": 0.20641169685878494,
+    "rms_ci": [
+     0.09485162664258706,
+     0.3163475805915392
+    ],
+    "median_abs": 0.08152714668856786,
+    "worst": 0.6264140658037427,
+    "vs_pilots": {
+     "ratio": 0.34256205724019,
+     "ci95": [
+      0.16760804034470192,
+      0.6717364141280865
+     ],
+     "label": "REAL positive",
+     "closer": "13/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.20788324775491904,
+     "ci95": [
+      0.10701828590847846,
+      0.4244637812101682
+     ]
+    }
+   },
+   "n-gram level + code-mean fall": {
+    "rms": 0.24866636782343765,
+    "rms_ci": [
+     0.1285498480891959,
+     0.35771049436883195
+    ],
+    "median_abs": 0.10639152052554995,
+    "worst": 0.6489882595922847,
+    "vs_pilots": {
+     "ratio": 0.41268815587674945,
+     "ci95": [
+      0.25169264944296416,
+      0.726808852918293
+     ],
+     "label": "REAL positive",
+     "closer": "12/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.27128405345672196,
+     "ci95": [
+      0.07483953045447538,
+      0.631343355028112
+     ]
+    }
+   },
+   "n-gram level + code-mean log-ratio fall": {
+    "rms": 0.24664517265729638,
+    "rms_ci": [
+     0.1163546399954024,
+     0.372722837801498
+    ],
+    "median_abs": 0.12503229027313617,
+    "worst": 0.7225850682046935,
+    "vs_pilots": {
+     "ratio": 0.40933376857828657,
+     "ci95": [
+      0.21009924977318353,
+      0.7917445435436626
+     ],
+     "label": "REAL positive",
+     "closer": "12/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.3188155066373746,
+     "ci95": [
+      0.12110716216210773,
+      0.584773172059687
+     ]
+    }
+   },
+   "Oracle level + info fall (lam code)": {
+    "rms": 0.15215768553317943,
+    "rms_ci": [
+     0.0572770170073373,
+     0.2369424879631445
+    ],
+    "median_abs": 0.05834000840308673,
+    "worst": 0.4656133635543771,
+    "vs_pilots": {
+     "ratio": 0.2525217832825226,
+     "ci95": [
+      0.09134128726685167,
+      0.4093269280631846
+     ],
+     "label": "REAL positive",
+     "closer": "13/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.1487591668970254,
+     "ci95": [
+      0.06162456369742363,
+      0.3467869235508107
+     ]
+    }
+   },
+   "Oracle level + code-mean fall": {
+    "rms": 0.13867422676273478,
+    "rms_ci": [
+     0.07551526988508725,
+     0.20536342500858654
+    ],
+    "median_abs": 0.08770781578223336,
+    "worst": 0.3964096149454397,
+    "vs_pilots": {
+     "ratio": 0.23014455638400627,
+     "ci95": [
+      0.13551991993002233,
+      0.3465923398960434
+     ],
+     "label": "REAL positive",
+     "closer": "12/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.2236431218174539,
+     "ci95": [
+      0.1362396230642923,
+      0.45714308720475993
+     ]
+    }
+   }
+  },
+  "ext45": {
+   "A0 (paper forecast, as run)": {
+    "rms": 1.7532020350350614,
+    "rms_ci": [
+     0.43006444341151945,
+     2.8601465383457136
+    ],
+    "median_abs": 0.18781049523760407,
+    "worst": 5.21908968710248,
+    "vs_pilots": {
+     "ratio": 2.064113840634253,
+     "ci95": [
+      0.7046010403068156,
+      3.5806433972260163
+     ],
+     "label": "tie",
+     "closer": "7/11"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.586794732344347,
+     "ci95": [
+      0.3107455134186456,
+      9.369737642499244
+     ]
+    }
+   },
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+    "rms": 1.7462788097587962,
+    "rms_ci": [
+     0.4149662526555098,
+     2.855337654888263
+    ],
+    "median_abs": 0.19550618693000166,
+    "worst": 5.211365020592412,
+    "vs_pilots": {
+     "ratio": 2.055962854707362,
+     "ci95": [
+      0.6599023382081188,
+      3.608824779489401
+     ],
+     "label": "tie",
+     "closer": "6/11"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.6108391359392153,
+     "ci95": [
+      0.2685603903344671,
+      10.0801117119394
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall)": {
+    "rms": 1.732969955001669,
+    "rms_ci": [
+     0.4209189969564185,
+     2.831225329402594
+    ],
+    "median_abs": 0.23808124707465717,
+    "worst": 5.16878405327743,
+    "vs_pilots": {
+     "ratio": 2.040293815567427,
+     "ci95": [
+      0.672508539475247,
+      3.556929441100956
+     ],
+     "label": "tie",
+     "closer": "7/11"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.7438605679444991,
+     "ci95": [
+      0.3008221528755407,
+      9.666106773627073
+     ]
+    }
+   },
+   "Two early pilots (2^19+2^20)": {
+    "rms": 0.849372743170185,
+    "rms_ci": [
+     0.23911514459138505,
+     1.2952708081900854
+    ],
+    "median_abs": 0.32006165850751334,
+    "worst": 1.927923942461669,
+    "vs_pilots": {
+     "ratio": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ],
+     "label": "tie",
+     "closer": "0/11"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "One pilot 2^20, pooled exponent 0.14": {
+    "rms": 0.888740204181119,
+    "rms_ci": [
+     0.47949183597478295,
+     1.2529754096640195
+    ],
+    "median_abs": 0.40954752013275475,
+    "worst": 2.017293510511035,
+    "vs_pilots": {
+     "ratio": 1.046348863119859,
+     "ci95": [
+      0.6041313671636306,
+      3.8638072432176758
+     ],
+     "label": "tie",
+     "closer": "5/11"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.2795894454916124,
+     "ci95": [
+      0.8366046533954156,
+      8.255497110022834
+     ]
+    }
+   },
+   "One pilot 2^20, code-pooled exponent": {
+    "rms": 1.3186330174961063,
+    "rms_ci": [
+     0.17220906067972883,
+     1.9323109876323354
+    ],
+    "median_abs": 0.13997140651011564,
+    "worst": 2.929643339406468,
+    "vs_pilots": {
+     "ratio": 1.5524786121278886,
+     "ci95": [
+      0.39500147168153343,
+      5.483276126526163
+     ],
+     "label": "tie",
+     "closer": "7/11"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.4373263800569535,
+     "ci95": [
+      0.23370387565535294,
+      11.353260361833703
+     ]
+    }
+   },
+   "Ref level - bias + pooled-exponent fall": {
+    "rms": 1.7300968030544746,
+    "rms_ci": [
+     0.4158639882159996,
+     2.8128095971255633
+    ],
+    "median_abs": 0.3486795617736804,
+    "worst": 5.057652069332394,
+    "vs_pilots": {
+     "ratio": 2.03691114056367,
+     "ci95": [
+      0.5844126033110927,
+      4.142375309475552
+     ],
+     "label": "tie",
+     "closer": "6/11"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.0894137192177777,
+     "ci95": [
+      0.3594505561342716,
+      9.754876045423416
+     ]
+    }
+   },
+   "Ref level - bias + code-mean fall": {
+    "rms": 1.6973895832779655,
+    "rms_ci": [
+     0.4155065580021013,
+     2.7739006763118916
+    ],
+    "median_abs": 0.3352252900119064,
+    "worst": 5.071580694697126,
+    "vs_pilots": {
+     "ratio": 1.9984036418953783,
+     "ci95": [
+      0.636143433048929,
+      3.5234676817178734
+     ],
+     "label": "tie",
+     "closer": "5/11"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.0473772196741806,
+     "ci95": [
+      0.4045594143232008,
+      10.011165740730155
+     ]
+    }
+   },
+   "Ref level - bias + code-mean log-ratio fall": {
+    "rms": 1.7664527909201153,
+    "rms_ci": [
+     0.3904257779174077,
+     2.872831672031705
+    ],
+    "median_abs": 0.2727225812594545,
+    "worst": 5.133495356947787,
+    "vs_pilots": {
+     "ratio": 2.0797144776827143,
+     "ci95": [
+      0.532580425246201,
+      4.416507771744763
+     ],
+     "label": "tie",
+     "closer": "5/11"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.8520938825699812,
+     "ci95": [
+      0.23428573117070792,
+      8.500053220760629
+     ]
+    }
+   },
+   "n-gram level + code-mean fall": {
+    "rms": 1.751346231824941,
+    "rms_ci": [
+     0.43549466014261606,
+     2.8252756891533775
+    ],
+    "median_abs": 0.41051619580400733,
+    "worst": 5.053356925023955,
+    "vs_pilots": {
+     "ratio": 2.0619289303871997,
+     "ci95": [
+      0.6851868101433868,
+      4.221548229047248
+     ],
+     "label": "tie",
+     "closer": "6/11"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.2826159738042182,
+     "ci95": [
+      0.28862388225555413,
+      10.170051730416157
+     ]
+    }
+   },
+   "n-gram level + code-mean log-ratio fall": {
+    "rms": 1.8135471043802474,
+    "rms_ci": [
+     0.40670999115073025,
+     2.9228321063792264
+    ],
+    "median_abs": 0.3368380118191149,
+    "worst": 5.119256954826577,
+    "vs_pilots": {
+     "ratio": 2.1351604686670234,
+     "ci95": [
+      0.5672697381348157,
+      4.949475511297101
+     ],
+     "label": "tie",
+     "closer": "6/11"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.0524160044343698,
+     "ci95": [
+      0.0821174713538192,
+      8.623486680855645
+     ]
+    }
+   },
+   "Oracle level + info fall (lam code)": {
+    "rms": 0.46602647702771066,
+    "rms_ci": [
+     0.08939305003699115,
+     0.7607061531528749
+    ],
+    "median_abs": 0.09277495114048784,
+    "worst": 1.379294804892421,
+    "vs_pilots": {
+     "ratio": 0.5486713351411785,
+     "ci95": [
+      0.29308227652907887,
+      0.7192985033162147
+     ],
+     "label": "REAL positive",
+     "closer": "9/11"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.2898658701361131,
+     "ci95": [
+      0.11242294163624347,
+      1.2643354958837647
+     ]
+    }
+   },
+   "Oracle level + code-mean fall": {
+    "rms": 0.41677753350060137,
+    "rms_ci": [
+     0.08323781832264604,
+     0.6843415033473992
+    ],
+    "median_abs": 0.08616612377717336,
+    "worst": 1.2465038303889844,
+    "vs_pilots": {
+     "ratio": 0.49068861327598967,
+     "ci95": [
+      0.2481791823803445,
+      0.6519083256000627
+     ],
+     "label": "REAL positive",
+     "closer": "9/11"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.2692172632578877,
+     "ci95": [
+      0.11781730874655849,
+      1.6798595318536538
+     ]
+    }
+   }
+  },
+  "ext45_C1": {
+   "A0 (paper forecast, as run)": {
+    "rms": 0.5569673731198773,
+    "rms_ci": [
+     0.14583535616388765,
+     0.8239604652683796
+    ],
+    "median_abs": 0.13476263224775975,
+    "worst": 1.2337762723389485,
+    "vs_pilots": {
+     "ratio": 0.7954117708121793,
+     "ci95": [
+      0.4919739062167508,
+      2.1028246044471777
+     ],
+     "label": "tie",
+     "closer": "7/9"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.42105209626224643,
+     "ci95": [
+      0.2738220556800047,
+      4.638794741450524
+     ]
+    }
+   },
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+    "rms": 0.5283239588707468,
+    "rms_ci": [
+     0.14438884525054546,
+     0.7599054506001494
+    ],
+    "median_abs": 0.11646798925846369,
+    "worst": 1.1291520958942072,
+    "vs_pilots": {
+     "ratio": 0.7545057681456568,
+     "ci95": [
+      0.43474991826179504,
+      2.0939688098292875
+     ],
+     "label": "tie",
+     "closer": "6/9"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.36389235062258996,
+     "ci95": [
+      0.2244682629237964,
+      4.9904886333728635
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall)": {
+    "rms": 0.5359979687268811,
+    "rms_ci": [
+     0.17233833267994675,
+     0.7738567646509124
+    ],
+    "median_abs": 0.1327963758987365,
+    "worst": 1.148828216703325,
+    "vs_pilots": {
+     "ratio": 0.765465113456507,
+     "ci95": [
+      0.505564233162206,
+      2.0883180742255147
+     ],
+     "label": "tie",
+     "closer": "7/9"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.41490872889299596,
+     "ci95": [
+      0.28709740265073086,
+      4.78552196258084
+     ]
+    }
+   },
+   "Two early pilots (2^19+2^20)": {
+    "rms": 0.7002252085748856,
+    "rms_ci": [
+     0.2151276324716993,
+     1.1481264776975344
+    ],
+    "median_abs": 0.32006165850751334,
+    "worst": 1.927923942461669,
+    "vs_pilots": {
+     "ratio": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ],
+     "label": "tie",
+     "closer": "0/9"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "One pilot 2^20, pooled exponent 0.14": {
+    "rms": 0.5555745768563964,
+    "rms_ci": [
+     0.34176059300982486,
+     0.7361709094782701
+    ],
+    "median_abs": 0.39974208840167424,
+    "worst": 1.0157845626198916,
+    "vs_pilots": {
+     "ratio": 0.7934227018006316,
+     "ci95": [
+      0.5116457783957334,
+      2.600175247675359
+     ],
+     "label": "tie",
+     "closer": "4/9"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.2489533743770513,
+     "ci95": [
+      0.8366046533954156,
+      5.447678552798265
+     ]
+    }
+   },
+   "One pilot 2^20, code-pooled exponent": {
+    "rms": 0.5778208296416938,
+    "rms_ci": [
+     0.09915136458874957,
+     0.9810747912351789
+    ],
+    "median_abs": 0.1315627219082497,
+    "worst": 1.682717748383902,
+    "vs_pilots": {
+     "ratio": 0.825192841625465,
+     "ci95": [
+      0.12427486799200603,
+      3.796927180748752
+     ],
+     "label": "tie",
+     "closer": "7/9"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.41105430285446487,
+     "ci95": [
+      0.1844244725307373,
+      3.9842002254946656
+     ]
+    }
+   },
+   "Ref level - bias + pooled-exponent fall": {
+    "rms": 0.504416434249937,
+    "rms_ci": [
+     0.24594915315677673,
+     0.6936509153513968
+    ],
+    "median_abs": 0.23134611341640854,
+    "worst": 0.9507620277570452,
+    "vs_pilots": {
+     "ratio": 0.720363146131995,
+     "ci95": [
+      0.434931024592454,
+      2.4258834572686117
+     ],
+     "label": "tie",
+     "closer": "6/9"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.7228173299332502,
+     "ci95": [
+      0.15246468432304602,
+      4.829470090791336
+     ]
+    }
+   },
+   "Ref level - bias + code-mean fall": {
+    "rms": 0.5123122726845579,
+    "rms_ci": [
+     0.23926983815956773,
+     0.7151190756086192
+    ],
+    "median_abs": 0.17544739737354242,
+    "worst": 1.0160372421998884,
+    "vs_pilots": {
+     "ratio": 0.7316392874904171,
+     "ci95": [
+      0.5270131119229314,
+      2.0949099080674976
+     ],
+     "label": "tie",
+     "closer": "5/9"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.548167494324922,
+     "ci95": [
+      0.3652412605423985,
+      4.956354677771056
+     ]
+    }
+   },
+   "Ref level - bias + code-mean log-ratio fall": {
+    "rms": 0.4895480182582279,
+    "rms_ci": [
+     0.19413223084478326,
+     0.7083493853485762
+    ],
+    "median_abs": 0.16964905348418746,
+    "worst": 1.081752495428085,
+    "vs_pilots": {
+     "ratio": 0.6991293833230702,
+     "ci95": [
+      0.3618726698370448,
+      2.5911468812000726
+     ],
+     "label": "tie",
+     "closer": "5/9"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.5300511603772903,
+     "ci95": [
+      0.1885197714363878,
+      4.208229054746147
+     ]
+    }
+   },
+   "n-gram level + code-mean fall": {
+    "rms": 0.5475345466484616,
+    "rms_ci": [
+     0.2589951497860083,
+     0.7852092887041541
+    ],
+    "median_abs": 0.16054559913695887,
+    "worst": 1.1478152054584472,
+    "vs_pilots": {
+     "ratio": 0.7819406384451889,
+     "ci95": [
+      0.5710697597903446,
+      2.2185589386015216
+     ],
+     "label": "tie",
+     "closer": "6/9"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.5016083459843413,
+     "ci95": [
+      0.21301063994827757,
+      5.594507909836739
+     ]
+    }
+   },
+   "n-gram level + code-mean log-ratio fall": {
+    "rms": 0.5114066012842132,
+    "rms_ci": [
+     0.21140303638651978,
+     0.7331255752430332
+    ],
+    "median_abs": 0.13624370089104487,
+    "worst": 1.0908616284317438,
+    "vs_pilots": {
+     "ratio": 0.7303458873253645,
+     "ci95": [
+      0.3997712806875243,
+      2.6594329042947162
+     ],
+     "label": "tie",
+     "closer": "6/9"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.42567954414273146,
+     "ci95": [
+      0.07271806825909573,
+      4.590422840114714
+     ]
+    }
+   },
+   "Oracle level + info fall (lam code)": {
+    "rms": 0.4657954479147827,
+    "rms_ci": [
+     0.05834674663571651,
+     0.7998834001018146
+    ],
+    "median_abs": 0.07595444720667244,
+    "worst": 1.379294804892421,
+    "vs_pilots": {
+     "ratio": 0.6652080533672593,
+     "ci95": [
+      0.2040944073235627,
+      0.7075509388362284
+     ],
+     "label": "REAL positive",
+     "closer": "8/9"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.23731192158678835,
+     "ci95": [
+      0.049334944327696376,
+      0.7540816842479414
+     ]
+    }
+   },
+   "Oracle level + code-mean fall": {
+    "rms": 0.4213398158481347,
+    "rms_ci": [
+     0.0548241546032035,
+     0.7230414705788609
+    ],
+    "median_abs": 0.06415488024062754,
+    "worst": 1.2465038303889844,
+    "vs_pilots": {
+     "ratio": 0.6017204332098457,
+     "ci95": [
+      0.1617567785221555,
+      0.6415993467140662
+     ],
+     "label": "REAL positive",
+     "closer": "8/9"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.2004453783679982,
+     "ci95": [
+      0.07628572555453182,
+      0.8554520886250161
+     ]
+    }
+   }
+  },
+  "new5": {
+   "A0 (paper forecast, as run)": {
+    "rms": 0.07813886665544428,
+    "rms_ci": [
+     0.032099964655843506,
+     0.1203432489357554
+    ],
+    "median_abs": 0.042514483250980284,
+    "worst": 0.15008506620087037,
+    "vs_pilots": {
+     "ratio": 0.3593594096258985,
+     "ci95": [
+      0.11415148616003701,
+      1.065275025296113
+     ],
+     "label": "tie",
+     "closer": "3/5"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.305607285910363,
+     "ci95": [
+      0.0448208198759161,
+      100.9023719751275
+     ]
+    }
+   },
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+    "rms": 0.06172996876033336,
+    "rms_ci": [
+     0.02315792044214769,
+     0.09502765776635044
+    ],
+    "median_abs": 0.035431680718211345,
+    "worst": 0.1181652086337377,
+    "vs_pilots": {
+     "ratio": 0.28389514820782147,
+     "ci95": [
+      0.11941215677873367,
+      0.8424888030366705
+     ],
+     "label": "REAL positive",
+     "closer": "4/5"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.25469390550067283,
+     "ci95": [
+      0.031766163041591584,
+      96.96252655342428
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall)": {
+    "rms": 0.07796734214570492,
+    "rms_ci": [
+     0.018081394353609066,
+     0.12306838132325228
+    ],
+    "median_abs": 0.03075771017691986,
+    "worst": 0.15266374523644632,
+    "vs_pilots": {
+     "ratio": 0.35857057112343965,
+     "ci95": [
+      0.0766277442137945,
+      1.1544061472440765
+     ],
+     "label": "tie",
+     "closer": "3/5"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.22109595622967598,
+     "ci95": [
+      0.05013599356949236,
+      208.37686635544128
+     ]
+    }
+   },
+   "Two early pilots (2^19+2^20)": {
+    "rms": 0.2174393227570934,
+    "rms_ci": [
+     0.07657262243799637,
+     0.32356115950364245
+    ],
+    "median_abs": 0.13911475678446394,
+    "worst": 0.3945849495403688,
+    "vs_pilots": {
+     "ratio": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ],
+     "label": "tie",
+     "closer": "0/5"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "One pilot 2^20, pooled exponent 0.14": {
+    "rms": 0.3401086621117095,
+    "rms_ci": [
+     0.2626982935387513,
+     0.3998830831984733
+    ],
+    "median_abs": 0.37153003764796644,
+    "worst": 0.41464210673693525,
+    "vs_pilots": {
+     "ratio": 1.564154347977127,
+     "ci95": [
+      1.09665980165039,
+      4.230574509157118
+     ],
+     "label": "REAL negative",
+     "closer": "0/5"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 2.670673092025692,
+     "ci95": [
+      1.0099810549426291,
+      1134.7118022539428
+     ]
+    }
+   },
+   "One pilot 2^20, code-pooled exponent": {
+    "rms": 0.07846697030728797,
+    "rms_ci": [
+     0.02553542097279301,
+     0.12061517786494955
+    ],
+    "median_abs": 0.04578785079231196,
+    "worst": 0.14935581601256764,
+    "vs_pilots": {
+     "ratio": 0.36086835312187426,
+     "ci95": [
+      0.08767566165355235,
+      1.1399936808097293
+     ],
+     "label": "tie",
+     "closer": "2/5"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.3291372666039513,
+     "ci95": [
+      0.018295208839862204,
+      125.30327684940546
+     ]
+    }
+   },
+   "Ref level - bias + pooled-exponent fall": {
+    "rms": 0.12769599419908362,
+    "rms_ci": [
+     0.03806688525544075,
+     0.1867031340188351
+    ],
+    "median_abs": 0.0514489560060003,
+    "worst": 0.21858359945301942,
+    "vs_pilots": {
+     "ratio": 0.5872718539587056,
+     "ci95": [
+      0.12994144427987725,
+      1.943062259079402
+     ],
+     "label": "tie",
+     "closer": "3/5"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.3698310459307507,
+     "ci95": [
+      0.031205791558773652,
+      464.46834291142636
+     ]
+    }
+   },
+   "Ref level - bias + code-mean fall": {
+    "rms": 0.11672989988466985,
+    "rms_ci": [
+     0.06517991576339364,
+     0.15166844640612298
+    ],
+    "median_abs": 0.10147363296478784,
+    "worst": 0.1687090283461763,
+    "vs_pilots": {
+     "ratio": 0.5368389599661859,
+     "ci95": [
+      0.25965094336017697,
+      1.6670680275730443
+     ],
+     "label": "tie",
+     "closer": "3/5"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.7294239325164116,
+     "ci95": [
+      0.22539619972046782,
+      423.04332758633427
+     ]
+    }
+   },
+   "Ref level - bias + code-mean log-ratio fall": {
+    "rms": 0.08177266457515453,
+    "rms_ci": [
+     0.018689240149598784,
+     0.1245823865874429
+    ],
+    "median_abs": 0.03959594056951443,
+    "worst": 0.15135582302428907,
+    "vs_pilots": {
+     "ratio": 0.37607118868055295,
+     "ci95": [
+      0.07920375418656707,
+      1.2062097236520242
+     ],
+     "label": "tie",
+     "closer": "3/5"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.28462789631197793,
+     "ci95": [
+      0.037512687863443764,
+      257.70802507944614
+     ]
+    }
+   },
+   "n-gram level + code-mean fall": {
+    "rms": 0.07671944539970645,
+    "rms_ci": [
+     0.032960466308562926,
+     0.10554409468310728
+    ],
+    "median_abs": 0.03882363469935801,
+    "worst": 0.11903207306471408,
+    "vs_pilots": {
+     "ratio": 0.3528315137617106,
+     "ci95": [
+      0.18816820010270655,
+      1.0398571332727071
+     ],
+     "label": "tie",
+     "closer": "4/5"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.279076322287714,
+     "ci95": [
+      0.16352463787681643,
+      325.7438064267227
+     ]
+    }
+   },
+   "n-gram level + code-mean log-ratio fall": {
+    "rms": 0.05728787351452239,
+    "rms_ci": [
+     0.003786197631561748,
+     0.09482597235644011
+    ],
+    "median_abs": 0.007506699502355385,
+    "worst": 0.11961037249839745,
+    "vs_pilots": {
+     "ratio": 0.2634660225580266,
+     "ci95": [
+      0.02140619395257305,
+      0.9898899098244889
+     ],
+     "label": "REAL positive",
+     "closer": "4/5"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.053960483243239356,
+     "ci95": [
+      0.007379804897212093,
+      327.32638374334243
+     ]
+    }
+   },
+   "Oracle level + info fall (lam code)": {
+    "rms": 0.08092374012198948,
+    "rms_ci": [
+     0.03405371098446605,
+     0.11285687226684962
+    ],
+    "median_abs": 0.05341627719896902,
+    "worst": 0.13017562715045883,
+    "vs_pilots": {
+     "ratio": 0.37216699857178687,
+     "ci95": [
+      0.11624246004678288,
+      1.3198464103086596
+     ],
+     "label": "tie",
+     "closer": "4/5"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.38397276057297786,
+     "ci95": [
+      0.025085766278077848,
+      356.23931601126185
+     ]
+    }
+   },
+   "Oracle level + code-mean fall": {
+    "rms": 0.07789625489958771,
+    "rms_ci": [
+     0.053391197811999386,
+     0.09635887634755315
+    ],
+    "median_abs": 0.08061438860888481,
+    "worst": 0.1080329528743782,
+    "vs_pilots": {
+     "ratio": 0.3582436420049351,
+     "ci95": [
+      0.2064409651316352,
+      1.1232226873285487
+     ],
+     "label": "tie",
+     "closer": "3/5"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.5794812173217821,
+     "ci95": [
+      0.14596251083861744,
+      141.57285478036883
+     ]
+    }
+   }
+  },
+  "held16": {
+   "A0 (paper forecast, as run)": {
+    "rms": 1.4543344599973573,
+    "rms_ci": [
+     0.3335583428254728,
+     2.379308345861826
+    ],
+    "median_abs": 0.12968080888816702,
+    "worst": 5.21908968710248,
+    "vs_pilots": {
+     "ratio": 2.0349581664766094,
+     "ci95": [
+      0.6873501856101076,
+      3.1089090403364823
+     ],
+     "label": "tie",
+     "closer": "10/16"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.6725622423676526,
+     "ci95": [
+      0.21012883860662124,
+      3.1758129881342954
+     ]
+    }
+   },
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+    "rms": 1.4483490480706458,
+    "rms_ci": [
+     0.3370076068105645,
+     2.3763875482090295
+    ],
+    "median_abs": 0.1069071574931143,
+    "worst": 5.211365020592412,
+    "vs_pilots": {
+     "ratio": 2.0265831583783966,
+     "ci95": [
+      0.6446397706228323,
+      3.1216227578618096
+     ],
+     "label": "tie",
+     "closer": "10/16"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.5544514888916734,
+     "ci95": [
+      0.24017539167399887,
+      3.2546945126556155
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall)": {
+    "rms": 1.4375636517761934,
+    "rms_ci": [
+     0.33525105562611873,
+     2.3550433847379355
+    ],
+    "median_abs": 0.13162774623639284,
+    "worst": 5.16878405327743,
+    "vs_pilots": {
+     "ratio": 2.011491835940694,
+     "ci95": [
+      0.6561881309412091,
+      3.0864293765947304
+     ],
+     "label": "tie",
+     "closer": "10/16"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.6826596234674367,
+     "ci95": [
+      0.2383881833121586,
+      3.3332563113048272
+     ]
+    }
+   },
+   "Two early pilots (2^19+2^20)": {
+    "rms": 0.7146753598947135,
+    "rms_ci": [
+     0.2271209852398954,
+     1.084958357618297
+    ],
+    "median_abs": 0.1928160707203032,
+    "worst": 1.927923942461669,
+    "vs_pilots": {
+     "ratio": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ],
+     "label": "tie",
+     "closer": "0/16"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "One pilot 2^20, pooled exponent 0.14": {
+    "rms": 0.7610363068714247,
+    "rms_ci": [
+     0.4271094255377411,
+     1.0727383637872392
+    ],
+    "median_abs": 0.39913270600147,
+    "worst": 2.017293510511035,
+    "vs_pilots": {
+     "ratio": 1.0648699389657719,
+     "ci95": [
+      0.6353174676440303,
+      3.3447354851744557
+     ],
+     "label": "tie",
+     "closer": "5/16"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 2.070017838816181,
+     "ci95": [
+      1.0232031337429315,
+      5.540902500963463
+     ]
+    }
+   },
+   "One pilot 2^20, code-pooled exponent": {
+    "rms": 1.0942322853913884,
+    "rms_ci": [
+     0.13655305780463559,
+     1.6347326421215371
+    ],
+    "median_abs": 0.10577152379786542,
+    "worst": 2.929643339406468,
+    "vs_pilots": {
+     "ratio": 1.5310899840629617,
+     "ci95": [
+      0.2840472702073847,
+      4.576402185214932
+     ],
+     "label": "tie",
+     "closer": "9/16"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.548561763564285,
+     "ci95": [
+      0.20613040989207676,
+      1.9141765885018989
+     ]
+    }
+   },
+   "Ref level - bias + pooled-exponent fall": {
+    "rms": 1.4362954901848388,
+    "rms_ci": [
+     0.3363928253883035,
+     2.343057517030392
+    ],
+    "median_abs": 0.19415393469102593,
+    "worst": 5.057652069332394,
+    "vs_pilots": {
+     "ratio": 2.009717377686611,
+     "ci95": [
+      0.5726675377247659,
+      3.4757169607759515
+     ],
+     "label": "tie",
+     "closer": "9/16"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.0069385501204586,
+     "ci95": [
+      0.20539324386875019,
+      3.8004867984561144
+     ]
+    }
+   },
+   "Ref level - bias + code-mean fall": {
+    "rms": 1.4089130278174873,
+    "rms_ci": [
+     0.34061650526297477,
+     2.309634067450537
+    ],
+    "median_abs": 0.16355255815236136,
+    "worst": 5.071580694697126,
+    "vs_pilots": {
+     "ratio": 1.97140283110509,
+     "ci95": [
+      0.6271165843812193,
+      3.0484393356915414
+     ],
+     "label": "tie",
+     "closer": "8/16"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.8482309464215192,
+     "ci95": [
+      0.39516030530734897,
+      3.6877510216278133
+     ]
+    }
+   },
+   "Ref level - bias + code-mean log-ratio fall": {
+    "rms": 1.4653784479487442,
+    "rms_ci": [
+     0.3020257267961442,
+     2.3900971465251786
+    ],
+    "median_abs": 0.12276325874731964,
+    "worst": 5.133495356947787,
+    "vs_pilots": {
+     "ratio": 2.050411319853849,
+     "ci95": [
+      0.5127852158937882,
+      3.7048145267210804
+     ],
+     "label": "tie",
+     "closer": "8/16"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.6366858233793106,
+     "ci95": [
+      0.20537415259152705,
+      3.134662080135301
+     ]
+    }
+   },
+   "n-gram level + code-mean fall": {
+    "rms": 1.4527727632770424,
+    "rms_ci": [
+     0.3489148197352943,
+     2.351560394269636
+    ],
+    "median_abs": 0.11962349575529296,
+    "worst": 5.053356925023955,
+    "vs_pilots": {
+     "ratio": 2.0327729830941226,
+     "ci95": [
+      0.6692890792209697,
+      3.553865168006761
+     ],
+     "label": "tie",
+     "closer": "10/16"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.6204021029389062,
+     "ci95": [
+      0.26612105166746247,
+      4.157641615820216
+     ]
+    }
+   },
+   "n-gram level + code-mean log-ratio fall": {
+    "rms": 1.5040548028605218,
+    "rms_ci": [
+     0.3169565343084566,
+     2.432322902786057
+    ],
+    "median_abs": 0.08238198601079993,
+    "worst": 5.119256954826577,
+    "vs_pilots": {
+     "ratio": 2.1045286954934337,
+     "ci95": [
+      0.5445625814512172,
+      4.1416220772710135
+     ],
+     "label": "tie",
+     "closer": "10/16"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.42725684484205834,
+     "ci95": [
+      0.08416905843914606,
+      3.694615301004435
+     ]
+    }
+   },
+   "Oracle level + info fall (lam code)": {
+    "rms": 0.3890477725145163,
+    "rms_ci": [
+     0.08488858448547898,
+     0.6367003853356635
+    ],
+    "median_abs": 0.08436469917358014,
+    "worst": 1.379294804892421,
+    "vs_pilots": {
+     "ratio": 0.5443699256286534,
+     "ci95": [
+      0.2976218395668158,
+      0.7103160579159867
+     ],
+     "label": "REAL positive",
+     "closer": "13/16"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.4375397696800834,
+     "ci95": [
+      0.1458800390314238,
+      1.1497207215252672
+     ]
+    }
+   },
+   "Oracle level + code-mean fall": {
+    "rms": 0.3483064176641203,
+    "rms_ci": [
+     0.08016912680345094,
+     0.571072490548506
+    ],
+    "median_abs": 0.08339025619302909,
+    "worst": 1.2465038303889844,
+    "vs_pilots": {
+     "ratio": 0.4873631262667752,
+     "ci95": [
+      0.2563264254989796,
+      0.6431164982198508
+     ],
+     "label": "REAL positive",
+     "closer": "12/16"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.4324860260947545,
+     "ci95": [
+      0.16100530632472704,
+      1.0998678794157157
+     ]
+    }
+   }
+  },
+  "held16_C1": {
+   "A0 (paper forecast, as run)": {
+    "rms": 0.44900225141747785,
+    "rms_ci": [
+     0.11366717095657997,
+     0.6719035582786335
+    ],
+    "median_abs": 0.12346456870040556,
+    "worst": 1.2337762723389485,
+    "vs_pilots": {
+     "ratio": 0.7791510783624359,
+     "ci95": [
+      0.4248022701184829,
+      1.768178523778561
+     ],
+     "label": "tie",
+     "closer": "10/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.6403230199597929,
+     "ci95": [
+      0.15359852911849048,
+      1.2958637116885645
+     ]
+    }
+   },
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+    "rms": 0.42520489135638107,
+    "rms_ci": [
+     0.10488531673796794,
+     0.6327285495812353
+    ],
+    "median_abs": 0.09723619337984168,
+    "worst": 1.1291520958942072,
+    "vs_pilots": {
+     "ratio": 0.737855653461453,
+     "ci95": [
+      0.3790721462910624,
+      1.7453925589235193
+     ],
+     "label": "tie",
+     "closer": "10/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.5042950674007427,
+     "ci95": [
+      0.1968683140701151,
+      1.1939117680953024
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall)": {
+    "rms": 0.43227297381899216,
+    "rms_ci": [
+     0.12625769804358902,
+     0.6407136349574473
+    ],
+    "median_abs": 0.11117399370982073,
+    "worst": 1.148828216703325,
+    "vs_pilots": {
+     "ratio": 0.7501208571554486,
+     "ci95": [
+      0.45742666436072643,
+      1.7532521757395438
+     ],
+     "label": "tie",
+     "closer": "10/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.5765805375791961,
+     "ci95": [
+      0.18816515023451252,
+      1.4024789281101209
+     ]
+    }
+   },
+   "Two early pilots (2^19+2^20)": {
+    "rms": 0.5762711031102706,
+    "rms_ci": [
+     0.20606850190343454,
+     0.9326960413650415
+    ],
+    "median_abs": 0.1928160707203032,
+    "worst": 1.927923942461669,
+    "vs_pilots": {
+     "ratio": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ],
+     "label": "tie",
+     "closer": "0/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "One pilot 2^20, pooled exponent 0.14": {
+    "rms": 0.4896308743955973,
+    "rms_ci": [
+     0.333629449200624,
+     0.6363570598951637
+    ],
+    "median_abs": 0.3850266806246161,
+    "worst": 1.0157845626198916,
+    "vs_pilots": {
+     "ratio": 0.8496536990193407,
+     "ci95": [
+      0.5593160742800561,
+      2.3616291195544883
+     ],
+     "label": "tie",
+     "closer": "4/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 1.9968599048112095,
+     "ci95": [
+      1.0099810549426291,
+      3.997336701729681
+     ]
+    }
+   },
+   "One pilot 2^20, code-pooled exponent": {
+    "rms": 0.46565449543444937,
+    "rms_ci": [
+     0.08692196174957868,
+     0.7899281093015433
+    ],
+    "median_abs": 0.07806823861743939,
+    "worst": 1.682717748383902,
+    "vs_pilots": {
+     "ratio": 0.8080476236292303,
+     "ci95": [
+      0.13555700201432241,
+      3.1647455404405873
+     ],
+     "label": "tie",
+     "closer": "9/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.40488450120262165,
+     "ci95": [
+      0.17942019998085812,
+      1.219652795515018
+     ]
+    }
+   },
+   "Ref level - bias + pooled-exponent fall": {
+    "rms": 0.4115697117608954,
+    "rms_ci": [
+     0.18302341626570864,
+     0.5803613585835484
+    ],
+    "median_abs": 0.16280453640848347,
+    "worst": 0.9507620277570452,
+    "vs_pilots": {
+     "ratio": 0.7141946030948921,
+     "ci95": [
+      0.4377053592379537,
+      2.0419568820688703
+     ],
+     "label": "tie",
+     "closer": "9/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.8443514889619645,
+     "ci95": [
+      0.1662131450235045,
+      2.1173842038557753
+     ]
+    }
+   },
+   "Ref level - bias + code-mean fall": {
+    "rms": 0.41664511537521587,
+    "rms_ci": [
+     0.17526833187354682,
+     0.59554518256224
+    ],
+    "median_abs": 0.15649149251967398,
+    "worst": 1.0160372421998884,
+    "vs_pilots": {
+     "ratio": 0.7230019224050698,
+     "ci95": [
+      0.523352750230728,
+      1.775614084221965
+     ],
+     "label": "tie",
+     "closer": "8/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.8116102145172264,
+     "ci95": [
+      0.36404448387608157,
+      1.9718898654087864
+     ]
+    }
+   },
+   "Ref level - bias + code-mean log-ratio fall": {
+    "rms": 0.3955420514924179,
+    "rms_ci": [
+     0.13634298971609202,
+     0.590691967471084
+    ],
+    "median_abs": 0.0879635249279399,
+    "worst": 1.081752495428085,
+    "vs_pilots": {
+     "ratio": 0.6863818944895631,
+     "ci95": [
+      0.35938312628470254,
+      2.1766469206872143
+     ],
+     "label": "tie",
+     "closer": "8/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.45620432259268884,
+     "ci95": [
+      0.17233795726215537,
+      1.4245710815112338
+     ]
+    }
+   },
+   "n-gram level + code-mean fall": {
+    "rms": 0.44139196093349475,
+    "rms_ci": [
+     0.1772288720510897,
+     0.6433509718750814
+    ],
+    "median_abs": 0.11380948443419847,
+    "worst": 1.1478152054584472,
+    "vs_pilots": {
+     "ratio": 0.7659449841423569,
+     "ci95": [
+      0.5505068869229265,
+      1.8331484419385453
+     ],
+     "label": "tie",
+     "closer": "10/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.5902489559560065,
+     "ci95": [
+      0.18653815001901286,
+      2.16516059419459
+     ]
+    }
+   },
+   "n-gram level + code-mean log-ratio fall": {
+    "rms": 0.4114642762477088,
+    "rms_ci": [
+     0.14114025511321512,
+     0.6098385967192426
+    ],
+    "median_abs": 0.04363274486025964,
+    "worst": 1.0908616284317438,
+    "vs_pilots": {
+     "ratio": 0.7140116414426116,
+     "ci95": [
+      0.3892390915467023,
+      2.2046822470670677
+     ],
+     "label": "tie",
+     "closer": "10/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.22629205489594695,
+     "ci95": [
+      0.06795863106135698,
+      1.7936725784641416
+     ]
+    }
+   },
+   "Oracle level + info fall (lam code)": {
+    "rms": 0.37658539652475087,
+    "rms_ci": [
+     0.06287742742957256,
+     0.6436008937603616
+    ],
+    "median_abs": 0.07222583539023875,
+    "worst": 1.379294804892421,
+    "vs_pilots": {
+     "ratio": 0.6534865178771432,
+     "ci95": [
+      0.22564182274254768,
+      0.703798001227886
+     ],
+     "label": "REAL positive",
+     "closer": "12/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.3745841055697516,
+     "ci95": [
+      0.09639296347041969,
+      0.8732040158253266
+     ]
+    }
+   },
+   "Oracle level + code-mean fall": {
+    "rms": 0.34101574077697516,
+    "rms_ci": [
+     0.0618903247060132,
+     0.5817890985092244
+    ],
+    "median_abs": 0.07238463442475618,
+    "worst": 1.2465038303889844,
+    "vs_pilots": {
+     "ratio": 0.5917626945658615,
+     "ci95": [
+      0.2035919919640408,
+      0.6375619382882569
+     ],
+     "label": "REAL positive",
+     "closer": "11/14"
+    },
+    "median_abs_vs_pilots": {
+     "ratio": 0.3754076833655453,
+     "ci95": [
+      0.14385946408308703,
+      0.8634549399452313
+     ]
+    }
+   }
+  }
+ },
+ "orig14_loo": {
+  "RevC": {
+   "rms": 0.23085156498870957,
+   "vs_pilots": {
+    "ratio": 0.3831226050806241,
+    "ci95": [
+     0.15471639319440184,
+     0.7546860451813341
+    ],
+    "label": "REAL positive",
+    "closer": "13/14"
+   },
+   "median_abs_vs_pilots": {
+    "ratio": 0.15619811059462088,
+    "ci95": [
+     0.09970720358912849,
+     0.39286025908500444
+    ]
+   }
+  },
+  "Rev": {
+   "rms": 0.2255143234976131,
+   "vs_pilots": {
+    "ratio": 0.3742648879405507,
+    "ci95": [
+     0.1420574559706384,
+     0.7514688495885281
+    ],
+    "label": "REAL positive",
+    "closer": "13/14"
+   },
+   "median_abs_vs_pilots": {
+    "ratio": 0.16358015227563863,
+    "ci95": [
+     0.06569187158388265,
+     0.3991432223212456
+    ]
+   }
+  },
+  "RefLev+meanfall": {
+   "rms": 0.2274708925925364,
+   "vs_pilots": {
+    "ratio": 0.37751202143390133,
+    "ci95": [
+     0.21967089902492168,
+     0.6569032016819213
+    ],
+    "label": "REAL positive",
+    "closer": "13/14"
+   },
+   "median_abs_vs_pilots": {
+    "ratio": 0.2593615647085973,
+    "ci95": [
+     0.09615181870761821,
+     0.5769679264801394
+    ]
+   }
+  },
+  "NgLev+meanfall": {
+   "rms": 0.29543508906130167,
+   "vs_pilots": {
+    "ratio": 0.49030579870198354,
+    "ci95": [
+     0.2971020581728525,
+     0.8541534126578324
+    ],
+    "label": "REAL positive",
+    "closer": "12/14"
+   },
+   "median_abs_vs_pilots": {
+    "ratio": 0.30560097670335423,
+    "ci95": [
+     0.13391705133855197,
+     0.7362494575087426
+    ]
+   }
+  },
+  "RevC / RefLev+meanfall": {
+   "rms": {
+    "ratio": 1.0148619999580732,
+    "ci95": [
+     0.6775282971094639,
+     1.1766421902203623
+    ],
+    "label": "tie",
+    "closer": "7/14"
+   },
+   "median_abs": {
+    "ratio": 0.6022407783131455,
+    "ci95": [
+     0.3670050348705446,
+     1.6539461894431642
+    ]
+   }
+  },
+  "Rev / RefLev+meanfall": {
+   "rms": {
+    "ratio": 0.991398595782415,
+    "ci95": [
+     0.6005511536631745,
+     1.1797254556760435
+    ],
+    "label": "tie",
+    "closer": "10/14"
+   },
+   "median_abs": {
+    "ratio": 0.6307031362161437,
+    "ci95": [
+     0.3981757889445011,
+     0.9669296483371129
+    ]
+   }
+  }
+ },
+ "increment": {
+  "orig14": {
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.002211288746732,
+     "ci95": [
+      0.5824555103882685,
+      1.2077042361662202
+     ],
+     "label": "tie",
+     "closer": "10/14"
+    },
+    "median_abs": {
+     "ratio": 0.6402281115112324,
+     "ci95": [
+      0.45184138546567154,
+      1.136772843218394
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 0.9953467774503543,
+     "ci95": [
+      0.6639361349542185,
+      1.1512741801577884
+     ],
+     "label": "tie",
+     "closer": "7/14"
+    },
+    "median_abs": {
+     "ratio": 0.6127012737463169,
+     "ci95": [
+      0.37337965218219155,
+      1.6556131749849394
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / Ref level - bias + code-mean log-ratio fall": {
+    "rms": {
+     "ratio": 1.0185474340730718,
+     "ci95": [
+      0.8119851905675829,
+      1.2109432382233432
+     ],
+     "label": "tie",
+     "closer": "7/14"
+    },
+    "median_abs": {
+     "ratio": 0.7098232562411462,
+     "ci95": [
+      0.45233846150365137,
+      1.73707544720261
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / n-gram level + code-mean fall": {
+    "rms": {
+     "ratio": 0.8454706040000648,
+     "ci95": [
+      0.5017832855057218,
+      0.9783510677941273
+     ],
+     "label": "REAL positive",
+     "closer": "8/14"
+    },
+    "median_abs": {
+     "ratio": 0.543933054520368,
+     "ci95": [
+      0.3002982063605926,
+      1.579755469416232
+     ]
+    }
+   },
+   "Oracle level + info fall (lam code) / Oracle level + code-mean fall": {
+    "rms": {
+     "ratio": 1.0972311804811015,
+     "ci95": [
+      0.6243952783987217,
+      1.304268150961909
+     ],
+     "label": "tie",
+     "closer": "8/14"
+    },
+    "median_abs": {
+     "ratio": 0.6651631657084823,
+     "ci95": [
+      0.3421717438689065,
+      1.3176323023054244
+     ]
+    }
+   },
+   "A0 (paper forecast, as run) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.0474370621039155,
+     "ci95": [
+      0.6078171852402151,
+      1.2652032255077494
+     ],
+     "label": "tie",
+     "closer": "6/14"
+    },
+    "median_abs": {
+     "ratio": 0.856460839836309,
+     "ci95": [
+      0.32205299216419103,
+      2.7806540330994816
+     ]
+    }
+   }
+  },
+  "ext45": {
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.0288025960347988,
+     "ci95": [
+      0.9840868977762901,
+      1.058962182023009
+     ],
+     "label": "tie",
+     "closer": "6/11"
+    },
+    "median_abs": {
+     "ratio": 0.5832083460142812,
+     "ci95": [
+      0.5832083460142812,
+      1.1113294365562885
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.0209618181201463,
+     "ci95": [
+      0.9893767550549462,
+      1.0711591394556204
+     ],
+     "label": "tie",
+     "closer": "7/11"
+    },
+    "median_abs": {
+     "ratio": 0.7102126664315843,
+     "ci95": [
+      0.5801208352420948,
+      1.1306949873371985
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / Ref level - bias + code-mean log-ratio fall": {
+    "rms": {
+     "ratio": 0.9810451566605379,
+     "ci95": [
+      0.7895811453501537,
+      1.301681197328523
+     ],
+     "label": "tie",
+     "closer": "5/11"
+    },
+    "median_abs": {
+     "ratio": 0.8729795896444625,
+     "ci95": [
+      0.6556802252219379,
+      1.6603606231521264
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / n-gram level + code-mean fall": {
+    "rms": {
+     "ratio": 0.9895073421295323,
+     "ci95": [
+      0.8330285701541702,
+      1.023029310652355
+     ],
+     "label": "tie",
+     "closer": "5/11"
+    },
+    "median_abs": {
+     "ratio": 0.5799557959177919,
+     "ci95": [
+      0.3177928615423842,
+      1.4829509395119194
+     ]
+    }
+   },
+   "Oracle level + info fall (lam code) / Oracle level + code-mean fall": {
+    "rms": {
+     "ratio": 1.118166022802278,
+     "ci95": [
+      1.0247966765565057,
+      1.22400991837681
+     ],
+     "label": "REAL negative",
+     "closer": "3/11"
+    },
+    "median_abs": {
+     "ratio": 1.0766986731398638,
+     "ci95": [
+      0.2597262972249919,
+      2.4798701855551357
+     ]
+    }
+   },
+   "A0 (paper forecast, as run) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.0328813445698848,
+     "ci95": [
+      0.9900196874333105,
+      1.1263197336111335
+     ],
+     "label": "tie",
+     "closer": "6/11"
+    },
+    "median_abs": {
+     "ratio": 0.5602515706107183,
+     "ci95": [
+      0.5602515706107183,
+      1.214302213635023
+     ]
+    }
+   }
+  },
+  "ext45_C1": {
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.0312537626754212,
+     "ci95": [
+      0.6949090853321871,
+      1.0874496579343054
+     ],
+     "label": "tie",
+     "closer": "6/9"
+    },
+    "median_abs": {
+     "ratio": 0.6638342375093399,
+     "ci95": [
+      0.5832083460142812,
+      1.0175127121867278
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.0462329272695503,
+     "ci95": [
+      0.813712607072984,
+      1.1078713888542049
+     ],
+     "label": "tie",
+     "closer": "7/9"
+    },
+    "median_abs": {
+     "ratio": 0.756901372643344,
+     "ci95": [
+      0.5237402903729205,
+      1.0548050478493436
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / Ref level - bias + code-mean log-ratio fall": {
+    "rms": {
+     "ratio": 1.094883338786496,
+     "ci95": [
+      0.6730386888865679,
+      1.601119913129015
+     ],
+     "label": "tie",
+     "closer": "4/9"
+    },
+    "median_abs": {
+     "ratio": 0.7827710981665694,
+     "ci95": [
+      0.598518521086861,
+      1.6269591682973188
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / n-gram level + code-mean fall": {
+    "rms": {
+     "ratio": 0.9789299542975004,
+     "ci95": [
+      0.7883220091181338,
+      1.0533962676733706
+     ],
+     "label": "tie",
+     "closer": "4/9"
+    },
+    "median_abs": {
+     "ratio": 0.8271567493136329,
+     "ci95": [
+      0.2238373827508203,
+      2.066013328553365
+     ]
+    }
+   },
+   "Oracle level + info fall (lam code) / Oracle level + code-mean fall": {
+    "rms": {
+     "ratio": 1.1055101616189802,
+     "ci95": [
+      0.7404777783371445,
+      1.5521101966286026
+     ],
+     "label": "tie",
+     "closer": "3/9"
+    },
+    "median_abs": {
+     "ratio": 1.1839231391561784,
+     "ci95": [
+      0.147702190320438,
+      3.5761635107672367
+     ]
+    }
+   },
+   "A0 (paper forecast, as run) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.087163831155797,
+     "ci95": [
+      0.7912820427491769,
+      1.185127349304818
+     ],
+     "label": "tie",
+     "closer": "6/9"
+    },
+    "median_abs": {
+     "ratio": 0.7681084716283288,
+     "ci95": [
+      0.2665832803937248,
+      1.60377689392835
+     ]
+    }
+   }
+  },
+  "new5": {
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 0.5288273940209244,
+     "ci95": [
+      0.2386506665791276,
+      0.6768765414276906
+     ],
+     "label": "REAL positive",
+     "closer": "5/5"
+    },
+    "median_abs": {
+     "ratio": 0.34917130374652516,
+     "ci95": [
+      0.14093477654453532,
+      0.700408329015285
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 0.6679294869843744,
+     "ci95": [
+      0.27740745200170913,
+      0.851233673313915
+     ],
+     "label": "REAL positive",
+     "closer": "5/5"
+    },
+    "median_abs": {
+     "ratio": 0.30311036747440623,
+     "ci95": [
+      0.06928036849005312,
+      0.9048937495105097
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / Ref level - bias + code-mean log-ratio fall": {
+    "rms": {
+     "ratio": 0.9534646149881508,
+     "ci95": [
+      0.8010320080877359,
+      1.0194681824580785
+     ],
+     "label": "tie",
+     "closer": "2/5"
+    },
+    "median_abs": {
+     "ratio": 0.7767894823188196,
+     "ci95": [
+      0.7767894823188196,
+      2.045256826934747
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / n-gram level + code-mean fall": {
+    "rms": {
+     "ratio": 1.0162657164620645,
+     "ci95": [
+      0.2839583901943752,
+      2.9405503626112295
+     ],
+     "label": "tie",
+     "closer": "4/5"
+    },
+    "median_abs": {
+     "ratio": 0.7922419014886433,
+     "ci95": [
+      0.09455001836513152,
+      6.442132624114514
+     ]
+    }
+   },
+   "Oracle level + info fall (lam code) / Oracle level + code-mean fall": {
+    "rms": {
+     "ratio": 1.0388656069063187,
+     "ci95": [
+      0.4402791403540294,
+      1.7767190279428007
+     ],
+     "label": "tie",
+     "closer": "2/5"
+    },
+    "median_abs": {
+     "ratio": 0.6626146786044324,
+     "ci95": [
+      0.12278782971413475,
+      2.516296761578475
+     ]
+    }
+   },
+   "A0 (paper forecast, as run) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 0.6693989006471021,
+     "ci95": [
+      0.2693826611592259,
+      0.944925617538625
+     ],
+     "label": "REAL positive",
+     "closer": "4/5"
+    },
+    "median_abs": {
+     "ratio": 0.41897074154951314,
+     "ci95": [
+      0.17428784633376992,
+      1.2567813467601032
+     ]
+    }
+   }
+  },
+  "held16": {
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.0279903865423459,
+     "ci95": [
+      0.9657787551133856,
+      1.0533888456003502
+     ],
+     "label": "tie",
+     "closer": "11/16"
+    },
+    "median_abs": {
+     "ratio": 0.6536562845658601,
+     "ci95": [
+      0.424875406812544,
+      1.0068869073787023
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.0203352679640474,
+     "ci95": [
+      0.9806655258743844,
+      1.0669033995412165
+     ],
+     "label": "tie",
+     "closer": "12/16"
+    },
+    "median_abs": {
+     "ratio": 0.8048039585768619,
+     "ci95": [
+      0.4726410833853895,
+      0.9677871193964368
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / Ref level - bias + code-mean log-ratio fall": {
+    "rms": {
+     "ratio": 0.981018694377902,
+     "ci95": [
+      0.7884649676418568,
+      1.3536809885808498
+     ],
+     "label": "tie",
+     "closer": "7/16"
+    },
+    "median_abs": {
+     "ratio": 1.0722079845348416,
+     "ci95": [
+      0.7520656088261339,
+      1.5957061192228692
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / n-gram level + code-mean fall": {
+    "rms": {
+     "ratio": 0.9895309769805006,
+     "ci95": [
+      0.8339466970016058,
+      1.0232630753211018
+     ],
+     "label": "tie",
+     "closer": "9/16"
+    },
+    "median_abs": {
+     "ratio": 1.1003502732076673,
+     "ci95": [
+      0.32063959371589773,
+      2.006504109871008
+     ]
+    }
+   },
+   "Oracle level + info fall (lam code) / Oracle level + code-mean fall": {
+    "rms": {
+     "ratio": 1.1169698655672884,
+     "ci95": [
+      1.003568710518,
+      1.2205138127235375
+     ],
+     "label": "REAL negative",
+     "closer": "5/16"
+    },
+    "median_abs": {
+     "ratio": 1.0116853338152054,
+     "ci95": [
+      0.45989771114905137,
+      1.9698093885813381
+     ]
+    }
+   },
+   "A0 (paper forecast, as run) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.0322386345239716,
+     "ci95": [
+      0.9810362995213501,
+      1.1225899125660121
+     ],
+     "label": "tie",
+     "closer": "10/16"
+    },
+    "median_abs": {
+     "ratio": 0.7928999115217734,
+     "ci95": [
+      0.31538592594056236,
+      1.0597631721344085
+     ]
+    }
+   }
+  },
+  "held16_C1": {
+   "Rev (frozen revision ii: ref level - bias, 0.69 x info fall) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.0205445249813059,
+     "ci95": [
+      0.6254688459787463,
+      1.0785895490108695
+     ],
+     "label": "tie",
+     "closer": "11/14"
+    },
+    "median_abs": {
+     "ratio": 0.6213513067978262,
+     "ci95": [
+      0.3339207111028893,
+      0.8741294455582328
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.0375088003364743,
+     "ci95": [
+      0.7441365101154588,
+      1.100461717739764
+     ],
+     "label": "tie",
+     "closer": "12/14"
+    },
+    "median_abs": {
+     "ratio": 0.7104155754399494,
+     "ci95": [
+      0.4402496082098576,
+      0.9542072520853572
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / Ref level - bias + code-mean log-ratio fall": {
+    "rms": {
+     "ratio": 1.0928622435667332,
+     "ci95": [
+      0.6767587101705164,
+      1.589067792478364
+     ],
+     "label": "tie",
+     "closer": "6/14"
+    },
+    "median_abs": {
+     "ratio": 1.2638646962010098,
+     "ci95": [
+      0.6601234630457682,
+      1.608475205548104
+     ]
+    }
+   },
+   "RevC (ref level - bias, code-fitted lam x info fall) / n-gram level + code-mean fall": {
+    "rms": {
+     "ratio": 0.9793403869539967,
+     "ci95": [
+      0.781921197449678,
+      1.0590567239998232
+     ],
+     "label": "tie",
+     "closer": "8/14"
+    },
+    "median_abs": {
+     "ratio": 0.9768429605188,
+     "ci95": [
+      0.34638031653159407,
+      2.9160240573466907
+     ]
+    }
+   },
+   "Oracle level + info fall (lam code) / Oracle level + code-mean fall": {
+    "rms": {
+     "ratio": 1.1043050261161942,
+     "ci95": [
+      0.7955957315737688,
+      1.383961138706974
+     ],
+     "label": "tie",
+     "closer": "5/14"
+    },
+    "median_abs": {
+     "ratio": 0.9978061775709801,
+     "ci95": [
+      0.3064181265441906,
+      2.014236482835298
+     ]
+    }
+   },
+   "A0 (paper forecast, as run) / Ref level - bias + code-mean fall": {
+    "rms": {
+     "ratio": 1.0776611433764736,
+     "ci95": [
+      0.7308320778121485,
+      1.1753787734486754
+     ],
+     "label": "tie",
+     "closer": "10/14"
+    },
+    "median_abs": {
+     "ratio": 0.7889538703510269,
+     "ci95": [
+      0.25676771098171497,
+      1.1591003957148371
+     ]
+    }
+   }
+  }
+ },
+ "per_corpus": [
+  {
+   "set": "orig14",
+   "corpus": "code_c",
+   "L20": 3.191551369085928,
+   "L23": 1.8303553927385992,
+   "L25": 1.409169354538421,
+   "fall": 0.4211860382001782,
+   "x": 0.6212978942637557,
+   "lev_A0": 2.3108291876191607,
+   "ngram23": 3.5810912395040058,
+   "c": 0.1819324830055064,
+   "n_docs": 398,
+   "A3_23": 2.525512434746,
+   "A3_25": 2.160634431521086,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.4804737948805615,
+     "fall": 0.2001118560635775,
+     "e25": 0.280361938816984
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.27933775549111384,
+     "fall": 0.009003088206238852,
+     "e25": 0.270334667284875
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.27933775549111384,
+     "fall": -0.029958746010939397,
+     "e25": 0.30929650150205323
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.6951570420074009,
+     "fall": -0.05630803497526404,
+     "e25": 0.751465076982665
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.5550886902903549,
+     "fall": -0.00037227414795393265,
+     "e25": 0.5554609644383088
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.14751112785484732,
+     "fall": 0.119006524225721,
+     "e25": 0.028504603629126324
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.27933775549111384,
+     "fall": -0.04901721604340348,
+     "e25": 0.3283549715345173
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.27933775549111384,
+     "fall": -0.09082131955443895,
+     "e25": 0.3701590750455528
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.27933775549111384,
+     "fall": 0.04018407173526972,
+     "e25": 0.23915368375584412
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.21775599636450882,
+     "fall": -0.09082131955443895,
+     "e25": 0.30857731591894777
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.21775599636450882,
+     "fall": 0.026716718436947007,
+     "e25": 0.1910392779275618
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": -0.029958746010939397,
+     "e25": 0.029958746010939397
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": -0.09082131955443895,
+     "e25": 0.09082131955443895
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": 0.3008252751442766,
+     "e25": 0.3342578118596211
+    },
+    "Rev": {
+     "level": 0.3008252751442766,
+     "e25": 0.29182218693803774
+    },
+    "RefLev+meanfall": {
+     "level": 0.3008252751442766,
+     "e25": 0.3986328500490568
+    },
+    "NgLev+meanfall": {
+     "level": 0.3152696844517957,
+     "e25": 0.4130772593565759
+    }
+   }
+  },
+  {
+   "set": "orig14",
+   "corpus": "code_cpp",
+   "L20": 2.805847894021484,
+   "L23": 1.6014849014184807,
+   "L25": 1.2352939684677324,
+   "fall": 0.3661909329507482,
+   "x": 0.486897804185787,
+   "lev_A0": 1.887016475864906,
+   "ngram23": 2.9435075250694127,
+   "c": 0.18582644714795046,
+   "n_docs": 426,
+   "A3_23": 2.024174313673775,
+   "A3_25": 1.628185063657478,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.2855315744464253,
+     "fall": 0.12070687123503876,
+     "e25": 0.16482470321138654
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.08439553505697761,
+     "fall": -0.029060962020947434,
+     "e25": 0.11345649707792504
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.08439553505697761,
+     "fall": -0.0595945139652605,
+     "e25": 0.1439900490222381
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.4226894122552942,
+     "fall": 0.029798317065548696,
+     "e25": 0.3928910951897455
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.49567490666248903,
+     "fall": 0.003766895420147076,
+     "e25": 0.49190801124234196
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.13735366631296886,
+     "fall": 0.10871859798463501,
+     "e25": 0.028635068328333846
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.08439553505697761,
+     "fall": -0.06878648014361288,
+     "e25": 0.1531820152005905
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.08439553505697761,
+     "fall": -0.035826214305008985,
+     "e25": 0.1202217493619866
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.08439553505697761,
+     "fall": 0.0024953108128926704,
+     "e25": 0.08190022424408494
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.0884423960474432,
+     "fall": -0.035826214305008985,
+     "e25": 0.12426861035245218
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.0884423960474432,
+     "fall": 0.003380321366029948,
+     "e25": 0.08506207468141325
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": -0.0595945139652605,
+     "e25": 0.0595945139652605
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": -0.035826214305008985,
+     "e25": 0.035826214305008985
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": 0.09088749929212958,
+     "e25": 0.1545441443320652
+    },
+    "Rev": {
+     "level": 0.09088749929212958,
+     "e25": 0.11994846131307701
+    },
+    "RefLev+meanfall": {
+     "level": 0.09088749929212958,
+     "e25": 0.1294695762359852
+    },
+    "NgLev+meanfall": {
+     "level": 0.09748849512725344,
+     "e25": 0.13607057207110906
+    }
+   }
+  },
+  {
+   "set": "orig14",
+   "corpus": "code_csharp",
+   "L20": 1.9362973349931465,
+   "L23": 1.1139359353633798,
+   "L25": 0.8681655287276683,
+   "fall": 0.24577040663571148,
+   "x": 0.4407034811833156,
+   "lev_A0": 1.3309872872144053,
+   "ngram23": 2.219870666181878,
+   "c": 0.14112110353894589,
+   "n_docs": 672,
+   "A3_23": 1.4960101070445484,
+   "A3_25": 1.259629571039749,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.21705135185102553,
+     "fall": 0.1949330745476041,
+     "e25": 0.02211827730342142
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.015915312461577846,
+     "fall": 0.05937443181441482,
+     "e25": -0.04345911935283697
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.015915312461577846,
+     "fall": 0.03173774395287776,
+     "e25": -0.015822431491299915
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.38207417168116864,
+     "fall": -0.009389870630912012,
+     "e25": 0.39146404231208065
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.3333003728107895,
+     "fall": 0.009535078262726704,
+     "e25": 0.3237652945480628
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.08602522142480273,
+     "fall": 0.08196156382226616,
+     "e25": 0.0040636576025365745
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.015915312461577846,
+     "fall": -0.0464544973679476,
+     "e25": 0.06236980982952545
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.015915312461577846,
+     "fall": 0.08459431201002776,
+     "e25": -0.06867899954844991
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.015915312461577846,
+     "fall": 0.0013174671895034296,
+     "e25": 0.014597845272074417
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.16946402285632423,
+     "fall": 0.08459431201002776,
+     "e25": 0.08486971084629646
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.16946402285632423,
+     "fall": 0.034897130400106335,
+     "e25": 0.1345668924562179
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.03173774395287776,
+     "e25": -0.03173774395287776
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.08459431201002776,
+     "e25": -0.08459431201002776
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": 0.017139567266314604,
+     "e25": -0.016348922429155643
+    },
+    "Rev": {
+     "level": 0.017139567266314604,
+     "e25": -0.042234864548100215
+    },
+    "RefLev+meanfall": {
+     "level": 0.017139567266314604,
+     "e25": -0.0739619995137154
+    },
+    "NgLev+meanfall": {
+     "level": 0.19473069081177274,
+     "e25": 0.10362912403174274
+    }
+   }
+  },
+  {
+   "set": "orig14",
+   "corpus": "code_javascript",
+   "L20": 2.613334784093719,
+   "L23": 1.3930348159916042,
+   "L25": 1.1389461649283343,
+   "fall": 0.25408865106326983,
+   "x": 0.4887834279330292,
+   "lev_A0": 1.8794360661176255,
+   "ngram23": 2.960914894708227,
+   "c": 0.1757764583600361,
+   "n_docs": 445,
+   "A3_23": 2.0130639267290906,
+   "A3_25": 1.6916061089293029,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.4864012501260213,
+     "fall": 0.23469477686975937,
+     "e25": 0.25170647325626194
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.2852652107365736,
+     "fall": 0.08434693322856979,
+     "e25": 0.20091827750800384
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.2852652107365736,
+     "fall": 0.05369513308075513,
+     "e25": 0.2315700776558185
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.6200291107374865,
+     "fall": 0.06736916673651794,
+     "e25": 0.5526599440009685
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.560235953225418,
+     "fall": 0.09048585833528988,
+     "e25": 0.4697500948901281
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.2264996294281607,
+     "fall": 0.1882366792354675,
+     "e25": 0.03826295019269321
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.2852652107365736,
+     "fall": 0.04197854937165291,
+     "e25": 0.24328666136492072
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.2852652107365736,
+     "fall": 0.07627606758246941,
+     "e25": 0.20898914315410422
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.2852652107365736,
+     "fall": 0.11293982816651305,
+     "e25": 0.17232538257006058
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.30667165672725183,
+     "fall": 0.07627606758246941,
+     "e25": 0.23039558914478242
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.30667165672725183,
+     "fall": 0.11762121718668106,
+     "e25": 0.18905043954057077
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.05369513308075513,
+     "e25": -0.05369513308075513
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.07627606758246941,
+     "e25": -0.07627606758246941
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": 0.3072086884855407,
+     "e25": 0.24982318737534515
+    },
+    "Rev": {
+     "level": 0.3072086884855407,
+     "e25": 0.22286175525697094
+    },
+    "RefLev+meanfall": {
+     "level": 0.3072086884855407,
+     "e25": 0.2250652310890351
+    },
+    "NgLev+meanfall": {
+     "level": 0.33909017562208876,
+     "e25": 0.2569467182255831
+    }
+   }
+  },
+  {
+   "set": "orig14",
+   "corpus": "code_php",
+   "L20": 3.056902017466319,
+   "L23": 1.9828292809333217,
+   "L25": 1.2560549473421427,
+   "fall": 0.7267743335911789,
+   "x": 0.4147429486316596,
+   "lev_A0": 1.5797969376481602,
+   "ngram23": 2.444308547576837,
+   "c": 0.20573477248694844,
+   "n_docs": 706,
+   "A3_23": 2.556495177469571,
+   "A3_25": 2.269275811682048,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": -0.40303234328516147,
+     "fall": -0.3120313849595193,
+     "e25": -0.09100095832564215
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": -0.6041683826746092,
+     "fall": -0.43960467085394694,
+     "e25": -0.1645637118206622
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": -0.6041683826746092,
+     "fall": -0.4656133635543771,
+     "e25": -0.13855501912023205
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.5736658965362493,
+     "fall": -0.4395549678036561,
+     "e25": 1.0132208643399054
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.30197456104675524,
+     "fall": -0.3237144120843334,
+     "e25": 0.6256889731310886
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": -0.08840758506294222,
+     "fall": -0.20937212289983909,
+     "e25": 0.12096453783689687
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": -0.6041683826746092,
+     "fall": -0.48356616699638555,
+     "e25": -0.1206022156782236
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": -0.6041683826746092,
+     "fall": -0.3964096149454397,
+     "e25": -0.20775876772916946
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": -0.6041683826746092,
+     "fall": -0.42527412218504734,
+     "e25": -0.1788942604895618
+    },
+    "n-gram level + code-mean fall": {
+     "level": -0.5733437956582141,
+     "fall": -0.3964096149454397,
+     "e25": -0.17693418071277445
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -0.5733437956582141,
+     "fall": -0.4185330740319535,
+     "e25": -0.15481072162626064
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": -0.4656133635543771,
+     "e25": 0.4656133635543771
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": -0.3964096149454397,
+     "e25": 0.3964096149454397
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": -0.6506428736495791,
+     "e25": -0.1624243913145218
+    },
+    "Rev": {
+     "level": -0.6506428736495791,
+     "e25": -0.21103820279563212
+    },
+    "RefLev+meanfall": {
+     "level": -0.6506428736495791,
+     "e25": -0.22374021140064415
+    },
+    "NgLev+meanfall": {
+     "level": -0.6273830534514098,
+     "e25": -0.20048039120247485
+    }
+   }
+  },
+  {
+   "set": "orig14",
+   "corpus": "code_html",
+   "L20": 2.508552075093554,
+   "L23": 1.2937091644991008,
+   "L25": 1.027755204437058,
+   "fall": 0.26595396006204286,
+   "x": 0.3895654631178662,
+   "lev_A0": 1.5217134384341597,
+   "ngram23": 2.35853780836524,
+   "c": 0.20655808380023402,
+   "n_docs": 462,
+   "A3_23": 0.9090860377070943,
+   "A3_25": 0.4620896403346455,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.22800427393505895,
+     "fall": 0.12361150305582336,
+     "e25": 0.1043927708792356
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.02686823454561127,
+     "fall": 0.0037827118373174873,
+     "e25": 0.023085522708293782
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.02686823454561127,
+     "fall": -0.020647090888350483,
+     "e25": 0.04751532543396175
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": -0.3846231267920065,
+     "fall": 0.18104243731040592,
+     "e25": -0.5656655641024124
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.5812444278085065,
+     "fall": 0.06480469582745152,
+     "e25": 0.516439731981055
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.2608893961105543,
+     "fall": 0.15863615825765676,
+     "e25": 0.10225323785289753
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.02686823454561127,
+     "fall": -0.032992244477131116,
+     "e25": 0.059860479022742386
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.02686823454561127,
+     "fall": 0.06441075858369638,
+     "e25": -0.03754252403808511
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.02686823454561127,
+     "fall": 0.022843934687144518,
+     "e25": 0.004024299858466751
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.06759172380774903,
+     "fall": 0.06441075858369638,
+     "e25": 0.0031809652240526454
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.06759172380774903,
+     "fall": 0.03174977994411643,
+     "e25": 0.0358419438636326
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": -0.020647090888350483,
+     "e25": 0.020647090888350483
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.06441075858369638,
+     "e25": -0.06441075858369638
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": 0.028935021818350615,
+     "e25": 0.05046147518980937
+    },
+    "Rev": {
+     "level": 0.028935021818350615,
+     "e25": 0.025152309981033127
+    },
+    "RefLev+meanfall": {
+     "level": 0.028935021818350615,
+     "e25": -0.04043041050255325
+    },
+    "NgLev+meanfall": {
+     "level": 0.07505103224418574,
+     "e25": 0.005685599923281881
+    }
+   }
+  },
+  {
+   "set": "orig14",
+   "corpus": "code_go",
+   "L20": 2.3688525781147867,
+   "L23": 1.381340857937672,
+   "L25": 1.0358696163119887,
+   "fall": 0.3454712416256833,
+   "x": 0.5754401835709082,
+   "lev_A0": 1.6286043311524288,
+   "ngram23": 2.4155015005726836,
+   "c": 0.24938683392644198,
+   "n_docs": 611,
+   "A3_23": 1.593193091712921,
+   "A3_25": 1.2229874535573477,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.24726347321475672,
+     "fall": 0.22996894194522488,
+     "e25": 0.017294531269531843
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.04612743382530904,
+     "fall": 0.05296582399943728,
+     "e25": -0.006838390174128239
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.04612743382530904,
+     "fall": 0.016879744775298855,
+     "e25": 0.029247689050010184
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.21185223377524887,
+     "fall": 0.024734396529889846,
+     "e25": 0.18711783724535902
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.3891978903232407,
+     "fall": -0.03313230215663143,
+     "e25": 0.42233019247987214
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.08668320454720924,
+     "fall": 0.05547375226533369,
+     "e25": 0.03120945228187555
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.04612743382530904,
+     "fall": -0.09365301239298063,
+     "e25": 0.13978044621828967
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.04612743382530904,
+     "fall": -0.015106522979944081,
+     "e25": 0.06123395680525312
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.04612743382530904,
+     "fall": -0.0332973109037249,
+     "e25": 0.07942474472903394
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.011961299987108598,
+     "fall": -0.015106522979944081,
+     "e25": 0.02706782296705268
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.011961299987108598,
+     "fall": -0.04076912401466348,
+     "e25": 0.05273042400177208
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.016879744775298855,
+     "e25": -0.016879744775298855
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": -0.015106522979944081,
+     "e25": 0.015106522979944081
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": 0.04967569796571736,
+     "e25": 0.031144198752665053
+    },
+    "Rev": {
+     "level": 0.04967569796571736,
+     "e25": -0.00329012603371992
+    },
+    "RefLev+meanfall": {
+     "level": 0.04967569796571736,
+     "e25": 0.06594426117488772
+    },
+    "NgLev+meanfall": {
+     "level": 0.013145953287883705,
+     "e25": 0.02941451649705429
+    }
+   }
+  },
+  {
+   "set": "orig14",
+   "corpus": "code_ruby",
+   "L20": 2.1223397090979423,
+   "L23": 1.319317540980131,
+   "L25": 1.088929459112135,
+   "fall": 0.23038808186799598,
+   "x": 0.5180920055578264,
+   "lev_A0": 1.6152453735750987,
+   "ngram23": 2.41346232693183,
+   "c": 0.2418300471076342,
+   "n_docs": 954,
+   "A3_23": 1.3635740464749586,
+   "A3_25": 1.0152849401940143,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.2959278325949677,
+     "fall": 0.28770392368983044,
+     "e25": 0.008223908905137245
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.09479179320552,
+     "fall": 0.12834087782561765,
+     "e25": -0.03354908462009765
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.09479179320552,
+     "fall": 0.09585112529923956,
+     "e25": -0.001059332093719556
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.044256505494827625,
+     "fall": 0.11790102441294836,
+     "e25": -0.07364451891812074
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.26697141876644537,
+     "fall": 0.04944753984057715,
+     "e25": 0.21752387892586822
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": -0.0040623028502517755,
+     "fall": 0.12883287158455914,
+     "e25": -0.13289517443481091
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.09479179320552,
+     "fall": 0.01907350724812429,
+     "e25": 0.07571828595739571
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.09479179320552,
+     "fall": 0.09997663677774327,
+     "e25": -0.005184843572223263
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.09479179320552,
+     "fall": 0.07886437009234837,
+     "e25": 0.015927423113171635
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.07283904258052498,
+     "fall": 0.09997663677774327,
+     "e25": -0.027137594197218284
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.07283904258052498,
+     "fall": 0.07406350937109218,
+     "e25": -0.0012244667905672024
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.09585112529923945,
+     "e25": -0.09585112529923945
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.09997663677774327,
+     "e25": -0.09997663677774327
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": 0.1020834696059445,
+     "e25": -0.001232408082306291
+    },
+    "Rev": {
+     "level": 0.1020834696059445,
+     "e25": -0.02625740821967315
+    },
+    "RefLev+meanfall": {
+     "level": 0.1020834696059445,
+     "e25": -0.005583677693163702
+    },
+    "NgLev+meanfall": {
+     "level": 0.08007944959067426,
+     "e25": -0.027587697708433945
+    }
+   }
+  },
+  {
+   "set": "orig14",
+   "corpus": "code_typescript",
+   "L20": 1.995278557742626,
+   "L23": 1.2239184413059334,
+   "L25": 0.9368780269756182,
+   "fall": 0.28704041433031524,
+   "x": 0.36518541813505867,
+   "lev_A0": 1.3133894480281592,
+   "ngram23": 2.033550456302567,
+   "c": 0.21917511616536517,
+   "n_docs": 354,
+   "A3_23": 1.4101805045773654,
+   "A3_25": 1.1188936788184318,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.08947100672222574,
+     "fall": 0.07814500380474343,
+     "e25": 0.011326002917482314
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": -0.11166503266722194,
+     "fall": -0.03418458228207266,
+     "e25": -0.07748045038514928
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": -0.11166503266722194,
+     "fall": -0.05708550284091296,
+     "e25": -0.05457952982630898
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.18626206327143202,
+     "fall": 0.0042464114286183685,
+     "e25": 0.18201565184281365
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.26740188512355045,
+     "fall": -0.023958112616699334,
+     "e25": 0.2913599977402498
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.01259452754137036,
+     "fall": 0.050674543762036395,
+     "e25": -0.038080016220666035
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": -0.11166503266722194,
+     "fall": -0.0908289219716858,
+     "e25": -0.020836110695536147
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": -0.11166503266722194,
+     "fall": 0.043324304315424,
+     "e25": -0.15498933698264594
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": -0.11166503266722194,
+     "fall": -0.043801022928621314,
+     "e25": -0.06786400973860063
+    },
+    "n-gram level + code-mean fall": {
+     "level": -0.04519012638322373,
+     "fall": 0.043324304315424,
+     "e25": -0.08851443069864773
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -0.04519012638322373,
+     "fall": -0.02926358422767461,
+     "e25": -0.015926542155549117
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": -0.05708550284091296,
+     "e25": 0.05708550284091296
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.043324304315424,
+     "e25": -0.043324304315424
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": -0.12025465056470064,
+     "e25": -0.061043633925569996
+    },
+    "Rev": {
+     "level": -0.12025465056470064,
+     "e25": -0.08607006828262798
+    },
+    "RefLev+meanfall": {
+     "level": -0.12025465056470064,
+     "e25": -0.16691159367361885
+    },
+    "NgLev+meanfall": {
+     "level": -0.05564776261435744,
+     "e25": -0.10230470572327566
+    }
+   }
+  },
+  {
+   "set": "orig14",
+   "corpus": "code_sql",
+   "L20": 4.012107425766256,
+   "L23": 1.6938698070110678,
+   "L25": 1.2008169357483902,
+   "fall": 0.4930528712626776,
+   "x": 0.7353445443258981,
+   "lev_A0": 2.005538398410714,
+   "ngram23": 3.3959895820820063,
+   "c": 0.10059305099706471,
+   "n_docs": 227,
+   "A3_23": 3.1311252976647306,
+   "A3_25": 2.6541107629013445,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.311668591399646,
+     "fall": 0.24229167306322053,
+     "e25": 0.06937691833642545
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.11053255201019829,
+     "fall": 0.016102608020164277,
+     "e25": 0.09442994399003402
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.11053255201019829,
+     "fall": -0.03001113627713936,
+     "e25": 0.14054368828733765
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 1.4372554906536628,
+     "fall": -0.01603833649929154,
+     "e25": 1.4532938271529543
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 1.3048780784136047,
+     "fall": 0.03595319267610497,
+     "e25": 1.2689248857374997
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.7925112775334575,
+     "fall": 0.1860245868179604,
+     "e25": 0.6064866907154971
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.11053255201019829,
+     "fall": -0.17474008666774465,
+     "e25": 0.28527263867794295
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.11053255201019829,
+     "fall": -0.16268815261693836,
+     "e25": 0.27322070462713666
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.11053255201019829,
+     "fall": -0.09844699436158,
+     "e25": 0.2089795463717783
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.25025450161425344,
+     "fall": -0.16268815261693836,
+     "e25": 0.4129426542311918
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.25025450161425344,
+     "fall": -0.06789111408898663,
+     "e25": 0.31814561570324007
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": -0.030011136277139583,
+     "e25": 0.030011136277139583
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": -0.16268815261693836,
+     "e25": 0.16268815261693836
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": 0.11903505601098274,
+     "e25": 0.15415845056480393
+    },
+    "Rev": {
+     "level": 0.11903505601098274,
+     "e25": 0.10293244799081847
+    },
+    "RefLev+meanfall": {
+     "level": 0.11903505601098274,
+     "e25": 0.29423768190614696
+    },
+    "NgLev+meanfall": {
+     "level": 0.321832933102294,
+     "e25": 0.4970355589974582
+    }
+   }
+  },
+  {
+   "set": "orig14",
+   "corpus": "code_scala",
+   "L20": 2.187295875817617,
+   "L23": 1.3433782241608914,
+   "L25": 1.1100278689375997,
+   "fall": 0.23335035522329162,
+   "x": 0.4712892253170602,
+   "lev_A0": 1.652102229986558,
+   "ngram23": 2.4447290752752724,
+   "c": 0.2509190253903138,
+   "n_docs": 826,
+   "A3_23": 1.4013915721647252,
+   "A3_25": 1.0415036897684058,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.3087240058256666,
+     "fall": 0.23793887009376857,
+     "e25": 0.07078513573189804
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.10758796643621893,
+     "fall": 0.09297217378536726,
+     "e25": 0.014615792650851667
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.10758796643621893,
+     "fall": 0.0634174419334188,
+     "e25": 0.044170524502800124
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.05801334800383384,
+     "fall": 0.1265375271730278,
+     "e25": -0.06852417916919396
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.29146057409324055,
+     "fall": 0.05504989410822292,
+     "e25": 0.23641067998501764
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.012131615134228113,
+     "fall": 0.13686488724041435,
+     "e25": -0.12473327210618623
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.10758796643621893,
+     "fall": 0.02261311443908931,
+     "e25": 0.08497485199712962
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.10758796643621893,
+     "fall": 0.09701436342244762,
+     "e25": 0.010573603013771304
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.10758796643621893,
+     "fall": 0.08396234564514571,
+     "e25": 0.02362562079107322
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.06634350668991429,
+     "fall": 0.09701436342244762,
+     "e25": -0.030670856732533336
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.06634350668991429,
+     "fall": 0.07494256902817731,
+     "e25": -0.00859906233826302
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.0634174419334188,
+     "e25": -0.0634174419334188
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.09701436342244762,
+     "e25": -0.09701436342244762
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": 0.11586396385438968,
+     "e25": 0.04841385619392824
+    },
+    "Rev": {
+     "level": 0.11586396385438968,
+     "e25": 0.0228917900690222
+    },
+    "RefLev+meanfall": {
+     "level": 0.11586396385438968,
+     "e25": 0.011386957091753747
+    },
+    "NgLev+meanfall": {
+     "level": 0.07259223174755758,
+     "e25": -0.03188477501507858
+    }
+   }
+  },
+  {
+   "set": "orig14",
+   "corpus": "code_perl",
+   "L20": 3.3801754967468414,
+   "L23": 2.3641268528700543,
+   "L25": 2.165806199407374,
+   "fall": 0.19832065346268024,
+   "x": 0.6905235156947163,
+   "lev_A0": 2.1714082258797016,
+   "ngram23": 3.22342910595147,
+   "c": 0.23071539993363518,
+   "n_docs": 479,
+   "A3_23": 2.889188603049018,
+   "A3_25": 2.602157956404452,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": -0.1927186269903527,
+     "fall": 0.492202862232036,
+     "e25": -0.6849214892223887
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": -0.3938546663798004,
+     "fall": 0.2798005678104287,
+     "e25": -0.6736552341902291
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": -0.3938546663798004,
+     "fall": 0.23649756776816688,
+     "e25": -0.6303522341479673
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.5250617501789638,
+     "fall": 0.08870999318188577,
+     "e25": 0.43635175699707807
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.16229954791306822,
+     "fall": 0.24736365784781666,
+     "e25": -0.08506410993474844
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": -0.26936628799133144,
+     "fall": 0.3737978719426842,
+     "e25": -0.6431641599340157
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": -0.3938546663798004,
+     "fall": 0.14925305866205996,
+     "e25": -0.5431077250418603
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": -0.3938546663798004,
+     "fall": 0.132044065183059,
+     "e25": -0.5258987315628594
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": -0.3938546663798004,
+     "fall": 0.23255939942394233,
+     "e25": -0.6264140658037427
+    },
+    "n-gram level + code-mean fall": {
+     "level": -0.5169441944092257,
+     "fall": 0.132044065183059,
+     "e25": -0.6489882595922847
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -0.5169441944092257,
+     "fall": 0.2056408737954678,
+     "e25": -0.7225850682046935
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.23649756776816688,
+     "e25": -0.23649756776816688
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.132044065183059,
+     "e25": -0.132044065183059
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": -0.42415117917824663,
+     "e25": -0.6954724861360062
+    },
+    "Rev": {
+     "level": -0.42415117917824663,
+     "e25": -0.7039517469886754
+    },
+    "RefLev+meanfall": {
+     "level": -0.42415117917824663,
+     "e25": -0.566352480144618
+    },
+    "NgLev+meanfall": {
+     "level": -0.6147618469645517,
+     "e25": -0.7569631479309229
+    }
+   }
+  },
+  {
+   "set": "orig14",
+   "corpus": "code_css",
+   "L20": 1.9774770475965728,
+   "L23": 0.9429802131930042,
+   "L25": 0.7499250232348169,
+   "fall": 0.19305518995818727,
+   "x": 0.4641877027759437,
+   "lev_A0": 1.2648364343192244,
+   "ngram23": 1.9070401326014623,
+   "c": 0.25142496812787785,
+   "n_docs": 455,
+   "A3_23": 1.402653213907412,
+   "A3_25": 1.1156026854148882,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.32185622112622025,
+     "fall": 0.2711325128177564,
+     "e25": 0.050723708308463844
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.12072018173677257,
+     "fall": 0.1283502166743552,
+     "e25": -0.00763003493758263
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.12072018173677257,
+     "fall": 0.09924082408154644,
+     "e25": 0.021479357655226128
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.45967300071440775,
+     "fall": 0.0939953385343365,
+     "e25": 0.36567766218007125
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.5350348262032824,
+     "fall": 0.06767993960493934,
+     "e25": 0.467354886598343
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.2825008132344077,
+     "fall": 0.1416467370816198,
+     "e25": 0.1408540761527879
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.12072018173677257,
+     "fall": -0.0054088853565446016,
+     "e25": 0.12612906709331717
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.12072018173677257,
+     "fall": 0.13730952868755197,
+     "e25": -0.016589346950779404
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.12072018173677257,
+     "fall": 0.03956611260372178,
+     "e25": 0.08115406913305079
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.16467667322279878,
+     "fall": 0.13730952868755197,
+     "e25": 0.0273671445352468
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.16467667322279878,
+     "fall": 0.049178985132744324,
+     "e25": 0.11549768809005445
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.09924082408154633,
+     "e25": -0.09924082408154633
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.13730952868755208,
+     "e25": -0.13730952868755208
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": 0.1300063495626781,
+     "e25": 0.02465524852112444
+    },
+    "Rev": {
+     "level": 0.1300063495626781,
+     "e25": 0.001656132888322892
+    },
+    "RefLev+meanfall": {
+     "level": 0.1300063495626781,
+     "e25": -0.017865450562377982
+    },
+    "NgLev+meanfall": {
+     "level": 0.21633345317291897,
+     "e25": 0.06846165304786289
+    }
+   }
+  },
+  {
+   "set": "orig14",
+   "corpus": "code_markdown",
+   "L20": 2.92139568339352,
+   "L23": 2.0288781982880706,
+   "L25": 1.6644152674816803,
+   "fall": 0.36446293080639025,
+   "x": 0.3834386231001792,
+   "lev_A0": 2.168160343893277,
+   "ngram23": 3.0475123314798536,
+   "c": 0.2917912740911484,
+   "n_docs": 728,
+   "A3_23": 2.2386538737971646,
+   "A3_25": 1.874640503319953,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.13928214560520624,
+     "fall": 0.018975692293788926,
+     "e25": 0.12030645331141732
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": -0.06185389378424144,
+     "fall": -0.09896850723778261,
+     "e25": 0.03711461345354117
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": -0.06185389378424144,
+     "fall": -0.1230140934269901,
+     "e25": 0.06116019964274866
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.20977567550909404,
+     "fall": -0.0004495603291785333,
+     "e25": 0.21022523583827257
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.15464487285500716,
+     "fall": 0.020730152946744518,
+     "e25": 0.13391471990826265
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": -0.21843241585182138,
+     "fall": 0.1300038778304029,
+     "e25": -0.3484362936822243
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": -0.06185389378424144,
+     "fall": -0.017462174238910277,
+     "e25": -0.044391719545331165
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": -0.06185389378424144,
+     "fall": -0.03409821216065101,
+     "e25": -0.027755681623590434
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": -0.06185389378424144,
+     "fall": 0.0657068407436352,
+     "e25": -0.12756073452787664
+    },
+    "n-gram level + code-mean fall": {
+     "level": -0.2805227034472175,
+     "fall": -0.03409821216065101,
+     "e25": -0.24642449128656652
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -0.2805227034472175,
+     "fall": 0.01788602242305748,
+     "e25": -0.298408725870275
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": -0.1230140934269901,
+     "e25": 0.1230140934269901
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": -0.03409821216065101,
+     "e25": 0.03409821216065101
+    }
+   },
+   "loo": {
+    "RevC": {
+     "level": -0.0666118856137985,
+     "e25": 0.06147115658739932
+    },
+    "Rev": {
+     "level": -0.0666118856137985,
+     "e25": 0.03235662162398434
+    },
+    "RefLev+meanfall": {
+     "level": -0.0666118856137985,
+     "e25": -0.029890734056174484
+    },
+    "NgLev+meanfall": {
+     "level": -0.3159690696059283,
+     "e25": -0.2792479180483043
+    }
+   }
+  },
+  {
+   "set": "new5",
+   "corpus": "code_kotlin",
+   "L20": 2.2699769867896173,
+   "L23": 1.2485617492893708,
+   "L25": 0.9988114192525164,
+   "fall": 0.24975033003685443,
+   "x": 0.41234150412130277,
+   "lev_A0": 1.4288385443229155,
+   "ngram23": 2.108064780246768,
+   "c": 0.2651877790907567,
+   "n_docs": 800,
+   "A3_23": 1.6937659049004463,
+   "A3_25": 1.3933963687928852,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.18027679503354466,
+     "fall": 0.16259117408444834,
+     "e25": 0.017685620949096315
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": -0.02085924435590303,
+     "fall": 0.03575656299592189,
+     "e25": -0.05661580735182492
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": -0.02085924435590303,
+     "fall": 0.009898465821016833,
+     "e25": -0.03075771017691986
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.4452041556110755,
+     "fall": 0.05061920607070669,
+     "e25": 0.3945849495403688
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.4480749472711596,
+     "fall": 0.04955162366989385,
+     "e25": 0.39852332360126574
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.1581871842158562,
+     "fall": 0.13445927317341777,
+     "e25": 0.023727911042438432
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": -0.02085924435590303,
+     "fall": -0.033172580043489,
+     "e25": 0.012313335687585969
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": -0.02085924435590303,
+     "fall": 0.08061438860888481,
+     "e25": -0.10147363296478784
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": -0.02085924435590303,
+     "fall": 0.018736696213611403,
+     "e25": -0.03959594056951443
+    },
+    "n-gram level + code-mean fall": {
+     "level": -0.027972507194798046,
+     "fall": 0.08061438860888481,
+     "e25": -0.10858689580368286
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -0.027972507194798046,
+     "fall": 0.017181092328404368,
+     "e25": -0.045153599523202415
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.009898465821016833,
+     "e25": -0.009898465821016833
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.08061438860888481,
+     "e25": -0.08061438860888481
+    }
+   }
+  },
+  {
+   "set": "new5",
+   "corpus": "code_dart",
+   "L20": 2.276507372112098,
+   "L23": 1.32553527172773,
+   "L25": 1.0298246289091966,
+   "fall": 0.29571064281853343,
+   "x": 0.41073353814163194,
+   "lev_A0": 1.5078123516355213,
+   "ngram23": 2.287451408674965,
+   "c": 0.2302465395645916,
+   "n_docs": 397,
+   "A3_23": 1.2085833324193507,
+   "A3_25": 0.7924069822264749,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.1822770799077913,
+     "fall": 0.1150228953230985,
+     "e25": 0.06725418458469279
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": -0.01885895948165639,
+     "fall": -0.011317111808182068,
+     "e25": -0.007541847673474322
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": -0.01885895948165639,
+     "fall": -0.037074372806906286,
+     "e25": 0.018215413325249896
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": -0.11695193930837933,
+     "fall": 0.12046570737434237,
+     "e25": -0.2374176466827217
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.37598239562910374,
+     "fall": 0.0044523579811373,
+     "e25": 0.37153003764796644
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.08526066870366433,
+     "fall": 0.08960427413199334,
+     "e25": -0.0043436054283290115
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": -0.01885895948165639,
+     "fall": -0.06520120381464456,
+     "e25": 0.04634224433298817
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": -0.01885895948165639,
+     "fall": 0.03465407582720581,
+     "e25": -0.0535130353088622
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": -0.01885895948165639,
+     "fall": -0.009952785408374076,
+     "e25": -0.008906174073282314
+    },
+    "n-gram level + code-mean fall": {
+     "level": -0.0041695588721522014,
+     "fall": 0.03465407582720581,
+     "e25": -0.03882363469935801
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -0.0041695588721522014,
+     "fall": -0.006740351230550612,
+     "e25": 0.0025707923583984105
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": -0.037074372806906286,
+     "e25": 0.037074372806906286
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.03465407582720581,
+     "e25": -0.03465407582720581
+    }
+   }
+  },
+  {
+   "set": "new5",
+   "corpus": "code_ocaml",
+   "L20": 2.7886291363181095,
+   "L23": 1.5805921843509636,
+   "L25": 1.3019604842975145,
+   "fall": 0.27863170005344906,
+   "x": 0.649216290944562,
+   "lev_A0": 1.988048139413503,
+   "ngram23": 2.629090801111437,
+   "c": 0.36932468828906034,
+   "n_docs": 271,
+   "A3_23": 1.7653947912030066,
+   "A3_25": 1.301595068069435,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.4074559550625394,
+     "fall": 0.37058459089111295,
+     "e25": 0.036871364171426446
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.2063199156730917,
+     "fall": 0.17088823495488037,
+     "e25": 0.035431680718211345
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.2063199156730917,
+     "fall": 0.13017562715045883,
+     "e25": 0.07614428852263289
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.18480260685204297,
+     "fall": 0.18516802308012248,
+     "e25": -0.000365416228079507
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.5036979002223476,
+     "fall": 0.08905579348541237,
+     "e25": 0.41464210673693525
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.14757558399508586,
+     "fall": 0.19336343478739781,
+     "e25": -0.04578785079231196
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.2063199156730917,
+     "fall": 0.03659564574405927,
+     "e25": 0.16972426992903245
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.2063199156730917,
+     "fall": 0.05173301859229018,
+     "e25": 0.15458689708080153
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.2063199156730917,
+     "fall": 0.11214922120274151,
+     "e25": 0.0941706944703502
+    },
+    "n-gram level + code-mean fall": {
+     "level": -0.0672990544724239,
+     "fall": 0.05173301859229018,
+     "e25": -0.11903207306471408
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -0.0672990544724239,
+     "fall": 0.05231131802597355,
+     "e25": -0.11961037249839745
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.13017562715045883,
+     "e25": -0.13017562715045883
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.05173301859229018,
+     "e25": -0.05173301859229018
+    }
+   }
+  },
+  {
+   "set": "new5",
+   "corpus": "code_clojure",
+   "L20": 2.090229121644693,
+   "L23": 1.3302291065629601,
+   "L25": 1.0909254877088324,
+   "fall": 0.23930361885412776,
+   "x": 0.5501247201804929,
+   "lev_A0": 1.7911352740901956,
+   "ngram23": 2.423138507565613,
+   "c": 0.3487902019379683,
+   "n_docs": 793,
+   "A3_23": 1.3037908107260596,
+   "A3_25": 0.9518107309243684,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.46090616752723546,
+     "fall": 0.3108211013263651,
+     "e25": 0.15008506620087037
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.25977012813778777,
+     "fall": 0.14160491950405008,
+     "e25": 0.1181652086337377
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.25977012813778777,
+     "fall": 0.10710638290134145,
+     "e25": 0.15266374523644632
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": -0.026438295836900494,
+     "fall": 0.11267646094756345,
+     "e25": -0.13911475678446394
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.232059609419758,
+     "fall": 0.036298144266732724,
+     "e25": 0.19576146515302528
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": -0.034873424647511975,
+     "fall": 0.11448239136505567,
+     "e25": -0.14935581601256764
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.25977012813778777,
+     "fall": 0.04118652868476835,
+     "e25": 0.21858359945301942
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.25977012813778777,
+     "fall": 0.09106109979161148,
+     "e25": 0.1687090283461763
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.25977012813778777,
+     "fall": 0.1084143051134987,
+     "e25": 0.15135582302428907
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.067363396850044,
+     "fall": 0.09106109979161148,
+     "e25": -0.023697702941567478
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.067363396850044,
+     "fall": 0.06633675708665154,
+     "e25": 0.0010266397633924562
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.10710638290134145,
+     "e25": -0.10710638290134145
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.09106109979161148,
+     "e25": -0.09106109979161148
+    }
+   }
+  },
+  {
+   "set": "new5",
+   "corpus": "code_groovy",
+   "L20": 2.0780618509379383,
+   "L23": 1.234576690789003,
+   "L25": 1.012244925017642,
+   "fall": 0.22233176577136105,
+   "x": 0.4379083000220456,
+   "lev_A0": 1.4926677082906679,
+   "ngram23": 2.258645247136246,
+   "c": 0.23381074950245234,
+   "n_docs": 714,
+   "A3_23": 1.2924110385992773,
+   "A3_25": 0.9416628808352875,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.25809101750166485,
+     "fall": 0.21557653425068457,
+     "e25": 0.042514483250980284
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.05695497811221717,
+     "fall": 0.08087767815543545,
+     "e25": -0.02392270004321828
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.05695497811221717,
+     "fall": 0.05341627719896902,
+     "e25": 0.0035387009132481495
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.0578343478102743,
+     "fall": 0.12841639199262878,
+     "e25": -0.07058204418235448
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.3186179074567501,
+     "fall": 0.0516657132906726,
+     "e25": 0.2669521941660775
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.053238696581607625,
+     "fall": 0.12939484812900526,
+     "e25": -0.07615615154739763
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.05695497811221717,
+     "fall": 0.005506022106216868,
+     "e25": 0.0514489560060003
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.05695497811221717,
+     "fall": 0.1080329528743782,
+     "e25": -0.05107797476216103
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.05695497811221717,
+     "fall": 0.06011410014334739,
+     "e25": -0.0031591220311302237
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.07060619215623154,
+     "fall": 0.1080329528743782,
+     "e25": -0.03742676071814666
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.07060619215623154,
+     "fall": 0.06309949265387615,
+     "e25": 0.007506699502355385
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.05341627719896902,
+     "e25": -0.05341627719896902
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.1080329528743782,
+     "e25": -0.1080329528743782
+    }
+   }
+  },
+  {
+   "set": "ext45",
+   "corpus": "code_nix",
+   "L20": 2.134561809770841,
+   "L23": 1.4609934980422266,
+   "L25": 1.2538942310886965,
+   "fall": 0.2070992669535301,
+   "x": 0.4762224516680287,
+   "lev_A0": 1.7100240507618105,
+   "ngram23": 2.024675934596509,
+   "c": 0.5243791558151966,
+   "n_docs": 438,
+   "A3_23": 1.496120511702632,
+   "A3_25": 1.1805158030982377,
+   "P2023_25": 1.1346832621750873,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.24903055271958396,
+     "fall": 0.2691231847144986,
+     "e25": -0.020092631994914623
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.04789451333013628,
+     "fall": 0.12263904754850019,
+     "e25": -0.07474453421836391
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.04789451333013628,
+     "fall": 0.09277495114048784,
+     "e25": -0.04488043781035156
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.03512701366040538,
+     "fall": 0.10850544165086418,
+     "e25": -0.0733784279904588
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.1344305607081615,
+     "fall": 0.07434786827746542,
+     "e25": 0.06008269243069608
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": -0.13816398616999082,
+     "fall": 0.15419036317603918,
+     "e25": -0.29235434934603
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.04789451333013628,
+     "fall": 0.059082132189822945,
+     "e25": -0.011187618859686665
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.04789451333013628,
+     "fall": 0.12326545169220915,
+     "e25": -0.07537093836207287
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.04789451333013628,
+     "fall": 0.12288039301327847,
+     "e25": -0.07498587968314219
+    },
+    "n-gram level + code-mean fall": {
+     "level": -0.2872507441117982,
+     "fall": 0.12326545169220915,
+     "e25": -0.41051619580400733
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -0.2872507441117982,
+     "fall": 0.049587267707316696,
+     "e25": -0.3368380118191149
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.09277495114048784,
+     "e25": -0.09277495114048784
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.12326545169220915,
+     "e25": -0.12326545169220915
+    }
+   }
+  },
+  {
+   "set": "ext45",
+   "corpus": "code_objective_cpp",
+   "L20": 4.039331679848043,
+   "L23": 3.8239924218354338,
+   "L25": 3.502284878265919,
+   "fall": 0.3217075435695147,
+   "x": 0.4844337725180934,
+   "lev_A0": 3.2991820318943903,
+   "ngram23": 5.429268632494566,
+   "c": 0.1079609866230141,
+   "n_docs": 423,
+   "A3_23": 3.7381769288290014,
+   "A3_25": 3.549986849063805,
+   "P2023_25": 3.6868490873882624,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": -0.5248103899410435,
+     "fall": 0.16272622894857847,
+     "e25": -0.6875366188896219
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": -0.7259464293304911,
+     "fall": 0.013716322059834418,
+     "e25": -0.7396627513903256
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": -0.7259464293304911,
+     "fall": -0.01666270949381099,
+     "e25": -0.7092837198366801
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": -0.08581549300643232,
+     "fall": -0.1335174638043184,
+     "e25": 0.04770197079788607
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": -0.8048964585313585,
+     "fall": 0.2108881040885331,
+     "e25": -1.0157845626198916
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": -1.3207399370001092,
+     "fall": 0.3619778113837928,
+     "e25": -1.682717748383902
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": -0.7259464293304911,
+     "fall": 0.22481559842655408,
+     "e25": -0.9507620277570452
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": -0.7259464293304911,
+     "fall": 0.008657175076224544,
+     "e25": -0.7346036044067157
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": -0.7259464293304911,
+     "fall": 0.3558060660975939,
+     "e25": -1.081752495428085
+    },
+    "n-gram level + code-mean fall": {
+     "level": -0.7376052334833583,
+     "fall": 0.008657175076224544,
+     "e25": -0.7462624085595828
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -0.7376052334833583,
+     "fall": 0.35325639494838557,
+     "e25": -1.0908616284317438
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": -0.01666270949381099,
+     "e25": 0.01666270949381099
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.008657175076224544,
+     "e25": -0.008657175076224544
+    }
+   }
+  },
+  {
+   "set": "ext45",
+   "corpus": "code_dm",
+   "L20": 2.2417831100702896,
+   "L23": 1.2146304506828254,
+   "L25": 0.9704318558142595,
+   "fall": 0.24419859486856588,
+   "x": 0.5652978604651591,
+   "lev_A0": 1.6603287018079929,
+   "ngram23": 2.0864014467347696,
+   "c": 0.44701552410721934,
+   "n_docs": 624,
+   "A3_23": 1.4772470221900764,
+   "A3_25": 1.1186463505721442,
+   "P2023_25": 0.8072558715865324,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.4456982511251675,
+     "fall": 0.3210992655965932,
+     "e25": 0.12459898552857429
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.2445622117357198,
+     "fall": 0.14721588600795488,
+     "e25": 0.09734632572776492
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.2445622117357198,
+     "fall": 0.1117658358369833,
+     "e25": 0.1327963758987365
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.26261657150725104,
+     "fall": 0.11440207674936631,
+     "e25": 0.14821449475788473
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.46093344816270854,
+     "fall": 0.05138592802995379,
+     "e25": 0.40954752013275475
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.17464618850527502,
+     "fall": 0.1352389960039897,
+     "e25": 0.039407192501285326
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.2445622117357198,
+     "fall": 0.013216098319311254,
+     "e25": 0.23134611341640854
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.2445622117357198,
+     "fall": 0.08616612377717336,
+     "e25": 0.15839608795854643
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.2445622117357198,
+     "fall": 0.07491315825153233,
+     "e25": 0.16964905348418746
+    },
+    "n-gram level + code-mean fall": {
+     "level": -0.006211314662416534,
+     "fall": 0.08616612377717336,
+     "e25": -0.0923774384395899
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -0.006211314662416534,
+     "fall": 0.020071339411530054,
+     "e25": -0.026282654073946587
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.11176583583698341,
+     "e25": -0.11176583583698341
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.08616612377717336,
+     "e25": -0.08616612377717336
+    }
+   }
+  },
+  {
+   "set": "ext45",
+   "corpus": "code_coffeescript",
+   "L20": 2.6818219250527906,
+   "L23": 1.5542501625739618,
+   "L25": 1.28804032416885,
+   "fall": 0.2662098384051117,
+   "x": 0.5315395856946539,
+   "lev_A0": 1.9543425421112637,
+   "ngram23": 2.8139278389246263,
+   "c": 0.2704864899842787,
+   "n_docs": 568,
+   "A3_23": 2.0556483154740786,
+   "A3_25": 1.7217155549555405,
+   "P2023_25": 1.080392542517203,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.4000923795373019,
+     "fall": 0.2653297472895422,
+     "e25": 0.13476263224775975
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.19895634014785424,
+     "fall": 0.10183027911593578,
+     "e25": 0.09712606103191845
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.19895634014785424,
+     "fall": 0.06849722357380505,
+     "e25": 0.13045911657404918
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.5013981529001168,
+     "fall": 0.06772292211342634,
+     "e25": 0.43367523078669046
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.4502095822449721,
+     "fall": 0.08739486610649605,
+     "e25": 0.36281471613847605
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.10772709749268361,
+     "fall": 0.18770742318016476,
+     "e25": -0.07998032568748115
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.19895634014785424,
+     "fall": 0.043071537259919745,
+     "e25": 0.1558848028879345
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.19895634014785424,
+     "fall": 0.06415488024062754,
+     "e25": 0.1348014599072267
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.19895634014785424,
+     "fall": 0.11719998476232463,
+     "e25": 0.08175635538552961
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.06288138881874095,
+     "fall": 0.06415488024062754,
+     "e25": -0.0012734914218865967
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.06288138881874095,
+     "fall": 0.08744166881630444,
+     "e25": -0.024560279997563494
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.06849722357380505,
+     "e25": -0.06849722357380505
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.06415488024062754,
+     "e25": -0.06415488024062754
+    }
+   }
+  },
+  {
+   "set": "ext45",
+   "corpus": "code_cython",
+   "L20": 2.100458913839086,
+   "L23": 1.3537262551193716,
+   "L25": 1.0777405305681869,
+   "fall": 0.27598572455118475,
+   "x": 0.4576619443088361,
+   "lev_A0": 2.3788407039856683,
+   "ngram23": 3.825824687390593,
+   "c": 0.1428272094467333,
+   "n_docs": 433,
+   "A3_23": 1.1232141668750533,
+   "A3_25": 0.7399939349070536,
+   "P2023_25": 1.0100478752818396,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 1.0251144488662967,
+     "fall": 0.18167621975765136,
+     "e25": 0.8434382291086453
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.823978409476849,
+     "fall": 0.04090122103389038,
+     "e25": 0.7830771884429586
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.823978409476849,
+     "fall": 0.012201061309701,
+     "e25": 0.811777348167148
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": -0.23051208824431835,
+     "fall": 0.10723450741681495,
+     "e25": -0.3377465956611333
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.21620845945108647,
+     "fall": 0.0009648614025126179,
+     "e25": 0.21524359804857385
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": -0.052030971814486016,
+     "fall": 0.07953175009376368,
+     "e25": -0.1315627219082497
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.823978409476849,
+     "fall": 0.10818094002189538,
+     "e25": 0.7157974694549536
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.823978409476849,
+     "fall": 0.05437899409455449,
+     "e25": 0.7695994153822945
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.823978409476849,
+     "fall": 0.20025786630219788,
+     "e25": 0.6237205431746511
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.8318723779956534,
+     "fall": 0.05437899409455449,
+     "e25": 0.7774933839010989
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.8318723779956534,
+     "fall": 0.20198420319929777,
+     "e25": 0.6298881747963556
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.012201061309701,
+     "e25": -0.012201061309701
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.05437899409455449,
+     "e25": -0.05437899409455449
+    }
+   }
+  },
+  {
+   "set": "ext45",
+   "corpus": "code_gas",
+   "L20": 4.076564065442215,
+   "L23": 3.2232198814844075,
+   "L25": 1.646351332449684,
+   "fall": 1.5768685490347236,
+   "x": 0.3137617278961271,
+   "lev_A0": 3.1938893326847593,
+   "ngram23": 5.49716678111581,
+   "c": 0.06667840916734867,
+   "n_docs": 89,
+   "A3_23": 3.767302613689506,
+   "A3_25": 3.574275274911353,
+   "P2023_25": 2.7560496732683957,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": -0.02933054879964825,
+     "fall": -1.2631068211385967,
+     "e25": 1.2337762723389485
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": -0.23046658818909593,
+     "fall": -1.359618684083303,
+     "e25": 1.1291520958942072
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": -0.23046658818909593,
+     "fall": -1.379294804892421,
+     "e25": 1.148828216703325
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.5440827322050983,
+     "fall": -1.3838412102565707,
+     "e25": 1.927923942461669
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": -0.17629551636516538,
+     "fall": -1.0393637213213927,
+     "e25": 0.8630682049562273
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": -0.6968937624090588,
+     "fall": -0.8868813504156177,
+     "e25": 0.1899875880065589
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": -0.23046658818909593,
+     "fall": -1.0489199849953774,
+     "e25": 0.8184533968062815
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": -0.23046658818909593,
+     "fall": -1.2465038303889844,
+     "e25": 1.0160372421998884
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": -0.23046658818909593,
+     "fall": -0.9223814654055418,
+     "e25": 0.6919148772164458
+    },
+    "n-gram level + code-mean fall": {
+     "level": -0.0986886249305372,
+     "fall": -1.2465038303889844,
+     "e25": 1.1478152054584472
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -0.0986886249305372,
+     "fall": -0.8935628604597525,
+     "e25": 0.7948742355292153
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": -1.379294804892421,
+     "e25": 1.379294804892421
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": -1.2465038303889844,
+     "e25": 1.2465038303889844
+    }
+   }
+  },
+  {
+   "set": "ext45",
+   "corpus": "code_nesc",
+   "L20": 8.411916439386735,
+   "L23": 6.373759068769832,
+   "L25": 6.534980037153483,
+   "fall": -0.16122096838365074,
+   "x": 0.679009750440541,
+   "lev_A0": 1.9949001004915443,
+   "ngram23": 3.1607807374488965,
+   "c": 0.16658962839003924,
+   "n_docs": 6,
+   "A3_23": 8.411916439386735,
+   "A3_25": 8.411916439386735,
+   "P2023_25": 5.29740005305655,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": -4.378858968278288,
+     "fall": 0.8402307188241922,
+     "e25": -5.21908968710248
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": -4.579995007667735,
+     "fall": 0.6313700129246769,
+     "e25": -5.211365020592412
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": -4.579995007667735,
+     "fall": 0.5887890456096949,
+     "e25": -5.16878405327743
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 2.0381573706169025,
+     "fall": 0.16122096838365074,
+     "e25": 1.8769364022332518
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": -0.08648558427125952,
+     "fall": 1.2703524879446038,
+     "e25": -1.3568380722158633
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": -1.1607306774211645,
+     "fall": 1.584997110707282,
+     "e25": -2.7457277881284465
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": -4.579995007667735,
+     "fall": 0.47765706166465893,
+     "e25": -5.057652069332394
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": -4.579995007667735,
+     "fall": 0.49158568702939043,
+     "e25": -5.071580694697126
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": -4.579995007667735,
+     "fall": 0.5535003492800517,
+     "e25": -5.133495356947787
+    },
+    "n-gram level + code-mean fall": {
+     "level": -4.561771237994565,
+     "fall": 0.49158568702939043,
+     "e25": -5.053356925023955
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -4.561771237994565,
+     "fall": 0.5574857168320122,
+     "e25": -5.119256954826577
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.588789045609694,
+     "e25": -0.588789045609694
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.49158568702939043,
+     "e25": -0.49158568702939043
+    }
+   }
+  },
+  {
+   "set": "ext45",
+   "corpus": "code_mathematica",
+   "L20": 5.525716287066389,
+   "L23": 5.482045752479814,
+   "L25": 5.418770878786434,
+   "fall": 0.0632748736933797,
+   "x": 0.5759172938511117,
+   "lev_A0": 4.050445369471769,
+   "ngram23": 5.992688708673695,
+   "c": 0.2096591599505497,
+   "n_docs": 25,
+   "A3_23": 5.465411278673123,
+   "A3_25": 5.425574017982029,
+   "P2023_25": 5.453123972989331,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": -1.4316003830080453,
+     "fall": 0.5126424201577322,
+     "e25": -1.9442428031657775
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": -1.632736422397493,
+     "fall": 0.33549254498224235,
+     "e25": -1.9682289673797353
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": -1.632736422397493,
+     "fall": 0.2993765459856208,
+     "e25": -1.9321129683831137
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": -0.016634473806690586,
+     "fall": -0.02343761300228575,
+     "e25": 0.006803139195595165
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": -1.3519893325342975,
+     "fall": 0.6653041779767372,
+     "e25": -2.017293510511035
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": -2.0576517877301,
+     "fall": 0.8719915516763677,
+     "e25": -2.929643339406468
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": -1.632736422397493,
+     "fall": 0.6157778694488822,
+     "e25": -2.248514291846375
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": -1.632736422397493,
+     "fall": 0.26708984495235955,
+     "e25": -1.8998262673498525
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": -1.632736422397493,
+     "fall": 0.7785329836653396,
+     "e25": -2.4112694060628326
+    },
+    "n-gram level + code-mean fall": {
+     "level": -2.0791383901842475,
+     "fall": 0.26708984495235955,
+     "e25": -2.346228235136607
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -2.0791383901842475,
+     "fall": 0.6809090590078615,
+     "e25": -2.760047449192109
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.2993765459856208,
+     "e25": -0.2993765459856208
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.26708984495236,
+     "e25": -0.26708984495236
+    }
+   }
+  },
+  {
+   "set": "ext45",
+   "corpus": "code_java_server_pages",
+   "L20": 1.9212362786090935,
+   "L23": 1.046372559925202,
+   "L25": 0.8288207214247163,
+   "fall": 0.21755183850048576,
+   "x": 0.33289431590377516,
+   "lev_A0": 1.2840451892007283,
+   "ngram23": 1.9195932510350082,
+   "c": 0.25953454718638336,
+   "n_docs": 794,
+   "A3_23": 1.2676047810073143,
+   "A3_25": 0.9606958803556854,
+   "P2023_25": 0.6978413791697248,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.23767262927552624,
+     "fall": 0.1153424774032894,
+     "e25": 0.12233015187223684
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.03653658988607855,
+     "fall": 0.012945506278075225,
+     "e25": 0.023591083608003327
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.03653658988607855,
+     "fall": -0.007930426616327368,
+     "e25": 0.04446701650240592
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.22123222108211227,
+     "fall": 0.08935706215114314,
+     "e25": 0.13187515893096913
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.38960674383929206,
+     "fall": 0.03576780970142712,
+     "e25": 0.35383893413786494
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.1442549669940305,
+     "fall": 0.1076309420181577,
+     "e25": 0.036624024975872804
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.03653658988607855,
+     "fall": -0.026516936990640505,
+     "e25": 0.06305352687671906
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.03653658988607855,
+     "fall": 0.11281288014525348,
+     "e25": -0.07627629025917493
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.03653658988607855,
+     "fall": 0.019270238642712045,
+     "e25": 0.017266351243366507
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.06833646289487039,
+     "fall": 0.11281288014525348,
+     "e25": -0.04447641725038309
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.06833646289487039,
+     "fall": 0.026224572697553516,
+     "e25": 0.04211189019731687
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": -0.007930426616327368,
+     "e25": 0.007930426616327368
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.11281288014525348,
+     "e25": -0.11281288014525348
+    }
+   }
+  },
+  {
+   "set": "ext45",
+   "corpus": "code_xslt",
+   "L20": 1.9680386482645356,
+   "L23": 1.1344884444516692,
+   "L25": 0.8117278051272077,
+   "fall": 0.32276063932446153,
+   "x": 0.3919464989162025,
+   "lev_A0": 1.1677811657888522,
+   "ngram23": 1.7543491730222778,
+   "c": 0.26292091343973656,
+   "n_docs": 455,
+   "A3_23": 1.412124009289119,
+   "A3_25": 1.131789463634721,
+   "P2023_25": 0.7857982293332455,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.03329272133718297,
+     "fall": 0.06918585959174095,
+     "e25": -0.03589313825455798
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": -0.1678433180522647,
+     "fall": -0.05137532879380102,
+     "e25": -0.11646798925846369
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": -0.1678433180522647,
+     "fall": -0.07595444720667244,
+     "e25": -0.09188887084559227
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.2776355648374498,
+     "fall": -0.04242609367006356,
+     "e25": 0.32006165850751334
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.3364721028697111,
+     "fall": -0.06326998553196317,
+     "e25": 0.39974208840167424
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.08514342215094728,
+     "fall": 0.010343772109061344,
+     "e25": 0.07479965004188593
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": -0.1678433180522647,
+     "fall": -0.15223575591308436,
+     "e25": -0.015607562139180353
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": -0.1678433180522647,
+     "fall": 0.0076040793212777125,
+     "e25": -0.17544739737354242
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": -0.1678433180522647,
+     "fall": -0.11136441394936836,
+     "e25": -0.056478904102896355
+    },
+    "n-gram level + code-mean fall": {
+     "level": -0.11261083912459413,
+     "fall": 0.0076040793212777125,
+     "e25": -0.12021491844587184
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": -0.11261083912459413,
+     "fall": -0.09928558869639281,
+     "e25": -0.013325250428201318
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": -0.07595444720667244,
+     "e25": 0.07595444720667244
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.0076040793212777125,
+     "e25": -0.0076040793212777125
+    }
+   }
+  },
+  {
+   "set": "ext45",
+   "corpus": "code_makefile",
+   "L20": 2.821177396067651,
+   "L23": 1.4235189103059964,
+   "L25": 1.1308629948985724,
+   "fall": 0.29265591540742397,
+   "x": 0.6789155528094892,
+   "lev_A0": 1.9975890429456657,
+   "ngram23": 2.822190381770559,
+   "c": 0.2906946561773491,
+   "n_docs": 931,
+   "A3_23": 2.026338190190206,
+   "A3_25": 1.6251730766891643,
+   "P2023_25": 0.9022325080034537,
+   "err": {
+    "A0 (paper forecast, as run)": {
+     "level": 0.5740701326396693,
+     "fall": 0.38625963740206526,
+     "e25": 0.18781049523760407
+    },
+    "Rev (frozen revision ii: ref level - bias, 0.69 x info fall)": {
+     "level": 0.37293409325022164,
+     "fall": 0.17742790632021999,
+     "e25": 0.19550618693000166
+    },
+    "RevC (ref level - bias, code-fitted lam x info fall)": {
+     "level": 0.37293409325022164,
+     "fall": 0.13485284617556448,
+     "e25": 0.23808124707465717
+    },
+    "Two early pilots (2^19+2^20)": {
+     "level": 0.6028192798842094,
+     "fall": 0.10850919809361748,
+     "e25": 0.4943100817905919
+    },
+    "One pilot 2^20, pooled exponent 0.14": {
+     "level": 0.6850985450828038,
+     "fall": 0.07932314486955261,
+     "e25": 0.6057754002132512
+    },
+    "One pilot 2^20, code-pooled exponent": {
+     "level": 0.32481964829765597,
+     "fall": 0.18484824178754033,
+     "e25": 0.13997140651011564
+    },
+    "Ref level - bias + pooled-exponent fall": {
+     "level": 0.37293409325022164,
+     "fall": 0.02425453147654122,
+     "e25": 0.3486795617736804
+    },
+    "Ref level - bias + code-mean fall": {
+     "level": 0.37293409325022164,
+     "fall": 0.03770880323831527,
+     "e25": 0.3352252900119064
+    },
+    "Ref level - bias + code-mean log-ratio fall": {
+     "level": 0.37293409325022164,
+     "fall": 0.10021151199076717,
+     "e25": 0.2727225812594545
+    },
+    "n-gram level + code-mean fall": {
+     "level": 0.19825440237527414,
+     "fall": 0.03770880323831527,
+     "e25": 0.16054559913695887
+    },
+    "n-gram level + code-mean log-ratio fall": {
+     "level": 0.19825440237527414,
+     "fall": 0.06201070148422927,
+     "e25": 0.13624370089104487
+    },
+    "Oracle level + info fall (lam code)": {
+     "level": 0.0,
+     "fall": 0.13485284617556448,
+     "e25": -0.13485284617556448
+    },
+    "Oracle level + code-mean fall": {
+     "level": 0.0,
+     "fall": 0.03770880323831527,
+     "e25": -0.03770880323831527
+    }
+   }
+  }
+ ]
+}

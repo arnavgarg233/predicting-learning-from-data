@@ -1,0 +1,10 @@
+{
+ "name": "code_clojure",
+ "prep_ok": true,
+ "prep_seconds": 59.10168981552124,
+ "train_sha256": "58008c0f9ffec361358b3ee9e0a33b6c3e5a8fd6b0118831bce2b2655032a34a",
+ "ref_sha256": "fc54a3a761885325eba823246486f5f14be12bdcb0fa7233cb953122ac8ed6c2",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

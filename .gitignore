@@ -1,0 +1,7 @@
+# outputs of reproduce.sh
+/figures/
+/paper/
+/regenerated/
+__pycache__/
+*.pyc
+.DS_Store

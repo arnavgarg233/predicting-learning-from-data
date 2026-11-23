@@ -1,0 +1,585 @@
+{
+ "created_utc": "2026-10-27T11:14:26+00:00",
+ "locked_sha256": "d154a5bfdfdfca1222eab946c9cd487bbbc7edcac73fcc3c24a173c0110dc8a3",
+ "chosen": {
+  "shape": "gamma",
+  "A2_form": "neff",
+  "A4_form": "off",
+  "level": "both",
+  "level_mode": "anch",
+  "A3_floor": "zero"
+ },
+ "code_sha256": {
+  "scripts/curve_forecast/core.py": "8b17c3f080d9700837d5717e20af54097db26ed35c7ae5fae090145b8dc04071",
+  "scripts/curve_forecast/develop.py": "dc477443564ca1d09564f7bd6643a5fa38d3e7511846ba75d5c48f183bf309d0",
+  "scripts/curve_forecast/forecast.py": "d9387933cfeb27c0adc063ba69fe92831a1655cf6ac5cb2afa85aee16ec59708",
+  "scripts/curve_forecast/pod_main.py": "73cf88e4aa17d2ba7102a6fe3a99378600def7af2d58c194723b4da3aba511ad",
+  "scripts/curve_forecast/power.py": "518d35632e444f4b8c3a9da8db9f590480edefc3cb7dd73d647db74265b1e878",
+  "scripts/curve_forecast/score.py": "f18be2fbd3796d436f899ce8cf66d5cb1207a2eb2819a9707918b6ff3899714f",
+  "scripts/forecast_neff.py": "0145e988a405fcbe9e8082f07e732955c666279189c60f79e879b53c713545fe",
+  "scripts/forecast_input_variants.py": "3db74abad8de72cd52ee3955883a048e3055c8f151e1aa747a69055ddb423266",
+  "scripts/forecast_multicorpus.py": "28968f77299d3459691cf47e55d23b866547f756eacafe782010b64b10677a50",
+  "scripts/ngram_curve_ts.py": "93487934a1f6133021aa7e2250c7af4cf6ddd27666c5011936eb53ee06739266"
+ },
+ "corpora": {
+  "code_kotlin": {
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.5590330172530844,
+    "gamma": 0.3780121934946946,
+    "A": 3.5320818751047844,
+    "ngram23": 2.108064780246768
+   },
+   "shape": {
+    "nu": 0.7256829835909939,
+    "n0": 0.00027876596341785677
+   },
+   "S": {
+    "19": 2.68584920899525,
+    "20": 2.3447916204240276,
+    "23": 1.6499600452568002,
+    "25": 1.2376185411354974
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.4288385443229155,
+    "25": 1.016497040201613
+   },
+   "refcurve_sha256": "9c18c591c6e0fbafe32fe6b6007e2b33294f56ba01e84e2fbde02311b35d55e8",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/code_kotlin/tok/tok_bytes_train.npy": "d68e05f3848618138825b81f447433f14722a5e4f87bf41c82f4b30f0db5467d",
+    "data/cf/code_kotlin/tok/tok_bytes_ref.npy": "1036e183bd6318edfc93a1e68b4d063258eb4640973162196dc1025f718ce60b"
+   }
+  },
+  "wiki_simple": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 0.8370317059284736,
+    "gamma": 0.6028168124457315,
+    "A": 4.730591032356445,
+    "ngram23": 2.194238127553941
+   },
+   "shape": {
+    "nu": 0.6239016163513436,
+    "n0": 0.0014106903871260843
+   },
+   "S": {
+    "19": 2.3768041988966457,
+    "20": 2.1329714397297237,
+    "23": 1.4762984426398595,
+    "25": 1.1769003009961791
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.6581442570820928,
+    "25": 1.358746115438412
+   },
+   "refcurve_sha256": "187ceb133016cc90fd277cde51fc93ae6558718dc9c7eafc99ebf0590868e9d5",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_simple/tok/tok_bytes_train.npy": "cf8b9c620f5a9936ad37555fdeb066136a94d56982436ad57c9949bb561e9b16",
+    "data/cf/wiki_simple/tok/tok_bytes_ref.npy": "65d6d76090016aa3189df013acb9bb1e6def1b3d1a0f692338bfe8134f079331"
+   }
+  },
+  "wiki_tl": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.528543708485597,
+    "gamma": 0.5643131816636088,
+    "A": 6.69649115244826,
+    "ngram23": 2.038519416582062
+   },
+   "shape": {
+    "nu": 0.6392581816235317,
+    "n0": 0.0014369065030724053
+   },
+   "S": {
+    "19": 3.771685584037588,
+    "20": 3.3939381529829644,
+    "23": 2.4167534503237595,
+    "25": 2.12424350350295
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.0220971503471405,
+    "25": 1.7295872035263304
+   },
+   "refcurve_sha256": "fa26cf741d5ad0a9f472d2d401975db1a57735082f09aedcf8230584f9cfa02b",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_tl/tok/tok_bytes_train.npy": "3e79b8dfa4f04c4dfd51463f6decdb3323967c224cb8ab1a1a7a10df6042c1f4",
+    "data/cf/wiki_tl/tok/tok_bytes_ref.npy": "3afcc84c06e02a1ae9e104206d0a740a84a230699f6149f94356a2d6b02b9343"
+   }
+  },
+  "code_dart": {
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.5266777712695611,
+    "gamma": 0.37805821099329767,
+    "A": 3.608674117437705,
+    "ngram23": 2.287451408674965
+   },
+   "shape": {
+    "nu": 0.7256587508587209,
+    "n0": 0.0002832420343619664
+   },
+   "S": {
+    "19": 2.673336553801476,
+    "20": 2.3080624939885963,
+    "23": 1.6096393069927648,
+    "25": 1.1989057688511329
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.5078123516355213,
+    "25": 1.0970788134938891
+   },
+   "refcurve_sha256": "b8be3c230542944360b4c7a261c6518bc8acfa3af146b6e2b54ccd1455cac057",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/code_dart/tok/tok_bytes_train.npy": "a4632c6b4d35bb38266936cf4eb009903d71ebab4355c9211c9b3381a40f223a",
+    "data/cf/code_dart/tok/tok_bytes_ref.npy": "a398d66928be6cbf292d8ac3f7cc28a5b028e49c7546d86298bda0db4c078e58"
+   }
+  },
+  "lyrics": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 1.4314369322051368,
+    "gamma": 0.47663216472058395,
+    "A": 2.8408338344139863,
+    "ngram23": 2.216129092459126
+   },
+   "shape": {
+    "nu": 0.6772167259333844,
+    "n0": 0.00048615848422132167
+   },
+   "S": {
+    "19": 2.827988838663809,
+    "20": 2.619862300751536,
+    "23": 2.169017599071386,
+    "25": 1.8709959316021356
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.0578662585684797,
+    "25": 1.7598445910992293
+   },
+   "refcurve_sha256": "40526ee5bc6af570b29450382a2e8452ccda61588cfd8a9455e93d2e30493c89",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/lyrics/tok/tok_bytes_train.npy": "6647b4d784fc4d6df534a83384cdfb9a16bddc89da7e3f78c5d2a5f8e8e86672",
+    "data/cf/lyrics/tok/tok_bytes_ref.npy": "8f9074ca1f9492080ba7fe4a74dac7197958975945bdbf861199a654578242cb"
+   }
+  },
+  "wiki_zh_yue": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.4871161889310918,
+    "gamma": 0.5626716671271937,
+    "A": 6.103592335963729,
+    "ngram23": 2.6513370031022605
+   },
+   "shape": {
+    "nu": 0.6399296928691323,
+    "n0": 0.0013423575370600117
+   },
+   "S": {
+    "19": 3.602010226608826,
+    "20": 3.212793380744772,
+    "23": 2.3490770411091844,
+    "25": 1.9576175196208114
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.336937065273182,
+    "25": 1.945477543784809
+   },
+   "refcurve_sha256": "e7c06086b1ecd9c84e6292820f3817e48eb319d099879193237b2ac2cf31cf14",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_zh_yue/tok/tok_bytes_train.npy": "971cded90cbe7e98f492550dd46374218b6194e285b86c3de3d2baa36772162c",
+    "data/cf/wiki_zh_yue/tok/tok_bytes_ref.npy": "9a9a2c2132bbcede9e8f00bd2f288d28ef501f9ce8b35167085fadc88bcdc74b"
+   }
+  },
+  "writingprompts": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 1.077774630083519,
+    "gamma": 0.43081365746348116,
+    "A": 2.158415770966851,
+    "ngram23": 2.0065172433567704
+   },
+   "shape": {
+    "nu": 0.6989030296039952,
+    "n0": 0.0002928298708073227
+   },
+   "S": {
+    "19": 2.27434034063696,
+    "20": 2.215320323719435,
+    "23": 1.7029040564524665,
+    "25": 1.4953616673705454
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.7103755260315485,
+    "25": 1.502833136949628
+   },
+   "refcurve_sha256": "ded938f302175f8e600201346650c4090576be06250bc0856667a74190ec7317",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/writingprompts/tok/tok_bytes_train.npy": "24af63fccdab49b9d51b25275fb56c40207fddaaa0e005fc9498d9dcf5b19c32",
+    "data/cf/writingprompts/tok/tok_bytes_ref.npy": "339c17190d39bc6b08d2566e41b1e2c6db2b6f62bc2eb0700f115539abf603f7"
+   }
+  },
+  "wiki_fy": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 2.181382252866243,
+    "gamma": 0.3330843002736982,
+    "A": 4.285692143114303,
+    "ngram23": 2.2297027541310253
+   },
+   "shape": {
+    "nu": 0.7501401072645503,
+    "n0": 0.00022244335868913496
+   },
+   "S": {
+    "19": 4.613826530402618,
+    "20": 4.35306876585348,
+    "23": 3.5569247597402285,
+    "25": 2.9973700277715136
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.5543498698393385,
+    "25": 1.9947951378706241
+   },
+   "refcurve_sha256": "cf362ba5a57e2ca0c24879faefd032d02e24fc1a5c07f46d3d5e3dc621250fca",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_fy/tok/tok_bytes_train.npy": "e81e0a3952c282376d0047f6c4f5eb24c95a7758faa93718ff866ce5b9311ce4",
+    "data/cf/wiki_fy/tok/tok_bytes_ref.npy": "f88c82919ca2e3bb75278e5f10ca4055fe8cde5a22c3f7cb38f0f50503e0ef96"
+   }
+  },
+  "code_ocaml": {
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.9709881406041173,
+    "gamma": 0.3372761919661922,
+    "A": 4.408015983441075,
+    "ngram23": 2.629090801111437
+   },
+   "shape": {
+    "nu": 0.7477886812070614,
+    "n0": 0.00023543491861958304
+   },
+   "S": {
+    "19": 3.3234343540866047,
+    "20": 3.1177312030972724,
+    "23": 2.421899041941689,
+    "25": 1.772682750997127
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.988048139413503,
+    "25": 1.3388318484689412
+   },
+   "refcurve_sha256": "514bafd2ad4d953de6b548c564517aa81ae028804e03cc3cfdce9b9ef91703e8",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/code_ocaml/tok/tok_bytes_train.npy": "ea1955fbceeb0a8b47884bebd7922152c3f7ef7638fd37604e5b611036ccde4c",
+    "data/cf/code_ocaml/tok/tok_bytes_ref.npy": "5c5c0ad702999e766d8b3e606cb0bbedbcbbb0b5c59998549fa2cbd7f6864b18"
+   }
+  },
+  "wiki_lb": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.9719572289549205,
+    "gamma": 0.3521304759216042,
+    "A": 3.713174677771607,
+    "ngram23": 2.1059153992194606
+   },
+   "shape": {
+    "nu": 0.7395735972287777,
+    "n0": 0.00023467974190770588
+   },
+   "S": {
+    "19": 4.244439861105781,
+    "20": 3.8859527652354906,
+    "23": 3.1712163089850516,
+    "25": 2.6955043455438163
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.3487671787183886,
+    "25": 1.8730552152771538
+   },
+   "refcurve_sha256": "082c56fab727d9a7083ef966f30c26c0a48b9bac28bfaf8c16600632f383a574",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_lb/tok/tok_bytes_train.npy": "c65f6e2527ee85c4b693f9038f9953475ba3daa788f20ba7026ce03220735ab3",
+    "data/cf/wiki_lb/tok/tok_bytes_ref.npy": "bb878492100d9dbb10b87b580505e03e49ae3051e4514756f94dd46176303a25"
+   }
+  },
+  "med_textbooks": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.7571220462735672,
+    "gamma": 0.5989806212667952,
+    "A": 3.6242580093634595,
+    "ngram23": 1.8536324050207222
+   },
+   "shape": {
+    "nu": 0.6253984486739734,
+    "n0": 0.0011708533887496684
+   },
+   "S": {
+    "19": 2.1610432111767266,
+    "20": 1.898505824545148,
+    "23": 1.3195627337737768,
+    "25": 1.087882009384959
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.4160488204401207,
+    "25": 1.184368096051303
+   },
+   "refcurve_sha256": "24f180be8f5ad2d0bc852750f6dd41c97c8a199d545897457f36db80fb95c05e",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/med_textbooks/tok/tok_bytes_train.npy": "4c81c3f4d70a50853ff4abf18b5f92fb954a7595f2d730b465fdbb311af3f283",
+    "data/cf/med_textbooks/tok/tok_bytes_ref.npy": "ccd69062e50b381102eb1d4cceef8c00157fc4b78b7fc1f8b337b74378b9fe99"
+   }
+  },
+  "code_clojure": {
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.8451669693774772,
+    "gamma": 0.4156805995732491,
+    "A": 4.992850031379158,
+    "ngram23": 2.423138507565613
+   },
+   "shape": {
+    "nu": 0.7063740227149018,
+    "n0": 0.0004733103761838292
+   },
+   "S": {
+    "19": 3.041988597401268,
+    "20": 2.84415413094092,
+    "23": 2.0686784673153573,
+    "25": 1.5185537471348645
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.7911352740901956,
+    "25": 1.2410105539097032
+   },
+   "refcurve_sha256": "962cd9a216a718f7328f6b9d2a536ce28e05f9e947c777c6e03d4f2dcbaa5d50",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/code_clojure/tok/tok_bytes_train.npy": "58008c0f9ffec361358b3ee9e0a33b6c3e5a8fd6b0118831bce2b2655032a34a",
+    "data/cf/code_clojure/tok/tok_bytes_ref.npy": "fc54a3a761885325eba823246486f5f14be12bdcb0fa7233cb953122ac8ed6c2"
+   }
+  },
+  "wiki_als": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 2.1884468633182905,
+    "gamma": 0.39368026757315217,
+    "A": 3.8362841329081836,
+    "ngram23": 2.511032339496767
+   },
+   "shape": {
+    "nu": 0.7175246886011547,
+    "n0": 0.0003338901070132685
+   },
+   "S": {
+    "19": 4.349166680053406,
+    "20": 3.9843911420071,
+    "23": 3.254962802146578,
+    "25": 2.8691348081308026
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.715889455899893,
+    "25": 2.330061461884118
+   },
+   "refcurve_sha256": "3935aeb113055746d1949dadf9f270e3bb817cf3b6aae334a59f4a260891b130",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_als/tok/tok_bytes_train.npy": "116aa04ea17f49e029aabc97f1024b5a4fe3bbfd5456c2d39f4e51b904a3363e",
+    "data/cf/wiki_als/tok/tok_bytes_ref.npy": "9dd03655f8c40cb3c8d09d2b71a9c07ea90f2d6f5cc0374fef46120bb0c99d4b"
+   }
+  },
+  "philosophy": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.8574033557349845,
+    "gamma": 0.4842593142443147,
+    "A": 2.227300935443328,
+    "ngram23": 1.8446225234296245
+   },
+   "shape": {
+    "nu": 0.6737367186468578,
+    "n0": 0.00043376746085304593
+   },
+   "S": {
+    "19": 1.931948683467871,
+    "20": 1.8986875616881584,
+    "23": 1.4196576775668894,
+    "25": 1.2171200863799854
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.4763992321944672,
+    "25": 1.2738616410075634
+   },
+   "refcurve_sha256": "71227bf1ae00a5280f64f668e3d0267e87879d5e708b72d56f1dcea3e4c6e156",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/philosophy/tok/tok_bytes_train.npy": "aa0985e51eb4d8095a8e291f3a171abd906b179248177379d4cf95d05a5e7af8",
+    "data/cf/philosophy/tok/tok_bytes_ref.npy": "08e964cb2903a4205253080d0a00c6882adc23ff1ccdfaa1c206b814b70979ef"
+   }
+  },
+  "wiki_km": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 0.9348321797105924,
+    "gamma": 0.6976677285786096,
+    "A": 3.6083202249162944,
+    "ngram23": 1.271191274992527
+   },
+   "shape": {
+    "nu": 0.5890434171339646,
+    "n0": 0.0018914798544385158
+   },
+   "S": {
+    "19": 3.539292866704622,
+    "20": 2.395097093763722,
+    "23": 1.3170868454014857,
+    "25": 1.2057827449482772
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.2070005092529328,
+    "25": 1.0956964087997239
+   },
+   "refcurve_sha256": "5907deb16e6b4a4e4c6634355f235c1256b2ea35797f06272fb191ff0f72c2f2",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_km/tok/tok_bytes_train.npy": "3d3bde609e0fc1cb8908a55c5962b76f247620e481b00f9e36a8aec606a093f6",
+    "data/cf/wiki_km/tok/tok_bytes_ref.npy": "f312bd87979826a4af4dddc531666591479d473c0b4daa88c5792a232c3cc0bd"
+   }
+  },
+  "yahoo_answers": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 1.1075845964497437,
+    "gamma": 0.6000127742663566,
+    "A": 2.94129322197791,
+    "ngram23": 2.2181277866865186
+   },
+   "shape": {
+    "nu": 0.6249950100920435,
+    "n0": 0.0010332035370458896
+   },
+   "S": {
+    "19": 2.276896933132073,
+    "20": 2.0639704092631597,
+    "23": 1.6024467630100108,
+    "25": 1.3881412428487592
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.8478521494665188,
+    "25": 1.633546629305267
+   },
+   "refcurve_sha256": "4d328a8b197578dcfc1fa5989b151f792ff33bf0a0c9360ec5708389702772fb",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/yahoo_answers/tok/tok_bytes_train.npy": "d8104ff95cacfc50263a69d7dcd492c0bb1b21429e173644279cc7a0dbc86ffb",
+    "data/cf/yahoo_answers/tok/tok_bytes_ref.npy": "76ab0daa1c33dc042f592eb96c9bca9890321de7d68d25f0bb3f68d8dfcf98e6"
+   }
+  },
+  "wiki_jv": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.799946676365513,
+    "gamma": 0.42211687556536515,
+    "A": 4.120717329874088,
+    "ngram23": 2.444503372550202
+   },
+   "shape": {
+    "nu": 0.7031770856403404,
+    "n0": 0.00043277102945151987
+   },
+   "S": {
+    "19": 3.9426775427855536,
+    "20": 3.5745385984872224,
+    "23": 2.8286573717762673,
+    "25": 2.428021913492399
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.4255027217359677,
+    "25": 2.0248672634520988
+   },
+   "refcurve_sha256": "e95696b51ee424c4c9ebe66af9b60922ae70205f674d3debca4f69935166d431",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_jv/tok/tok_bytes_train.npy": "2c618d407141e3e9e3c5a551813522554c46e080e7c5eb0c9648bbee2be05ad1",
+    "data/cf/wiki_jv/tok/tok_bytes_ref.npy": "185db1960e5d724ef47fdba33b832beb4b640b42118ca6e2520ec6f6580b2e05"
+   }
+  },
+  "code_groovy": {
+   "family": "code",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.5280955380930774,
+    "gamma": 0.3471908455650724,
+    "A": 3.3003323599272476,
+    "ngram23": 2.258645247136246
+   },
+   "shape": {
+    "nu": 0.7422853289806575,
+    "n0": 0.00020635617696899823
+   },
+   "S": {
+    "19": 2.684704336832179,
+    "20": 2.3747518195877664,
+    "23": 1.694987833567441,
+    "25": 1.2570795335453955
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.4926677082906679,
+    "25": 1.0547594082686222
+   },
+   "refcurve_sha256": "b5b10fb806b9563bae7a8f4b3e2bc7d2dbcc5e5eb64888c01b0bc8a72f36ed3c",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/code_groovy/tok/tok_bytes_train.npy": "a5e75a37b80e5d9c29f506aee4af0e6393d16b0b024bef80da72f06712e43765",
+    "data/cf/code_groovy/tok/tok_bytes_ref.npy": "852906a635a77003e0230e0f0c4311338c95ffab8465bae0eb9960aadd76fcff"
+   }
+  }
+ },
+ "date": "Tue Oct 27 04:16:08 PDT 2026"
+}

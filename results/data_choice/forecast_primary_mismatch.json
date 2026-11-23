@@ -1,0 +1,985 @@
+{
+ "created_utc": "2026-10-16T21:47:49Z",
+ "primary": "mismatch|all11",
+ "note": "PRIMARY. ours_mismatch of datadecide_predict.py: affine in the eval-set mismatch M (bigram cross-entropy of the DataDecide eval text under the corpus sample minus the eval text's own), fitted on the 25 recipes. No reference LM.",
+ "target_definition": "bits/byte at 1B parameters (100 tokens/parameter, DataDecide ladder), equal-weight average over the 11 DataDecide eval sets (all11) or the 4 sets no recipe trains on (ood4)",
+ "corpora": {
+  "fineweb": "FineWeb",
+  "fineweb_edu": "FineWeb-Edu",
+  "c4": "C4",
+  "dclm_baseline": "DCLM-baseline",
+  "refinedweb": "RefinedWeb",
+  "pile": "The Pile (uncopyrighted)",
+  "dolma": "Dolma v1.7",
+  "slimpajama": "SlimPajama",
+  "redpajama_1t": "RedPajama-1T (sample)"
+ },
+ "forecasts": {
+  "mismatch|all11": {
+   "features": [
+    "mismatch_all"
+   ],
+   "coef": {
+    "intercept": 0.8334220432505985,
+    "mismatch_all": 0.7945266084759894
+   },
+   "predicted_bpb": {
+    "c4": 1.0270732859566127,
+    "dclm_baseline": 0.9179178803385019,
+    "dolma": 0.86051506970208,
+    "fineweb": 1.0222412934093454,
+    "fineweb_edu": 1.0235492352354008,
+    "pile": 0.8500038300391656,
+    "redpajama_1t": 0.8767713724497391,
+    "refinedweb": 0.9924499491953986,
+    "slimpajama": 0.8581939449692941
+   },
+   "interval80": {
+    "c4": [
+     0.9926152868021875,
+     1.0592879639821102
+    ],
+    "dclm_baseline": [
+     0.9060292343115698,
+     0.9291877053036903
+    ],
+    "dolma": [
+     0.8475819078792978,
+     0.872259834831369
+    ],
+    "fineweb": [
+     0.9889891558334472,
+     1.0534449620461221
+    ],
+    "fineweb_edu": [
+     0.9900512154718131,
+     1.055108880000146
+    ],
+    "pile": [
+     0.8359515089830604,
+     0.863166780957422
+    ],
+    "redpajama_1t": [
+     0.8654904005515218,
+     0.8867617131097468
+    ],
+    "refinedweb": [
+     0.9659970626878481,
+     1.0168959198763612
+    ],
+    "slimpajama": [
+     0.8450563469957292,
+     0.870301217401569
+    ]
+   },
+   "interval95": {
+    "c4": [
+     0.9795203461653148,
+     1.0748052726457495
+    ],
+    "dclm_baseline": [
+     0.8998456321012179,
+     0.9372750440389445
+    ],
+    "dolma": [
+     0.8391817669955259,
+     0.8788037687236473
+    ],
+    "fineweb": [
+     0.9763833503024456,
+     1.0683987276921965
+    ],
+    "fineweb_edu": [
+     0.9773174832640843,
+     1.0701328752562267
+    ],
+    "pile": [
+     0.8260198344920678,
+     0.8703208401793667
+    ],
+    "redpajama_1t": [
+     0.8586978136839024,
+     0.8926227984574809
+    ],
+    "refinedweb": [
+     0.9561922879894112,
+     1.0301048358206657
+    ],
+    "slimpajama": [
+     0.836098591451494,
+     0.8768748669216015
+    ]
+   },
+   "ranking": [
+    "pile",
+    "slimpajama",
+    "dolma",
+    "redpajama_1t",
+    "dclm_baseline",
+    "refinedweb",
+    "fineweb",
+    "fineweb_edu",
+    "c4"
+   ],
+   "p_best": {
+    "c4": 0.0,
+    "dclm_baseline": 0.0,
+    "dolma": 0.0,
+    "fineweb": 0.0,
+    "fineweb_edu": 0.0,
+    "pile": 1.0,
+    "redpajama_1t": 0.0,
+    "refinedweb": 0.0,
+    "slimpajama": 0.0
+   },
+   "median_rank": {
+    "c4": 9.0,
+    "dclm_baseline": 5.0,
+    "dolma": 3.0,
+    "fineweb": 7.0,
+    "fineweb_edu": 8.0,
+    "pile": 1.0,
+    "redpajama_1t": 4.0,
+    "refinedweb": 6.0,
+    "slimpajama": 2.0
+   },
+   "n_boot": 1000,
+   "feature_z": {
+    "c4": {
+     "mismatch_all": 1.7260563349345097
+    },
+    "dclm_baseline": {
+     "mismatch_all": -0.13830376525415686
+    },
+    "dolma": {
+     "mismatch_all": -1.1187362888036265
+    },
+    "fineweb": {
+     "mismatch_all": 1.6435265320491488
+    },
+    "fineweb_edu": {
+     "mismatch_all": 1.6658660079556085
+    },
+    "pile": {
+     "mismatch_all": -1.2982668921675944
+    },
+    "redpajama_1t": {
+     "mismatch_all": -0.8410807567875875
+    },
+    "refinedweb": {
+     "mismatch_all": 1.1346942560024067
+    },
+    "slimpajama": {
+     "mismatch_all": -1.1583807966945763
+    }
+   },
+   "outside_training_range": {
+    "c4": [],
+    "dclm_baseline": [],
+    "dolma": [],
+    "fineweb": [],
+    "fineweb_edu": [],
+    "pile": [],
+    "redpajama_1t": [],
+    "refinedweb": [],
+    "slimpajama": []
+   },
+   "ranking_excluding_datadecide_recipes": [
+    "pile",
+    "slimpajama",
+    "redpajama_1t",
+    "fineweb"
+   ],
+   "ranking_excluding_datadecide_families": [
+    "pile",
+    "slimpajama",
+    "redpajama_1t"
+   ],
+   "run_order_sensitivity": {
+    "orders": [
+     "sample order",
+     "runs permuted, seed 1",
+     "runs permuted, seed 2",
+     "runs permuted, seed 3",
+     "runs permuted, seed 4"
+    ],
+    "predicted_bpb": {
+     "c4": [
+      1.0270732859566127,
+      1.0270732859566127,
+      1.0270732859566127,
+      1.0270732859566127,
+      1.0270732859566127
+     ],
+     "dclm_baseline": [
+      0.9179178803385019,
+      0.9179178803385019,
+      0.9179178803385019,
+      0.9179178803385019,
+      0.9179178803385019
+     ],
+     "dolma": [
+      0.86051506970208,
+      0.86051506970208,
+      0.86051506970208,
+      0.86051506970208,
+      0.86051506970208
+     ],
+     "fineweb": [
+      1.0222412934093454,
+      1.0222412934093454,
+      1.0222412934093454,
+      1.0222412934093454,
+      1.0222412934093454
+     ],
+     "fineweb_edu": [
+      1.0235492352354008,
+      1.0235492352354008,
+      1.0235492352354008,
+      1.0235492352354008,
+      1.0235492352354008
+     ],
+     "pile": [
+      0.8500038300391656,
+      0.8500038300391656,
+      0.8500038300391656,
+      0.8500038300391656,
+      0.8500038300391656
+     ],
+     "redpajama_1t": [
+      0.8767713724497391,
+      0.8767713724497391,
+      0.8767713724497391,
+      0.8767713724497391,
+      0.8767713724497391
+     ],
+     "refinedweb": [
+      0.9924499491953986,
+      0.9924499491953986,
+      0.9924499491953986,
+      0.9924499491953986,
+      0.9924499491953986
+     ],
+     "slimpajama": [
+      0.8581939449692941,
+      0.8581939449692941,
+      0.8581939449692941,
+      0.8581939449692941,
+      0.8581939449692941
+     ]
+    },
+    "sd": {
+     "c4": 0.0,
+     "dclm_baseline": 1.2412670766236366e-16,
+     "dolma": 0.0,
+     "fineweb": 0.0,
+     "fineweb_edu": 0.0,
+     "pile": 1.2412670766236366e-16,
+     "redpajama_1t": 1.2412670766236366e-16,
+     "refinedweb": 0.0,
+     "slimpajama": 0.0
+    },
+    "rankings": [
+     [
+      "pile",
+      "slimpajama",
+      "dolma",
+      "redpajama_1t",
+      "dclm_baseline",
+      "refinedweb",
+      "fineweb",
+      "fineweb_edu",
+      "c4"
+     ],
+     [
+      "pile",
+      "slimpajama",
+      "dolma",
+      "redpajama_1t",
+      "dclm_baseline",
+      "refinedweb",
+      "fineweb",
+      "fineweb_edu",
+      "c4"
+     ],
+     [
+      "pile",
+      "slimpajama",
+      "dolma",
+      "redpajama_1t",
+      "dclm_baseline",
+      "refinedweb",
+      "fineweb",
+      "fineweb_edu",
+      "c4"
+     ],
+     [
+      "pile",
+      "slimpajama",
+      "dolma",
+      "redpajama_1t",
+      "dclm_baseline",
+      "refinedweb",
+      "fineweb",
+      "fineweb_edu",
+      "c4"
+     ],
+     [
+      "pile",
+      "slimpajama",
+      "dolma",
+      "redpajama_1t",
+      "dclm_baseline",
+      "refinedweb",
+      "fineweb",
+      "fineweb_edu",
+      "c4"
+     ]
+    ]
+   }
+  },
+  "mismatch|ood4": {
+   "features": [
+    "mismatch_ood4"
+   ],
+   "coef": {
+    "intercept": 0.769207804761379,
+    "mismatch_ood4": 0.985295129683276
+   },
+   "predicted_bpb": {
+    "c4": 1.1084097063139828,
+    "dclm_baseline": 0.9714516027288471,
+    "dolma": 0.9060041611343523,
+    "fineweb": 1.104514181366279,
+    "fineweb_edu": 1.0907066691983212,
+    "pile": 0.866791929938034,
+    "redpajama_1t": 0.9548096744066272,
+    "refinedweb": 1.0622543137136597,
+    "slimpajama": 0.9159762212867942
+   },
+   "interval80": {
+    "c4": [
+     1.0613045228959137,
+     1.1461623537688335
+    ],
+    "dclm_baseline": [
+     0.957067623187056,
+     0.9865117714838872
+    ],
+    "dolma": [
+     0.8886342247499487,
+     0.9260172908185382
+    ],
+    "fineweb": [
+     1.0584856099499604,
+     1.141709684712083
+    ],
+    "fineweb_edu": [
+     1.0489720765469766,
+     1.1248604704952763
+    ],
+    "pile": [
+     0.8424558968542726,
+     0.8960097868433279
+    ],
+    "redpajama_1t": [
+     0.941491164976457,
+     0.9691439327974888
+    ],
+    "refinedweb": [
+     1.027373590898228,
+     1.090607004884878
+    ],
+    "slimpajama": [
+     0.8999329630071189,
+     0.9338172716804348
+    ]
+   },
+   "interval95": {
+    "c4": [
+     1.037352747566925,
+     1.1595056197276967
+    ],
+    "dclm_baseline": [
+     0.9492928233746569,
+     0.9938360285684007
+    ],
+    "dolma": [
+     0.8782775546079393,
+     0.9373433390115846
+    ],
+    "fineweb": [
+     1.0354565114743592,
+     1.1544541195194657
+    ],
+    "fineweb_edu": [
+     1.0283111057136276,
+     1.1368596737588708
+    ],
+    "pile": [
+     0.8284402855868451,
+     0.9125730138685227
+    ],
+    "redpajama_1t": [
+     0.9335282836716818,
+     0.976749045129241
+    ],
+    "refinedweb": [
+     1.0100788872769764,
+     1.1024120967056115
+    ],
+    "slimpajama": [
+     0.8907411779115845,
+     0.9440081390995265
+    ]
+   },
+   "ranking": [
+    "pile",
+    "dolma",
+    "slimpajama",
+    "redpajama_1t",
+    "dclm_baseline",
+    "refinedweb",
+    "fineweb_edu",
+    "fineweb",
+    "c4"
+   ],
+   "p_best": {
+    "c4": 0.0,
+    "dclm_baseline": 0.0,
+    "dolma": 0.0,
+    "fineweb": 0.0,
+    "fineweb_edu": 0.0,
+    "pile": 1.0,
+    "redpajama_1t": 0.0,
+    "refinedweb": 0.0,
+    "slimpajama": 0.0
+   },
+   "median_rank": {
+    "c4": 9.0,
+    "dclm_baseline": 5.0,
+    "dolma": 2.0,
+    "fineweb": 8.0,
+    "fineweb_edu": 7.0,
+    "pile": 1.0,
+    "redpajama_1t": 4.0,
+    "refinedweb": 6.0,
+    "slimpajama": 3.0
+   },
+   "n_boot": 1000,
+   "feature_z": {
+    "c4": {
+     "mismatch_ood4": 2.1387820578582173
+    },
+    "dclm_baseline": {
+     "mismatch_ood4": -0.06733163633268698
+    },
+    "dolma": {
+     "mismatch_ood4": -1.1215554710079565
+    },
+    "fineweb": {
+     "mismatch_ood4": 2.076033153571228
+    },
+    "fineweb_edu": {
+     "mismatch_ood4": 1.853622497472266
+    },
+    "pile": {
+     "mismatch_ood4": -1.7531839614550626
+    },
+    "redpajama_1t": {
+     "mismatch_ood4": -0.33539891390396737
+    },
+    "refinedweb": {
+     "mismatch_ood4": 1.395313500606807
+    },
+    "slimpajama": {
+     "mismatch_ood4": -0.9609260676669396
+    }
+   },
+   "outside_training_range": {
+    "c4": [],
+    "dclm_baseline": [],
+    "dolma": [],
+    "fineweb": [],
+    "fineweb_edu": [],
+    "pile": [
+     "mismatch_ood4"
+    ],
+    "redpajama_1t": [],
+    "refinedweb": [],
+    "slimpajama": []
+   },
+   "ranking_excluding_datadecide_recipes": [
+    "pile",
+    "slimpajama",
+    "redpajama_1t",
+    "fineweb"
+   ],
+   "ranking_excluding_datadecide_families": [
+    "pile",
+    "slimpajama",
+    "redpajama_1t"
+   ],
+   "run_order_sensitivity": {
+    "orders": [
+     "sample order",
+     "runs permuted, seed 1",
+     "runs permuted, seed 2",
+     "runs permuted, seed 3",
+     "runs permuted, seed 4"
+    ],
+    "predicted_bpb": {
+     "c4": [
+      1.1084097063139828,
+      1.1084097063139828,
+      1.1084097063139828,
+      1.1084097063139828,
+      1.1084097063139828
+     ],
+     "dclm_baseline": [
+      0.9714516027288471,
+      0.9714516027288471,
+      0.9714516027288471,
+      0.9714516027288471,
+      0.9714516027288471
+     ],
+     "dolma": [
+      0.9060041611343523,
+      0.9060041611343523,
+      0.9060041611343523,
+      0.9060041611343523,
+      0.9060041611343523
+     ],
+     "fineweb": [
+      1.104514181366279,
+      1.104514181366279,
+      1.104514181366279,
+      1.104514181366279,
+      1.104514181366279
+     ],
+     "fineweb_edu": [
+      1.0907066691983212,
+      1.0907066691983212,
+      1.0907066691983212,
+      1.0907066691983212,
+      1.0907066691983212
+     ],
+     "pile": [
+      0.866791929938034,
+      0.866791929938034,
+      0.866791929938034,
+      0.866791929938034,
+      0.866791929938034
+     ],
+     "redpajama_1t": [
+      0.9548096744066272,
+      0.9548096744066272,
+      0.9548096744066272,
+      0.9548096744066272,
+      0.9548096744066272
+     ],
+     "refinedweb": [
+      1.0622543137136597,
+      1.0622543137136597,
+      1.0622543137136597,
+      1.0622543137136597,
+      1.0622543137136597
+     ],
+     "slimpajama": [
+      0.9159762212867942,
+      0.9159762212867942,
+      0.9159762212867942,
+      0.9159762212867942,
+      0.9159762212867942
+     ]
+    },
+    "sd": {
+     "c4": 0.0,
+     "dclm_baseline": 0.0,
+     "dolma": 0.0,
+     "fineweb": 0.0,
+     "fineweb_edu": 0.0,
+     "pile": 0.0,
+     "redpajama_1t": 0.0,
+     "refinedweb": 0.0,
+     "slimpajama": 0.0
+    },
+    "rankings": [
+     [
+      "pile",
+      "dolma",
+      "slimpajama",
+      "redpajama_1t",
+      "dclm_baseline",
+      "refinedweb",
+      "fineweb_edu",
+      "fineweb",
+      "c4"
+     ],
+     [
+      "pile",
+      "dolma",
+      "slimpajama",
+      "redpajama_1t",
+      "dclm_baseline",
+      "refinedweb",
+      "fineweb_edu",
+      "fineweb",
+      "c4"
+     ],
+     [
+      "pile",
+      "dolma",
+      "slimpajama",
+      "redpajama_1t",
+      "dclm_baseline",
+      "refinedweb",
+      "fineweb_edu",
+      "fineweb",
+      "c4"
+     ],
+     [
+      "pile",
+      "dolma",
+      "slimpajama",
+      "redpajama_1t",
+      "dclm_baseline",
+      "refinedweb",
+      "fineweb_edu",
+      "fineweb",
+      "c4"
+     ],
+     [
+      "pile",
+      "dolma",
+      "slimpajama",
+      "redpajama_1t",
+      "dclm_baseline",
+      "refinedweb",
+      "fineweb_edu",
+      "fineweb",
+      "c4"
+     ]
+    ]
+   }
+  }
+ },
+ "family_heldout": {
+  "mismatch|all11": {
+   "c4": {
+    "removed_families": [
+     "c4"
+    ],
+    "features": [
+     "mismatch_all"
+    ],
+    "predicted_bpb": 1.0035841582007219
+   },
+   "dclm_baseline": {
+    "removed_families": [
+     "dclm",
+     "dclm_dolma_mix"
+    ],
+    "features": [
+     "mismatch_all"
+    ],
+    "predicted_bpb": 0.9037750913646604
+   },
+   "dolma": {
+    "removed_families": [
+     "dolma",
+     "dclm_dolma_mix"
+    ],
+    "features": [
+     "mismatch_all"
+    ],
+    "predicted_bpb": 0.8839211540694785
+   },
+   "fineweb_edu": {
+    "removed_families": [
+     "fineweb"
+    ],
+    "features": [
+     "mismatch_all"
+    ],
+    "predicted_bpb": 1.019557473475388
+   },
+   "refinedweb": {
+    "removed_families": [
+     "falcon"
+    ],
+    "features": [
+     "mismatch_all"
+    ],
+    "predicted_bpb": 1.0241151340657095
+   },
+   "fineweb": {
+    "removed_families": [
+     "fineweb"
+    ],
+    "features": [
+     "mismatch_all"
+    ],
+    "predicted_bpb": 1.018287120790264
+   }
+  },
+  "mismatch|ood4": {
+   "c4": {
+    "removed_families": [
+     "c4"
+    ],
+    "features": [
+     "mismatch_ood4"
+    ],
+    "predicted_bpb": 1.0760070727964364
+   },
+   "dclm_baseline": {
+    "removed_families": [
+     "dclm",
+     "dclm_dolma_mix"
+    ],
+    "features": [
+     "mismatch_ood4"
+    ],
+    "predicted_bpb": 0.951851703561519
+   },
+   "dolma": {
+    "removed_families": [
+     "dolma",
+     "dclm_dolma_mix"
+    ],
+    "features": [
+     "mismatch_ood4"
+    ],
+    "predicted_bpb": 0.9427537881242017
+   },
+   "fineweb_edu": {
+    "removed_families": [
+     "fineweb"
+    ],
+    "features": [
+     "mismatch_ood4"
+    ],
+    "predicted_bpb": 1.0789003854674644
+   },
+   "refinedweb": {
+    "removed_families": [
+     "falcon"
+    ],
+    "features": [
+     "mismatch_ood4"
+    ],
+    "predicted_bpb": 1.1030581735697051
+   },
+   "fineweb": {
+    "removed_families": [
+     "fineweb"
+    ],
+    "features": [
+     "mismatch_ood4"
+    ],
+    "predicted_bpb": 1.0916531819330548
+   }
+  }
+ },
+ "datadecide_overlap": {
+  "c4": {
+   "recipe": "C4",
+   "families": [
+    "c4"
+   ]
+  },
+  "dclm_baseline": {
+   "recipe": "DCLM-Baseline",
+   "families": [
+    "dclm",
+    "dclm_dolma_mix"
+   ]
+  },
+  "dolma": {
+   "recipe": "Dolma1.7",
+   "families": [
+    "dolma",
+    "dclm_dolma_mix"
+   ]
+  },
+  "fineweb_edu": {
+   "recipe": "FineWeb-Edu",
+   "families": [
+    "fineweb"
+   ]
+  },
+  "refinedweb": {
+   "recipe": "Falcon",
+   "families": [
+    "falcon"
+   ]
+  },
+  "fineweb": {
+   "note": "parent corpus of DataDecide's FineWeb-Edu and FineWeb-Pro",
+   "families": [
+    "fineweb"
+   ]
+  }
+ },
+ "samples": {
+  "c4": {
+   "dataset": "allenai/c4",
+   "revision": "1588ec454efa1a09f29cd18ddd04fe05fc8653a2",
+   "note": "c4/en train",
+   "n_tokens": 16578006,
+   "n_docs": 34972,
+   "sha256_npy": "4daad4d2b3167448cac5b147f2d7d84e172c1775e418ded1eb1262810d8a1f66",
+   "created_utc": "2026-10-16T05:01:07Z"
+  },
+  "dclm_baseline": {
+   "dataset": "mlfoundations/dclm-baseline-1.0",
+   "revision": "a3b142c183aebe5af344955ae20836eb34dcf69b",
+   "note": "DCLM-baseline 1.0",
+   "n_tokens": 16107850,
+   "n_docs": 12962,
+   "sha256_npy": "7e499ed03852e27d744417e63bb3a6c81bb92aa5b1ba6c1e42bc991cb12fe482",
+   "created_utc": "2026-10-16T05:02:03Z"
+  },
+  "dolma": {
+   "dataset": "allenai/dolma",
+   "revision": "7f48140530a023e9ea4c5cfb141160922727d4d3",
+   "note": "Dolma v1.7 (files on olmo-data.org, list on HF)",
+   "n_tokens": 16458797,
+   "n_docs": 28007,
+   "sha256_npy": "c91cdb5da1972d3fba11da7c2c79eaa6d3712085d05d2ab3078d8193a14d7561",
+   "created_utc": "2026-10-16T05:05:59Z"
+  },
+  "fineweb": {
+   "dataset": "HuggingFaceFW/fineweb",
+   "revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+   "note": "all CC dumps",
+   "n_tokens": 16430101,
+   "n_docs": 24027,
+   "sha256_npy": "f29687b0a538a7fd41a457b3b4aad3f16953f2aaa921773266a9b2fc842dcb40",
+   "created_utc": "2026-10-16T04:57:04Z"
+  },
+  "fineweb_edu": {
+   "dataset": "HuggingFaceFW/fineweb-edu",
+   "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+   "note": "all CC dumps (int_score >= 3)",
+   "n_tokens": 16559671,
+   "n_docs": 16145,
+   "sha256_npy": "2951fd1b2fa8a5d638fc1e623e38316296bb02a3355b0f02c965541f32d4c2f0",
+   "created_utc": "2026-10-16T04:58:08Z"
+  },
+  "pile": {
+   "dataset": "monology/pile-uncopyrighted",
+   "revision": "3be90335b66f24456a5d6659d9c8d208c0357119",
+   "note": "the Pile minus copyrighted subsets",
+   "n_tokens": 16068499,
+   "n_docs": 12646,
+   "sha256_npy": "dd9eee2dbf64e40ac094908395a0997e1ee47774b554500f1535a3953ec398bb",
+   "created_utc": "2026-10-16T05:02:34Z"
+  },
+  "redpajama_1t": {
+   "dataset": "liang2kl/RedPajama-Data-1T-Sample-Backup",
+   "revision": "c2c1504dcb5887121b04787e36055e32aeb9017c",
+   "note": "RedPajama-Data-1T-Sample (1B-token random sample of RedPajama-1T; official repo no longer served)",
+   "n_tokens": 16159211,
+   "n_docs": 17302,
+   "sha256_npy": "0901f377dbfe11af80c9b1a5ea94975807e4a6f19367ef2b1ba8b0f412c904d8",
+   "created_utc": "2026-10-16T05:07:45Z"
+  },
+  "refinedweb": {
+   "dataset": "tiiuae/falcon-refinedweb",
+   "revision": "c735840575b629292b41da8dde11dcd523d4f91c",
+   "note": "RefinedWeb public extract",
+   "n_tokens": 16530058,
+   "n_docs": 29124,
+   "sha256_npy": "8de44f1e58e97631e8871d8cebee8c40d86b47bfa2956652273b84535b035a8a",
+   "created_utc": "2026-10-16T04:59:03Z"
+  },
+  "slimpajama": {
+   "dataset": "cerebras-archive/SlimPajama-627B",
+   "revision": "c60a39f1a37572b826787cb8557bbfddc0656861",
+   "note": "SlimPajama-627B train",
+   "n_tokens": 15916432,
+   "n_docs": 17029,
+   "sha256_npy": "259be309c348bfd2fb3df951cd8c5e600ef53a3db722603f9ad736fcf6d785c3",
+   "created_utc": "2026-10-16T05:00:15Z"
+  }
+ },
+ "rivals": {
+  "unigram_ce": {
+   "source": "Chung & Kim 2026 (word overlap predicts performance): lower corpus->eval unigram cross-entropy forecasts better performance; add-0.5 smoothing",
+   "datadecide_eval|all11": {
+    "ce_bits_per_byte": {
+     "c4": 2.907175161488134,
+     "dclm_baseline": 2.8345923039278316,
+     "dolma": 2.81212846263948,
+     "fineweb": 2.910352549628067,
+     "fineweb_edu": 2.9152729825873944,
+     "pile": 2.8000879150739575,
+     "redpajama_1t": 2.8156827681445664,
+     "refinedweb": 2.8885547802419023,
+     "slimpajama": 2.8011379496349837
+    },
+    "ranking": [
+     "pile",
+     "slimpajama",
+     "dolma",
+     "redpajama_1t",
+     "dclm_baseline",
+     "refinedweb",
+     "c4",
+     "fineweb",
+     "fineweb_edu"
+    ]
+   },
+   "datadecide_eval|ood4": {
+    "ce_bits_per_byte": {
+     "c4": 2.898963023803865,
+     "dclm_baseline": 2.8185697403835714,
+     "dolma": 2.797332193440166,
+     "fineweb": 2.9015596966788033,
+     "fineweb_edu": 2.8984472906869145,
+     "pile": 2.7750412892181795,
+     "redpajama_1t": 2.8082749045028,
+     "refinedweb": 2.880276240585322,
+     "slimpajama": 2.786596167128507
+    },
+    "ranking": [
+     "pile",
+     "slimpajama",
+     "dolma",
+     "redpajama_1t",
+     "dclm_baseline",
+     "refinedweb",
+     "fineweb_edu",
+     "c4",
+     "fineweb"
+    ]
+   },
+   "benchmark_pool_mean": {
+    "ce_bits_per_byte": {
+     "c4": 2.384637611848428,
+     "dclm_baseline": 2.372785789283704,
+     "dolma": 2.378042839216099,
+     "fineweb": 2.3861792005697158,
+     "fineweb_edu": 2.3658202202615928,
+     "pile": 2.482582866530564,
+     "redpajama_1t": 2.3995446841227928,
+     "refinedweb": 2.395766155295799,
+     "slimpajama": 2.4117894654977308
+    },
+    "ranking": [
+     "fineweb_edu",
+     "dclm_baseline",
+     "dolma",
+     "c4",
+     "fineweb",
+     "refinedweb",
+     "redpajama_1t",
+     "slimpajama",
+     "pile"
+    ]
+   }
+  }
+ }
+}

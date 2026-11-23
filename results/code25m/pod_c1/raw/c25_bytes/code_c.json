@@ -1,0 +1,10 @@
+{
+ "name": "code_c",
+ "prep_ok": true,
+ "prep_seconds": 41.396453619003296,
+ "train_sha256": "00295c2d4eb3b4776b52be5b408f95cb5756c229b519ca2278ae29728e8a0a87",
+ "ref_sha256": "45ef8342db6f1dd10e24d5226d06a47043ec3d3924835fd817007a05e8a3112f",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

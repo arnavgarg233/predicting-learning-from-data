@@ -1,0 +1,10 @@
+{
+ "name": "fw2_chv_cyrl",
+ "prep_ok": true,
+ "prep_seconds": 25.23926615715027,
+ "train_sha256": "e1e38368f7e761c843b105644170de3c2347c9dfc27409853ed12e9b04cff769",
+ "ref_sha256": "f175221e786388a14e487c0496d0f4ff97e907c973ae125ba546df550cf1dffa",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

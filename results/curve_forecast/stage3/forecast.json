@@ -1,0 +1,522 @@
+{
+ "created_utc": "2026-10-21T08:45:46+00:00",
+ "locked_sha256": "2832a199a385749272fd98a9067680d6e6f6c45818661fa49ac40abb813bc306",
+ "chosen": {
+  "shape": "gamma",
+  "A2_form": "neff",
+  "A4_form": "off",
+  "level": "both",
+  "level_mode": "anch",
+  "A3_floor": "zero"
+ },
+ "code_sha256": {
+  "scripts/curve_forecast/core.py": "8b17c3f080d9700837d5717e20af54097db26ed35c7ae5fae090145b8dc04071",
+  "scripts/curve_forecast/develop.py": "dc477443564ca1d09564f7bd6643a5fa38d3e7511846ba75d5c48f183bf309d0",
+  "scripts/curve_forecast/forecast.py": "d9387933cfeb27c0adc063ba69fe92831a1655cf6ac5cb2afa85aee16ec59708",
+  "scripts/curve_forecast/pod_main.py": "46101a2a2b3ee0d9dd0eb12abe2d457c140107c6065eda9c05c3417ccf06cea2",
+  "scripts/curve_forecast/power.py": "518d35632e444f4b8c3a9da8db9f590480edefc3cb7dd73d647db74265b1e878",
+  "scripts/curve_forecast/score.py": "f18be2fbd3796d436f899ce8cf66d5cb1207a2eb2819a9707918b6ff3899714f",
+  "scripts/forecast_neff.py": "5ca440438c66e116a4982379652f6c2abe432f0c687bec01a981a773e141d23b",
+  "scripts/forecast_input_variants.py": "9f5f50141bce5843af6722366b36564b2ba343ace12a3e5ad550fe0d5d81866b",
+  "scripts/forecast_multicorpus.py": "28968f77299d3459691cf47e55d23b866547f756eacafe782010b64b10677a50",
+  "scripts/ngram_curve_ts.py": "f2051248a9e73b8aa15e9a354a093ddb4ffb9d1d7ceafd930006322831856d58"
+ },
+ "corpora": {
+  "wiki_ceb": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 0.8819554509032373,
+    "gamma": 1.1199261898863992,
+    "A": 46.553034799309074,
+    "ngram23": 0.8737021895573913
+   },
+   "shape": {
+    "nu": 0.47171453646392614,
+    "n0": 0.027547753407223857
+   },
+   "S": {
+    "19": 3.70415557841474,
+    "20": 3.1613209914500437,
+    "23": 1.3997319803261157,
+    "25": 1.1233687621412156
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 0.950797429596675,
+    "25": 0.6744342114117747
+   },
+   "refcurve_sha256": "bdeeb02bd3b7b07071e02b1ad547c4e7781a1b2468552579db7704a01a3fc8cb",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_ceb/tok/tok_bytes_train.npy": "e1dd78d571149ae864008aac83bdc012c6a92b9a63e612e44555e5e4dfb02e51",
+    "data/cf/wiki_ceb/tok/tok_bytes_ref.npy": "0b14d06efd6e934f792544a44d236408e260bd9f19ff64ecb2318f99bb2621d8"
+   }
+  },
+  "wiki_arz": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.0868059380088233,
+    "gamma": 0.43603954867838113,
+    "A": 2.2783888294176835,
+    "ngram23": 1.5699580158570563
+   },
+   "shape": {
+    "nu": 0.6963596517382283,
+    "n0": 0.0003158490246330153
+   },
+   "S": {
+    "19": 2.646139448093503,
+    "20": 2.4788207136236386,
+    "23": 1.7467067643394107,
+    "25": 1.5297041373687572
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.4727376705831678,
+    "25": 1.2557350436125143
+   },
+   "refcurve_sha256": "34ac29bb8f56a57163313630c00b61086f811939c978f1f548863a368cf3fd53",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_arz/tok/tok_bytes_train.npy": "84da1cb980bd39332420213129631b887200824c1d29ee75214d2938cbabeb1c",
+    "data/cf/wiki_arz/tok/tok_bytes_ref.npy": "f8ed38ca826b34beafb81279874d67a87a9a2ef03afd8b0881e6619cb5026528"
+   }
+  },
+  "wiki_zh": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.1769727333413778,
+    "gamma": 0.7025478579385426,
+    "A": 6.739426251273793,
+    "ngram23": 2.7597126835029253
+   },
+   "shape": {
+    "nu": 0.5873550017036275,
+    "n0": 0.0027909071933035685
+   },
+   "S": {
+    "19": 2.8680792550940524,
+    "20": 2.5466467593130044,
+    "23": 1.7933122473924477,
+    "25": 1.5124155229580332
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.195200411742863,
+    "25": 1.9143036873084487
+   },
+   "refcurve_sha256": "31201af093dcbda43594163167cde1d5da0bde8ad5deb086cf84896f26342fe6",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_zh/tok/tok_bytes_train.npy": "b31bd17995cb1a8dd2dca7f86753359aa14a26c5127fce1f644db71bd61803ab",
+    "data/cf/wiki_zh/tok/tok_bytes_ref.npy": "7afdaf5d816a4df931314e48e312da2b02bca424577d8a3d8aad9b9bf0bffe93"
+   }
+  },
+  "wiki_ce": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.5115672336172785,
+    "gamma": 0.3420644668409983,
+    "A": 2.745866319977142,
+    "ngram23": 0.5920480825166696
+   },
+   "shape": {
+    "nu": 0.7451206888398123,
+    "n0": 0.00017226914041116375
+   },
+   "S": {
+    "19": 3.468119110659337,
+    "20": 3.1400253329271326,
+    "23": 2.528618138258119,
+    "25": 2.2234493602719922
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.20414523030498,
+    "25": 0.8989764523188533
+   },
+   "refcurve_sha256": "6180337708b8c61a820efdec7665d9770df93377c34044a2be5fef35d0c5de86",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_ce/tok/tok_bytes_train.npy": "f24db0cf858c7d83ff18e2813e8e62306ccccaa78c2827f431f972cccbcc3a52",
+    "data/cf/wiki_ce/tok/tok_bytes_ref.npy": "dba967482e773b9685c38a990bfd18da1c980e5adfa7846e5928f8cb290c35a8"
+   }
+  },
+  "wiki_sh": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.9076430963545925,
+    "gamma": 0.6809661367455835,
+    "A": 7.240381010413357,
+    "ngram23": 2.3734459945774673
+   },
+   "shape": {
+    "nu": 0.5948959816263992,
+    "n0": 0.002651030455615353
+   },
+   "S": {
+    "19": 3.9181012203316983,
+    "20": 3.4371873639697226,
+    "23": 2.5757716294450983,
+    "25": 2.298979950072209
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.456075339455733,
+    "25": 2.1792836600828434
+   },
+   "refcurve_sha256": "c5c373c8a994e133bdea7c32a61f7f2837ceb32302b7be97af3b40a1460a841b",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_sh/tok/tok_bytes_train.npy": "00d80c814cf80ad913791297ff40e25efd036808f7d7b0803efc28d953c2e3a3",
+    "data/cf/wiki_sh/tok/tok_bytes_ref.npy": "26049fce297ece9456e622c7362afdc87c93cbf520bdbfc3dc897c32f160f1fe"
+   }
+  },
+  "wiki_uz": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 2.2669777200303725,
+    "gamma": 0.5309515270218563,
+    "A": 6.259968686361081,
+    "ngram23": 1.4905980126964231
+   },
+   "shape": {
+    "nu": 0.6531885447381142,
+    "n0": 0.0011457126926879273
+   },
+   "S": {
+    "19": 4.553431899706472,
+    "20": 4.165542588599434,
+    "23": 3.2206122815144966,
+    "25": 2.8396844666764673
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.1978576568805335,
+    "25": 1.8169298420425046
+   },
+   "refcurve_sha256": "7ee64c9693e8f0a2901ef8435c793e4bee1abcac9d0b7ea4bdb14556e0d9c551",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_uz/tok/tok_bytes_train.npy": "eb8a65f94b815e05d35ad640f2dd808f027a1736c82ca57d4e5ef7792f6550a2",
+    "data/cf/wiki_uz/tok/tok_bytes_ref.npy": "708bf65a1d7a3b54e7214356374e758dfbc6bc9ef7c17dd1a465bb4192c039b2"
+   }
+  },
+  "wiki_min": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.764789680915994,
+    "gamma": 0.44268682305909407,
+    "A": 4.1412087668428885,
+    "ngram23": 0.4244215006731861
+   },
+   "shape": {
+    "nu": 0.6931511288635641,
+    "n0": 0.0005012277832119937
+   },
+   "S": {
+    "19": 3.978135143734301,
+    "20": 3.519286410574569,
+    "23": 2.736435127483911,
+    "25": 2.350158763862348
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.275721469816848,
+    "25": 0.8894451061952853
+   },
+   "refcurve_sha256": "382c6858087224ea3cb4d275001f814590285f75b1c72c68f4e3aaa0dea4e75a",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_min/tok/tok_bytes_train.npy": "38bbdbe6e30bd59f24762bab39c5926b555e1e9f91d74d9428889253d7501745",
+    "data/cf/wiki_min/tok/tok_bytes_ref.npy": "dad04789519e34209052ff7979c379a9d47cd5132fa998c58421493126a5b825"
+   }
+  },
+  "wiki_gl": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.4107424708611627,
+    "gamma": 0.48198139707164,
+    "A": 3.569621701494778,
+    "ngram23": 2.152384835747086
+   },
+   "shape": {
+    "nu": 0.6747723027940676,
+    "n0": 0.0005873933507057389
+   },
+   "S": {
+    "19": 3.443842858958677,
+    "20": 2.9039161304711887,
+    "23": 2.1813298145839752,
+    "25": 1.8941279764144223
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.0088164894667067,
+    "25": 1.7216146512971542
+   },
+   "refcurve_sha256": "e20d93b4006a5e920c0b3284da02d75bbb48d7585468a4573e67bc488f42b847",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_gl/tok/tok_bytes_train.npy": "1a87f1a6263a962407476ece84a4e31ff8d5c7afc872694f6b35d02cbfbf8268",
+    "data/cf/wiki_gl/tok/tok_bytes_ref.npy": "e10fdae919114ec0ae1ecf51366f2b0fc4a25c07f35b56bd7719a5ef39c92ab5"
+   }
+  },
+  "wiki_nn": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.9602915733845803,
+    "gamma": 0.5971211247461434,
+    "A": 6.034628112941059,
+    "ngram23": 2.3244494213187763
+   },
+   "shape": {
+    "nu": 0.626126587711966,
+    "n0": 0.0015954677901476623
+   },
+   "S": {
+    "19": 3.961354169462427,
+    "20": 3.5770043751138707,
+    "23": 2.7359757027881715,
+    "25": 2.431923406377437
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.4630667226855705,
+    "25": 2.159014426274836
+   },
+   "refcurve_sha256": "8066fdd61848063428a1c945a004842a92bb5191cfe2d4ee377382dd5d47b99c",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_nn/tok/tok_bytes_train.npy": "f1cc62429b478fe7bd841c0376ba2f535e0f7285ae02b5f9d3fb8a5b6658c83b",
+    "data/cf/wiki_nn/tok/tok_bytes_ref.npy": "ec65dcdf0491a7f75186fb6e12ea37a9db1973b5f85a4d3e81e43e0e8df46b64"
+   }
+  },
+  "wiki_la": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.634765276741087,
+    "gamma": 0.5654796937062557,
+    "A": 5.3417485458352045,
+    "ngram23": 2.3477195568538125
+   },
+   "shape": {
+    "nu": 0.6387818404929361,
+    "n0": 0.0012514520797480124
+   },
+   "S": {
+    "19": 3.5446046307120707,
+    "20": 3.203831713028661,
+    "23": 2.4108692568055115,
+    "25": 2.0888744894736204
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.2638271467773508,
+    "25": 1.9418323794454593
+   },
+   "refcurve_sha256": "48c2eb05ac8d139e99828918c1b3f6ad146c39019f9b397e546993419babe179",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_la/tok/tok_bytes_train.npy": "318af3dbe0042c3358ee8fd81948e15ca8b0b7e2c97344ec71b4df1476421c3b",
+    "data/cf/wiki_la/tok/tok_bytes_ref.npy": "099ea8f0984809efd73861265d94f7a21dd39e7fe3ddd66dc06857ff3c1d45b7"
+   }
+  },
+  "wiki_af": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.658014451405758,
+    "gamma": 0.5928110790910387,
+    "A": 6.3261232270157075,
+    "ngram23": 2.09452466299346
+   },
+   "shape": {
+    "nu": 0.6278208465065831,
+    "n0": 0.001607704702557074
+   },
+   "S": {
+    "19": 3.7249439766553456,
+    "20": 3.3284653133990885,
+    "23": 2.465804034200489,
+    "25": 2.114664643145163
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.1377443875760305,
+    "25": 1.7866049965207038
+   },
+   "refcurve_sha256": "9d6050bf5b957027a05ab0a1bfd492d976d85f2cde4005762ae8cd61d689deaa",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_af/tok/tok_bytes_train.npy": "61abf6321542a0000db6abb8859524954b0a0945a58768f89677f37a77ab1e2c",
+    "data/cf/wiki_af/tok/tok_bytes_ref.npy": "efd5d9c2995ef99fe43b3432d9d28a7a155c7d078da88c2ece40fe371d142d31"
+   }
+  },
+  "wiki_my": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 0.8402862917107929,
+    "gamma": 0.5154734050236847,
+    "A": 1.551738769535664,
+    "ngram23": 0.9973298133326721
+   },
+   "shape": {
+    "nu": 0.6598598145537047,
+    "n0": 0.0004176843553873882
+   },
+   "S": {
+    "19": 4.384749463383394,
+    "20": 2.719989006857316,
+    "23": 1.1847774562174769,
+    "25": 1.078722174856591
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 0.9925951976107135,
+    "25": 0.8865399162498278
+   },
+   "refcurve_sha256": "1524185cd6a7f394c665bf6c226af96134a6374fa1024ffac119320dbec55de1",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_my/tok/tok_bytes_train.npy": "8782e2d51da260864204b08ee106af30c25cd2b33ee226a281212f1a129c8db3",
+    "data/cf/wiki_my/tok/tok_bytes_ref.npy": "254e75c4d4740aab180830423301ccb7c58135cf0795b3457db935c27ffb7eb8"
+   }
+  },
+  "wiki_de": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.1703981474006964,
+    "gamma": 0.6545867113672348,
+    "A": 5.533222870804656,
+    "ngram23": 2.329470899464721
+   },
+   "shape": {
+    "nu": 0.6043805339000153,
+    "n0": 0.0020016308453691518
+   },
+   "S": {
+    "19": 3.0290904323557677,
+    "20": 2.5431175297408344,
+    "23": 1.7843690777271377,
+    "25": 1.5342738547068258
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.9509126631723326,
+    "25": 1.700817440152021
+   },
+   "refcurve_sha256": "8174e80cb7a6611ffffa84c592c030c8ef6cb7e89f72f10de5ca850d45052993",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_de/tok/tok_bytes_train.npy": "30b1ea17620e8c4e3bcf5009768ecb1dbb26853acf3c53b6a58e7eccacfd8db1",
+    "data/cf/wiki_de/tok/tok_bytes_ref.npy": "bfd097898f9343ad696f3f974eaaf8942a8349ba5e2fa5bd8c8780f3c1a15157"
+   }
+  },
+  "wiki_bs": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.8382483086766312,
+    "gamma": 0.6856301569337654,
+    "A": 7.4865022849419285,
+    "ngram23": 2.417003719031087
+   },
+   "shape": {
+    "nu": 0.5932499462509876,
+    "n0": 0.002760038278990539
+   },
+   "S": {
+    "19": 3.8612145908925237,
+    "20": 3.380624716965913,
+    "23": 2.5090523344392865,
+    "25": 2.233346180180674
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.435132584061521,
+    "25": 2.1594264298029087
+   },
+   "refcurve_sha256": "df21f277aa2f375d0bfa1c10b9fd77ac3b9d980e217cc31d91ca694658a04362",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_bs/tok/tok_bytes_train.npy": "ebbc81b7a50c099d63a1b0585d18ff2dbaddb12ece5258c9159f18b8486aed90",
+    "data/cf/wiki_bs/tok/tok_bytes_ref.npy": "5bc288cf4b34de1206454b6b023c14d1dc3ef3adec6cdca07c9b7d446772a0e3"
+   }
+  },
+  "wiki_te": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 1.0202238557781127,
+    "gamma": 0.4745712144942166,
+    "A": 1.5438459035817589,
+    "ngram23": 1.0800810939984242
+   },
+   "shape": {
+    "nu": 0.6781632451322492,
+    "n0": 0.00031715006624651444
+   },
+   "S": {
+    "19": 4.891958093544922,
+    "20": 2.7822525588529645,
+    "23": 1.4079599101567841,
+    "25": 1.2883118573430283
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.1560629955971478,
+    "25": 1.036414942783392
+   },
+   "refcurve_sha256": "6c8aedeee503d0a3067c7c308f13fe1a8d58b6e67b74bd36cb3d2fcd4d30ea21",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_te/tok/tok_bytes_train.npy": "9596ef300fef3b846d4415fc986240d6e9c44a0256ffbe80300c6a8fe4d4a543",
+    "data/cf/wiki_te/tok/tok_bytes_ref.npy": "2ea619008ec5f9b394a6aaa29c0f30ef31d2e2a7269f6c2a789abe26f4af7a12"
+   }
+  },
+  "wiki_br": {
+   "family": "wiki",
+   "ref_model": "Qwen2.5-0.5B",
+   "ref_stats": {
+    "ref_full": 2.4573733827549837,
+    "gamma": 0.38702295924672725,
+    "A": 4.345940960875533,
+    "ngram23": 2.365317802829277
+   },
+   "shape": {
+    "nu": 0.72096859920984,
+    "n0": 0.00034724401825643285
+   },
+   "S": {
+    "19": 4.722037512134438,
+    "20": 4.4416568913472165,
+    "23": 3.644981149283653,
+    "25": 3.218820350489608
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 2.809926836719266,
+    "25": 2.3837660379252212
+   },
+   "refcurve_sha256": "318f6f9543014f0a25d4e9074e59ec3aad12159d090cb49c7ca196b02c35d1e1",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/wiki_br/tok/tok_bytes_train.npy": "02c3b853ad6d9917c88ac2f8df48f37b8298c81a10835928d84639e6f5f0bde6",
+    "data/cf/wiki_br/tok/tok_bytes_ref.npy": "e52201d8a3c97fe91c3bf027c146a174cac5b8a441d2ae433afb164555920a0d"
+   }
+  }
+ }
+}

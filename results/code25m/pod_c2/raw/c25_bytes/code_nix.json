@@ -1,0 +1,10 @@
+{
+ "name": "code_nix",
+ "prep_ok": true,
+ "prep_seconds": 638.7038562297821,
+ "train_sha256": "e4ad7066546a91406258062225c492d2442f4d3aa7d9aa6262100546063ecc0f",
+ "ref_sha256": "fee31ed0e0a7cf671b74cb0a61983d9c3d59779cc22115a299df0ca706181960",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

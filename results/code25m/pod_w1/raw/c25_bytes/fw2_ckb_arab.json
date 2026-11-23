@@ -1,0 +1,10 @@
+{
+ "name": "fw2_ckb_arab",
+ "prep_ok": true,
+ "prep_seconds": 24.602182388305664,
+ "train_sha256": "42c2fd97352055e640de6e6cc1183d7e1f5739b6867453c09a7b2666b0e31014",
+ "ref_sha256": "173a0407354efc9b17f6c34e185565d8894d2e0aa2e72bf7b799702e7b94f2a5",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

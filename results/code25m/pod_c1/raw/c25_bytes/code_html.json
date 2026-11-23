@@ -1,0 +1,10 @@
+{
+ "name": "code_html",
+ "prep_ok": true,
+ "prep_seconds": 52.420897245407104,
+ "train_sha256": "7e5b8c8ce7653d5c4cfb1daffe6a5421a830ca8c6df4794d1c7b4a03a6f9c0e5",
+ "ref_sha256": "050680597e97d472d79cbbcb8b2aca788043561a6ed7f04365d81990e62d4589",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

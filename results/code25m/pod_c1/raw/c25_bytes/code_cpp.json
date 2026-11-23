@@ -1,0 +1,10 @@
+{
+ "name": "code_cpp",
+ "prep_ok": true,
+ "prep_seconds": 58.29691529273987,
+ "train_sha256": "c96dda4eb6379b06ca1133e1c8e4c00a8195fff03a4f9df1af751717ceaa0695",
+ "ref_sha256": "b54bca71963abe4728f02687df69b371cb5e2cf70b6626f993876ef1cf5a9042",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

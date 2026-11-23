@@ -1,0 +1,149 @@
+{
+ "Qwen2.5-0.5B": {
+  "model": "Qwen/Qwen2.5-0.5B",
+  "short": "Qwen2.5-0.5B",
+  "n_targets": 20000,
+  "n_docs": 1243,
+  "n_docs_total": 1248,
+  "mean_bytes_per_target_token": 2.2864,
+  "rows": [
+   {
+    "n_tokens": 1,
+    "bits_per_token": 13.494952073582803,
+    "bits_per_byte": 5.902270850937195,
+    "bpb_se": 0.01992818085708687,
+    "context_bytes_exact_mean": 2.2694
+   },
+   {
+    "n_tokens": 2,
+    "bits_per_token": 7.990143553750831,
+    "bits_per_byte": 3.494639412942106,
+    "bpb_se": 0.01564120860849298,
+    "context_bytes_exact_mean": 4.5383
+   },
+   {
+    "n_tokens": 3,
+    "bits_per_token": 5.188948233390595,
+    "bits_per_byte": 2.269484006906314,
+    "bpb_se": 0.012087378459323941,
+    "context_bytes_exact_mean": 6.82145
+   },
+   {
+    "n_tokens": 4,
+    "bits_per_token": 4.395615875315823,
+    "bits_per_byte": 1.9225051938925046,
+    "bpb_se": 0.01069263259259422,
+    "context_bytes_exact_mean": 9.0996
+   },
+   {
+    "n_tokens": 6,
+    "bits_per_token": 3.686268499760663,
+    "bits_per_byte": 1.6122587910079877,
+    "bpb_se": 0.01009894875638856,
+    "context_bytes_exact_mean": 13.6478
+   },
+   {
+    "n_tokens": 8,
+    "bits_per_token": 3.4470781394704098,
+    "bits_per_byte": 1.5076443927004946,
+    "bpb_se": 0.009618394049217655,
+    "context_bytes_exact_mean": 18.214
+   },
+   {
+    "n_tokens": 12,
+    "bits_per_token": 3.2475078534096364,
+    "bits_per_byte": 1.420358578293228,
+    "bpb_se": 0.009393292135544325,
+    "context_bytes_exact_mean": 27.32585
+   },
+   {
+    "n_tokens": 16,
+    "bits_per_token": 3.150469443031206,
+    "bits_per_byte": 1.3779170062242856,
+    "bpb_se": 0.009464588759768397,
+    "context_bytes_exact_mean": 36.4531
+   },
+   {
+    "n_tokens": 24,
+    "bits_per_token": 3.048394564398114,
+    "bits_per_byte": 1.3332726401321353,
+    "bpb_se": 0.009299748524674124,
+    "context_bytes_exact_mean": 54.62645
+   },
+   {
+    "n_tokens": 32,
+    "bits_per_token": 2.984622165310274,
+    "bits_per_byte": 1.3053805831483,
+    "bpb_se": 0.009387543361012069,
+    "context_bytes_exact_mean": 72.8271
+   },
+   {
+    "n_tokens": 48,
+    "bits_per_token": 2.9086297486695263,
+    "bits_per_byte": 1.2721438718813534,
+    "bpb_se": 0.009308342280125894,
+    "context_bytes_exact_mean": 109.2309
+   },
+   {
+    "n_tokens": 64,
+    "bits_per_token": 2.8500467366869793,
+    "bits_per_byte": 1.2465214908532976,
+    "bpb_se": 0.009262395909808834,
+    "context_bytes_exact_mean": 145.6202
+   },
+   {
+    "n_tokens": 96,
+    "bits_per_token": 2.7762606009972757,
+    "bits_per_byte": 1.2142497380149035,
+    "bpb_se": 0.009460800901178195,
+    "context_bytes_exact_mean": 218.40695
+   },
+   {
+    "n_tokens": 128,
+    "bits_per_token": 2.7181122878384083,
+    "bits_per_byte": 1.1888174806850982,
+    "bpb_se": 0.009593028241933052,
+    "context_bytes_exact_mean": 291.1153
+   },
+   {
+    "n_tokens": 192,
+    "bits_per_token": 2.632104607514075,
+    "bits_per_byte": 1.1512004056657081,
+    "bpb_se": 0.010145377475339392,
+    "context_bytes_exact_mean": 436.4046
+   },
+   {
+    "n_tokens": 256,
+    "bits_per_token": 2.578822674261933,
+    "bits_per_byte": 1.1278965510242887,
+    "bpb_se": 0.00997131419024988,
+    "context_bytes_exact_mean": 581.4809
+   },
+   {
+    "n_tokens": 384,
+    "bits_per_token": 2.4954780034656165,
+    "bits_per_byte": 1.0914441932582297,
+    "bpb_se": 0.009980445818684715,
+    "context_bytes_exact_mean": 871.72855
+   },
+   {
+    "n_tokens": 512,
+    "bits_per_token": 2.4419439999855865,
+    "bits_per_byte": 1.0680300909664042,
+    "bpb_se": 0.010042900760681915,
+    "context_bytes_exact_mean": 1161.988
+   }
+  ],
+  "key": {
+   "model": "Qwen/Qwen2.5-0.5B",
+   "corpus": [
+    "eb7970d010027af518093f5c473488c765120ec978aafe836481ec88db9ac268",
+    "2c52ffbd3d676daa62a49092d75421d2e868199204b595f63aafc721ca24e7b8"
+   ],
+   "ns": "1,2,3,4,6,8,12,16,24,32,48,64,96,128,192,256,384,512",
+   "nt": 20000,
+   "seed": 0,
+   "docs": "nfc_only"
+  }
+ }
+}

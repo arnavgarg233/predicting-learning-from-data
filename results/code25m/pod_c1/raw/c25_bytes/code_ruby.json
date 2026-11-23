@@ -1,0 +1,10 @@
+{
+ "name": "code_ruby",
+ "prep_ok": true,
+ "prep_seconds": 43.5706422328949,
+ "train_sha256": "93a9151cf944fc60ffd9bcdf91f72eb5aeb21c14f05b530e0927e94c8e6025da",
+ "ref_sha256": "0573a2318fff052997850c68e4e51d5ee94c465cde8916a368a2806bdfdf8390",
+ "train_same": true,
+ "ref_same": true,
+ "test_encoded": true
+}

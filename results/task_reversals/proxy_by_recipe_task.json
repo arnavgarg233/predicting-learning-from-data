@@ -1,0 +1,5121 @@
+{
+ "source": {
+  "repo": "allenai/DataDecide-eval-results",
+  "revision": "9919b5a0e61e57a85021263918fa82d6ceaee038",
+  "file": "data/macro_avg-00000-of-00001.parquet",
+  "read": "HfFileSystem range reads, not saved"
+ },
+ "selection": "final step per params/data/seed/task, 3 seeds averaged",
+ "values": {
+  "150M": {
+   "arc_challenge": {
+    "C4": {
+     "primary_metric": 0.2539817974971558,
+     "correct_prob_per_char": 0.4589942993951064
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.27957906712172925,
+     "correct_prob_per_char": 0.5071095354773758
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.33248009101251425,
+     "correct_prob_per_char": 0.5451761219157744
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.323094425483504,
+     "correct_prob_per_char": 0.5376492030420499
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.33902161547212745,
+     "correct_prob_per_char": 0.546891593534776
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.35693970420932875,
+     "correct_prob_per_char": 0.5657175594810449
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.3492605233219568,
+     "correct_prob_per_char": 0.5556400254274266
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.3762798634812287,
+     "correct_prob_per_char": 0.5694376188379774
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.2710466439135381,
+     "correct_prob_per_char": 0.48708767245035006
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.28953356086461884,
+     "correct_prob_per_char": 0.4989750117597905
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.2767349260523322,
+     "correct_prob_per_char": 0.5021967962304799
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.26507394766780434,
+     "correct_prob_per_char": 0.45215036755909893
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.26393629124004553,
+     "correct_prob_per_char": 0.41572013940898844
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.2784414106939704,
+     "correct_prob_per_char": 0.4663035267007471
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.2630830489192264,
+     "correct_prob_per_char": 0.41471003911548826
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.27474402730375425,
+     "correct_prob_per_char": 0.39710479312346586
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.2707622298065984,
+     "correct_prob_per_char": 0.4175705894060722
+    },
+    "Falcon": {
+     "primary_metric": 0.2647895335608646,
+     "correct_prob_per_char": 0.4711477829713427
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.2568259385665529,
+     "correct_prob_per_char": 0.4698877465980266
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.29294653014789535,
+     "correct_prob_per_char": 0.514547863585381
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.295221843003413,
+     "correct_prob_per_char": 0.501478324814776
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.3043230944254835,
+     "correct_prob_per_char": 0.5279340350996486
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.30147895335608643,
+     "correct_prob_per_char": 0.5187060860480288
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.3364618885096701,
+     "correct_prob_per_char": 0.5343069074045192
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.2960750853242321,
+     "correct_prob_per_char": 0.49985155074597487
+    }
+   },
+   "arc_easy": {
+    "C4": {
+     "primary_metric": 0.4559483726150393,
+     "correct_prob_per_char": 0.48291843938833773
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.5102413019079686,
+     "correct_prob_per_char": 0.5550759249666513
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.5928731762065095,
+     "correct_prob_per_char": 0.6157957345110098
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.5718294051627385,
+     "correct_prob_per_char": 0.6023849902518422
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.5980639730639731,
+     "correct_prob_per_char": 0.6188170815712307
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.6430976430976431,
+     "correct_prob_per_char": 0.6420505453077832
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.6280864197530863,
+     "correct_prob_per_char": 0.6338098806448323
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.6572671156004489,
+     "correct_prob_per_char": 0.6477556429502259
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.4900392817059484,
+     "correct_prob_per_char": 0.5313062886862322
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.5060325476992144,
+     "correct_prob_per_char": 0.5534199882924684
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.510662177328844,
+     "correct_prob_per_char": 0.5552610180818874
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.45679012345679015,
+     "correct_prob_per_char": 0.48750007472240675
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.4382716049382716,
+     "correct_prob_per_char": 0.42924680191695314
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.4538439955106622,
+     "correct_prob_per_char": 0.49989731430967205
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.4409371492704826,
+     "correct_prob_per_char": 0.4275781363261997
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.4358866442199776,
+     "correct_prob_per_char": 0.41530777003406233
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.4419191919191919,
+     "correct_prob_per_char": 0.4104590424052321
+    },
+    "Falcon": {
+     "primary_metric": 0.4685746352413019,
+     "correct_prob_per_char": 0.510342945992478
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.4657687991021324,
+     "correct_prob_per_char": 0.5087945579828651
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.5391414141414141,
+     "correct_prob_per_char": 0.5676291538544824
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.5171156004489338,
+     "correct_prob_per_char": 0.5523553142522678
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.5547138047138047,
+     "correct_prob_per_char": 0.5881881240198864
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.5349326599326599,
+     "correct_prob_per_char": 0.5765495866753975
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.5831930415263749,
+     "correct_prob_per_char": 0.6017840078647166
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.5342312008978676,
+     "correct_prob_per_char": 0.5559279059945954
+    }
+   },
+   "boolq": {
+    "C4": {
+     "primary_metric": 0.5160040774719673,
+     "correct_prob_per_char": 0.6581907943188648
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.519571865443425,
+     "correct_prob_per_char": 0.7270400259669306
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.49612640163098876,
+     "correct_prob_per_char": 0.7356614310555925
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.5874617737003058,
+     "correct_prob_per_char": 0.747466769103867
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.5798165137614678,
+     "correct_prob_per_char": 0.7728417798880828
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.5357798165137614,
+     "correct_prob_per_char": 0.7565821764053915
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.5729867482161061,
+     "correct_prob_per_char": 0.7549443774339529
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.5897043832823649,
+     "correct_prob_per_char": 0.7796788790135557
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.4688073394495413,
+     "correct_prob_per_char": 0.7444379583023376
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.48929663608562696,
+     "correct_prob_per_char": 0.7499457782138438
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.5638124362895005,
+     "correct_prob_per_char": 0.7680556740474804
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.4083588175331294,
+     "correct_prob_per_char": 0.7144120259569312
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.38501529051987765,
+     "correct_prob_per_char": 0.4770758634569509
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.5324159021406728,
+     "correct_prob_per_char": 0.7565989255912263
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.3868501529051988,
+     "correct_prob_per_char": 0.4973288121253421
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.3889908256880734,
+     "correct_prob_per_char": 0.5855424821550127
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.44036697247706424,
+     "correct_prob_per_char": 0.5627543027336316
+    },
+    "Falcon": {
+     "primary_metric": 0.48419979612640157,
+     "correct_prob_per_char": 0.7087069603648631
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.6128440366972477,
+     "correct_prob_per_char": 0.7399392025588788
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.571967380224261,
+     "correct_prob_per_char": 0.7199432014746799
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.5598369011213048,
+     "correct_prob_per_char": 0.7305893245477947
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.5855249745158002,
+     "correct_prob_per_char": 0.7742464143195148
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.5779816513761468,
+     "correct_prob_per_char": 0.7319343368845281
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.48817533129459734,
+     "correct_prob_per_char": 0.7651849394426494
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.5576962283384302,
+     "correct_prob_per_char": 0.7361188885002651
+    }
+   },
+   "csqa": {
+    "C4": {
+     "primary_metric": 0.38001638001638005,
+     "correct_prob_per_char": 0.37172668064278724
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.4501774501774502,
+     "correct_prob_per_char": 0.43261619751316766
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.4673764673764674,
+     "correct_prob_per_char": 0.44362817985122804
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.4520884520884521,
+     "correct_prob_per_char": 0.43779479241110525
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.46027846027846026,
+     "correct_prob_per_char": 0.4426171990844674
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.4507234507234507,
+     "correct_prob_per_char": 0.4342487186816851
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.44253344253344257,
+     "correct_prob_per_char": 0.43931483447391845
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.4460824460824461,
+     "correct_prob_per_char": 0.42874994884002765
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.438984438984439,
+     "correct_prob_per_char": 0.4385921421161114
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.4605514605514605,
+     "correct_prob_per_char": 0.4400856994187888
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.44662844662844664,
+     "correct_prob_per_char": 0.43444013683322863
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.4064974064974065,
+     "correct_prob_per_char": 0.41163949537476574
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.41714441714441713,
+     "correct_prob_per_char": 0.32376223229333567
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.3993993993993994,
+     "correct_prob_per_char": 0.4058256789389942
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.4226044226044226,
+     "correct_prob_per_char": 0.3370894202302604
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.4086814086814086,
+     "correct_prob_per_char": 0.3252837323702209
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.4097734097734098,
+     "correct_prob_per_char": 0.3244601766977793
+    },
+    "Falcon": {
+     "primary_metric": 0.4321594321594322,
+     "correct_prob_per_char": 0.41192114747282155
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.4294294294294294,
+     "correct_prob_per_char": 0.41424664404742034
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.4512694512694513,
+     "correct_prob_per_char": 0.4273546874194905
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.44417144417144416,
+     "correct_prob_per_char": 0.4273322882309512
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.4758394758394758,
+     "correct_prob_per_char": 0.4485132745277947
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.4384384384384384,
+     "correct_prob_per_char": 0.4249415887872365
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.4488124488124488,
+     "correct_prob_per_char": 0.44009292517380066
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.44198744198744194,
+     "correct_prob_per_char": 0.4329838288963619
+    }
+   },
+   "hellaswag": {
+    "C4": {
+     "primary_metric": 0.3625439819425081,
+     "correct_prob_per_char": 0.5243173676011529
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.3592909778928501,
+     "correct_prob_per_char": 0.5428640076104866
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.3650335258580628,
+     "correct_prob_per_char": 0.5373305717584845
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.3689836022040762,
+     "correct_prob_per_char": 0.5408334295705244
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.36274314545575254,
+     "correct_prob_per_char": 0.5350358125801337
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.3546770231693554,
+     "correct_prob_per_char": 0.5248350516336453
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.3572329549226582,
+     "correct_prob_per_char": 0.5275179208397521
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.3486689238531501,
+     "correct_prob_per_char": 0.5186848330275821
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.3540463387107482,
+     "correct_prob_per_char": 0.5415833006371423
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.3563699130319325,
+     "correct_prob_per_char": 0.5432086209248442
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.35766447586802097,
+     "correct_prob_per_char": 0.5426265510441745
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.34823740290778726,
+     "correct_prob_per_char": 0.5377485112377854
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.3485361481776539,
+     "correct_prob_per_char": 0.5381555625445508
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.3468764522339507,
+     "correct_prob_per_char": 0.538284697307848
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.3450839806147514,
+     "correct_prob_per_char": 0.5389177363216262
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.3568346278961694,
+     "correct_prob_per_char": 0.5425239705409584
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.35836154816437626,
+     "correct_prob_per_char": 0.5435481537590057
+    },
+    "Falcon": {
+     "primary_metric": 0.3557724224921994,
+     "correct_prob_per_char": 0.5350563906342002
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.3569342096527916,
+     "correct_prob_per_char": 0.5419262824074672
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.36606253734315874,
+     "correct_prob_per_char": 0.5451125305894184
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.3685852751775875,
+     "correct_prob_per_char": 0.5470309483918204
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.3659297616676625,
+     "correct_prob_per_char": 0.545791872557537
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.34750713669255795,
+     "correct_prob_per_char": 0.5402241496506098
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.36729071234149907,
+     "correct_prob_per_char": 0.5349084051222425
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.37874261435305057,
+     "correct_prob_per_char": 0.5404223170703942
+    }
+   },
+   "mmlu": {
+    "C4": {
+     "primary_metric": 0.2565369820702699,
+     "correct_prob_per_char": 0.41807529649812175
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.2628180414223104,
+     "correct_prob_per_char": 0.4668247261595245
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.2757126983969819,
+     "correct_prob_per_char": 0.49896101240840457
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.273348195875564,
+     "correct_prob_per_char": 0.493709036139298
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.27865840194717006,
+     "correct_prob_per_char": 0.5018209000315638
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.2904840040058818,
+     "correct_prob_per_char": 0.5127392703739267
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.2843063079831066,
+     "correct_prob_per_char": 0.5079826112704192
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.2898933133233595,
+     "correct_prob_per_char": 0.5083997454384804
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.261882323176491,
+     "correct_prob_per_char": 0.45339512388149017
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.26357252813907284,
+     "correct_prob_per_char": 0.4599028383460652
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.26530734304429454,
+     "correct_prob_per_char": 0.46378528555645965
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.253569134898689,
+     "correct_prob_per_char": 0.4272012212519522
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.2560965414374559,
+     "correct_prob_per_char": 0.3975074883289842
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.2547975518078804,
+     "correct_prob_per_char": 0.4381322952330615
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.2572159627145323,
+     "correct_prob_per_char": 0.39753110832865834
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.25528834311975296,
+     "correct_prob_per_char": 0.3842063682422434
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.2590553138999323,
+     "correct_prob_per_char": 0.3817409601065565
+    },
+    "Falcon": {
+     "primary_metric": 0.2572454514188825,
+     "correct_prob_per_char": 0.4397950887236164
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.25738042453752835,
+     "correct_prob_per_char": 0.4374869536103061
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.26571520523177833,
+     "correct_prob_per_char": 0.4648835223682573
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.26224776294695734,
+     "correct_prob_per_char": 0.45802943126949924
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.26511059762438843,
+     "correct_prob_per_char": 0.4768469958679995
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.2653591821626068,
+     "correct_prob_per_char": 0.477993813683641
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.27694661862531667,
+     "correct_prob_per_char": 0.4852184438348879
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.26907792770101135,
+     "correct_prob_per_char": 0.46376658376032953
+    }
+   },
+   "openbookqa": {
+    "C4": {
+     "primary_metric": 0.30866666666666664,
+     "correct_prob_per_char": 0.34170812540881207
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.35333333333333333,
+     "correct_prob_per_char": 0.38950973810651496
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.36000000000000004,
+     "correct_prob_per_char": 0.40290395350236463
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.3686666666666667,
+     "correct_prob_per_char": 0.40112923868114586
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.38999999999999996,
+     "correct_prob_per_char": 0.40720527669746587
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.4126666666666667,
+     "correct_prob_per_char": 0.4125469367700873
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.3873333333333333,
+     "correct_prob_per_char": 0.41147829155707766
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.4073333333333333,
+     "correct_prob_per_char": 0.4080668284511733
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.338,
+     "correct_prob_per_char": 0.3808678630392643
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.32666666666666666,
+     "correct_prob_per_char": 0.3829145338967342
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.334,
+     "correct_prob_per_char": 0.3833383386123177
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.322,
+     "correct_prob_per_char": 0.35580765555784843
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.31666666666666665,
+     "correct_prob_per_char": 0.3176992873750302
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.3233333333333333,
+     "correct_prob_per_char": 0.36480169604485063
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.32266666666666666,
+     "correct_prob_per_char": 0.30333633396166965
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.32066666666666666,
+     "correct_prob_per_char": 0.298050530472894
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.3153333333333333,
+     "correct_prob_per_char": 0.3082662041591601
+    },
+    "Falcon": {
+     "primary_metric": 0.3293333333333333,
+     "correct_prob_per_char": 0.36730025360046725
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.326,
+     "correct_prob_per_char": 0.3659374918750597
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.3486666666666667,
+     "correct_prob_per_char": 0.38777387642492006
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.36999999999999994,
+     "correct_prob_per_char": 0.383934804316666
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.35333333333333333,
+     "correct_prob_per_char": 0.3964500601285212
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.33666666666666667,
+     "correct_prob_per_char": 0.3870524258087586
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.37399999999999994,
+     "correct_prob_per_char": 0.39671274074263657
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.35333333333333333,
+     "correct_prob_per_char": 0.3790131336318992
+    }
+   },
+   "piqa": {
+    "C4": {
+     "primary_metric": 0.6648531011969533,
+     "correct_prob_per_char": 0.460565775773998
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.6565107000362713,
+     "correct_prob_per_char": 0.47227635814362046
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.6461733768589046,
+     "correct_prob_per_char": 0.4678619625328641
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.6490750816104461,
+     "correct_prob_per_char": 0.4717030984134145
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.6439970982952484,
+     "correct_prob_per_char": 0.46731610712413874
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.6244105912223431,
+     "correct_prob_per_char": 0.45227981781614085
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.6340224882118245,
+     "correct_prob_per_char": 0.45829268239589754
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.6251360174102285,
+     "correct_prob_per_char": 0.4494256683933863
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.6563293434892999,
+     "correct_prob_per_char": 0.46890549607833804
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.6608632571635836,
+     "correct_prob_per_char": 0.4708512267980572
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.6575988393180994,
+     "correct_prob_per_char": 0.4710340889649489
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.6532462821907871,
+     "correct_prob_per_char": 0.46446284043620606
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.6543344214726151,
+     "correct_prob_per_char": 0.46385027156903136
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.6534276387377584,
+     "correct_prob_per_char": 0.467503316713543
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.64689880304679,
+     "correct_prob_per_char": 0.4577203948191338
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.6572361262241567,
+     "correct_prob_per_char": 0.4650637314571271
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.6594124047878128,
+     "correct_prob_per_char": 0.4624522739718748
+    },
+    "Falcon": {
+     "primary_metric": 0.6601378309756982,
+     "correct_prob_per_char": 0.468139621042366
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.6592310482408416,
+     "correct_prob_per_char": 0.4651880887684993
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.652702212549873,
+     "correct_prob_per_char": 0.46908849284044357
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.6594124047878128,
+     "correct_prob_per_char": 0.47396304139641354
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.6552412042074719,
+     "correct_prob_per_char": 0.4730069644668542
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.6476242292346753,
+     "correct_prob_per_char": 0.4638626304034698
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.6396445411679362,
+     "correct_prob_per_char": 0.46036532505359906
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.6541530649256438,
+     "correct_prob_per_char": 0.466967486704152
+    }
+   },
+   "socialiqa": {
+    "C4": {
+     "primary_metric": 0.42681678607983625,
+     "correct_prob_per_char": 0.43196373338775307
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.4401228249744114,
+     "correct_prob_per_char": 0.4604947148644855
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.4368816103718867,
+     "correct_prob_per_char": 0.4553043234203144
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.4341521664960764,
+     "correct_prob_per_char": 0.4518824130690026
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.42562265438416924,
+     "correct_prob_per_char": 0.44859135505031666
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.42954622995564656,
+     "correct_prob_per_char": 0.4390250458924907
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.42664619583759805,
+     "correct_prob_per_char": 0.438786021011529
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.4223814397816445,
+     "correct_prob_per_char": 0.4302826431289463
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.4353462981917435,
+     "correct_prob_per_char": 0.4648643149631137
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.4435346298191744,
+     "correct_prob_per_char": 0.46636485353167795
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.43312862504264754,
+     "correct_prob_per_char": 0.459180290360163
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.42715796656431254,
+     "correct_prob_per_char": 0.4334684357236185
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.42494029341521666,
+     "correct_prob_per_char": 0.38444081393638263
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.42903445922893213,
+     "correct_prob_per_char": 0.43859882240393205
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.4295462299556465,
+     "correct_prob_per_char": 0.4008467435280198
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.4230638007505971,
+     "correct_prob_per_char": 0.36438077374095074
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.432446264073695,
+     "correct_prob_per_char": 0.39709929129930566
+    },
+    "Falcon": {
+     "primary_metric": 0.4375639713408393,
+     "correct_prob_per_char": 0.4520167587666228
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.4368816103718867,
+     "correct_prob_per_char": 0.4467018437282599
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.42681678607983625,
+     "correct_prob_per_char": 0.4515591353713579
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.42408734220402594,
+     "correct_prob_per_char": 0.4507672708582155
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.44114636642784033,
+     "correct_prob_per_char": 0.4610445073813716
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.4307403616513135,
+     "correct_prob_per_char": 0.450047921398671
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.4263050153531218,
+     "correct_prob_per_char": 0.44181120856353084
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.43500511770726713,
+     "correct_prob_per_char": 0.44567590385065153
+    }
+   },
+   "winogrande": {
+    "C4": {
+     "primary_metric": 0.5082872928176796,
+     "correct_prob_per_char": 0.47322256264999024
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.5098658247829518,
+     "correct_prob_per_char": 0.46858504475787094
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.502236253617469,
+     "correct_prob_per_char": 0.47410223695049464
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.5256511444356748,
+     "correct_prob_per_char": 0.4725003347924431
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.5198631938963431,
+     "correct_prob_per_char": 0.46806343022046143
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.5214417258616154,
+     "correct_prob_per_char": 0.46169248690757714
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.5130228887134964,
+     "correct_prob_per_char": 0.4609337660674769
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.5109181794264667,
+     "correct_prob_per_char": 0.452454103228001
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.5067087608524072,
+     "correct_prob_per_char": 0.46727496838671173
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.5003946329913181,
+     "correct_prob_per_char": 0.4665496515243002
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.5038147855827414,
+     "correct_prob_per_char": 0.46715800504659316
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.5111812680873454,
+     "correct_prob_per_char": 0.46098773604852994
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.5085503814785582,
+     "correct_prob_per_char": 0.4641459890928505
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.5169692186266772,
+     "correct_prob_per_char": 0.46233911909261005
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.510655090765588,
+     "correct_prob_per_char": 0.4638064838940157
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.5111812680873454,
+     "correct_prob_per_char": 0.4658031907161943
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.506971849513286,
+     "correct_prob_per_char": 0.46973228741264755
+    },
+    "Falcon": {
+     "primary_metric": 0.5140752433570114,
+     "correct_prob_per_char": 0.46256836565509557
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.5090765588003158,
+     "correct_prob_per_char": 0.46649916263321506
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.5185477505919495,
+     "correct_prob_per_char": 0.4752089314301706
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.5122336227308603,
+     "correct_prob_per_char": 0.4735228896439438
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.5043409629044988,
+     "correct_prob_per_char": 0.4765079039492021
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.5198631938963431,
+     "correct_prob_per_char": 0.46853588750408665
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.5040778742436202,
+     "correct_prob_per_char": 0.46678072611945787
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.5127598000526178,
+     "correct_prob_per_char": 0.4670252890933388
+    }
+   }
+  },
+  "20M": {
+   "arc_challenge": {
+    "C4": {
+     "primary_metric": 0.22866894197952217,
+     "correct_prob_per_char": 0.36734250686060516
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.23378839590443687,
+     "correct_prob_per_char": 0.38998885628189855
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.2369169510807736,
+     "correct_prob_per_char": 0.4241023743182402
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.23236632536973834,
+     "correct_prob_per_char": 0.41583430895489376
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.2366325369738339,
+     "correct_prob_per_char": 0.4283087022786973
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.24203640500568827,
+     "correct_prob_per_char": 0.440833051699405
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.24232081911262796,
+     "correct_prob_per_char": 0.4365334645377002
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.24829351535836178,
+     "correct_prob_per_char": 0.4434380853133438
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.22781569965870307,
+     "correct_prob_per_char": 0.3703822119555232
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.23208191126279865,
+     "correct_prob_per_char": 0.3827601852854485
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.2292377701934016,
+     "correct_prob_per_char": 0.3844489950306887
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.21302616609783845,
+     "correct_prob_per_char": 0.35773640485184544
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.209613196814562,
+     "correct_prob_per_char": 0.3541935689916622
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.2295221843003413,
+     "correct_prob_per_char": 0.35801918777431857
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.21985210466439134,
+     "correct_prob_per_char": 0.3505332877211269
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.2295221843003413,
+     "correct_prob_per_char": 0.3568012761869905
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.21558589306029577,
+     "correct_prob_per_char": 0.3588703571481277
+    },
+    "Falcon": {
+     "primary_metric": 0.2226962457337884,
+     "correct_prob_per_char": 0.36640286795440935
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.22127417519908987,
+     "correct_prob_per_char": 0.3619323079126298
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.22753128555176336,
+     "correct_prob_per_char": 0.38778070877422893
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.23720136518771331,
+     "correct_prob_per_char": 0.36517732739793535
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.22753128555176336,
+     "correct_prob_per_char": 0.3997587227528321
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.23179749715585896,
+     "correct_prob_per_char": 0.3928471687868676
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.24459613196814564,
+     "correct_prob_per_char": 0.40651331434185356
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.2357792946530148,
+     "correct_prob_per_char": 0.3807113913171656
+    }
+   },
+   "arc_easy": {
+    "C4": {
+     "primary_metric": 0.34020763187429853,
+     "correct_prob_per_char": 0.3682605359397131
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.35774410774410775,
+     "correct_prob_per_char": 0.40012957967252727
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.4009539842873176,
+     "correct_prob_per_char": 0.4495973534458317
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.3900112233445567,
+     "correct_prob_per_char": 0.43359464799683106
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.41077441077441074,
+     "correct_prob_per_char": 0.45148300522706686
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.4464085297418631,
+     "correct_prob_per_char": 0.47794580984017326
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.4239618406285073,
+     "correct_prob_per_char": 0.4642968386337998
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.46352413019079686,
+     "correct_prob_per_char": 0.48192541382470894
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.3489057239057239,
+     "correct_prob_per_char": 0.37717999395634516
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.35634118967452305,
+     "correct_prob_per_char": 0.3934170445271188
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.358726150392817,
+     "correct_prob_per_char": 0.39263995951003583
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.3237934904601571,
+     "correct_prob_per_char": 0.3578446256031041
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.3416105499438833,
+     "correct_prob_per_char": 0.3635677649266274
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.3306677890011223,
+     "correct_prob_per_char": 0.36256150086376326
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.3340347923681257,
+     "correct_prob_per_char": 0.35499594030107856
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.34722222222222227,
+     "correct_prob_per_char": 0.357345937423404
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.34553872053872053,
+     "correct_prob_per_char": 0.3647651939151295
+    },
+    "Falcon": {
+     "primary_metric": 0.337682379349046,
+     "correct_prob_per_char": 0.3738661182667806
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.3383838383838384,
+     "correct_prob_per_char": 0.36766397898912545
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.36153198653198654,
+     "correct_prob_per_char": 0.3998586083463804
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.35381593714927045,
+     "correct_prob_per_char": 0.37318944298915363
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.37219416386083054,
+     "correct_prob_per_char": 0.41231352626345963
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.3740179573512907,
+     "correct_prob_per_char": 0.4087840115930288
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.40670594837261503,
+     "correct_prob_per_char": 0.42760187979991865
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.3675645342312009,
+     "correct_prob_per_char": 0.38915564861575463
+    }
+   },
+   "boolq": {
+    "C4": {
+     "primary_metric": 0.4764525993883792,
+     "correct_prob_per_char": 0.47169778642025767
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.3837920489296636,
+     "correct_prob_per_char": 0.6314238477913149
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.4196738022426096,
+     "correct_prob_per_char": 0.59222110895361
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.39204892966360855,
+     "correct_prob_per_char": 0.6524516442033567
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.40428134556574924,
+     "correct_prob_per_char": 0.6695266556486761
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.4034658511722731,
+     "correct_prob_per_char": 0.5391120340841091
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.381243628950051,
+     "correct_prob_per_char": 0.5816226894005652
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.3872579001019368,
+     "correct_prob_per_char": 0.537401956884212
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.398980632008155,
+     "correct_prob_per_char": 0.6830922108475422
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.41651376146788993,
+     "correct_prob_per_char": 0.6927731560183089
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.4527013251783894,
+     "correct_prob_per_char": 0.697767835637344
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.44780835881753317,
+     "correct_prob_per_char": 0.755571288293718
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.41162079510703364,
+     "correct_prob_per_char": 0.5972016061605446
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.4533129459734964,
+     "correct_prob_per_char": 0.6844572094834813
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.43312945973496436,
+     "correct_prob_per_char": 0.6131615523562258
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.4109072375127421,
+     "correct_prob_per_char": 0.4969669692876692
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.3933741080530071,
+     "correct_prob_per_char": 0.5447932291123309
+    },
+    "Falcon": {
+     "primary_metric": 0.4767584097859327,
+     "correct_prob_per_char": 0.7458295052771066
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.4730886850152905,
+     "correct_prob_per_char": 0.5698974983670272
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.4660550458715596,
+     "correct_prob_per_char": 0.6784050713335859
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.5213047910295617,
+     "correct_prob_per_char": 0.6066568264244884
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.5121304791029562,
+     "correct_prob_per_char": 0.6316518928180576
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.41182466870540263,
+     "correct_prob_per_char": 0.6580418968370713
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.4291539245667686,
+     "correct_prob_per_char": 0.3432140841476538
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.39031600407747197,
+     "correct_prob_per_char": 0.5300020315198909
+    }
+   },
+   "csqa": {
+    "C4": {
+     "primary_metric": 0.2683592683592683,
+     "correct_prob_per_char": 0.2899794742707347
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.28364728364728364,
+     "correct_prob_per_char": 0.3084859043886986
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.309036309036309,
+     "correct_prob_per_char": 0.3274804545085237
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.30057330057330056,
+     "correct_prob_per_char": 0.32268133244630676
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.30821730821730825,
+     "correct_prob_per_char": 0.3354952424800572
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.3153153153153153,
+     "correct_prob_per_char": 0.3241089855498424
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.313950313950314,
+     "correct_prob_per_char": 0.3279502542841333
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.2893802893802894,
+     "correct_prob_per_char": 0.31345227711312734
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.2877422877422877,
+     "correct_prob_per_char": 0.3145078666149592
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.2659022659022659,
+     "correct_prob_per_char": 0.314728079261299
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.2800982800982801,
+     "correct_prob_per_char": 0.2999296645698412
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.2522522522522523,
+     "correct_prob_per_char": 0.29886279844064695
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.2708162708162708,
+     "correct_prob_per_char": 0.30233380983463337
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.24897624897624895,
+     "correct_prob_per_char": 0.29400495479934735
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.26371826371826373,
+     "correct_prob_per_char": 0.3020222046541094
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.2814632814632814,
+     "correct_prob_per_char": 0.3088496816427662
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.2863772863772864,
+     "correct_prob_per_char": 0.3142583334673522
+    },
+    "Falcon": {
+     "primary_metric": 0.2645372645372645,
+     "correct_prob_per_char": 0.3051779331163975
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.2721812721812722,
+     "correct_prob_per_char": 0.2893541701289397
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.28173628173628174,
+     "correct_prob_per_char": 0.2957716179587911
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.29074529074529076,
+     "correct_prob_per_char": 0.2819996602594212
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.2989352989352989,
+     "correct_prob_per_char": 0.31646982158259784
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.2888342888342888,
+     "correct_prob_per_char": 0.3038532891519219
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.29866229866229865,
+     "correct_prob_per_char": 0.30135266939360017
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.2770952770952771,
+     "correct_prob_per_char": 0.30597347843723205
+    }
+   },
+   "hellaswag": {
+    "C4": {
+     "primary_metric": 0.2711279293633406,
+     "correct_prob_per_char": 0.4515989308554198
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.26203279559184756,
+     "correct_prob_per_char": 0.455169695375547
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.2676425678815641,
+     "correct_prob_per_char": 0.45469206161284376
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.26827325234017124,
+     "correct_prob_per_char": 0.4579129914598728
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.2670118834229569,
+     "correct_prob_per_char": 0.45721762060363463
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.2672110469362013,
+     "correct_prob_per_char": 0.444305356398782
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.2680740888269269,
+     "correct_prob_per_char": 0.44880671257206356
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.2706300205802297,
+     "correct_prob_per_char": 0.44346354848880226
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.2645223395074023,
+     "correct_prob_per_char": 0.45359042258735505
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.26448914558852815,
+     "correct_prob_per_char": 0.45619369988776
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.26239792869946227,
+     "correct_prob_per_char": 0.45574129869586427
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.26558454491137223,
+     "correct_prob_per_char": 0.4492437994303464
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.2656841266679944,
+     "correct_prob_per_char": 0.4490040582280829
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.2625638982938326,
+     "correct_prob_per_char": 0.4474622078903912
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.26644758680209785,
+     "correct_prob_per_char": 0.44800633636133935
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.26598287193786097,
+     "correct_prob_per_char": 0.45888645559956015
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.26362610369780254,
+     "correct_prob_per_char": 0.458656755021853
+    },
+    "Falcon": {
+     "primary_metric": 0.2674765982871938,
+     "correct_prob_per_char": 0.4517495500211482
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.26591648410011287,
+     "correct_prob_per_char": 0.4578221612909806
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.2632277766713138,
+     "correct_prob_per_char": 0.4598010287067226
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.26203279559184756,
+     "correct_prob_per_char": 0.46315151094722395
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.2655181570736241,
+     "correct_prob_per_char": 0.4610407083939807
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.2655513509924982,
+     "correct_prob_per_char": 0.4581373978759988
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.2711943172010887,
+     "correct_prob_per_char": 0.45390899992729666
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.26797450707030473,
+     "correct_prob_per_char": 0.4565578511488016
+    }
+   },
+   "mmlu": {
+    "C4": {
+     "primary_metric": 0.23868180770383826,
+     "correct_prob_per_char": 0.33958745291691744
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.23813411130918646,
+     "correct_prob_per_char": 0.3550615348644482
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.24454261441945283,
+     "correct_prob_per_char": 0.38164559378389623
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.24620845900384294,
+     "correct_prob_per_char": 0.37670666480905446
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.24486438243673825,
+     "correct_prob_per_char": 0.38663801719535384
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.25002301388763837,
+     "correct_prob_per_char": 0.38893825264288456
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.24537602080130214,
+     "correct_prob_per_char": 0.3873508964397805
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.25135766513734764,
+     "correct_prob_per_char": 0.39068688859827105
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.23495996152822332,
+     "correct_prob_per_char": 0.3479372813314539
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.23794071816948673,
+     "correct_prob_per_char": 0.35241387239796684
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.23499183853911573,
+     "correct_prob_per_char": 0.3551363007733766
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.2335097955625897,
+     "correct_prob_per_char": 0.34139505947165133
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.23354371529216453,
+     "correct_prob_per_char": 0.3358455688057444
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.23306744057681053,
+     "correct_prob_per_char": 0.34054951471409717
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.23147409117898773,
+     "correct_prob_per_char": 0.3315135316680519
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.2363889802148085,
+     "correct_prob_per_char": 0.3318414106703717
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.23505100312726612,
+     "correct_prob_per_char": 0.329559056399181
+    },
+    "Falcon": {
+     "primary_metric": 0.2347949065473197,
+     "correct_prob_per_char": 0.34317846940613883
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.23872556081946503,
+     "correct_prob_per_char": 0.34011505639038364
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.23740697558219714,
+     "correct_prob_per_char": 0.35254399807697867
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.23671730687188022,
+     "correct_prob_per_char": 0.3467220241515003
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.23878916814611673,
+     "correct_prob_per_char": 0.3605838703814035
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.24135506454202268,
+     "correct_prob_per_char": 0.3650240720757798
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.24524999395560876,
+     "correct_prob_per_char": 0.3696178762167372
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.24388944711679902,
+     "correct_prob_per_char": 0.35603092819628346
+    }
+   },
+   "openbookqa": {
+    "C4": {
+     "primary_metric": 0.2373333333333333,
+     "correct_prob_per_char": 0.2977603529555215
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.268,
+     "correct_prob_per_char": 0.3132617065303002
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.256,
+     "correct_prob_per_char": 0.32169419656604
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.26866666666666666,
+     "correct_prob_per_char": 0.3205383026334994
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.26733333333333337,
+     "correct_prob_per_char": 0.3302749288375087
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.27133333333333337,
+     "correct_prob_per_char": 0.3330874949700528
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.24933333333333332,
+     "correct_prob_per_char": 0.3300402093461782
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.27666666666666667,
+     "correct_prob_per_char": 0.33072346047582124
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.24066666666666667,
+     "correct_prob_per_char": 0.29791164435437745
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.26866666666666666,
+     "correct_prob_per_char": 0.30443893194041677
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.26533333333333337,
+     "correct_prob_per_char": 0.30829019299089655
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.2293333333333333,
+     "correct_prob_per_char": 0.2894796731855492
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.24066666666666667,
+     "correct_prob_per_char": 0.28373759282715
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.238,
+     "correct_prob_per_char": 0.292149556229868
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.24066666666666667,
+     "correct_prob_per_char": 0.2819460966088643
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.25266666666666665,
+     "correct_prob_per_char": 0.2862984933203343
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.23066666666666666,
+     "correct_prob_per_char": 0.28590326329119514
+    },
+    "Falcon": {
+     "primary_metric": 0.25666666666666665,
+     "correct_prob_per_char": 0.299621466131605
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.242,
+     "correct_prob_per_char": 0.2964341004255995
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.26466666666666666,
+     "correct_prob_per_char": 0.3079334234805788
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.27466666666666667,
+     "correct_prob_per_char": 0.30271671311087783
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.26133333333333336,
+     "correct_prob_per_char": 0.3126953619456858
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.25733333333333336,
+     "correct_prob_per_char": 0.3056647093093134
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.26133333333333336,
+     "correct_prob_per_char": 0.31498745245463394
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.24866666666666667,
+     "correct_prob_per_char": 0.30151470530874747
+    }
+   },
+   "piqa": {
+    "C4": {
+     "primary_metric": 0.5866884294523033,
+     "correct_prob_per_char": 0.39161771902529446
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.5685527747551687,
+     "correct_prob_per_char": 0.3824215040132432
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.5703663402248821,
+     "correct_prob_per_char": 0.38213534162250196
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.56873413130214,
+     "correct_prob_per_char": 0.38377298425195255
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.5689154878491114,
+     "correct_prob_per_char": 0.387169949489549
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.5583968081247733,
+     "correct_prob_per_char": 0.3707337995222328
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.5578527384838593,
+     "correct_prob_per_char": 0.3725666346530909
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.5647442872687704,
+     "correct_prob_per_char": 0.37085266991852905
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.5750816104461371,
+     "correct_prob_per_char": 0.3769499676350581
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.5663764961915124,
+     "correct_prob_per_char": 0.3832107658751415
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.5718171926006529,
+     "correct_prob_per_char": 0.38230987857903354
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.5678273485672832,
+     "correct_prob_per_char": 0.3745413471736239
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.5712731229597389,
+     "correct_prob_per_char": 0.37246438739544585
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.5741748277112805,
+     "correct_prob_per_char": 0.37163287675098705
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.5654697134566558,
+     "correct_prob_per_char": 0.37043664381147506
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.5725426187885382,
+     "correct_prob_per_char": 0.38362248440056
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.5729053318824809,
+     "correct_prob_per_char": 0.3736508822312963
+    },
+    "Falcon": {
+     "primary_metric": 0.5763511062749366,
+     "correct_prob_per_char": 0.3813159311446193
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.5698222705839681,
+     "correct_prob_per_char": 0.38490326778527334
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.5651070003627131,
+     "correct_prob_per_char": 0.37860741905650985
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.5808850199492201,
+     "correct_prob_per_char": 0.386948877953566
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.5712731229597389,
+     "correct_prob_per_char": 0.3810273395569468
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.5719985491476242,
+     "correct_prob_per_char": 0.38623239864639275
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.5710917664127675,
+     "correct_prob_per_char": 0.38039565683449555
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.5750816104461371,
+     "correct_prob_per_char": 0.3839467239226426
+    }
+   },
+   "socialiqa": {
+    "C4": {
+     "primary_metric": 0.40225179119754345,
+     "correct_prob_per_char": 0.3309317999559939
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.39286932787444556,
+     "correct_prob_per_char": 0.35018264428960016
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.3947458205390652,
+     "correct_prob_per_char": 0.3593368212213366
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.39406345957011263,
+     "correct_prob_per_char": 0.35692268378351666
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.3920163766632549,
+     "correct_prob_per_char": 0.35357880038788303
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.38638689866939613,
+     "correct_prob_per_char": 0.3375294176603451
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.3858751279426817,
+     "correct_prob_per_char": 0.34625367154923586
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.38485158648925283,
+     "correct_prob_per_char": 0.3316427337080338
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.3892869327874446,
+     "correct_prob_per_char": 0.3431677105778152
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.392186966905493,
+     "correct_prob_per_char": 0.3448717457490739
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.39406345957011263,
+     "correct_prob_per_char": 0.3429853816055894
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.3942340498123507,
+     "correct_prob_per_char": 0.3413218081029921
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.3952575912657796,
+     "correct_prob_per_char": 0.3413347806211524
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.39440464005458886,
+     "correct_prob_per_char": 0.33288129487567136
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.38758103036506314,
+     "correct_prob_per_char": 0.341578481705816
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.39849880586830433,
+     "correct_prob_per_char": 0.3368698285583141
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.38911634254520644,
+     "correct_prob_per_char": 0.3482540524285178
+    },
+    "Falcon": {
+     "primary_metric": 0.3991811668372569,
+     "correct_prob_per_char": 0.3420989513957608
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.3955987717502559,
+     "correct_prob_per_char": 0.3337651389916436
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.39013988399863525,
+     "correct_prob_per_char": 0.3335832958040563
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.3986693961105425,
+     "correct_prob_per_char": 0.32491167664792736
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.3988399863527807,
+     "correct_prob_per_char": 0.3492362105019049
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.40208120095530536,
+     "correct_prob_per_char": 0.34938231589136715
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.390992835209826,
+     "correct_prob_per_char": 0.3291019504926233
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.3954281815080177,
+     "correct_prob_per_char": 0.31768073039844946
+    }
+   },
+   "winogrande": {
+    "C4": {
+     "primary_metric": 0.519073927913707,
+     "correct_prob_per_char": 0.4180355823044932
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.5117074454091028,
+     "correct_prob_per_char": 0.4102837573240228
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.5093396474611944,
+     "correct_prob_per_char": 0.41149096023782367
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.5011838989739542,
+     "correct_prob_per_char": 0.4118422535107286
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.4969744803998948,
+     "correct_prob_per_char": 0.4097361817572853
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.5080242041568008,
+     "correct_prob_per_char": 0.4000490556113141
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.5090765588003157,
+     "correct_prob_per_char": 0.4031050655274609
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.5030255196001052,
+     "correct_prob_per_char": 0.39983738619555503
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.5148645093396474,
+     "correct_prob_per_char": 0.4103977689969384
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.5080242041568008,
+     "correct_prob_per_char": 0.4102353120998245
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.5135490660352539,
+     "correct_prob_per_char": 0.4102933510654274
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.5122336227308603,
+     "correct_prob_per_char": 0.40298176181173084
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.5132859773743751,
+     "correct_prob_per_char": 0.40602927861871535
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.5114443567482242,
+     "correct_prob_per_char": 0.4043315989258103
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.5119705340699816,
+     "correct_prob_per_char": 0.4051128097457104
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.5182846619310708,
+     "correct_prob_per_char": 0.4093308645516672
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.5101289134438306,
+     "correct_prob_per_char": 0.4111435633714426
+    },
+    "Falcon": {
+     "primary_metric": 0.5061825835306498,
+     "correct_prob_per_char": 0.41028764872113105
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.5172323072875559,
+     "correct_prob_per_char": 0.4105098733254458
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.5030255196001052,
+     "correct_prob_per_char": 0.41672307114833096
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.5101289134438306,
+     "correct_prob_per_char": 0.4186065343630554
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.505130228887135,
+     "correct_prob_per_char": 0.41852301180901724
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.5148645093396474,
+     "correct_prob_per_char": 0.41182757844827395
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.5167061299657985,
+     "correct_prob_per_char": 0.4077136293460128
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.5151275980005262,
+     "correct_prob_per_char": 0.4062004396427308
+    }
+   }
+  },
+  "300M": {
+   "arc_challenge": {
+    "C4": {
+     "primary_metric": 0.29607508532423205,
+     "correct_prob_per_char": 0.49850092130761947
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.3242320819112628,
+     "correct_prob_per_char": 0.5432416246130968
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.3833902161547213,
+     "correct_prob_per_char": 0.5814059427132684
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.3572241183162685,
+     "correct_prob_per_char": 0.5760099489189727
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.37343572241183165,
+     "correct_prob_per_char": 0.5837207033961697
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.42889647326507396,
+     "correct_prob_per_char": 0.6040797083923063
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.40614334470989766,
+     "correct_prob_per_char": 0.5951826899669318
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.42775881683731515,
+     "correct_prob_per_char": 0.602466463739825
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.3137087599544937,
+     "correct_prob_per_char": 0.5331041296423559
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.31939704209328784,
+     "correct_prob_per_char": 0.53961011260478
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.32195676905574516,
+     "correct_prob_per_char": 0.5412820704470418
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.29010238907849834,
+     "correct_prob_per_char": 0.4924134595592138
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.27929465301478956,
+     "correct_prob_per_char": 0.42022307343572596
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.29806598407281,
+     "correct_prob_per_char": 0.5075945204400023
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.3006257110352673,
+     "correct_prob_per_char": 0.4297230455925773
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.2935153583617747,
+     "correct_prob_per_char": 0.38043333824776365
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.2818543799772469,
+     "correct_prob_per_char": 0.4107075205343063
+    },
+    "Falcon": {
+     "primary_metric": 0.29977246871444824,
+     "correct_prob_per_char": 0.5144293336288759
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.2986348122866894,
+     "correct_prob_per_char": 0.5125095590532482
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.34670079635949946,
+     "correct_prob_per_char": 0.5574847279820997
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.31626848691695114,
+     "correct_prob_per_char": 0.5427299823076733
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.3529579067121729,
+     "correct_prob_per_char": 0.5689957949663055
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.3364618885096701,
+     "correct_prob_per_char": 0.5607847872977848
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.38253697383390217,
+     "correct_prob_per_char": 0.5740790506303952
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.3540955631399318,
+     "correct_prob_per_char": 0.5488452930396589
+    }
+   },
+   "arc_easy": {
+    "C4": {
+     "primary_metric": 0.5079966329966329,
+     "correct_prob_per_char": 0.5337529880397393
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.5881032547699214,
+     "correct_prob_per_char": 0.6128264720987807
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.6541806958473625,
+     "correct_prob_per_char": 0.6616229378716384
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.6418350168350169,
+     "correct_prob_per_char": 0.6538871760945767
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.6693322109988777,
+     "correct_prob_per_char": 0.6662334574295473
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.7146464646464646,
+     "correct_prob_per_char": 0.6905638918101462
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.7028619528619529,
+     "correct_prob_per_char": 0.6795796852554975
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.7236251402918069,
+     "correct_prob_per_char": 0.6922538077610619
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.5624298540965208,
+     "correct_prob_per_char": 0.5904604194438342
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.5791245791245792,
+     "correct_prob_per_char": 0.6080441733779441
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.5830527497194163,
+     "correct_prob_per_char": 0.609861148799698
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.5054713804713805,
+     "correct_prob_per_char": 0.5374457943267731
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.48583052749719413,
+     "correct_prob_per_char": 0.4422983361116311
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.5310044893378226,
+     "correct_prob_per_char": 0.5658272285448366
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.49452861952861954,
+     "correct_prob_per_char": 0.4461746667921864
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.452020202020202,
+     "correct_prob_per_char": 0.3700022799448474
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.47853535353535354,
+     "correct_prob_per_char": 0.40617828206465917
+    },
+    "Falcon": {
+     "primary_metric": 0.5332491582491582,
+     "correct_prob_per_char": 0.5730872042657701
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.5294612794612794,
+     "correct_prob_per_char": 0.5676916849220234
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.6358024691358025,
+     "correct_prob_per_char": 0.631331235251057
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.597783389450056,
+     "correct_prob_per_char": 0.6112999812895045
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.6363636363636364,
+     "correct_prob_per_char": 0.6431051810710783
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.6175645342312008,
+     "correct_prob_per_char": 0.6364042888439422
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.6621773288439955,
+     "correct_prob_per_char": 0.6570763083018029
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.6223344556677891,
+     "correct_prob_per_char": 0.6239380265435417
+    }
+   },
+   "boolq": {
+    "C4": {
+     "primary_metric": 0.5169215086646279,
+     "correct_prob_per_char": 0.7344888062341983
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.5239551478083588,
+     "correct_prob_per_char": 0.7549776730600901
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.5908256880733945,
+     "correct_prob_per_char": 0.7908080048586424
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.5623853211009174,
+     "correct_prob_per_char": 0.7874916567532506
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.6106014271151886,
+     "correct_prob_per_char": 0.7906068321409264
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.5459734964322119,
+     "correct_prob_per_char": 0.7533437485546818
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.599388379204893,
+     "correct_prob_per_char": 0.7744935901161561
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.543934760448522,
+     "correct_prob_per_char": 0.7296639447929455
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.5686034658511723,
+     "correct_prob_per_char": 0.767606209695296
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.5227319062181447,
+     "correct_prob_per_char": 0.7779525829807855
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.5454638124362895,
+     "correct_prob_per_char": 0.7969018007739503
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.4060142711518859,
+     "correct_prob_per_char": 0.6763157870242938
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.42742099898063196,
+     "correct_prob_per_char": 0.4121430887103063
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.5441386340468909,
+     "correct_prob_per_char": 0.7723694568707394
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.4131498470948012,
+     "correct_prob_per_char": 0.41337295708277205
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.5293577981651376,
+     "correct_prob_per_char": 0.5952686619736156
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.4087665647298675,
+     "correct_prob_per_char": 0.4274027342874531
+    },
+    "Falcon": {
+     "primary_metric": 0.5454638124362895,
+     "correct_prob_per_char": 0.7825776882160377
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.5014271151885831,
+     "correct_prob_per_char": 0.761990180283
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.5249745158002038,
+     "correct_prob_per_char": 0.755116719487838
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.5671763506625892,
+     "correct_prob_per_char": 0.7756381996067158
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.5328236493374108,
+     "correct_prob_per_char": 0.7750567711437165
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.5493374108053007,
+     "correct_prob_per_char": 0.7779412474469242
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.4729867482161059,
+     "correct_prob_per_char": 0.765335192291992
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.5213047910295617,
+     "correct_prob_per_char": 0.7736662849644457
+    }
+   },
+   "csqa": {
+    "C4": {
+     "primary_metric": 0.4264264264264264,
+     "correct_prob_per_char": 0.41151266107919215
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.5285285285285285,
+     "correct_prob_per_char": 0.4853458053748116
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.5320775320775321,
+     "correct_prob_per_char": 0.48414576118247354
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.5320775320775321,
+     "correct_prob_per_char": 0.49014081952796423
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.5318045318045318,
+     "correct_prob_per_char": 0.48867530616886007
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.5156975156975157,
+     "correct_prob_per_char": 0.47855242082775634
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.517062517062517,
+     "correct_prob_per_char": 0.4761019237365816
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.4946764946764947,
+     "correct_prob_per_char": 0.46426813265479777
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.5107835107835108,
+     "correct_prob_per_char": 0.47694475945638476
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.517062517062517,
+     "correct_prob_per_char": 0.47419588439622834
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.5339885339885341,
+     "correct_prob_per_char": 0.49066447598265245
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.4657384657384657,
+     "correct_prob_per_char": 0.4511712265400811
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.4829374829374829,
+     "correct_prob_per_char": 0.352155623782127
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.478023478023478,
+     "correct_prob_per_char": 0.46295154379068354
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.48211848211848213,
+     "correct_prob_per_char": 0.33105674489273884
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.4706524706524706,
+     "correct_prob_per_char": 0.239146346467808
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.4742014742014742,
+     "correct_prob_per_char": 0.31510712902380517
+    },
+    "Falcon": {
+     "primary_metric": 0.5118755118755118,
+     "correct_prob_per_char": 0.4722470830985433
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.49713349713349714,
+     "correct_prob_per_char": 0.44709079091892345
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.5416325416325416,
+     "correct_prob_per_char": 0.4895226843310634
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.5200655200655201,
+     "correct_prob_per_char": 0.4765149028383598
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.5511875511875511,
+     "correct_prob_per_char": 0.47881049692161265
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.5211575211575211,
+     "correct_prob_per_char": 0.4655137564352965
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.5088725088725089,
+     "correct_prob_per_char": 0.4660057652240514
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.5107835107835108,
+     "correct_prob_per_char": 0.47288687660594775
+    }
+   },
+   "hellaswag": {
+    "C4": {
+     "primary_metric": 0.4410144061607914,
+     "correct_prob_per_char": 0.5472718920407361
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.44854942574520346,
+     "correct_prob_per_char": 0.5662247893812108
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.44592710615415254,
+     "correct_prob_per_char": 0.5598640720468523
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.4534621257385647,
+     "correct_prob_per_char": 0.5634310298761587
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.4442342162915754,
+     "correct_prob_per_char": 0.5580906277828017
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.41801102038106625,
+     "correct_prob_per_char": 0.5455757624339864
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.42684060280156677,
+     "correct_prob_per_char": 0.5507469210658017
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.40327292040098256,
+     "correct_prob_per_char": 0.5394112411857838
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.43968664940582886,
+     "correct_prob_per_char": 0.5667316188194
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.44586071831640445,
+     "correct_prob_per_char": 0.5678754473427275
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.4486490075018257,
+     "correct_prob_per_char": 0.5663696560230672
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.4233220474009161,
+     "correct_prob_per_char": 0.5607240215177205
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.4300604129323508,
+     "correct_prob_per_char": 0.5630677680916235
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.42869946225851424,
+     "correct_prob_per_char": 0.561930956125786
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.42730531766580365,
+     "correct_prob_per_char": 0.5631909318798073
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.4432383987253535,
+     "correct_prob_per_char": 0.5666759172861805
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.4435703379140941,
+     "correct_prob_per_char": 0.5671469666896292
+    },
+    "Falcon": {
+     "primary_metric": 0.43686516630153355,
+     "correct_prob_per_char": 0.5585726857637101
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.4404501095399323,
+     "correct_prob_per_char": 0.5646492177799349
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.4618269932948284,
+     "correct_prob_per_char": 0.5684808547069651
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.46501360950673837,
+     "correct_prob_per_char": 0.5705528920380634
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.4535617074951869,
+     "correct_prob_per_char": 0.5682067417789829
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.42916417712275107,
+     "correct_prob_per_char": 0.5633289754485261
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.4444997676425679,
+     "correct_prob_per_char": 0.5578902178381201
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.47128726017393613,
+     "correct_prob_per_char": 0.5636291488026434
+    }
+   },
+   "mmlu": {
+    "C4": {
+     "primary_metric": 0.26487441003568907,
+     "correct_prob_per_char": 0.4528010767754355
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.2815621410535718,
+     "correct_prob_per_char": 0.5055844815619192
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.29969494717129114,
+     "correct_prob_per_char": 0.538010996155578
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.2965274247857322,
+     "correct_prob_per_char": 0.5333089103324359
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.30279493749468595,
+     "correct_prob_per_char": 0.5383867783763842
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.3176543266416784,
+     "correct_prob_per_char": 0.5492352704216014
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.3119282631714943,
+     "correct_prob_per_char": 0.5443244117724978
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.3161343940942001,
+     "correct_prob_per_char": 0.5423480429414932
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.27649485608322627,
+     "correct_prob_per_char": 0.49402371310545523
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.280268351419994,
+     "correct_prob_per_char": 0.49990272035074446
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.28554575094191553,
+     "correct_prob_per_char": 0.5041633996012371
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.26982844453764915,
+     "correct_prob_per_char": 0.4619537110064398
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.270294985676887,
+     "correct_prob_per_char": 0.40314771009296785
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.27019369038658964,
+     "correct_prob_per_char": 0.47782624052322925
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.27084068040139253,
+     "correct_prob_per_char": 0.4148713186707325
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.2641616038681885,
+     "correct_prob_per_char": 0.3778669933230032
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.26560337981782545,
+     "correct_prob_per_char": 0.38009803488367117
+    },
+    "Falcon": {
+     "primary_metric": 0.2716236141999548,
+     "correct_prob_per_char": 0.48017948858612397
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.2695714757484969,
+     "correct_prob_per_char": 0.47455812131471875
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.28186643535363776,
+     "correct_prob_per_char": 0.50742981539943
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.27932882988233715,
+     "correct_prob_per_char": 0.4980133984371741
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.2865990475954095,
+     "correct_prob_per_char": 0.5167241545733053
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.28607989720836974,
+     "correct_prob_per_char": 0.5204768674833352
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.29932074985247975,
+     "correct_prob_per_char": 0.5253884758288857
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.2908421614279308,
+     "correct_prob_per_char": 0.5063865318968959
+    }
+   },
+   "openbookqa": {
+    "C4": {
+     "primary_metric": 0.34400000000000003,
+     "correct_prob_per_char": 0.3659657309518527
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.40066666666666667,
+     "correct_prob_per_char": 0.41777060166208074
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.418,
+     "correct_prob_per_char": 0.42335778158692144
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.424,
+     "correct_prob_per_char": 0.42630350381467846
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.42933333333333334,
+     "correct_prob_per_char": 0.42775869310004694
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.452,
+     "correct_prob_per_char": 0.4315784575079156
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.4533333333333333,
+     "correct_prob_per_char": 0.4309261284217971
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.4406666666666667,
+     "correct_prob_per_char": 0.4308616076163602
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.3973333333333333,
+     "correct_prob_per_char": 0.4097261461517907
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.38933333333333336,
+     "correct_prob_per_char": 0.41716131138318696
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.39999999999999997,
+     "correct_prob_per_char": 0.41800872910332115
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.35400000000000004,
+     "correct_prob_per_char": 0.38007495266315133
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.3446666666666667,
+     "correct_prob_per_char": 0.3213941810682946
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.35799999999999993,
+     "correct_prob_per_char": 0.3962938770952697
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.3646666666666667,
+     "correct_prob_per_char": 0.32311432442659616
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.36066666666666664,
+     "correct_prob_per_char": 0.2669862079294307
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.35733333333333334,
+     "correct_prob_per_char": 0.2979992066061075
+    },
+    "Falcon": {
+     "primary_metric": 0.3786666666666667,
+     "correct_prob_per_char": 0.4061239146010871
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.37333333333333335,
+     "correct_prob_per_char": 0.39386086522009345
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.3973333333333333,
+     "correct_prob_per_char": 0.4182247752666925
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.40199999999999997,
+     "correct_prob_per_char": 0.411698232804876
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.41133333333333333,
+     "correct_prob_per_char": 0.42295668793539853
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.4000000000000001,
+     "correct_prob_per_char": 0.41791369611358276
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.4246666666666667,
+     "correct_prob_per_char": 0.4208384589619423
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.3986666666666667,
+     "correct_prob_per_char": 0.41303270088054145
+    }
+   },
+   "piqa": {
+    "C4": {
+     "primary_metric": 0.6971345665578528,
+     "correct_prob_per_char": 0.4925908074701297
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.690424374319913,
+     "correct_prob_per_char": 0.49819742228234154
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.6782734856728329,
+     "correct_prob_per_char": 0.49277365838747916
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.6808124773304316,
+     "correct_prob_per_char": 0.49642113303650487
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.6770039898440334,
+     "correct_prob_per_char": 0.49116993624870836
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.6635836053681538,
+     "correct_prob_per_char": 0.4788553128104566
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.6735582154515778,
+     "correct_prob_per_char": 0.48380950491313196
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.652158142908959,
+     "correct_prob_per_char": 0.47296306729272947
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.6848023213638013,
+     "correct_prob_per_char": 0.49657842254662216
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.6813565469713456,
+     "correct_prob_per_char": 0.4965374666308937
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.6860718171926007,
+     "correct_prob_per_char": 0.4980444888939937
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.6864345302865433,
+     "correct_prob_per_char": 0.49331176026266
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.6896989481320276,
+     "correct_prob_per_char": 0.4883091959098634
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.6855277475516867,
+     "correct_prob_per_char": 0.49591089667628413
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.6891548784911136,
+     "correct_prob_per_char": 0.4855835056778681
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.6871599564744287,
+     "correct_prob_per_char": 0.4843370259242869
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.691512513601741,
+     "correct_prob_per_char": 0.48070868750699297
+    },
+    "Falcon": {
+     "primary_metric": 0.6891548784911136,
+     "correct_prob_per_char": 0.49279870503105344
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.6886108088501995,
+     "correct_prob_per_char": 0.4942250742965977
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.681537903518317,
+     "correct_prob_per_char": 0.4944174822982485
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.6927820094305405,
+     "correct_prob_per_char": 0.4978061758704661
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.6916938701487124,
+     "correct_prob_per_char": 0.5002306326686395
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.6844396082698586,
+     "correct_prob_per_char": 0.493296372152719
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.6884294523032283,
+     "correct_prob_per_char": 0.48823909238751867
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.6926006528835691,
+     "correct_prob_per_char": 0.49296113156090976
+    }
+   },
+   "socialiqa": {
+    "C4": {
+     "primary_metric": 0.45257591265779595,
+     "correct_prob_per_char": 0.47132648771462876
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.46383486864551343,
+     "correct_prob_per_char": 0.4855193102992846
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.4607642442852269,
+     "correct_prob_per_char": 0.4795678698624079
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.46827021494370524,
+     "correct_prob_per_char": 0.4848869048327212
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.46656431252132374,
+     "correct_prob_per_char": 0.4750049840611829
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.44984646878198564,
+     "correct_prob_per_char": 0.4663334548251481
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.4554759467758444,
+     "correct_prob_per_char": 0.46814501371512746
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.4382463323097919,
+     "correct_prob_per_char": 0.4582604479527576
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.46673490276356194,
+     "correct_prob_per_char": 0.4918426139781256
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.4709996588195155,
+     "correct_prob_per_char": 0.4962436715301178
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.4651995905834186,
+     "correct_prob_per_char": 0.48965256482240216
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.4382463323097919,
+     "correct_prob_per_char": 0.4646099835954898
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.44814056635960425,
+     "correct_prob_per_char": 0.3875403556429052
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.4495052882975094,
+     "correct_prob_per_char": 0.4717276612062012
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.450187649266462,
+     "correct_prob_per_char": 0.3888818115552443
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.43926987376322074,
+     "correct_prob_per_char": 0.3100299000461025
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.44558171272603203,
+     "correct_prob_per_char": 0.3625421087136817
+    },
+    "Falcon": {
+     "primary_metric": 0.46366427840327534,
+     "correct_prob_per_char": 0.48027170234385014
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.46025247355851245,
+     "correct_prob_per_char": 0.4776034907280509
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.4612760150119413,
+     "correct_prob_per_char": 0.4878189698999284
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.46605254179460937,
+     "correct_prob_per_char": 0.4856633869382081
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.46554077106789493,
+     "correct_prob_per_char": 0.48387322067860294
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.4495052882975094,
+     "correct_prob_per_char": 0.47915000249753686
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.44762879563288976,
+     "correct_prob_per_char": 0.46789789035084417
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.473899692937564,
+     "correct_prob_per_char": 0.4772328336949072
+    }
+   },
+   "winogrande": {
+    "C4": {
+     "primary_metric": 0.5261773217574323,
+     "correct_prob_per_char": 0.4922113060869846
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.530123651670613,
+     "correct_prob_per_char": 0.4851017971240779
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.5351223362273086,
+     "correct_prob_per_char": 0.4914913440499363
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.5438042620363063,
+     "correct_prob_per_char": 0.491564720490383
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.5330176269402789,
+     "correct_prob_per_char": 0.4837547466900065
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.5280189423835833,
+     "correct_prob_per_char": 0.47815250166596623
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.5317021836358853,
+     "correct_prob_per_char": 0.4783121506554935
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.5188108392528282,
+     "correct_prob_per_char": 0.4725661096572229
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.5243357011312813,
+     "correct_prob_per_char": 0.488828853072158
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.5401210207840043,
+     "correct_prob_per_char": 0.48583490902536336
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.5272296764009471,
+     "correct_prob_per_char": 0.4865439527726359
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.5219679031833727,
+     "correct_prob_per_char": 0.4820820604599361
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.5269665877400684,
+     "correct_prob_per_char": 0.4852601670960916
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.5274927650618259,
+     "correct_prob_per_char": 0.4838618979344418
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.5272296764009471,
+     "correct_prob_per_char": 0.48151970291710805
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.5261773217574323,
+     "correct_prob_per_char": 0.48617991484619133
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.528282031044462,
+     "correct_prob_per_char": 0.48547523838268586
+    },
+    "Falcon": {
+     "primary_metric": 0.522757169166009,
+     "correct_prob_per_char": 0.4824820108981744
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.5277558537227045,
+     "correct_prob_per_char": 0.484491939896639
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.5414364640883979,
+     "correct_prob_per_char": 0.4914376234464439
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.5474875032886083,
+     "correct_prob_per_char": 0.4896351933239506
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.5369639568534597,
+     "correct_prob_per_char": 0.4916335214649652
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.5224940805051302,
+     "correct_prob_per_char": 0.48302092847405254
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.5224940805051302,
+     "correct_prob_per_char": 0.48573520518460667
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.5348592475664299,
+     "correct_prob_per_char": 0.4862296933924222
+    }
+   }
+  },
+  "4M": {
+   "arc_challenge": {
+    "C4": {
+     "primary_metric": 0.2229806598407281,
+     "correct_prob_per_char": 0.27986771796941645
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.21359499431171788,
+     "correct_prob_per_char": 0.2927926236950486
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.22895335608646192,
+     "correct_prob_per_char": 0.31734168824895986
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.2232650739476678,
+     "correct_prob_per_char": 0.30549397418984897
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.22838452787258245,
+     "correct_prob_per_char": 0.32111339503725
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.23464163822525597,
+     "correct_prob_per_char": 0.33174621978384716
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.22667804323094423,
+     "correct_prob_per_char": 0.32733835060191435
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.23151308304891924,
+     "correct_prob_per_char": 0.33482910976765123
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.22724687144482367,
+     "correct_prob_per_char": 0.29132876898399745
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.2229806598407281,
+     "correct_prob_per_char": 0.295908474965968
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.22554038680318544,
+     "correct_prob_per_char": 0.2883263317359007
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.22212741751990897,
+     "correct_prob_per_char": 0.27906368845479745
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.22980659840728102,
+     "correct_prob_per_char": 0.27689984363621406
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.2229806598407281,
+     "correct_prob_per_char": 0.27875473530026645
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.2170079635949943,
+     "correct_prob_per_char": 0.2752158206363731
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.22241183162684872,
+     "correct_prob_per_char": 0.2745512771131217
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.23293515358361774,
+     "correct_prob_per_char": 0.2818714135334127
+    },
+    "Falcon": {
+     "primary_metric": 0.2161547212741752,
+     "correct_prob_per_char": 0.27533871491572937
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.21331058020477814,
+     "correct_prob_per_char": 0.2792423521093809
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.20904436860068257,
+     "correct_prob_per_char": 0.30641247024722634
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.2170079635949943,
+     "correct_prob_per_char": 0.2905102833381019
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.24146757679180886,
+     "correct_prob_per_char": 0.3094183659165322
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.24516496018202502,
+     "correct_prob_per_char": 0.29914897951572755
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.22696245733788398,
+     "correct_prob_per_char": 0.31982523481440256
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.22554038680318544,
+     "correct_prob_per_char": 0.30236827892650425
+    }
+   },
+   "arc_easy": {
+    "C4": {
+     "primary_metric": 0.3026094276094276,
+     "correct_prob_per_char": 0.2640277100716414
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.3035914702581369,
+     "correct_prob_per_char": 0.27991275795342085
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.3212682379349046,
+     "correct_prob_per_char": 0.31169529521211853
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.31902356902356904,
+     "correct_prob_per_char": 0.29535865455543486
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.33179012345679015,
+     "correct_prob_per_char": 0.3155933280810181
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.3442760942760943,
+     "correct_prob_per_char": 0.33017142620406176
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.3313692480359147,
+     "correct_prob_per_char": 0.3141599024870703
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.33978675645342316,
+     "correct_prob_per_char": 0.32358338665957287
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.3005050505050505,
+     "correct_prob_per_char": 0.28291499696910316
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.3027497194163861,
+     "correct_prob_per_char": 0.28795792500119194
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.3048540965207632,
+     "correct_prob_per_char": 0.2763330433124214
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.2904040404040404,
+     "correct_prob_per_char": 0.26517620661097
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.2999438832772166,
+     "correct_prob_per_char": 0.2629137731836963
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.29419191919191917,
+     "correct_prob_per_char": 0.2653925772391906
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.2972783389450056,
+     "correct_prob_per_char": 0.26274536510194546
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.2913860830527497,
+     "correct_prob_per_char": 0.2526292007840656
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.2936307519640853,
+     "correct_prob_per_char": 0.2662926987715799
+    },
+    "Falcon": {
+     "primary_metric": 0.2940516273849607,
+     "correct_prob_per_char": 0.26174624133526875
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.2972783389450056,
+     "correct_prob_per_char": 0.2592979979311787
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.31369248035914704,
+     "correct_prob_per_char": 0.28895716934300253
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.3052749719416386,
+     "correct_prob_per_char": 0.27504614727329274
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.3155162738496072,
+     "correct_prob_per_char": 0.3004244008233486
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.3100448933782267,
+     "correct_prob_per_char": 0.28585094452885645
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.3247755331088664,
+     "correct_prob_per_char": 0.3147946217906535
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.30808080808080807,
+     "correct_prob_per_char": 0.29126596256378007
+    }
+   },
+   "boolq": {
+    "C4": {
+     "primary_metric": 0.5251783893985729,
+     "correct_prob_per_char": 0.09536287371823786
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.4779816513761468,
+     "correct_prob_per_char": 0.09320229910573892
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.5166156982670744,
+     "correct_prob_per_char": 0.14474425448498976
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.5470948012232416,
+     "correct_prob_per_char": 0.12802324295077172
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.4106014271151886,
+     "correct_prob_per_char": 0.12283931741373653
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.46095820591233433,
+     "correct_prob_per_char": 0.12172395288517447
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.39938837920489295,
+     "correct_prob_per_char": 0.11017099495760123
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.4340468909276249,
+     "correct_prob_per_char": 0.10203883575183022
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.5226299694189602,
+     "correct_prob_per_char": 0.16560515203040777
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.4783893985728848,
+     "correct_prob_per_char": 0.1287041059153119
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.5759429153924567,
+     "correct_prob_per_char": 0.11563331849448683
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.5184505606523955,
+     "correct_prob_per_char": 0.1320973866512899
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.617737003058104,
+     "correct_prob_per_char": 0.16928801745752112
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.5229357798165138,
+     "correct_prob_per_char": 0.10794183315194046
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.6212028542303772,
+     "correct_prob_per_char": 0.17863580998238468
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.6212028542303772,
+     "correct_prob_per_char": 0.1612833085274915
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.6213047910295617,
+     "correct_prob_per_char": 0.18833101139903874
+    },
+    "Falcon": {
+     "primary_metric": 0.5218144750254842,
+     "correct_prob_per_char": 0.07539409536274123
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.6209989806320082,
+     "correct_prob_per_char": 0.08083296437143302
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.4813455657492354,
+     "correct_prob_per_char": 0.10127673544379963
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.5562691131498471,
+     "correct_prob_per_char": 0.08318602052599385
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.44678899082568807,
+     "correct_prob_per_char": 0.09512065676830334
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.4598369011213048,
+     "correct_prob_per_char": 0.10703804357605738
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.5139653414882773,
+     "correct_prob_per_char": 0.10418023982917694
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.48399592252803264,
+     "correct_prob_per_char": 0.08992015852179029
+    }
+   },
+   "csqa": {
+    "C4": {
+     "primary_metric": 0.20584220584220583,
+     "correct_prob_per_char": 0.16869251604566568
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.21512421512421512,
+     "correct_prob_per_char": 0.1814268253737075
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.20748020748020748,
+     "correct_prob_per_char": 0.19971636009777427
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.2192192192192192,
+     "correct_prob_per_char": 0.18422945851752748
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.21457821457821458,
+     "correct_prob_per_char": 0.20099140504979282
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.20584220584220583,
+     "correct_prob_per_char": 0.20195880762769755
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.21785421785421785,
+     "correct_prob_per_char": 0.197797759479851
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.21294021294021293,
+     "correct_prob_per_char": 0.20005036449216076
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.2143052143052143,
+     "correct_prob_per_char": 0.19978809596847635
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.21294021294021293,
+     "correct_prob_per_char": 0.1929898366513595
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.21184821184821187,
+     "correct_prob_per_char": 0.1855378238427358
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.20502320502320504,
+     "correct_prob_per_char": 0.18775659938234546
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.22113022113022116,
+     "correct_prob_per_char": 0.1883155820520904
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.20147420147420148,
+     "correct_prob_per_char": 0.18202906098225788
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.21403221403221404,
+     "correct_prob_per_char": 0.18953614176320485
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.2192192192192192,
+     "correct_prob_per_char": 0.1708462084046143
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.21430521430521432,
+     "correct_prob_per_char": 0.18800987306715997
+    },
+    "Falcon": {
+     "primary_metric": 0.22194922194922195,
+     "correct_prob_per_char": 0.17047073295404824
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.21457821457821458,
+     "correct_prob_per_char": 0.16221211461316895
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.22113022113022116,
+     "correct_prob_per_char": 0.18387544290871868
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.21457821457821458,
+     "correct_prob_per_char": 0.17187385148712617
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.22467922467922466,
+     "correct_prob_per_char": 0.18269978203038237
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.2222222222222222,
+     "correct_prob_per_char": 0.17349569434928303
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.22822822822822822,
+     "correct_prob_per_char": 0.19772561398148536
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.208026208026208,
+     "correct_prob_per_char": 0.18242675381716714
+    }
+   },
+   "hellaswag": {
+    "C4": {
+     "primary_metric": 0.2544645820885614,
+     "correct_prob_per_char": 0.3591656234607464
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.24865564628560047,
+     "correct_prob_per_char": 0.3673439860249918
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.25084644493128855,
+     "correct_prob_per_char": 0.36382107995430374
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.2484564827723561,
+     "correct_prob_per_char": 0.36789450294400056
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.24948549425745203,
+     "correct_prob_per_char": 0.36318399041981003
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.24938591250082984,
+     "correct_prob_per_char": 0.3568668810560487
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.24938591250082986,
+     "correct_prob_per_char": 0.35873968913466037
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.24862245236672642,
+     "correct_prob_per_char": 0.35290737211307516
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.2491535550687114,
+     "correct_prob_per_char": 0.36279624891430423
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.24832370709685983,
+     "correct_prob_per_char": 0.36702056410526057
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.24805815574586734,
+     "correct_prob_per_char": 0.36911368908655445
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.2488880037177189,
+     "correct_prob_per_char": 0.3601416416030976
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.24779260439487485,
+     "correct_prob_per_char": 0.3618191141638314
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.24915355506871142,
+     "correct_prob_per_char": 0.3592136863064996
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.24848967669123015,
+     "correct_prob_per_char": 0.35678048174184823
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.24905397331208923,
+     "correct_prob_per_char": 0.3676448385384467
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.24779260439487485,
+     "correct_prob_per_char": 0.3713277627507652
+    },
+    "Falcon": {
+     "primary_metric": 0.25008298479718516,
+     "correct_prob_per_char": 0.3621865005809182
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.251576711146518,
+     "correct_prob_per_char": 0.3712651602274559
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.2465976233154086,
+     "correct_prob_per_char": 0.37493812632838136
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.24712872601739364,
+     "correct_prob_per_char": 0.3762817025305192
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.24736108344951205,
+     "correct_prob_per_char": 0.3746690364710723
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.2476266348005046,
+     "correct_prob_per_char": 0.37008710086775637
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.25141074155214765,
+     "correct_prob_per_char": 0.36348179395094404
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.25028214831042955,
+     "correct_prob_per_char": 0.36718963715521385
+    }
+   },
+   "mmlu": {
+    "C4": {
+     "primary_metric": 0.228657989080124,
+     "correct_prob_per_char": 0.2558587516970455
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.22796461255146325,
+     "correct_prob_per_char": 0.27022567587148566
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.22607326071552922,
+     "correct_prob_per_char": 0.28458223634986995
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.22857331570378872,
+     "correct_prob_per_char": 0.2809504618448383
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.22843689553168964,
+     "correct_prob_per_char": 0.2890928933503912
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.22998547523804147,
+     "correct_prob_per_char": 0.29382012088109283
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.22898566448595217,
+     "correct_prob_per_char": 0.2932294019337754
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.2313466996851575,
+     "correct_prob_per_char": 0.2941893240670781
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.2275423995110455,
+     "correct_prob_per_char": 0.26623518672370516
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.22756207741115564,
+     "correct_prob_per_char": 0.2700005437069618
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.2282745629857095,
+     "correct_prob_per_char": 0.268918170578423
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.22921259601863408,
+     "correct_prob_per_char": 0.2570981121792579
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.23053038415084978,
+     "correct_prob_per_char": 0.2519328170838429
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.22923301071416294,
+     "correct_prob_per_char": 0.2614201403181746
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.23179938684699455,
+     "correct_prob_per_char": 0.25225107050367873
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.22953976540010804,
+     "correct_prob_per_char": 0.2539673627776973
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.22989351162407498,
+     "correct_prob_per_char": 0.2533239962706408
+    },
+    "Falcon": {
+     "primary_metric": 0.2286163026583424,
+     "correct_prob_per_char": 0.25744407174839296
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.22750869617352518,
+     "correct_prob_per_char": 0.2572790954612158
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.2284799334365281,
+     "correct_prob_per_char": 0.2729986430290048
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.2304116432522405,
+     "correct_prob_per_char": 0.264652557631543
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.2298788226882449,
+     "correct_prob_per_char": 0.2757512110375457
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.2307699064112159,
+     "correct_prob_per_char": 0.276194531386776
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.23126422828762108,
+     "correct_prob_per_char": 0.2833909970811676
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.228197766732402,
+     "correct_prob_per_char": 0.27490245154395304
+    }
+   },
+   "openbookqa": {
+    "C4": {
+     "primary_metric": 0.24466666666666667,
+     "correct_prob_per_char": 0.217165743924202
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.21933333333333335,
+     "correct_prob_per_char": 0.2425303786420858
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.24333333333333332,
+     "correct_prob_per_char": 0.2518576457379117
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.2373333333333333,
+     "correct_prob_per_char": 0.241988512767084
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.246,
+     "correct_prob_per_char": 0.24967789037338547
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.24,
+     "correct_prob_per_char": 0.2547586856304173
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.24266666666666667,
+     "correct_prob_per_char": 0.25838778960306913
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.264,
+     "correct_prob_per_char": 0.25648359241645013
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.24866666666666667,
+     "correct_prob_per_char": 0.23332028005843952
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.2353333333333333,
+     "correct_prob_per_char": 0.24420646845971208
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.20266666666666666,
+     "correct_prob_per_char": 0.236460590294886
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.24466666666666667,
+     "correct_prob_per_char": 0.22200001097998834
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.24133333333333332,
+     "correct_prob_per_char": 0.22024354398357818
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.25266666666666665,
+     "correct_prob_per_char": 0.22069224014014513
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.23933333333333331,
+     "correct_prob_per_char": 0.2207886765087934
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.2293333333333333,
+     "correct_prob_per_char": 0.20863812017699482
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.22999999999999998,
+     "correct_prob_per_char": 0.2214826231373603
+    },
+    "Falcon": {
+     "primary_metric": 0.2373333333333333,
+     "correct_prob_per_char": 0.21872240092687453
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.21933333333333335,
+     "correct_prob_per_char": 0.21318436318989895
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.24866666666666667,
+     "correct_prob_per_char": 0.23298656502524562
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.22799999999999998,
+     "correct_prob_per_char": 0.2287754311690454
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.23399999999999999,
+     "correct_prob_per_char": 0.24346861341119316
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.236,
+     "correct_prob_per_char": 0.22541321746434598
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.258,
+     "correct_prob_per_char": 0.24668481797959252
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.224,
+     "correct_prob_per_char": 0.2405663629533316
+    }
+   },
+   "piqa": {
+    "C4": {
+     "primary_metric": 0.5482408414943779,
+     "correct_prob_per_char": 0.3114797997963382
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.5337323177366703,
+     "correct_prob_per_char": 0.3091637948875128
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.5301051867972434,
+     "correct_prob_per_char": 0.3046833641051218
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.5342763873775843,
+     "correct_prob_per_char": 0.3073295301021662
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.5261153427638737,
+     "correct_prob_per_char": 0.30611669981965545
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.523576351106275,
+     "correct_prob_per_char": 0.2983113727465361
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.5272034820457018,
+     "correct_prob_per_char": 0.2971801131727801
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.5197678636198767,
+     "correct_prob_per_char": 0.2942294962776189
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.5328255350018135,
+     "correct_prob_per_char": 0.300360642715781
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.5322814653608995,
+     "correct_prob_per_char": 0.30946820490542926
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.5400797968806673,
+     "correct_prob_per_char": 0.3068723636688386
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.5417120058034095,
+     "correct_prob_per_char": 0.2993822941451626
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.5437069278200943,
+     "correct_prob_per_char": 0.2963788143861356
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.534639100471527,
+     "correct_prob_per_char": 0.3023254251909046
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.5328255350018135,
+     "correct_prob_per_char": 0.29512367528009215
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.539354370692782,
+     "correct_prob_per_char": 0.2994634702003605
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.5406238665215813,
+     "correct_prob_per_char": 0.30407329925613275
+    },
+    "Falcon": {
+     "primary_metric": 0.5391730141458106,
+     "correct_prob_per_char": 0.305170372887887
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.5409865796155241,
+     "correct_prob_per_char": 0.30715132320219213
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.5281102647805586,
+     "correct_prob_per_char": 0.31027760208489696
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.5379035183170112,
+     "correct_prob_per_char": 0.3099343378924044
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.5317373957199855,
+     "correct_prob_per_char": 0.31229823800465234
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.5326441784548422,
+     "correct_prob_per_char": 0.30752269084535594
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.5306492564381574,
+     "correct_prob_per_char": 0.30371217283674096
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.5333696046427275,
+     "correct_prob_per_char": 0.30821737153816053
+    }
+   },
+   "socialiqa": {
+    "C4": {
+     "primary_metric": 0.38741044012282494,
+     "correct_prob_per_char": 0.2552728745120363
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.3833162743091096,
+     "correct_prob_per_char": 0.24712954130083972
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.3843398157625384,
+     "correct_prob_per_char": 0.2670699109921677
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.38553394745820535,
+     "correct_prob_per_char": 0.2616724889436751
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.38126919140225174,
+     "correct_prob_per_char": 0.268133520474051
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.385022176731491,
+     "correct_prob_per_char": 0.2603513856993162
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.3821221426134425,
+     "correct_prob_per_char": 0.24702041445833867
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.3920163766632549,
+     "correct_prob_per_char": 0.2533146201497399
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.3836574547935858,
+     "correct_prob_per_char": 0.26173276885434754
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.3894575230296827,
+     "correct_prob_per_char": 0.26451801424347354
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.38451040600477654,
+     "correct_prob_per_char": 0.25574350120335415
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.3870692596383487,
+     "correct_prob_per_char": 0.25842636788115936
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.38178096212896623,
+     "correct_prob_per_char": 0.24974432258949167
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.38911634254520644,
+     "correct_prob_per_char": 0.25721956251161954
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.38399863527806205,
+     "correct_prob_per_char": 0.25282978638742115
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.3826339133401569,
+     "correct_prob_per_char": 0.23943014967506557
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.37853974752644154,
+     "correct_prob_per_char": 0.2533486903693255
+    },
+    "Falcon": {
+     "primary_metric": 0.38451040600477654,
+     "correct_prob_per_char": 0.24945235557294568
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.3799044694643466,
+     "correct_prob_per_char": 0.2501514954128303
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.3834868645513477,
+     "correct_prob_per_char": 0.26071611439151615
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.3816103718867281,
+     "correct_prob_per_char": 0.2490111251142074
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.3836574547935858,
+     "correct_prob_per_char": 0.25600632311898447
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.3865574889116343,
+     "correct_prob_per_char": 0.24936750764956347
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.3754691231661549,
+     "correct_prob_per_char": 0.25638165097445176
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.3834868645513477,
+     "correct_prob_per_char": 0.25603779886832156
+    }
+   },
+   "winogrande": {
+    "C4": {
+     "primary_metric": 0.5053933175480136,
+     "correct_prob_per_char": 0.36320978182354063
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.5006577216521967,
+     "correct_prob_per_char": 0.35814286472752305
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.49907918968692444,
+     "correct_prob_per_char": 0.35313738300843384
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.5040778742436202,
+     "correct_prob_per_char": 0.35411388162308727
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.5038147855827414,
+     "correct_prob_per_char": 0.3502377789956452
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.4953959484346225,
+     "correct_prob_per_char": 0.3447690784327935
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.5038147855827414,
+     "correct_prob_per_char": 0.34835963212911975
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.505130228887135,
+     "correct_prob_per_char": 0.3428223204641075
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.5032886082609839,
+     "correct_prob_per_char": 0.3562727199664632
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.4993422783478032,
+     "correct_prob_per_char": 0.3597928053544821
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.5019731649565903,
+     "correct_prob_per_char": 0.36110709822820625
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.5024993422783478,
+     "correct_prob_per_char": 0.3520786953093797
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.5074980268350434,
+     "correct_prob_per_char": 0.35340505739164724
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.5001315443304394,
+     "correct_prob_per_char": 0.35200859477113927
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.5040778742436202,
+     "correct_prob_per_char": 0.35041546266485324
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.5085503814785582,
+     "correct_prob_per_char": 0.3585369238771383
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.5061825835306498,
+     "correct_prob_per_char": 0.36015289532938416
+    },
+    "Falcon": {
+     "primary_metric": 0.49960536700868197,
+     "correct_prob_per_char": 0.3586473314144785
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.5043409629044988,
+     "correct_prob_per_char": 0.3586106077285054
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.48960799789529075,
+     "correct_prob_per_char": 0.36476919743432396
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.5027624309392266,
+     "correct_prob_per_char": 0.3644636542048056
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.496711391739016,
+     "correct_prob_per_char": 0.3633197552691974
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.4896079978952907,
+     "correct_prob_per_char": 0.35856133510182603
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.4927650618258353,
+     "correct_prob_per_char": 0.34607498483000776
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.5046040515653775,
+     "correct_prob_per_char": 0.3541749192960471
+    }
+   }
+  },
+  "60M": {
+   "arc_challenge": {
+    "C4": {
+     "primary_metric": 0.2366325369738339,
+     "correct_prob_per_char": 0.40685451006389534
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.25341296928327645,
+     "correct_prob_per_char": 0.45158834510652346
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.2642207053469852,
+     "correct_prob_per_char": 0.48543111956055246
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.2645051194539249,
+     "correct_prob_per_char": 0.4828958920594732
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.26023890784982934,
+     "correct_prob_per_char": 0.493355807458802
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.29920364050056886,
+     "correct_prob_per_char": 0.5124101105239424
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.29692832764505117,
+     "correct_prob_per_char": 0.5083565003704567
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.30489192263936293,
+     "correct_prob_per_char": 0.5213270190444527
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.2426052332195677,
+     "correct_prob_per_char": 0.4339049779097335
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.24744027303754268,
+     "correct_prob_per_char": 0.4431726026530594
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.2505688282138794,
+     "correct_prob_per_char": 0.4481146446520241
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.24089874857792948,
+     "correct_prob_per_char": 0.41322004273820534
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.23862343572241182,
+     "correct_prob_per_char": 0.3954972365782337
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.24601820250284412,
+     "correct_prob_per_char": 0.41575585032699675
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.23549488054607506,
+     "correct_prob_per_char": 0.3824928868827289
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.24687144482366322,
+     "correct_prob_per_char": 0.38033641197253126
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.24857792946530147,
+     "correct_prob_per_char": 0.3795651052253297
+    },
+    "Falcon": {
+     "primary_metric": 0.24203640500568827,
+     "correct_prob_per_char": 0.4220255277738518
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.2244027303754266,
+     "correct_prob_per_char": 0.41874315478047747
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.2579635949943117,
+     "correct_prob_per_char": 0.45391487765675237
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.25199089874857794,
+     "correct_prob_per_char": 0.43434385963737016
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.2656427758816837,
+     "correct_prob_per_char": 0.46549202785691607
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.2605233219567691,
+     "correct_prob_per_char": 0.4631965669878349
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.2707622298065984,
+     "correct_prob_per_char": 0.4803672417754727
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.2647895335608646,
+     "correct_prob_per_char": 0.44320697218266325
+    }
+   },
+   "arc_easy": {
+    "C4": {
+     "primary_metric": 0.39323793490460157,
+     "correct_prob_per_char": 0.42576379802399034
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.4385521885521886,
+     "correct_prob_per_char": 0.4855517078414253
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.4819023569023569,
+     "correct_prob_per_char": 0.5331155240314072
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.4727833894500561,
+     "correct_prob_per_char": 0.5273233766810917
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.5067340067340068,
+     "correct_prob_per_char": 0.5460181913996008
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.5484006734006734,
+     "correct_prob_per_char": 0.569833739114218
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.5332491582491582,
+     "correct_prob_per_char": 0.5698470846777176
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.5782828282828283,
+     "correct_prob_per_char": 0.5896275798260291
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.41919191919191917,
+     "correct_prob_per_char": 0.45833784375694736
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.42803030303030304,
+     "correct_prob_per_char": 0.46778267392731426
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.4299943883277217,
+     "correct_prob_per_char": 0.472323890834003
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.3915544332210999,
+     "correct_prob_per_char": 0.4309351248187296
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.3942199775533109,
+     "correct_prob_per_char": 0.4218015973553797
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.39604377104377103,
+     "correct_prob_per_char": 0.4364741760718405
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.39225589225589225,
+     "correct_prob_per_char": 0.3970367847280069
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.39253647586980916,
+     "correct_prob_per_char": 0.3905896458434451
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.3968855218855219,
+     "correct_prob_per_char": 0.38579943100823333
+    },
+    "Falcon": {
+     "primary_metric": 0.3957631874298541,
+     "correct_prob_per_char": 0.44652488490936765
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.40558361391694725,
+     "correct_prob_per_char": 0.4447852977157772
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.46226150392817056,
+     "correct_prob_per_char": 0.48804702348902057
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.4207351290684624,
+     "correct_prob_per_char": 0.4622351155966813
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.45314253647586983,
+     "correct_prob_per_char": 0.4989073061094164
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.457070707070707,
+     "correct_prob_per_char": 0.4967856617787388
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.5004208754208754,
+     "correct_prob_per_char": 0.5339927351156515
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.44682940516273845,
+     "correct_prob_per_char": 0.47761139558222077
+    }
+   },
+   "boolq": {
+    "C4": {
+     "primary_metric": 0.48950050968399594,
+     "correct_prob_per_char": 0.6341758826661005
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.6007135575942916,
+     "correct_prob_per_char": 0.701083558606061
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.5156982670744138,
+     "correct_prob_per_char": 0.7460508869288079
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.4797145769622834,
+     "correct_prob_per_char": 0.6891643147485388
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.5479102956167177,
+     "correct_prob_per_char": 0.7602852436297524
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.5423037716615698,
+     "correct_prob_per_char": 0.718930321176734
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.543934760448522,
+     "correct_prob_per_char": 0.7457530988921285
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.4066258919469929,
+     "correct_prob_per_char": 0.6751270924362888
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.49041794087665647,
+     "correct_prob_per_char": 0.7192145065857943
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.5302752293577981,
+     "correct_prob_per_char": 0.748350514850836
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.5672782874617738,
+     "correct_prob_per_char": 0.7437181741793424
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.5306829765545361,
+     "correct_prob_per_char": 0.7260907997416646
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.5059123343527013,
+     "correct_prob_per_char": 0.6141741596226159
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.544954128440367,
+     "correct_prob_per_char": 0.7469435206670765
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.501223241590214,
+     "correct_prob_per_char": 0.6372114247361916
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.5344546381243629,
+     "correct_prob_per_char": 0.5709536831336258
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.4763506625891947,
+     "correct_prob_per_char": 0.5895618954871155
+    },
+    "Falcon": {
+     "primary_metric": 0.5591233435270132,
+     "correct_prob_per_char": 0.7673256210965919
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.5340468909276249,
+     "correct_prob_per_char": 0.6522531620769292
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.48144750254841995,
+     "correct_prob_per_char": 0.7347293734473247
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.4924566768603466,
+     "correct_prob_per_char": 0.647346475420976
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.609072375127421,
+     "correct_prob_per_char": 0.7046400889149772
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.5005096839959225,
+     "correct_prob_per_char": 0.7425467727630055
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.5024464831804282,
+     "correct_prob_per_char": 0.6769780949053664
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.49633027522935785,
+     "correct_prob_per_char": 0.6955930869575874
+    }
+   },
+   "csqa": {
+    "C4": {
+     "primary_metric": 0.31859131859131856,
+     "correct_prob_per_char": 0.3192494177556195
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.3914823914823915,
+     "correct_prob_per_char": 0.3867993401020014
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.3931203931203931,
+     "correct_prob_per_char": 0.38491155808844907
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.3748293748293748,
+     "correct_prob_per_char": 0.37842905892523815
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.3838383838383838,
+     "correct_prob_per_char": 0.3918660513013812
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.38847938847938845,
+     "correct_prob_per_char": 0.38393411547651973
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.37182637182637185,
+     "correct_prob_per_char": 0.3881442651439681
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.38684138684138686,
+     "correct_prob_per_char": 0.39730954746087943
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.37564837564837567,
+     "correct_prob_per_char": 0.3838727475966159
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.37046137046137045,
+     "correct_prob_per_char": 0.38684506375886024
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.3832923832923833,
+     "correct_prob_per_char": 0.3914088876409489
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.34261534261534266,
+     "correct_prob_per_char": 0.3658307169374209
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.3595413595413595,
+     "correct_prob_per_char": 0.34884636830033006
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.33606333606333605,
+     "correct_prob_per_char": 0.3647878934088143
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.34507234507234513,
+     "correct_prob_per_char": 0.32220178948604505
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.34043134043134043,
+     "correct_prob_per_char": 0.3133695124448672
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.361998361998362,
+     "correct_prob_per_char": 0.32954904434529103
+    },
+    "Falcon": {
+     "primary_metric": 0.3636363636363636,
+     "correct_prob_per_char": 0.3721632199395441
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.34234234234234234,
+     "correct_prob_per_char": 0.3666295910726915
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.3906633906633907,
+     "correct_prob_per_char": 0.37424669299445074
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.3636363636363636,
+     "correct_prob_per_char": 0.36635491363637523
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.3903903903903904,
+     "correct_prob_per_char": 0.3758080495994636
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.3688233688233688,
+     "correct_prob_per_char": 0.38143011627761597
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.3871143871143871,
+     "correct_prob_per_char": 0.3832499800337596
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.35681135681135684,
+     "correct_prob_per_char": 0.37053590959605076
+    }
+   },
+   "hellaswag": {
+    "C4": {
+     "primary_metric": 0.29947553608178984,
+     "correct_prob_per_char": 0.49034712137789516
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.28775808271924586,
+     "correct_prob_per_char": 0.5045830655617735
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.29751709486822014,
+     "correct_prob_per_char": 0.5010793243341665
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.2941977029808139,
+     "correct_prob_per_char": 0.5052161904212399
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.296919604328487,
+     "correct_prob_per_char": 0.5017156110427796
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.2981809732457014,
+     "correct_prob_per_char": 0.4910010183623115
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.29575781716789484,
+     "correct_prob_per_char": 0.4936409092758752
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.2955254597357764,
+     "correct_prob_per_char": 0.4855803579196199
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.2871937860983868,
+     "correct_prob_per_char": 0.5057803140876675
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.2878908583947421,
+     "correct_prob_per_char": 0.5070553008726985
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.2905795658235411,
+     "correct_prob_per_char": 0.5071308043930346
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.2903140144725486,
+     "correct_prob_per_char": 0.5022821958355704
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.2877248888003718,
+     "correct_prob_per_char": 0.5023510347424253
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.2851025692093208,
+     "correct_prob_per_char": 0.5013394803751522
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.2860319989377946,
+     "correct_prob_per_char": 0.5018158356732095
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.2914758016331408,
+     "correct_prob_per_char": 0.5077079808681605
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.2933678550089624,
+     "correct_prob_per_char": 0.507358408268496
+    },
+    "Falcon": {
+     "primary_metric": 0.29233884352386647,
+     "correct_prob_per_char": 0.4994049310638733
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.29091150501228175,
+     "correct_prob_per_char": 0.5072348036842067
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.2949279691960433,
+     "correct_prob_per_char": 0.5104353948441281
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.29369979419770303,
+     "correct_prob_per_char": 0.5111827987751517
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.29625572595100574,
+     "correct_prob_per_char": 0.5095328425500868
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.28921861514970454,
+     "correct_prob_per_char": 0.5056646210129544
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.3017991104029742,
+     "correct_prob_per_char": 0.5001410340401439
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.30322644891455885,
+     "correct_prob_per_char": 0.5061526343574086
+    }
+   },
+   "mmlu": {
+    "C4": {
+     "primary_metric": 0.2468006039424739,
+     "correct_prob_per_char": 0.37446364104190827
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.2494592575530007,
+     "correct_prob_per_char": 0.41352033883745803
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.25657422781037836,
+     "correct_prob_per_char": 0.44195784667749854
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.2573513692154191,
+     "correct_prob_per_char": 0.4400334017839593
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.2605735732369505,
+     "correct_prob_per_char": 0.44815470955337683
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.2642950975346361,
+     "correct_prob_per_char": 0.4581581588760176
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.26328366227290306,
+     "correct_prob_per_char": 0.45385190907489603
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.26559838064695357,
+     "correct_prob_per_char": 0.4577932830029437
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.24732415742946148,
+     "correct_prob_per_char": 0.4035580522685284
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.2483701987657687,
+     "correct_prob_per_char": 0.407769849520127
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.24590982418125093,
+     "correct_prob_per_char": 0.41082373900247043
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.24525856903421464,
+     "correct_prob_per_char": 0.39125070196046546
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.24460907398502627,
+     "correct_prob_per_char": 0.3741547395410582
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.24648865347592033,
+     "correct_prob_per_char": 0.39450337541442737
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.2438787375399608,
+     "correct_prob_per_char": 0.36604813042275536
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.2445801138761355,
+     "correct_prob_per_char": 0.36148692379677855
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.24498697941421735,
+     "correct_prob_per_char": 0.3436761463045192
+    },
+    "Falcon": {
+     "primary_metric": 0.24271691632936765,
+     "correct_prob_per_char": 0.39437249208990366
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.2413154168813716,
+     "correct_prob_per_char": 0.39156334833107637
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.2503934865895801,
+     "correct_prob_per_char": 0.41153912978165924
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.24747028047421252,
+     "correct_prob_per_char": 0.40098189533914397
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.2524865066000261,
+     "correct_prob_per_char": 0.42062375433422367
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.25310610504963044,
+     "correct_prob_per_char": 0.42431056612485074
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.2586629331730213,
+     "correct_prob_per_char": 0.43153113117441566
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.2533897265415217,
+     "correct_prob_per_char": 0.4109870718386692
+    }
+   },
+   "openbookqa": {
+    "C4": {
+     "primary_metric": 0.292,
+     "correct_prob_per_char": 0.32168351366607656
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.3113333333333333,
+     "correct_prob_per_char": 0.3580196492432724
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.3153333333333333,
+     "correct_prob_per_char": 0.3680166154200788
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.3153333333333333,
+     "correct_prob_per_char": 0.3700986419239151
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.3433333333333333,
+     "correct_prob_per_char": 0.3770712885130763
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.3433333333333333,
+     "correct_prob_per_char": 0.38113582220316133
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.328,
+     "correct_prob_per_char": 0.37588478678998505
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.3373333333333333,
+     "correct_prob_per_char": 0.38076439343223756
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.29000000000000004,
+     "correct_prob_per_char": 0.335192979896398
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.296,
+     "correct_prob_per_char": 0.34829778974893566
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.29,
+     "correct_prob_per_char": 0.3531427817660306
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.296,
+     "correct_prob_per_char": 0.3296626573389761
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.2733333333333334,
+     "correct_prob_per_char": 0.3112625225181733
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.2786666666666667,
+     "correct_prob_per_char": 0.329883906110108
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.2906666666666667,
+     "correct_prob_per_char": 0.2988420417101259
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.29333333333333333,
+     "correct_prob_per_char": 0.2912246977544325
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.2733333333333333,
+     "correct_prob_per_char": 0.292753262375029
+    },
+    "Falcon": {
+     "primary_metric": 0.318,
+     "correct_prob_per_char": 0.33399587501038547
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.272,
+     "correct_prob_per_char": 0.33159043296886787
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.308,
+     "correct_prob_per_char": 0.3485555703305085
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.3013333333333333,
+     "correct_prob_per_char": 0.33881262030340914
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.322,
+     "correct_prob_per_char": 0.35781193151208895
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.2993333333333333,
+     "correct_prob_per_char": 0.3478215873330339
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.31,
+     "correct_prob_per_char": 0.3574132571966328
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.27799999999999997,
+     "correct_prob_per_char": 0.3373682954614246
+    }
+   },
+   "piqa": {
+    "C4": {
+     "primary_metric": 0.6196953210010882,
+     "correct_prob_per_char": 0.4296378431893815
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.602829162132753,
+     "correct_prob_per_char": 0.43319213042791344
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.6071817192600654,
+     "correct_prob_per_char": 0.43091384687936757
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.6079071454479507,
+     "correct_prob_per_char": 0.436095295782021
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.597569822270584,
+     "correct_prob_per_char": 0.42925294770977174
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.5926731955023576,
+     "correct_prob_per_char": 0.41991255672648903
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.5961189698948132,
+     "correct_prob_per_char": 0.4224162758520338
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.5899528472977874,
+     "correct_prob_per_char": 0.4160742202969412
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.6135291984040624,
+     "correct_prob_per_char": 0.43088083289367773
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.6071817192600654,
+     "correct_prob_per_char": 0.4333526148905556
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.6048240841494378,
+     "correct_prob_per_char": 0.4351767090882306
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.6138919114980051,
+     "correct_prob_per_char": 0.43070437464428984
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.607000362713094,
+     "correct_prob_per_char": 0.4257453361501719
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.6060935799782372,
+     "correct_prob_per_char": 0.425699278428427
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.6015596663039536,
+     "correct_prob_per_char": 0.4215898237511968
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.6155241204207472,
+     "correct_prob_per_char": 0.42459187556169065
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.6153427638737758,
+     "correct_prob_per_char": 0.42182728580324835
+    },
+    "Falcon": {
+     "primary_metric": 0.6140732680449764,
+     "correct_prob_per_char": 0.4309173471475651
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.6129851287631484,
+     "correct_prob_per_char": 0.429857166063543
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.6059122234312658,
+     "correct_prob_per_char": 0.4296438656684558
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.6111715632934349,
+     "correct_prob_per_char": 0.4338189598676765
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.6066376496191513,
+     "correct_prob_per_char": 0.4350707966189007
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.6040986579615524,
+     "correct_prob_per_char": 0.43108997581346625
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.6100834240116068,
+     "correct_prob_per_char": 0.42495584696948513
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.6113529198404063,
+     "correct_prob_per_char": 0.4294626060879483
+    }
+   },
+   "socialiqa": {
+    "C4": {
+     "primary_metric": 0.4080518594336404,
+     "correct_prob_per_char": 0.37109602654690566
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.41845786421016723,
+     "correct_prob_per_char": 0.4121644126337262
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.4174343227567383,
+     "correct_prob_per_char": 0.41303564129374964
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.41487546912316614,
+     "correct_prob_per_char": 0.406151518827022
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.41334015694302284,
+     "correct_prob_per_char": 0.4055783864525166
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.40395769361992495,
+     "correct_prob_per_char": 0.3894140518899234
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.40822244967587856,
+     "correct_prob_per_char": 0.3959453589560939
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.40310474240873423,
+     "correct_prob_per_char": 0.3941600384779677
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.40736949846468784,
+     "correct_prob_per_char": 0.41408173224799655
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.414704878880928,
+     "correct_prob_per_char": 0.41778324492435076
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.4119754350051177,
+     "correct_prob_per_char": 0.41254842888446136
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.40225179119754345,
+     "correct_prob_per_char": 0.3822800456141815
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.401569430228591,
+     "correct_prob_per_char": 0.3946908105899478
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.41061071306721253,
+     "correct_prob_per_char": 0.391751488923884
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.40293415216649614,
+     "correct_prob_per_char": 0.3637050599036821
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.4114636642784033,
+     "correct_prob_per_char": 0.36545588864939443
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.4162401910610713,
+     "correct_prob_per_char": 0.37919792906235666
+    },
+    "Falcon": {
+     "primary_metric": 0.41334015694302284,
+     "correct_prob_per_char": 0.3992435905971863
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.414704878880928,
+     "correct_prob_per_char": 0.39590875709257817
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.40549300580006825,
+     "correct_prob_per_char": 0.40132912002490856
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.4092459911293074,
+     "correct_prob_per_char": 0.39767496213707254
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.42067553735926305,
+     "correct_prob_per_char": 0.4105177944832758
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.41231661548959403,
+     "correct_prob_per_char": 0.4081304867780657
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.41061071306721253,
+     "correct_prob_per_char": 0.3950817945735059
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.4094165813715456,
+     "correct_prob_per_char": 0.38821568603909157
+    }
+   },
+   "winogrande": {
+    "C4": {
+     "primary_metric": 0.5196001052354643,
+     "correct_prob_per_char": 0.445094961349471
+    },
+    "DCLM-Baseline": {
+     "primary_metric": 0.5185477505919495,
+     "correct_prob_per_char": 0.4430335000082392
+    },
+    "DCLM-Baseline (QC 10%)": {
+     "primary_metric": 0.508813470139437,
+     "correct_prob_per_char": 0.44554889553084753
+    },
+    "DCLM-Baseline (QC 20%)": {
+     "primary_metric": 0.5188108392528282,
+     "correct_prob_per_char": 0.4436282238961308
+    },
+    "DCLM-Baseline (QC 7%, FW2)": {
+     "primary_metric": 0.5030255196001052,
+     "correct_prob_per_char": 0.44142796353969604
+    },
+    "DCLM-Baseline (QC 7%, FW3)": {
+     "primary_metric": 0.5082872928176795,
+     "correct_prob_per_char": 0.4313595813637144
+    },
+    "DCLM-Baseline (QC FW 10%)": {
+     "primary_metric": 0.5127598000526178,
+     "correct_prob_per_char": 0.4346955294248005
+    },
+    "DCLM-Baseline (QC FW 3%)": {
+     "primary_metric": 0.49802683504340967,
+     "correct_prob_per_char": 0.4272584721172388
+    },
+    "DCLM-Baseline 25% / Dolma 75%": {
+     "primary_metric": 0.5117074454091028,
+     "correct_prob_per_char": 0.44281915626967655
+    },
+    "DCLM-Baseline 50% / Dolma 50%": {
+     "primary_metric": 0.5111812680873454,
+     "correct_prob_per_char": 0.4427411927341151
+    },
+    "DCLM-Baseline 75% / Dolma 25%": {
+     "primary_metric": 0.5053933175480138,
+     "correct_prob_per_char": 0.4427368009093837
+    },
+    "Dolma1.6++": {
+     "primary_metric": 0.5103920021047093,
+     "correct_prob_per_char": 0.4379026143395897
+    },
+    "Dolma1.7": {
+     "primary_metric": 0.5048671402262562,
+     "correct_prob_per_char": 0.44022550307674607
+    },
+    "Dolma1.7 (no Flan)": {
+     "primary_metric": 0.5135490660352539,
+     "correct_prob_per_char": 0.4387128549254656
+    },
+    "Dolma1.7 (no Reddit)": {
+     "primary_metric": 0.5146014206787687,
+     "correct_prob_per_char": 0.4383559489694549
+    },
+    "Dolma1.7 (no code)": {
+     "primary_metric": 0.5119705340699815,
+     "correct_prob_per_char": 0.44221060915834204
+    },
+    "Dolma1.7 (no math, code)": {
+     "primary_metric": 0.5098658247829518,
+     "correct_prob_per_char": 0.4444439109949913
+    },
+    "Falcon": {
+     "primary_metric": 0.5117074454091028,
+     "correct_prob_per_char": 0.4412214057082307
+    },
+    "Falcon+CC": {
+     "primary_metric": 0.5074980268350434,
+     "correct_prob_per_char": 0.44339521202947113
+    },
+    "Falcon+CC (QC 10%)": {
+     "primary_metric": 0.49881610102604573,
+     "correct_prob_per_char": 0.44961050462054725
+    },
+    "Falcon+CC (QC 20%)": {
+     "primary_metric": 0.5056564062088924,
+     "correct_prob_per_char": 0.4469062599468057
+    },
+    "Falcon+CC (QC Orig 10%)": {
+     "primary_metric": 0.5127598000526178,
+     "correct_prob_per_char": 0.4499318149123783
+    },
+    "Falcon+CC (QC Tulu 10%)": {
+     "primary_metric": 0.5067087608524072,
+     "correct_prob_per_char": 0.4460480047168332
+    },
+    "FineWeb-Edu": {
+     "primary_metric": 0.5253880557747961,
+     "correct_prob_per_char": 0.4399061566200895
+    },
+    "FineWeb-Pro": {
+     "primary_metric": 0.5169692186266772,
+     "correct_prob_per_char": 0.4421423290396176
+    }
+   }
+  }
+ }
+}

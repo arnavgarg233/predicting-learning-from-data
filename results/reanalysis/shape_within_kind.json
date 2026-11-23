@@ -1,0 +1,893 @@
+{
+ "design": "docs/analysis/shape_within_kind_2026-10-31.md",
+ "source": "results/referee_reanalysis/shape_vs_pooled.json",
+ "noise_fall": 0.01543178537953402,
+ "kinds": {
+  "wiki": {
+   "n": 71,
+   "sets": {
+    "forward18": 8,
+    "stage3": 16,
+    "test80": 47
+   },
+   "full_fit": {
+    "a": 0.12392594875978215,
+    "b": 0.2723974808911415,
+    "mean_fall": 0.19987194735641964
+   },
+   "spearman": 0.4115358819584171,
+   "pearson": 0.45551609562029355,
+   "loo": {
+    "n": 71,
+    "fall_mean": 0.19987194735641964,
+    "fall_sd": 0.05673527902478206,
+    "best_attainable_ratio": 0.2719962895184386,
+    "fall_rms": {
+     "own_cal": 0.05168375806421442,
+     "kind_mean": 0.05713909393593986,
+     "A3": 0.06577167705246025,
+     "pool_exp": 0.14722559546043054,
+     "fw_info": 0.056776179334905835
+    },
+    "fall_bias": {
+     "own_cal": 0.0005124485620753747,
+     "kind_mean": 3.1273888017610044e-18,
+     "A3": 0.05385361508428441,
+     "pool_exp": 0.13602244594477433,
+     "fw_info": 0.007069593997282489
+    },
+    "e25_rms_own_level": {
+     "own_cal": 0.5097853423538004,
+     "kind_mean": 0.5202330802035563,
+     "A3": 0.4676852767089188,
+     "pool_exp": 0.37835406293335666,
+     "fw_info": 0.5143511584526055
+    },
+    "e25_rms_observed_L23": {
+     "own_cal": 0.05168375806421442,
+     "kind_mean": 0.05713909393593985
+    },
+    "ratio": 0.9045253346536863,
+    "ci95": [
+     0.8013221137838398,
+     1.003034502854725
+    ],
+    "label": "tie",
+    "closer": "45/71",
+    "held_out": [
+     "wiki_als",
+     "wiki_fy",
+     "wiki_jv",
+     "wiki_km",
+     "wiki_lb",
+     "wiki_simple",
+     "wiki_tl",
+     "wiki_zh_yue",
+     "wiki_af",
+     "wiki_arz",
+     "wiki_br",
+     "wiki_bs",
+     "wiki_ce",
+     "wiki_ceb",
+     "wiki_de",
+     "wiki_gl",
+     "wiki_la",
+     "wiki_min",
+     "wiki_my",
+     "wiki_nn",
+     "wiki_sh",
+     "wiki_te",
+     "wiki_uz",
+     "wiki_zh",
+     "wiki_ar",
+     "wiki_az",
+     "wiki_be",
+     "wiki_bg",
+     "wiki_bn",
+     "wiki_ca",
+     "wiki_cs",
+     "wiki_cy",
+     "wiki_da",
+     "wiki_el",
+     "wiki_es",
+     "wiki_et",
+     "wiki_eu",
+     "wiki_fa",
+     "wiki_fi",
+     "wiki_fr",
+     "wiki_ga",
+     "wiki_he",
+     "wiki_hi",
+     "wiki_hr",
+     "wiki_hu",
+     "wiki_hy",
+     "wiki_id",
+     "wiki_is",
+     "wiki_it",
+     "wiki_ka",
+     "wiki_kk",
+     "wiki_ko",
+     "wiki_lt",
+     "wiki_lv",
+     "wiki_mk",
+     "wiki_ms",
+     "wiki_nl",
+     "wiki_no",
+     "wiki_pl",
+     "wiki_pt",
+     "wiki_ro",
+     "wiki_ru",
+     "wiki_sk",
+     "wiki_sl",
+     "wiki_sr",
+     "wiki_sv",
+     "wiki_sw",
+     "wiki_th",
+     "wiki_tr",
+     "wiki_uk",
+     "wiki_vi"
+    ]
+   },
+   "split2": {
+    "n_splits": 200,
+    "median": 0.9040750524339827,
+    "p2_5": 0.8682071537220166,
+    "p97_5": 1.0053204843218215,
+    "share_below_1": 0.965
+   },
+   "A": {
+    "calibration": {
+     "a": 0.1112578032334331,
+     "b": 0.3390910992278482,
+     "mean_fall": 0.20009483159893213,
+     "n": 47
+    },
+    "n": 24,
+    "fall_mean": 0.1994354657148327,
+    "fall_sd": 0.07024252358857623,
+    "best_attainable_ratio": 0.21969292376112384,
+    "fall_rms": {
+     "own_cal": 0.06732107833511346,
+     "kind_mean": 0.06876672920187239,
+     "A3": 0.0651294202450095,
+     "pool_exp": 0.15925051240411875,
+     "fw_info": 0.06917202796832664
+    },
+    "fall_bias": {
+     "own_cal": 0.017532332750960933,
+     "kind_mean": 0.0006593658840994288,
+     "A3": 0.053629819627818875,
+     "pool_exp": 0.14779113207343356,
+     "fw_info": 0.007506075638869431
+    },
+    "e25_rms_own_level": {
+     "own_cal": 0.5690407357627035,
+     "kind_mean": 0.5957871980250817,
+     "A3": 0.5554944934086691,
+     "pool_exp": 0.45493933490892163,
+     "fw_info": 0.5899796074440212
+    },
+    "e25_rms_observed_L23": {
+     "own_cal": 0.06732107833511346,
+     "kind_mean": 0.0687667292018724
+    },
+    "ratio": 0.9789774665228723,
+    "ci95": [
+     0.767969541058327,
+     1.1529190226712274
+    ],
+    "label": "tie",
+    "closer": "13/24",
+    "held_out": [
+     "wiki_als",
+     "wiki_fy",
+     "wiki_jv",
+     "wiki_km",
+     "wiki_lb",
+     "wiki_simple",
+     "wiki_tl",
+     "wiki_zh_yue",
+     "wiki_af",
+     "wiki_arz",
+     "wiki_br",
+     "wiki_bs",
+     "wiki_ce",
+     "wiki_ceb",
+     "wiki_de",
+     "wiki_gl",
+     "wiki_la",
+     "wiki_min",
+     "wiki_my",
+     "wiki_nn",
+     "wiki_sh",
+     "wiki_te",
+     "wiki_uz",
+     "wiki_zh"
+    ]
+   },
+   "sensitivity_drop3": {
+    "dropped": [
+     "wiki_ce",
+     "wiki_min",
+     "wiki_uk"
+    ],
+    "loo": {
+     "n": 68,
+     "fall_mean": 0.20534144817443056,
+     "fall_sd": 0.051375606442525014,
+     "best_attainable_ratio": 0.3003718388569853,
+     "fall_rms": {
+      "own_cal": 0.043924612333303796,
+      "kind_mean": 0.05175758647094621,
+      "A3": 0.06542298396672078,
+      "pool_exp": 0.14700552940231704,
+      "fw_info": 0.05102154203027347
+     },
+     "fall_bias": {
+      "own_cal": 0.0006122725014451308,
+      "kind_mean": 1.1020596200323244e-17,
+      "A3": 0.05393725518356161,
+      "pool_exp": 0.1353136816436057,
+      "fw_info": 0.0016000931792715764
+     },
+     "e25_rms_own_level": {
+      "own_cal": 0.4982346760987288,
+      "kind_mean": 0.5099447420924371,
+      "A3": 0.4525052808339286,
+      "pool_exp": 0.3639568615012109,
+      "fw_info": 0.5084922054257297
+     },
+     "e25_rms_observed_L23": {
+      "own_cal": 0.04392461233330379,
+      "kind_mean": 0.05175758647094621
+     },
+     "ratio": 0.8486603670741215,
+     "ci95": [
+      0.7388873813098299,
+      0.985486332939876
+     ],
+     "label": "REAL positive",
+     "closer": "39/68",
+     "held_out": [
+      "wiki_als",
+      "wiki_fy",
+      "wiki_jv",
+      "wiki_km",
+      "wiki_lb",
+      "wiki_simple",
+      "wiki_tl",
+      "wiki_zh_yue",
+      "wiki_af",
+      "wiki_arz",
+      "wiki_br",
+      "wiki_bs",
+      "wiki_ceb",
+      "wiki_de",
+      "wiki_gl",
+      "wiki_la",
+      "wiki_my",
+      "wiki_nn",
+      "wiki_sh",
+      "wiki_te",
+      "wiki_uz",
+      "wiki_zh",
+      "wiki_ar",
+      "wiki_az",
+      "wiki_be",
+      "wiki_bg",
+      "wiki_bn",
+      "wiki_ca",
+      "wiki_cs",
+      "wiki_cy",
+      "wiki_da",
+      "wiki_el",
+      "wiki_es",
+      "wiki_et",
+      "wiki_eu",
+      "wiki_fa",
+      "wiki_fi",
+      "wiki_fr",
+      "wiki_ga",
+      "wiki_he",
+      "wiki_hi",
+      "wiki_hr",
+      "wiki_hu",
+      "wiki_hy",
+      "wiki_id",
+      "wiki_is",
+      "wiki_it",
+      "wiki_ka",
+      "wiki_kk",
+      "wiki_ko",
+      "wiki_lt",
+      "wiki_lv",
+      "wiki_mk",
+      "wiki_ms",
+      "wiki_nl",
+      "wiki_no",
+      "wiki_pl",
+      "wiki_pt",
+      "wiki_ro",
+      "wiki_ru",
+      "wiki_sk",
+      "wiki_sl",
+      "wiki_sr",
+      "wiki_sv",
+      "wiki_sw",
+      "wiki_th",
+      "wiki_tr",
+      "wiki_vi"
+     ]
+    },
+    "A": {
+     "calibration": {
+      "a": 0.11523814828850122,
+      "b": 0.33248360213104255,
+      "mean_fall": 0.20248845133224294,
+      "n": 46
+     },
+     "n": 22,
+     "fall_mean": 0.21130680520809558,
+     "fall_sd": 0.060253352042086886,
+     "best_attainable_ratio": 0.256114968819576,
+     "fall_rms": {
+      "own_cal": 0.05129673829577696,
+      "kind_mean": 0.05952485695840765,
+      "A3": 0.06784955983159706,
+      "pool_exp": 0.16007365423024927,
+      "fw_info": 0.05902965999696763
+     },
+     "fall_bias": {
+      "own_cal": 0.0065544883030556,
+      "kind_mean": -0.008818353875852647,
+      "A3": 0.0570905868797321,
+      "pool_exp": 0.14760081229362612,
+      "fw_info": -0.004365263854393458
+     },
+     "e25_rms_own_level": {
+      "own_cal": 0.5484644102095946,
+      "kind_mean": 0.5744354429834373,
+      "A3": 0.5139557706700406,
+      "pool_exp": 0.4165248453260777,
+      "fw_info": 0.570723566058361
+     },
+     "e25_rms_observed_L23": {
+      "own_cal": 0.05129673829577699,
+      "kind_mean": 0.05952485695840767
+     },
+     "ratio": 0.8617700388867796,
+     "ci95": [
+      0.6866244738979045,
+      1.0859444967045877
+     ],
+     "label": "tie",
+     "closer": "13/22",
+     "held_out": [
+      "wiki_als",
+      "wiki_fy",
+      "wiki_jv",
+      "wiki_km",
+      "wiki_lb",
+      "wiki_simple",
+      "wiki_tl",
+      "wiki_zh_yue",
+      "wiki_af",
+      "wiki_arz",
+      "wiki_br",
+      "wiki_bs",
+      "wiki_ceb",
+      "wiki_de",
+      "wiki_gl",
+      "wiki_la",
+      "wiki_my",
+      "wiki_nn",
+      "wiki_sh",
+      "wiki_te",
+      "wiki_uz",
+      "wiki_zh"
+     ]
+    }
+   },
+   "primary": "A",
+   "verdict": "tie"
+  },
+  "web": {
+   "n": 29,
+   "sets": {
+    "external45": 29
+   },
+   "full_fit": {
+    "a": 0.06509467053233585,
+    "b": 0.35563964665142905,
+    "mean_fall": 0.16418533942297106
+   },
+   "spearman": 0.8019704433497535,
+   "pearson": 0.7681635350457058,
+   "loo": {
+    "n": 29,
+    "fall_mean": 0.16418533942297106,
+    "fall_sd": 0.04806094400181175,
+    "best_attainable_ratio": 0.32108785418264546,
+    "fall_rms": {
+     "own_cal": 0.033322403588699916,
+     "kind_mean": 0.04891164622197183,
+     "A3": 0.04764303840436033,
+     "pool_exp": 0.08179613429650526,
+     "fw_info": 0.06370476428249791
+    },
+    "fall_bias": {
+     "own_cal": 0.0006746941101089728,
+     "kind_mean": 3.828355257328126e-18,
+     "A3": 0.037508958480368546,
+     "pool_exp": 0.07195582214069282,
+     "fw_info": 0.04275620193073104
+    },
+    "e25_rms_own_level": {
+     "own_cal": 0.17641005265907098,
+     "kind_mean": 0.1836763039639627,
+     "A3": 0.17511226247644776,
+     "pool_exp": 0.1844408251539251,
+     "fw_info": 0.20027809622282455
+    },
+    "e25_rms_observed_L23": {
+     "own_cal": 0.03332240358869992,
+     "kind_mean": 0.04891164622197183
+    },
+    "ratio": 0.6812774903849178,
+    "ci95": [
+     0.5007093694712771,
+     0.9179989584067603
+    ],
+    "label": "REAL positive",
+    "closer": "20/29",
+    "held_out": [
+     "fw2_asm_beng",
+     "fw2_bod_tibt",
+     "fw2_cos_latn",
+     "fw2_div_thaa",
+     "fw2_fao_latn",
+     "fw2_gla_latn",
+     "fw2_guj_gujr",
+     "fw2_ibo_latn",
+     "fw2_khk_cyrl",
+     "fw2_kin_latn",
+     "fw2_kir_cyrl",
+     "fw2_mri_latn",
+     "fw2_mww_latn",
+     "fw2_nap_latn",
+     "fw2_nrm_latn",
+     "fw2_nya_latn",
+     "fw2_oss_cyrl",
+     "fw2_pan_guru",
+     "fw2_pbt_arab",
+     "fw2_rue_cyrl",
+     "fw2_san_deva",
+     "fw2_sin_sinh",
+     "fw2_sme_latn",
+     "fw2_sna_latn",
+     "fw2_sot_latn",
+     "fw2_sun_latn",
+     "fw2_tir_ethi",
+     "fw2_tuk_latn",
+     "fw2_uig_arab"
+    ]
+   },
+   "split2": {
+    "n_splits": 200,
+    "median": 0.6828196723397294,
+    "p2_5": 0.5862685095915763,
+    "p97_5": 0.8601684162667149,
+    "share_below_1": 1.0
+   },
+   "sensitivity_drop3": {
+    "dropped": [
+     "fw2_bod_tibt",
+     "fw2_guj_gujr",
+     "fw2_nrm_latn"
+    ],
+    "loo": {
+     "n": 26,
+     "fall_mean": 0.1661014065730814,
+     "fall_sd": 0.04058926225121549,
+     "best_attainable_ratio": 0.3801937882985764,
+     "fall_rms": {
+      "own_cal": 0.031995376949147974,
+      "kind_mean": 0.04139308805225656,
+      "A3": 0.046976125704763165,
+      "pool_exp": 0.07823421479372897,
+      "fw_info": 0.057026659448363284
+     },
+     "fall_bias": {
+      "own_cal": 0.0009919463561600431,
+      "kind_mean": 1.0675221390626506e-17,
+      "A3": 0.03699685509100774,
+      "pool_exp": 0.06993254999756363,
+      "fw_info": 0.040840134780620735
+     },
+     "e25_rms_own_level": {
+      "own_cal": 0.13510050388057473,
+      "kind_mean": 0.133953434387171,
+      "A3": 0.15555995053304403,
+      "pool_exp": 0.17450050101372133,
+      "fw_info": 0.1613297732465297
+     },
+     "e25_rms_observed_L23": {
+      "own_cal": 0.031995376949147995,
+      "kind_mean": 0.04139308805225656
+     },
+     "ratio": 0.7729642424540909,
+     "ci95": [
+      0.5834520091026274,
+      0.9940726091051393
+     ],
+     "label": "REAL positive",
+     "closer": "18/26",
+     "held_out": [
+      "fw2_asm_beng",
+      "fw2_cos_latn",
+      "fw2_div_thaa",
+      "fw2_fao_latn",
+      "fw2_gla_latn",
+      "fw2_ibo_latn",
+      "fw2_khk_cyrl",
+      "fw2_kin_latn",
+      "fw2_kir_cyrl",
+      "fw2_mri_latn",
+      "fw2_mww_latn",
+      "fw2_nap_latn",
+      "fw2_nya_latn",
+      "fw2_oss_cyrl",
+      "fw2_pan_guru",
+      "fw2_pbt_arab",
+      "fw2_rue_cyrl",
+      "fw2_san_deva",
+      "fw2_sin_sinh",
+      "fw2_sme_latn",
+      "fw2_sna_latn",
+      "fw2_sot_latn",
+      "fw2_sun_latn",
+      "fw2_tir_ethi",
+      "fw2_tuk_latn",
+      "fw2_uig_arab"
+     ]
+    }
+   },
+   "primary": "loo",
+   "verdict": "REAL positive"
+  },
+  "english": {
+   "n": 29,
+   "sets": {
+    "external45": 5,
+    "forward18": 5,
+    "test80": 19
+   },
+   "full_fit": {
+    "a": -0.7905503858071077,
+    "b": 4.388451877103845,
+    "mean_fall": 0.29353599518174334
+   },
+   "spearman": 0.33990147783251223,
+   "pearson": 0.6262437996816556,
+   "loo": {
+    "n": 29,
+    "fall_mean": 0.29353599518174334,
+    "fall_sd": 0.5690006095019643,
+    "best_attainable_ratio": 0.0271208591376399,
+    "fall_rms": {
+     "own_cal": 0.6844037949613897,
+     "kind_mean": 0.5790721986442313,
+     "A3": 0.5315118520134281,
+     "pool_exp": 0.4662033635029463,
+     "fw_info": 0.5657703568727154
+    },
+    "fall_bias": {
+     "own_cal": -0.02166021315766711,
+     "kind_mean": 1.914177628664063e-18,
+     "A3": -0.05664111847451119,
+     "pool_exp": 0.0025763382518121897,
+     "fw_info": -0.08659445382804117
+    },
+    "e25_rms_own_level": {
+     "own_cal": 0.6135544540159954,
+     "kind_mean": 0.5693773703590433,
+     "A3": 0.5286589315859561,
+     "pool_exp": 0.4551041263778822,
+     "fw_info": 0.5614438325730149
+    },
+    "e25_rms_observed_L23": {
+     "own_cal": 0.6844037949613896,
+     "kind_mean": 0.5790721986442313
+    },
+    "ratio": 1.181897173726815,
+    "ci95": [
+     1.0029668454224925,
+     4.407997803017876
+    ],
+    "label": "REAL negative",
+    "closer": "15/29",
+    "held_out": [
+     "dolma_reddit",
+     "pile_dm_math",
+     "pile_nih_exporter",
+     "pile_pmc",
+     "pile_ubuntu_irc",
+     "lyrics",
+     "med_textbooks",
+     "philosophy",
+     "writingprompts",
+     "yahoo_answers",
+     "amazon_polarity",
+     "billsum",
+     "booksum",
+     "caselaw",
+     "cnn_dailymail",
+     "dbpedia",
+     "ecthr",
+     "edgar",
+     "govreport",
+     "hacker_news",
+     "hh_dialogue",
+     "multi_news",
+     "patents",
+     "poetry",
+     "recipes",
+     "sci_abstracts",
+     "scotus",
+     "xsum",
+     "yelp"
+    ]
+   },
+   "split2": {
+    "n_splits": 200,
+    "median": 1.2110151215811475,
+    "p2_5": 0.8955378648235155,
+    "p97_5": 1.3927657912610187,
+    "share_below_1": 0.41
+   },
+   "sensitivity_drop3": {
+    "dropped": [
+     "pile_dm_math",
+     "pile_pmc",
+     "pile_ubuntu_irc"
+    ],
+    "loo": {
+     "n": 26,
+     "fall_mean": 0.1871944714983645,
+     "fall_sd": 0.044466483583917006,
+     "best_attainable_ratio": 0.3470430790959938,
+     "fall_rms": {
+      "own_cal": 0.04500656680144681,
+      "kind_mean": 0.04534709349904921,
+      "A3": 0.05534373047275875,
+      "pool_exp": 0.11438773755744779,
+      "fw_info": 0.04786612742552448
+     },
+     "fall_bias": {
+      "own_cal": -7.377639868934198e-06,
+      "kind_mean": -1.0675221390626506e-17,
+      "A3": 0.040921998107290476,
+      "pool_exp": 0.08898808367388722,
+      "fw_info": 0.019747069855337626
+     },
+     "e25_rms_own_level": {
+      "own_cal": 0.08566517245801376,
+      "kind_mean": 0.09168524822548246,
+      "A3": 0.10705655844813848,
+      "pool_exp": 0.11667179126416802,
+      "fw_info": 0.0913970358213186
+     },
+     "e25_rms_observed_L23": {
+      "own_cal": 0.04500656680144683,
+      "kind_mean": 0.045347093499049224
+     },
+     "ratio": 0.9924906610032341,
+     "ci95": [
+      0.8547264748770332,
+      1.2277589393535893
+     ],
+     "label": "tie",
+     "closer": "14/26",
+     "held_out": [
+      "dolma_reddit",
+      "pile_nih_exporter",
+      "lyrics",
+      "med_textbooks",
+      "philosophy",
+      "writingprompts",
+      "yahoo_answers",
+      "amazon_polarity",
+      "billsum",
+      "booksum",
+      "caselaw",
+      "cnn_dailymail",
+      "dbpedia",
+      "ecthr",
+      "edgar",
+      "govreport",
+      "hacker_news",
+      "hh_dialogue",
+      "multi_news",
+      "patents",
+      "poetry",
+      "recipes",
+      "sci_abstracts",
+      "scotus",
+      "xsum",
+      "yelp"
+     ]
+    }
+   },
+   "primary": "loo",
+   "verdict": "REAL negative"
+  },
+  "code": {
+   "n": 30,
+   "sets": {
+    "external45": 11,
+    "forward18": 5,
+    "test80": 14
+   },
+   "full_fit": {
+    "a": 0.7462562958996638,
+    "b": -0.857026963649291,
+    "mean_fall": 0.3179308644833136
+   },
+   "spearman": -0.17819799777530587,
+   "pearson": -0.3490219976303895,
+   "loo": {
+    "n": 30,
+    "fall_mean": 0.3179308644833136,
+    "fall_sd": 0.2757852315224982,
+    "best_attainable_ratio": 0.05595580769260705,
+    "fall_rms": {
+     "own_cal": 0.28807591526431103,
+     "kind_mean": 0.28049985049953224,
+     "A3": 0.2819345938227659,
+     "pool_exp": 0.26389343784725666,
+     "fw_info": 0.2929861327386616
+    },
+    "fall_bias": {
+     "own_cal": -0.0050282523861915765,
+     "kind_mean": 3.14563190310461e-17,
+     "A3": -0.0005443524191371581,
+     "pool_exp": 0.005582264184696268,
+     "fw_info": -0.11098932312961146
+    },
+    "e25_rms_own_level": {
+     "own_cal": 1.042443470077934,
+     "kind_mean": 1.0560147285093777,
+     "A3": 0.9757387550136498,
+     "pool_exp": 1.074061597373906,
+     "fw_info": 1.0526671502588687
+    },
+    "e25_rms_observed_L23": {
+     "own_cal": 0.288075915264311,
+     "kind_mean": 0.28049985049953224
+    },
+    "ratio": 1.0270091579417489,
+    "ci95": [
+     0.9374793490821148,
+     1.6395745310088488
+    ],
+    "label": "tie",
+    "closer": "10/30",
+    "held_out": [
+     "code_coffeescript",
+     "code_cython",
+     "code_dm",
+     "code_gas",
+     "code_java_server_pages",
+     "code_makefile",
+     "code_mathematica",
+     "code_nesc",
+     "code_nix",
+     "code_objective_cpp",
+     "code_xslt",
+     "code_clojure",
+     "code_dart",
+     "code_groovy",
+     "code_kotlin",
+     "code_ocaml",
+     "code_c",
+     "code_cpp",
+     "code_csharp",
+     "code_css",
+     "code_go",
+     "code_html",
+     "code_javascript",
+     "code_markdown",
+     "code_perl",
+     "code_php",
+     "code_ruby",
+     "code_scala",
+     "code_sql",
+     "code_typescript"
+    ]
+   },
+   "split2": {
+    "n_splits": 200,
+    "median": 1.037871052363164,
+    "p2_5": 0.9130821957737254,
+    "p97_5": 1.3708728596680817,
+    "share_below_1": 0.355
+   },
+   "sensitivity_drop3": {
+    "dropped": [
+     "code_gas",
+     "code_nesc",
+     "code_php"
+    ],
+    "loo": {
+     "n": 27,
+     "fall_mean": 0.2739075563058206,
+     "fall_sd": 0.08125846090810036,
+     "best_attainable_ratio": 0.18990989008500506,
+     "fall_rms": {
+      "own_cal": 0.08761070988404789,
+      "kind_mean": 0.08280638020456062,
+      "A3": 0.09630126152945362,
+      "pool_exp": 0.14401951448008465,
+      "fw_info": 0.10412891715619807
+     },
+     "fall_bias": {
+      "own_cal": -0.0014064735590598907,
+      "kind_mean": -4.11193712824132e-18,
+      "A3": 0.06095720878157266,
+      "pool_exp": 0.043956104139572995,
+      "fw_info": -0.06696601495211846
+     },
+     "e25_rms_own_level": {
+      "own_cal": 0.5064066610133381,
+      "kind_mean": 0.5036071087495216,
+      "A3": 0.419490329583135,
+      "pool_exp": 0.5563275541609815,
+      "fw_info": 0.5251796400776757
+     },
+     "e25_rms_observed_L23": {
+      "own_cal": 0.08761070988404783,
+      "kind_mean": 0.08280638020456056
+     },
+     "ratio": 1.0580188346310864,
+     "ci95": [
+      0.9879192920755733,
+      1.1509339903469602
+     ],
+     "label": "tie",
+     "closer": "11/27",
+     "held_out": [
+      "code_coffeescript",
+      "code_cython",
+      "code_dm",
+      "code_java_server_pages",
+      "code_makefile",
+      "code_mathematica",
+      "code_nix",
+      "code_objective_cpp",
+      "code_xslt",
+      "code_clojure",
+      "code_dart",
+      "code_groovy",
+      "code_kotlin",
+      "code_ocaml",
+      "code_c",
+      "code_cpp",
+      "code_csharp",
+      "code_css",
+      "code_go",
+      "code_html",
+      "code_javascript",
+      "code_markdown",
+      "code_perl",
+      "code_ruby",
+      "code_scala",
+      "code_sql",
+      "code_typescript"
+     ]
+    }
+   },
+   "primary": "loo",
+   "verdict": "tie"
+  }
+ }
+}

@@ -1,0 +1,396 @@
+{
+ "created_utc": "2026-11-02T01:21:31+00:00",
+ "locked_sha256": "d154a5bfdfdfca1222eab946c9cd487bbbc7edcac73fcc3c24a173c0110dc8a3",
+ "chosen": {
+  "shape": "gamma",
+  "A2_form": "neff",
+  "A4_form": "off",
+  "level": "both",
+  "level_mode": "anch",
+  "A3_floor": "zero"
+ },
+ "code_sha256": {
+  "scripts/curve_forecast/core.py": "8b17c3f080d9700837d5717e20af54097db26ed35c7ae5fae090145b8dc04071",
+  "scripts/curve_forecast/forecast.py": "d9387933cfeb27c0adc063ba69fe92831a1655cf6ac5cb2afa85aee16ec59708",
+  "scripts/curve_forecast/pod_main.py": "73cf88e4aa17d2ba7102a6fe3a99378600def7af2d58c194723b4da3aba511ad",
+  "scripts/forecast_neff.py": "0145e988a405fcbe9e8082f07e732955c666279189c60f79e879b53c713545fe",
+  "scripts/forecast_input_variants.py": "3db74abad8de72cd52ee3955883a048e3055c8f151e1aa747a69055ddb423266",
+  "scripts/forecast_multicorpus.py": "28968f77299d3459691cf47e55d23b866547f756eacafe782010b64b10677a50",
+  "scripts/ngram_curve_ts.py": "93487934a1f6133021aa7e2250c7af4cf6ddd27666c5011936eb53ee06739266"
+ },
+ "corpora": {
+  "cp_uk_hansard": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.9956289510462883,
+    "gamma": 0.4746292019556906,
+    "A": 2.160216275425782,
+    "ngram23": 1.8110837892591105
+   },
+   "shape": {
+    "nu": 0.6781365774350424,
+    "n0": 0.00039845010428396385
+   },
+   "S": {
+    "19": 2.0999674837708033,
+    "20": 2.052824298572258,
+    "23": 1.5737650430779921,
+    "25": 1.3743246160166707
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.5478037419499913,
+    "25": 1.3483633148886698
+   },
+   "refcurve_sha256": "1bd1ba43569842526034dfb159c4b00392abb6bb7c1bcf036d430f4868876358",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/cp_uk_hansard/tok/tok_bytes_train.npy": "4e2199355cb34ca4039c3927e15793ed9f2693bb52c267d29e4539b50caf0569",
+    "data/cf/cp_uk_hansard/tok/tok_bytes_ref.npy": "45a6e340f051b1dcb195fd333eb5692a1e6b83728d8336cf7e5292bb46239676"
+   }
+  },
+  "cp_youtube": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 1.0402372378487497,
+    "gamma": 0.4942360267558507,
+    "A": 1.9481468283176508,
+    "ngram23": 2.0259943324156704
+   },
+   "shape": {
+    "nu": 0.6692383144924627,
+    "n0": 0.00042336538339238846
+   },
+   "S": {
+    "19": 2.020666353871382,
+    "20": 1.996875650765004,
+    "23": 1.5335393373112236,
+    "25": 1.3596966631581506
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.6967686712171623,
+    "25": 1.5229259970640894
+   },
+   "refcurve_sha256": "438fa443a9219888181328cc9cd9f7c312d916a347a09d8a8d39eeea96b5a5e3",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/cp_youtube/tok/tok_bytes_train.npy": "b422b02aa70a49da826ad04c55d3defa4b6660814b536a9bba906acfeaa5b04d",
+    "data/cf/cp_youtube/tok/tok_bytes_ref.npy": "f0711a08dfb1488cbdf27f954e676d20aeae5713d7d7dd7066c3c4b0ec8b0300"
+   }
+  },
+  "cp_libretexts": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.7185691386812827,
+    "gamma": 0.5634309601995037,
+    "A": 3.405908165258418,
+    "ngram23": 2.068193417418396
+   },
+   "shape": {
+    "nu": 0.6396189057637656,
+    "n0": 0.0009280867577622192
+   },
+   "S": {
+    "19": 2.1429258105144706,
+    "20": 1.8782977689718916,
+    "23": 1.3212164364377845,
+    "25": 1.0739608158042135
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.5106034971157534,
+    "25": 1.2633478764821826
+   },
+   "refcurve_sha256": "455969bdc3e2686280b63222267ce3315ab65008eeeb55e122f7811d2cb116b4",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/cp_libretexts/tok/tok_bytes_train.npy": "9aa49ce1e15ead77f03cb3bb1def7eb90b5e054c015d387d2babab810aee84a4",
+    "data/cf/cp_libretexts/tok/tok_bytes_ref.npy": "3a61931e527080610e697610554a9d40992b38505e13252f857b7749a29c6ef0"
+   }
+  },
+  "pol_founding_docs": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 1.1780741582812921,
+    "gamma": 0.47355257661276257,
+    "A": 1.9639307188487185,
+    "ngram23": 1.843351183026769
+   },
+   "shape": {
+    "nu": 0.6786320460303411,
+    "n0": 0.00037080453057918207
+   },
+   "S": {
+    "19": 2.1597817859609676,
+    "20": 2.14925029216041,
+    "23": 1.7131206682439328,
+    "25": 1.5240358883751315
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.6847449439372728,
+    "25": 1.495660164068472
+   },
+   "refcurve_sha256": "08d75a3179041f8154e719951cf68f35f73af0c6e2476e87f6ddeef0f0c97297",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_founding_docs/tok/tok_bytes_train.npy": "55464eb8faaab775cc7287a052e4e7d28d78bbcaba5ffc9026397841920acd39",
+    "data/cf/pol_founding_docs/tok/tok_bytes_ref.npy": "b498bd6862580511fd80e3694ccde9bb4e667cd96636b27e8e2ae51ccebd2a89"
+   }
+  },
+  "pol_scotus_oral": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.8943289162249849,
+    "gamma": 0.3368239678136687,
+    "A": 1.5342401708446192,
+    "ngram23": 1.7720347669877174
+   },
+   "shape": {
+    "nu": 0.7480416450308465,
+    "n0": 0.00010649835856059858
+   },
+   "S": {
+    "19": 1.938530980856354,
+    "20": 1.938530980856354,
+    "23": 1.5300045143304397,
+    "25": 1.357878544236144
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.459980516094453,
+    "25": 1.2878545460001576
+   },
+   "refcurve_sha256": "03ac10f16d2cbc2b6ee62c5520452ed6acf1cd1bf882eba85b968784a1be5d09",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_scotus_oral/tok/tok_bytes_train.npy": "651e6f20bfa8855db3544241b4d1f7e6883d6b4b6b64b2e7d855fcf751d49415",
+    "data/cf/pol_scotus_oral/tok/tok_bytes_ref.npy": "f52421847bcbd2dc9fa52c74072d88386d123856deafb53888533b4495c6ab1d"
+   }
+  },
+  "pol_undebates": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.7885649831619045,
+    "gamma": 0.5208876700844544,
+    "A": 2.2440439151309417,
+    "ngram23": 1.4931378643763822
+   },
+   "shape": {
+    "nu": 0.6575107548504686,
+    "n0": 0.0005510652679121646
+   },
+   "S": {
+    "19": 1.7859828143067755,
+    "20": 1.7801461875253717,
+    "23": 1.2873030992210768,
+    "25": 1.1053076456343343
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.2354529070606222,
+    "25": 1.05345745347388
+   },
+   "refcurve_sha256": "cd671f722f14e9a38893a9f00f0a0bf4bb444bffac576c2063150644019d9bf5",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_undebates/tok/tok_bytes_train.npy": "de5c89fa8c8fe6e805b1afe506a3b6bdd5b37edfbf02b9a2107a5dba31eb01a4",
+    "data/cf/pol_undebates/tok/tok_bytes_ref.npy": "aa25fddc280b216c6aea9b37ce9890cfa475aac48dff8d4d19440883a5e092df"
+   }
+  },
+  "pol_oig": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.7961786776376182,
+    "gamma": 0.3250503973805373,
+    "A": 2.202162725338778,
+    "ngram23": 1.5273258638802452
+   },
+   "shape": {
+    "nu": 0.7546882759907682,
+    "n0": 0.0001255554593280244
+   },
+   "S": {
+    "19": 2.216179807483872,
+    "20": 2.213372783279868,
+    "23": 1.6857455893624085,
+    "25": 1.4344833890913185
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.259487578823471,
+    "25": 1.008225378552381
+   },
+   "refcurve_sha256": "920ceaf7ea9a1a12084f24ad5d9f08b7fb7d32ac62379a892b117cd20f096a2d",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_oig/tok/tok_bytes_train.npy": "1474595c78ae43c7c8dbfde171e276e71d349f0a387c549e0d938b2f9600c1ae",
+    "data/cf/pol_oig/tok/tok_bytes_ref.npy": "75fbd02c4bbea1ba566a72b49af83f9b96a40fec60b8d2788e0754ed08592969"
+   }
+  },
+  "pol_state_code": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.6740692305326356,
+    "gamma": 0.3171473409248837,
+    "A": 2.2800665944641048,
+    "ngram23": 2.937017293733503
+   },
+   "shape": {
+    "nu": 0.7592165044328397,
+    "n0": 0.00011988783243917977
+   },
+   "S": {
+    "19": 2.2474060341263336,
+    "20": 2.140715850437349,
+    "23": 1.6091232832480156,
+    "25": 1.308948354923699
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.9662483022654862,
+    "25": 1.6660733739411695
+   },
+   "refcurve_sha256": "b5e2bdef320cde480b75752b3a44d26e469dcc97d53d13ebc274a1cfee224ba4",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_state_code/tok/tok_bytes_train.npy": "d21b126bdbb03c28a7f35bae5deaaf7fb4742a1517e6e906b72bed293a4e0881",
+    "data/cf/pol_state_code/tok/tok_bytes_ref.npy": "a96e2b7ccdd984917398fe02bd2feb0917b4d2a63a48f37ac3e1791f17100aaf"
+   }
+  },
+  "pol_cfr": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.5047932420601113,
+    "gamma": 0.323762858522953,
+    "A": 2.0906170851581622,
+    "ngram23": 1.9384641509165261
+   },
+   "shape": {
+    "nu": 0.7554223126608902,
+    "n0": 0.00011931237608263784
+   },
+   "S": {
+    "19": 1.8267019292380857,
+    "20": 1.8267019292380857,
+    "23": 1.4369859099980271,
+    "25": 1.174305701746997
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.2988697678854262,
+    "25": 1.036189559634396
+   },
+   "refcurve_sha256": "254ac66a5ae8b82928b43cfd21acac9126d8796dc61a7217b203f6006c6f0007",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_cfr/tok/tok_bytes_train.npy": "44bb6125a90907cff59384057ec1d5616356869adff0a71ea1e5035c1095f9db",
+    "data/cf/pol_cfr/tok/tok_bytes_ref.npy": "0e24cc3b7a64de4f00aa4257187b2ed0a8cce3c34d4086f6dde6d3a5f91382f0"
+   }
+  },
+  "pol_dol_ecab": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.873906865042043,
+    "gamma": 0.3078195415807348,
+    "A": 1.7827445327841909,
+    "ngram23": 1.1952579909388161
+   },
+   "shape": {
+    "nu": 0.7646314863832975,
+    "n0": 9.103050865739981e-05
+   },
+   "S": {
+    "19": 2.2620688030561604,
+    "20": 2.2620688030561604,
+    "23": 1.6590664905385712,
+    "25": 1.4626776549921772
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.1249236420272046,
+    "25": 0.9285348064808105
+   },
+   "refcurve_sha256": "4f9a9b361bde857b015ae7ad91ee4ddd212cbd2c606479d25273a47877975e26",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_dol_ecab/tok/tok_bytes_train.npy": "78c014ff1b9714c056dd1ba1a98842c11f62608940c316138a34ea679635cfb2",
+    "data/cf/pol_dol_ecab/tok/tok_bytes_ref.npy": "b2505fc2bcf175e4677d438d6b4c552fc5ea52a832b095ce7500c02b30434d39"
+   }
+  },
+  "pol_taxrulings": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.8869921664674956,
+    "gamma": 0.2888629378078744,
+    "A": 1.801289452491386,
+    "ngram23": 1.5410465764127936
+   },
+   "shape": {
+    "nu": 0.775877690843389,
+    "n0": 7.617705112823907e-05
+   },
+   "S": {
+    "19": 2.049247505263982,
+    "20": 2.049247505263982,
+    "23": 1.7627560913922236,
+    "25": 1.53501249356643
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.3263454316655938,
+    "25": 1.0986018338398003
+   },
+   "refcurve_sha256": "40537c5acfdf5edc60a5372051b7e29f3ceb7fc7ab52c709db6ae0b03a7ec8dd",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_taxrulings/tok/tok_bytes_train.npy": "6b35f34c97c5939b384e2b63bf3dba5d4b6cf85282e021f957e6fd0b6da33c19",
+    "data/cf/pol_taxrulings/tok/tok_bytes_ref.npy": "0545d432ab8cb6615d9624a8d92c9cdc4d78f0236c82a2aa0b920622792c34ca"
+   }
+  },
+  "pol_federal_register": {
+   "family": "english",
+   "ref_model": "SmolLM2-135M",
+   "ref_stats": {
+    "ref_full": 0.7261208936064337,
+    "gamma": 0.37869924190626386,
+    "A": 2.1708564374676427,
+    "ngram23": 1.7560522238486072
+   },
+   "shape": {
+    "nu": 0.7253213533484983,
+    "n0": 0.00019690217559354656
+   },
+   "S": {
+    "19": 2.007448674049054,
+    "20": 2.0055997508717858,
+    "23": 1.4913019508108227,
+    "25": 1.2577438744609846
+   },
+   "level_used": "both",
+   "A0": {
+    "23": 1.3414051321144298,
+    "25": 1.1078470557645914
+   },
+   "refcurve_sha256": "931a59d0645a4a8d9666feae75e992f8f1e095057588c99478d96f42bc8f5cd9",
+   "ref_n_targets": 20000,
+   "inputs": {
+    "data/cf/pol_federal_register/tok/tok_bytes_train.npy": "bb8456c4f9fc680d3dd917997cf704a9c58d8994696cee7bab104385486ff1c9",
+    "data/cf/pol_federal_register/tok/tok_bytes_ref.npy": "cf2bdf0e38adb6fece2b0adb559a36048663ba22a81101bde313158a079fe1aa"
+   }
+  }
+ },
+ "date": "2026-11-01 17:22:55 PST"
+}

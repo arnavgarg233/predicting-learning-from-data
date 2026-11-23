@@ -1,0 +1,54 @@
+eb main start PAR=4 PREP_PAR=4 2026-10-31T08:05:17Z
+prep fw2_grc_grek ok=True 68s 2026-10-31T08:06:25Z
+prep fw2_npi_deva ok=True 68s 2026-10-31T08:06:25Z
+prep fw2_haw_latn ok=True 78s 2026-10-31T08:06:35Z
+prep fw2_kmr_latn ok=True 84s 2026-10-31T08:06:42Z
+prep fw2_amh_ethi ok=True 107s 2026-10-31T08:08:13Z
+prep fw2_snd_arab ok=True 127s 2026-10-31T08:08:33Z
+ref fw2_grc_grek ok=True 1174s 2026-10-31T08:25:59Z
+prep fw2_hbo_hebr ok=True 49s 2026-10-31T08:26:48Z
+ref fw2_npi_deva ok=True 1085s 2026-10-31T08:44:04Z
+prep fw2_sah_cyrl ok=True 48s 2026-10-31T08:44:52Z
+ref fw2_haw_latn ok=True 1086s 2026-10-31T09:02:11Z
+prep fw2_som_latn ok=True 59s 2026-10-31T09:03:10Z
+ref fw2_kmr_latn ok=True 1088s 2026-10-31T09:20:19Z
+prep fw2_pap_latn ok=True 56s 2026-10-31T09:21:15Z
+ref fw2_amh_ethi ok=True 1087s 2026-10-31T09:38:26Z
+prep fw2_mlt_latn ok=True 73s 2026-10-31T09:39:39Z
+ref fw2_snd_arab ok=True 1091s 2026-10-31T09:56:37Z
+prep fw2_zul_latn ok=True 51s 2026-10-31T09:57:28Z
+ref fw2_hbo_hebr ok=True 1090s 2026-10-31T10:14:46Z
+prep fw2_ydd_hebr ok=True 49s 2026-10-31T10:15:35Z
+ref fw2_sah_cyrl ok=True 1088s 2026-10-31T10:32:54Z
+prep fw2_gmh_latn ok=True 55s 2026-10-31T10:33:49Z
+ref fw2_som_latn ok=True 1089s 2026-10-31T10:51:03Z
+prep fw2_hyw_armn ok=True 46s 2026-10-31T10:51:50Z
+ref fw2_pap_latn ok=True 1090s 2026-10-31T11:09:14Z
+ref fw2_mlt_latn ok=True 1090s 2026-10-31T11:27:24Z
+ref fw2_zul_latn ok=True 1102s 2026-10-31T11:45:46Z
+ref fw2_ydd_hebr ok=True 1091s 2026-10-31T12:03:57Z
+ref fw2_gmh_latn ok=True 1091s 2026-10-31T12:22:08Z
+ref fw2_hyw_armn ok=True 1092s 2026-10-31T12:40:20Z
+eb corpora.json written: 15 corpora 2026-10-31T12:40:20Z
+eb forecast written 2026-10-31T12:40:21Z
+eb training released 2026-10-31T12:41:51Z
+eb test splits encoded 2026-10-31T12:41:52Z
+train cf_fw2_haw_latn b19 s0 ok=True 505s 2026-10-31T12:50:17Z
+train cf_fw2_haw_latn b20 s0 ok=True 558s 2026-10-31T12:51:11Z
+train cf_fw2_haw_latn b23 s0 ok=True 1087s 2026-10-31T12:59:59Z
+train cf_fw2_grc_grek b23 s0 ok=True 1187s 2026-10-31T13:19:46Z
+train cf_fw2_haw_latn b25 s0 ok=True 2461s 2026-10-31T13:22:53Z
+train cf_fw2_grc_grek b20 s0 ok=True 559s 2026-10-31T13:29:05Z
+train cf_fw2_grc_grek b19 s0 ok=True 527s 2026-10-31T13:31:40Z
+train cf_fw2_haw_latn b25 s1 ok=True 2502s 2026-10-31T13:31:59Z
+train cf_fw2_grc_grek b25 s0 ok=True 2691s 2026-10-31T13:36:02Z
+train cf_fw2_kmr_latn b20 s0 ok=True 540s 2026-10-31T13:45:02Z
+train cf_fw2_kmr_latn b19 s0 ok=True 508s 2026-10-31T13:53:30Z
+train cf_fw2_kmr_latn b23 s0 ok=True 1377s 2026-10-31T13:54:56Z
+train cf_fw2_grc_grek b25 s1 ok=True 2124s 2026-10-31T14:04:29Z
+train cf_fw2_kmr_latn b25 s0 ok=True 2832s 2026-10-31T14:18:52Z
+train cf_fw2_npi_deva b23 s0 ok=True 1178s 2026-10-31T14:24:07Z
+train cf_fw2_npi_deva b20 s0 ok=True 551s 2026-10-31T14:28:03Z
+train cf_fw2_npi_deva b19 s0 ok=True 529s 2026-10-31T14:32:56Z
+train cf_fw2_npi_deva b25 s0 ok=True 2647s 2026-10-31T14:39:03Z
+train cf_fw2_kmr_latn b25 s1 ok=True 2833s 2026-10-31T14:40:43Z

@@ -1,0 +1,57 @@
+{
+ "written_pt": "2026-10-28 14:15:12 PDT",
+ "note": "Both forecasters written before the corpus draw, before any corpus is prepared, and before any training.",
+ "forecaster_i": {
+  "name": "(i) the paper's forecaster (A0)",
+  "code": "scripts/curve_forecast/forecast.py with results/curve_forecast/locked.json, unchanged",
+  "chosen": {
+   "shape": "gamma",
+   "A2_form": "neff",
+   "A4_form": "off",
+   "level": "both",
+   "level_mode": "anch",
+   "A3_floor": "zero"
+  },
+  "pooled_exponent_baseline": 0.14,
+  "c_flag_threshold": 0.7,
+  "reference_model": {
+   "code": "SmolLM2-135M",
+   "english": "SmolLM2-135M",
+   "lang": "Qwen2.5-0.5B"
+  },
+  "reference_targets": 20000
+ },
+ "forecaster_ii": {
+  "name": "(ii) revised n-gram-level route (plan section 1b)",
+  "code": "scripts/extbench/forecast_ii.py",
+  "constants": {
+   "ngram": [
+    -0.09618305026700236,
+    0.8134058678431364
+   ],
+   "lam": 0.6924039665645343,
+   "code_bias": 0.2011360393894477
+  },
+  "level_rule": {
+   "code": "A0(2^23) of (i) minus 0.2011 (mean level bias on the 14 test code corpora)",
+   "english": "A0(2^23) of (i), the paper's reference-based level, unchanged",
+   "lang (FineWeb-2)": "-0.0962 + 0.8134 * g, g = best n-gram cross-entropy at 2^23 (development fit)"
+  },
+  "drop_rule": "0.6924 * (S(2^23) - S(2^25)), S the information shape of (i)",
+  "english_level_choice": "English keeps the reference level. Decided before the draw from test80 alone: the n-gram level was worse on the 19 test English corpora (leave-one-out 0.117 against 0.094 for the reference level)."
+ },
+ "baselines": {
+  "A3": "two pilots (2^19, 2^20 seed 0), power law with the locked floor rule (core.A3)",
+  "X_pool1": "one pilot at 2^20, L20 * 2^(-0.14 (k - 20))",
+  "P2023": "pilots at 2^20 and 2^23: L23 * 2^(-2a), a = log2(L20/L23)/3",
+  "compute": "each charged its learner FLOPs (core.learner_flops); data forecasts charged the reference pass at 1,000 targets and at the 20,000 run, n-gram level 0"
+ },
+ "reported": [
+  "level error at 2^23",
+  "drop error 2^23->2^25",
+  "error at 2^25",
+  "per family, paired corpus-bootstrap ratios (20,000 draws, seed 0)",
+  "c-flag counts (c = reference full-context bits per byte / best n-gram cross-entropy at 2^23 >= 0.70)",
+  "second seed at 2^25"
+ ]
+}
